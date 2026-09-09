@@ -81,6 +81,32 @@ So this eliminates noise. It does not rank threats. Findings that cannot be
 resolved statically are reported as undetermined and must never be treated as
 safe.
 
+## Measuring whether this is worth doing
+
+`scripts/probe.ts` measures what symbol-level reachability adds **over
+package-level analysis**, not over a raw dependency scan. That distinction
+matters: a scanner already tells you which packages you import, so the dataset
+only earns its place if knowing the vulnerable function eliminates findings
+that survive the weaker check.
+
+```
+npx tsx scripts/probe.ts --project <path> --entry <entry-file> [--osv-dir <feed>]
+```
+
+On `fixtures/sample-app`, which calls `lodash.trim` and never `lodash.template`:
+
+```
+package is imported           : 2
+vulnerable symbol is reached  : 1
+elimination rate              : 50.0%
+
+  REACHABLE      GHSA-29mw-wpgm-hmr9   (trim, called at src/index.js:13:10)
+  not reachable  GHSA-35jh-r3h4-6jhm   (template, never called)
+```
+
+That is the known-correct answer for that fixture. A package-level scan keeps
+both advisories, because lodash *is* imported.
+
 ## Goal
 
 To make this data unnecessary, by getting these fields upstream into OSV as

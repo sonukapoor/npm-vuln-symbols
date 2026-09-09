@@ -13,6 +13,7 @@
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --passWithNoTests"
   },
   "devDependencies": {
+    "@cs-au-dk/jelly": "^0.13.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.0.0",
     "jest": "^30.4.2",
