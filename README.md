@@ -3,6 +3,16 @@
 An open dataset mapping npm security advisories to the specific functions that
 are actually vulnerable.
 
+> **Status: early, and not yet safe to suppress findings with.**
+>
+> The 11 records in `advisories/` are machine-extracted and **have not been
+> reviewed by a human**. They carry `confidence: medium` and no `reviewedBy`
+> field. Extraction measures at roughly 75 percent precision, so expect
+> about one record in four to be wrong.
+>
+> Do not wire this into anything that silences vulnerability alerts yet.
+> Review is what makes a record trustworthy, and that work has not been done.
+
 ## The problem
 
 A security advisory today says:
