@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-v9p9-535w-4285",
+  "aliases": [
+    "CVE-2021-23682"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "litespeed.js"
+      },
+      "symbols": [
+        "getJsonFromUrl"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the getJsonFromUrl function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6956-83fg-5wc5",
+  "aliases": [
+    "CVE-2022-25354"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "set-in"
+      },
+      "symbols": [
+        "setIn"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `setIn` method"
+  }
+}

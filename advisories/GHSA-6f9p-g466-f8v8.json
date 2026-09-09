@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6f9p-g466-f8v8",
+  "aliases": [
+    "CVE-2023-26143"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "blamer"
+      },
+      "symbols": [
+        "blameByFile"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the blameByFile() API"
+  }
+}
