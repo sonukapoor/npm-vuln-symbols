@@ -107,6 +107,11 @@ elimination rate              : 50.0%
 That is the known-correct answer for that fixture. A package-level scan keeps
 both advisories, because lodash *is* imported.
 
+## Limitations
+
+Transitive reachability has no scalable sound answer yet, and that is the open
+question for the whole approach. See [LIMITATIONS.md](LIMITATIONS.md).
+
 ## Goal
 
 To make this data unnecessary, by getting these fields upstream into OSV as
