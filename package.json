@@ -1,0 +1,23 @@
+{
+  "name": "npm-vuln-symbols",
+  "version": "0.1.0",
+  "description": "Open dataset mapping npm security advisories to the specific functions that are vulnerable",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "validate": "tsx scripts/validate.ts",
+    "extract": "tsx scripts/extract.ts",
+    "probe": "tsx scripts/probe.ts",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --passWithNoTests"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.9",
+    "tsx": "^4.22.0",
+    "typescript": "^5.8.2"
+  }
+}

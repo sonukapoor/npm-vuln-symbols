@@ -1,0 +1,12 @@
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+
+Copyright (c) 2026 Sonu Kapoor and contributors
+
+The contents of the advisories/ directory are licensed under CC-BY-4.0.
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This matches the licence used by the OSV database, so the data can be
+redistributed by, and contributed upstream to, existing advisory sources
+without a licence conflict.
+
+Everything outside advisories/ is licensed under the MIT License. See LICENSE.
