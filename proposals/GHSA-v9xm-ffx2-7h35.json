@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-v9xm-ffx2-7h35",
+  "aliases": [
+    "CVE-2026-32730"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "apostrophe"
+      },
+      "symbols": [
+        "getBearer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In `packages/apostrophe/modules/@apostrophecms/express/index.js`, the `getBearer()` function"
+  }
+}

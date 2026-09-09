@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-mp7w-mhcv-673j",
+  "aliases": [
+    "CVE-2025-25304"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vega"
+      },
+      "symbols": [
+        "vlSelectionTuples"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vega-selections"
+      },
+      "symbols": [
+        "vlSelectionTuples"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the vlSelectionTuples function"
+  }
+}

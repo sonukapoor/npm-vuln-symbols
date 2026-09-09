@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8j2w-6fmm-m587",
+  "aliases": [
+    "CVE-2026-32031"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "openclaw"
+      },
+      "symbols": [
+        "channel"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in channel APIs"
+  }
+}

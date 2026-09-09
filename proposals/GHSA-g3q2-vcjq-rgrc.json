@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-g3q2-vcjq-rgrc",
+  "aliases": [
+    "CVE-2024-24294"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@blackprint/engine"
+      },
+      "symbols": [
+        "setDeepProperty"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `_utils.setDeepProperty` function"
+  }
+}

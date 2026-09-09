@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-j5c2-hm46-wp5c",
+  "aliases": [
+    "BIT-ghost-2021-39192",
+    "CVE-2021-39192"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ghost"
+      },
+      "symbols": [
+        "integrations"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the integrations API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-hw46-vg6w-88fj",
+  "aliases": [
+    "CVE-2021-33420"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "replicator"
+      },
+      "symbols": [
+        "fromSerializable"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the fromSerializable function"
+  }
+}

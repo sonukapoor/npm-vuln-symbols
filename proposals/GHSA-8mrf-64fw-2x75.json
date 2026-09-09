@@ -1,0 +1,25 @@
+{
+  "id": "GHSA-8mrf-64fw-2x75",
+  "aliases": [
+    "CVE-2020-8298"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fs-path"
+      },
+      "symbols": [
+        "copy",
+        "copySync",
+        "remove",
+        "removeSync"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `copy`, `copySync`, `remove`, and `removeSync` methods"
+  }
+}

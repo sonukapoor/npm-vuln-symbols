@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5xjx-4xcm-hpcm",
+  "aliases": [
+    "CVE-2021-23403"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ts-nodash"
+      },
+      "symbols": [
+        "Merge"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the Merge() function"
+  }
+}

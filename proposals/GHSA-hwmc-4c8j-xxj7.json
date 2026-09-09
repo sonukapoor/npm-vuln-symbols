@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-hwmc-4c8j-xxj7",
+  "aliases": [
+    "CVE-2025-62381"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "sveltekit-superforms"
+      },
+      "symbols": [
+        "parseFormData"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `parseFormData` function"
+  }
+}

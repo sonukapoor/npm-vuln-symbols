@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-c2rm-g55x-8hr5",
+  "aliases": [
+    "CVE-2026-44589"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nuxt-og-image"
+      },
+      "symbols": [
+        "dashboards"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in dashboards, internal HTTP-RPC, Redis HTTP UI, anything running alongside the function"
+  }
+}

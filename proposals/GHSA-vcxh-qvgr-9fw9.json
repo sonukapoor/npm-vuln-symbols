@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vcxh-qvgr-9fw9",
+  "aliases": [
+    "CVE-2023-26126"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "m.static"
+      },
+      "symbols": [
+        "requestFile"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `requestFile` function"
+  }
+}

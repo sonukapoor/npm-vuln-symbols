@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4m6q-rxhm-675w",
+  "aliases": [
+    "CVE-2020-7636"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "adb-driver"
+      },
+      "symbols": [
+        "command"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the command function"
+  }
+}

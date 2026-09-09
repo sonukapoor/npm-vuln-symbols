@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-wjc4-73q6-gv3m",
+  "aliases": [
+    "CVE-2023-46308"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "plotly.js"
+      },
+      "symbols": [
+        "plot"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In Plotly plotly.js before 2.25.2, plot API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-v65r-p3vv-jjfv",
+  "aliases": [
+    "CVE-2023-45818"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tinymce"
+      },
+      "symbols": [
+        "getContent"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in undo/redo, getContent API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5226-3rvg-hp4x",
+  "aliases": [
+    "CVE-2026-5327"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fast-filesystem-mcp"
+      },
+      "symbols": [
+        "handleGetDiskUsage"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through handleGetDiskUsage function"
+  }
+}

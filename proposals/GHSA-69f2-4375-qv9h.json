@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-69f2-4375-qv9h",
+  "aliases": [
+    "CVE-2022-21810"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "smartctl"
+      },
+      "symbols": [
+        "info"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the info method"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cxx3-36qc-m6qm",
+  "aliases": [
+    "CVE-2023-26110"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "node-bluetooth"
+      },
+      "symbols": [
+        "findSerialPortChannel"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the findSerialPortChannel method"
+  }
+}

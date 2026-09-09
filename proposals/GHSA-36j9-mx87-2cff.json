@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-36j9-mx87-2cff",
+  "aliases": [
+    "CVE-2026-76231"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "renovate"
+      },
+      "symbols": [
+        "quote"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `quote` function"
+  }
+}

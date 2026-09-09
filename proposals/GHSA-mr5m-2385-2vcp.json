@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-mr5m-2385-2vcp",
+  "aliases": [
+    "CVE-2020-11610"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "xdlocalstorage"
+      },
+      "symbols": [
+        "postMessage"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `xdLocalStoragePostMessageApi.js` specifies the wildcard (`*`) as the targetOrigin when calling the `postMessage()` function"
+  }
+}

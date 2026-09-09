@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-82jv-9wjw-pqh6",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "derby"
+      },
+      "symbols": [
+        "emit"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in emit function"
+  }
+}

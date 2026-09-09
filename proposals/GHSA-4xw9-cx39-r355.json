@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4xw9-cx39-r355",
+  "aliases": [
+    "CVE-2023-48238"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "json-web-token"
+      },
+      "symbols": [
+        "decode"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the decode function"
+  }
+}

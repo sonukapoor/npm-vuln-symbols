@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vp56-6g26-6827",
+  "aliases": [
+    "CVE-2022-2596"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "node-fetch"
+      },
+      "symbols": [
+        "isOriginPotentiallyTrustworthy"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `isOriginPotentiallyTrustworthy()` function"
+  }
+}

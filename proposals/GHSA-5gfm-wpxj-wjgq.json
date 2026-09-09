@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5gfm-wpxj-wjgq",
+  "aliases": [
+    "CVE-2025-12816"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "node-forge"
+      },
+      "symbols": [
+        "validate"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the node-forge asn1.validate function"
+  }
+}

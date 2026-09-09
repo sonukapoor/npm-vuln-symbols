@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cv76-rv4h-4mqc",
+  "aliases": [
+    "CVE-2021-34082"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "proctree"
+      },
+      "symbols": [
+        "fix"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the fix function"
+  }
+}

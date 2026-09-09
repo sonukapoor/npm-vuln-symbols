@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6m85-wvcr-pgw3",
+  "aliases": [
+    "CVE-2020-7737"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "safetydance"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the set function"
+  }
+}

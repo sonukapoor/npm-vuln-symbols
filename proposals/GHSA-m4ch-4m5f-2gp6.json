@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-m4ch-4m5f-2gp6",
+  "aliases": [
+    "CVE-2023-46998"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "bootbox"
+      },
+      "symbols": [
+        "confirm",
+        "prompt"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via a crafted payload to alert(), confirm(), prompt() functions"
+  }
+}

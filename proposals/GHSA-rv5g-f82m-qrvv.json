@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-rv5g-f82m-qrvv",
+  "aliases": [
+    "CVE-2026-39412"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "liquidjs"
+      },
+      "symbols": [
+        "sort_natural"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In `src/filters/array.ts`, the `sort_natural` function"
+  }
+}

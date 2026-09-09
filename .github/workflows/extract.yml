@@ -1,0 +1,71 @@
+name: extract
+
+# Proposes new symbol records from newly published advisories.
+#
+# This never writes to the dataset directly. It opens a pull request against
+# proposals/, which a human promotes into advisories/ after review. Extraction
+# runs at roughly 75 percent precision, so unreviewed output must not be
+# treated as data.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Download the OSV npm advisory feed
+        run: |
+          curl -sS -o npm-all.zip \
+            https://storage.googleapis.com/osv-vulnerabilities/npm/all.zip
+          mkdir -p osv-feed
+          unzip -q -o npm-all.zip -d osv-feed
+
+      - name: Propose symbol records
+        run: npx tsx scripts/extract.ts --osv-dir osv-feed --out proposals
+
+      - name: Drop proposals already reviewed or already queued
+        run: |
+          git checkout -- proposals 2>/dev/null || true
+          for f in proposals/*.json; do
+            [ -e "$f" ] || continue
+            name=$(basename "$f")
+            # Already promoted into the dataset, so it is settled.
+            if [ -e "advisories/$name" ]; then rm "$f"; continue; fi
+            # Already queued and unchanged, so re-proposing it only adds noise.
+            if git ls-files --error-unmatch "proposals/$name" >/dev/null 2>&1 \
+               && git diff --quiet -- "proposals/$name"; then rm "$f"; fi
+          done
+
+      - name: Clean up the feed before committing
+        run: rm -rf osv-feed npm-all.zip
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: extract/proposals
+          title: "Proposed symbol records from new advisories"
+          commit-message: "Add proposed symbol records from new advisories"
+          add-paths: proposals/**
+          body: |
+            Machine-proposed records from the OSV npm feed.
+
+            Measured at roughly 75 percent precision on a held-out sample, so
+            every entry needs review before it is promoted into `advisories/`.
+
+            For each file, check that the named symbols really are the
+            vulnerable exports, then move it to `advisories/` and set
+            `reviewedBy` and `reviewedAt`.

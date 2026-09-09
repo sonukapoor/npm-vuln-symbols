@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xqg6-98cw-gxhq",
+  "aliases": [
+    "CVE-2026-25150"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@builder.io/qwik-city"
+      },
+      "symbols": [
+        "formToObj"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `formToObj()` function"
+  }
+}

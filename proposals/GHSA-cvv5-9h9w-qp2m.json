@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cvv5-9h9w-qp2m",
+  "aliases": [
+    "CVE-2024-56334"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "systeminformation"
+      },
+      "symbols": [
+        "getWindowsIEEE8021x"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `getWindowsIEEE8021x` function"
+  }
+}

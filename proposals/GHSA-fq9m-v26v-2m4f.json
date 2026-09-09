@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fq9m-v26v-2m4f",
+  "aliases": [
+    "CVE-2024-21537"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "lilconfig"
+      },
+      "symbols": [
+        "dynamicImport"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the dynamicImport function"
+  }
+}

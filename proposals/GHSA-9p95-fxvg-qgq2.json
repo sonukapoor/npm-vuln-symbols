@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-9p95-fxvg-qgq2",
+  "aliases": [
+    "CVE-2022-25912"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "simple-git"
+      },
+      "symbols": [
+        "clone"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via `clone()` method"
+  }
+}

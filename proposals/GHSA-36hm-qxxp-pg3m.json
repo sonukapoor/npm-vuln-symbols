@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-36hm-qxxp-pg3m",
+  "aliases": [
+    "CVE-2026-22028"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "preact"
+      },
+      "symbols": [
+        "your"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in your API"
+  }
+}

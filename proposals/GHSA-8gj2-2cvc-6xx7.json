@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8gj2-2cvc-6xx7",
+  "aliases": [
+    "CVE-2026-73603"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "ElevenLabs"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the chatflow owner's OpenAI or ElevenLabs API"
+  }
+}

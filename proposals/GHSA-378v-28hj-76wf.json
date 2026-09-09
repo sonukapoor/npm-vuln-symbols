@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-378v-28hj-76wf",
+  "aliases": [
+    "CVE-2026-2739"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "bn.js"
+      },
+      "symbols": [
+        "toString",
+        "divmod"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using toString(), divmod(), and other methods"
+  }
+}

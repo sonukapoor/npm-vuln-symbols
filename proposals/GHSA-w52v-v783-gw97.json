@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-w52v-v783-gw97",
+  "aliases": [
+    "BIT-ghost-2026-26980",
+    "CVE-2026-26980"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ghost"
+      },
+      "symbols": [
+        "Content"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in Content API"
+  }
+}

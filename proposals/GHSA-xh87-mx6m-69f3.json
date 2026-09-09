@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xh87-mx6m-69f3",
+  "aliases": [
+    "CVE-2026-27700"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "hono"
+      },
+      "symbols": [
+        "getConnInfo"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the AWS Lambda adapter (`hono/aws-lambda`) behind an Application Load Balancer (ALB), the `getConnInfo()` function"
+  }
+}

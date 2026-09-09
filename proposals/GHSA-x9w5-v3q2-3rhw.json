@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-x9w5-v3q2-3rhw",
+  "aliases": [
+    "CVE-2023-46234"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "browserify-sign"
+      },
+      "symbols": [
+        "dsaVerify"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `dsaVerify` function"
+  }
+}

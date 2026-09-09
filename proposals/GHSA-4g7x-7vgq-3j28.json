@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4g7x-7vgq-3j28",
+  "aliases": [
+    "CVE-2020-36376"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "aaptjs"
+      },
+      "symbols": [
+        "list"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in list function"
+  }
+}

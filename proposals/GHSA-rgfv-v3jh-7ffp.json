@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-rgfv-v3jh-7ffp",
+  "aliases": [
+    "CVE-2020-7716"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "deeps"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the set function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-wg4g-395p-mqv3",
+  "aliases": [
+    "CVE-2026-42282"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "n8n-mcp"
+      },
+      "symbols": [
+        "n8n_manage_credentials"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through `n8n_manage_credentials`\n- per-tenant API"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "GHSA-8m3c-c648-2xjj",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nodemailer"
+      },
+      "symbols": [
+        "resolveAll",
+        "_convertDataImages"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through the library's internal resolution paths (`MailMessage.resolveAll()` and `_convertDataImages()`), but the public plugin API"
+  }
+}

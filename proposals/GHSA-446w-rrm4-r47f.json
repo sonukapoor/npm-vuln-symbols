@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-446w-rrm4-r47f",
+  "aliases": [
+    "CVE-2022-24725"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "shescape"
+      },
+      "symbols": [
+        "escape",
+        "escapeAll"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using Bash with the `escape` or `escapeAll` functions"
+  }
+}

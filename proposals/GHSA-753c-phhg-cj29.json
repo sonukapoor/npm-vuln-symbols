@@ -1,0 +1,25 @@
+{
+  "id": "GHSA-753c-phhg-cj29",
+  "aliases": [
+    "CVE-2021-23352",
+    "SNYK-JS-MADGE-1082875"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "madge"
+      },
+      "symbols": [
+        "image",
+        "svg",
+        "dot"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the graphVizPath option parameter which, when the .image(), .svg() or .dot() functions"
+  }
+}

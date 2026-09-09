@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-m33v-338h-4v9f",
+  "aliases": [
+    "CVE-2021-21298"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@node-red/runtime"
+      },
+      "symbols": [
+        "Projects"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the Projects API"
+  }
+}

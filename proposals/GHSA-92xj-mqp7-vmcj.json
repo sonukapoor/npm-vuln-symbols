@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-92xj-mqp7-vmcj",
+  "aliases": [
+    "CVE-2020-7720"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "node-forge"
+      },
+      "symbols": [
+        "setPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the util.setPath function"
+  }
+}

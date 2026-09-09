@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-h7cp-r72f-jxh6",
+  "aliases": [
+    "CVE-2025-6545"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "pbkdf2"
+      },
+      "symbols": [
+        "deriveKey"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In this case, the resulting `deriveKey` method"
+  }
+}

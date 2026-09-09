@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-w4pp-8pjf-rmxw",
+  "aliases": [
+    "CVE-2026-9496"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "pacote"
+      },
+      "symbols": [
+        "addGitSha"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the addGitSha function"
+  }
+}

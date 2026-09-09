@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fr4j-65pv-gjjj",
+  "aliases": [
+    "CVE-2026-76230"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "renovate"
+      },
+      "symbols": [
+        "quote"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `quote` function"
+  }
+}

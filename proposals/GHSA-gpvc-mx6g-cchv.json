@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-gpvc-mx6g-cchv",
+  "aliases": [
+    "CVE-2023-26139"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "underscore-keypath"
+      },
+      "symbols": [
+        "setProperty"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the name argument of the `setProperty()` function"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-h6pr-c536-6rjg",
+  "aliases": [
+    "CVE-2021-23507",
+    "SNYK-JS-OBJECTPATHSET-2388576"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "object-path-set"
+      },
+      "symbols": [
+        "setPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the setPath method"
+  }
+}

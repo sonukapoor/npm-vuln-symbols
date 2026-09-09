@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-x2fc-mxcx-w4mf",
+  "aliases": [
+    "CVE-2020-7743"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mathjs"
+      },
+      "symbols": [
+        "deepExtend"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the deepExtend function"
+  }
+}

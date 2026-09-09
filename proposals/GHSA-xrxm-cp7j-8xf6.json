@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xrxm-cp7j-8xf6",
+  "aliases": [
+    "CVE-2026-50168"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@angular/platform-server"
+      },
+      "symbols": [
+        "url"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using raw client inputs (such as request Host headers or absolute-form URIs) and pass it as `config.url` to the rendering API"
+  }
+}

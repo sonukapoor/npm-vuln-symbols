@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cwx2-736x-mf6w",
+  "aliases": [
+    "CVE-2020-15256"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "object-path"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `object-path` <= 0.11.4 affecting the `set()` method"
+  }
+}

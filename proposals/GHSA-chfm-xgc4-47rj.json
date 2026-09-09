@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-chfm-xgc4-47rj",
+  "aliases": [
+    "CVE-2026-41365"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "openclaw"
+      },
+      "symbols": [
+        "Graph"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via Graph API"
+  }
+}

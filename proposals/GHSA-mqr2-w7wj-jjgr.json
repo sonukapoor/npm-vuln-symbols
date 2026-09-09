@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-mqr2-w7wj-jjgr",
+  "aliases": [
+    "CVE-2024-21507"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mysql2"
+      },
+      "symbols": [
+        "keyFromFields"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through the `keyFromFields` function"
+  }
+}

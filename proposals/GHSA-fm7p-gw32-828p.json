@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fm7p-gw32-828p",
+  "aliases": [
+    "CVE-2026-54705"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mathlive"
+      },
+      "symbols": [
+        "createHTML"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through `createHTML`, but its default value is the identity function"
+  }
+}

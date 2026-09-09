@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vrm6-8vpv-qv8q",
+  "aliases": [
+    "CVE-2026-1526"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "undici"
+      },
+      "symbols": [
+        "decompress"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `PerMessageDeflate.decompress()` method"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5q53-78f2-6gf8",
+  "aliases": [
+    "CVE-2025-57317"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "apidoc-core"
+      },
+      "symbols": [
+        "preProcess"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the preProcess function"
+  }
+}

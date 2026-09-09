@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-rj5f-7c8x-gjg4",
+  "aliases": [
+    "CVE-2020-7723"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "promisehelpers"
+      },
+      "symbols": [
+        "insert"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the insert function"
+  }
+}

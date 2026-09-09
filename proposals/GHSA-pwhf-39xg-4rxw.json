@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-pwhf-39xg-4rxw",
+  "aliases": [
+    "CVE-2021-32660"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@backstage/techdocs-common"
+      },
+      "symbols": [
+        "TechDocs"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the TechDocs API"
+  }
+}

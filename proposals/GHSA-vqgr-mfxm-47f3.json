@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vqgr-mfxm-47f3",
+  "aliases": [
+    "CVE-2020-28422"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "git-archive"
+      },
+      "symbols": [
+        "exports"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via exports function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xjr7-3c3g-m763",
+  "aliases": [
+    "CVE-2026-76233"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "renovate"
+      },
+      "symbols": [
+        "quote"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `quote` function"
+  }
+}

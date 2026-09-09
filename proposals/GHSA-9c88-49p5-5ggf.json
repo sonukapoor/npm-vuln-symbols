@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-9c88-49p5-5ggf",
+  "aliases": [
+    "CVE-2026-26280"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "systeminformation"
+      },
+      "symbols": [
+        "wifiNetworks"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `wifiNetworks()` function"
+  }
+}

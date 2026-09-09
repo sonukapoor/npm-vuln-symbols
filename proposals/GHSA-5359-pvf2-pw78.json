@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5359-pvf2-pw78",
+  "aliases": [
+    "CVE-2024-29881"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tinymce"
+      },
+      "symbols": [
+        "addNodeFilter"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `editor.parser.addNodeFilter` and `editor.serializer.addNodeFilter` APIs"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-j4fx-xxwh-2485",
+  "aliases": [
+    "CVE-2026-8657"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jsondiffpatch"
+      },
+      "symbols": [
+        "patch"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the jsondiffpatch.patch() and jsondiffpatch/formatters/jsonpatch.patch() APIs"
+  }
+}

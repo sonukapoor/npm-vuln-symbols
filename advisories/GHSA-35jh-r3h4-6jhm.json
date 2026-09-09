@@ -1,0 +1,51 @@
+{
+  "id": "GHSA-35jh-r3h4-6jhm",
+  "aliases": [
+    "CVE-2021-23337",
+    "CVE-2026-4800",
+    "GHSA-r5fr-rjxr-66jc"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "lodash"
+      },
+      "symbols": [
+        "template"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "lodash-es"
+      },
+      "symbols": [
+        "template"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "lodash-template"
+      },
+      "symbols": [
+        "template"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "lodash.template"
+      },
+      "symbols": [
+        "template"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the template function"
+  }
+}

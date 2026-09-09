@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-hgqx-r2hp-jr38",
+  "aliases": [
+    "CVE-2023-45819"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tinymce"
+      },
+      "symbols": [
+        "open"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in notificationManager.open API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-gjx4-2c7g-fm94",
+  "aliases": [
+    "CVE-2025-55294"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "screenshot-desktop"
+      },
+      "symbols": [
+        "g"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in a server-side context (e.g., API"
+  }
+}

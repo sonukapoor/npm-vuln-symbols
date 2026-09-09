@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-gjm5-83cw-p3p2",
+  "aliases": [
+    "CVE-2021-23568"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "extend2"
+      },
+      "symbols": [
+        "extend"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the extend function"
+  }
+}

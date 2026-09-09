@@ -1,0 +1,40 @@
+{
+  "id": "GHSA-chmr-rg2f-9jmf",
+  "aliases": [
+    "CVE-2023-34093"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/database"
+      },
+      "symbols": [
+        "bootstrap"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/strapi"
+      },
+      "symbols": [
+        "bootstrap"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/utils"
+      },
+      "symbols": [
+        "bootstrap"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the bootstrap functions"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-5xpp-75jx-m839",
+  "aliases": [
+    "CVE-2026-50289"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "systeminformation"
+      },
+      "symbols": [
+        "checkLinuxDCHPInterfaces",
+        "readFileSync"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `checkLinuxDCHPInterfaces()` with a non-shell `fs.readFileSync` read and adds a Linux regression test that points the function"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-f8pq-3926-8gx5",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@opentelemetry/instrumentation"
+      },
+      "symbols": [
+        "import"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in cases where an application passes user-supplied input directly to an `import()` function"
+  }
+}

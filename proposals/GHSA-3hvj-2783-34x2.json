@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3hvj-2783-34x2",
+  "aliases": [
+    "CVE-2024-34273"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "njwt"
+      },
+      "symbols": [
+        "parse"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `Parser.prototype.parse` method"
+  }
+}

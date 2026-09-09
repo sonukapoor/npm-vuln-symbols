@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-9g9w-hmvj-5h57",
+  "aliases": [
+    "CVE-2018-3722"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "merge-deep"
+      },
+      "symbols": [
+        "merging"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via merging functions"
+  }
+}

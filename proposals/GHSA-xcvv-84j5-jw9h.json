@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xcvv-84j5-jw9h",
+  "aliases": [
+    "CVE-2018-3720"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "assign-deep"
+      },
+      "symbols": [
+        "merging"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via merging functions"
+  }
+}

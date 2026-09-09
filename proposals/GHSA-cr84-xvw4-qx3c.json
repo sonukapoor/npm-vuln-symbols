@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-cr84-xvw4-qx3c",
+  "aliases": [
+    "CVE-2022-25918"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "shescape"
+      },
+      "symbols": [
+        "escape",
+        "escapeAll"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `escape` or `escapeAll` functions"
+  }
+}

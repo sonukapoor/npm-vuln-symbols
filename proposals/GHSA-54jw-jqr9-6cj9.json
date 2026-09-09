@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-54jw-jqr9-6cj9",
+  "aliases": [
+    "CVE-2022-25962"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vagrant.js"
+      },
+      "symbols": [
+        "boxAdd"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the boxAdd function"
+  }
+}

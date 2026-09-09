@@ -1,0 +1,24 @@
+{
+  "id": "GHSA-65w6-pf7x-5g85",
+  "aliases": [
+    "CVE-2026-39397"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@delmaredigital/payload-puck"
+      },
+      "symbols": [
+        "styles",
+        "prompts",
+        "context"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the plugin (AI, styles, prompts, context, and the Next.js API"
+  }
+}

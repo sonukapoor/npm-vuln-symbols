@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-m7p2-ghfh-pjvx",
+  "aliases": [
+    "CVE-2020-36380"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "aaptjs"
+      },
+      "symbols": [
+        "crunch"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in crunch function"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-93r5-fhx6-vmg9",
+  "aliases": [
+    "CVE-2026-83614"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@xmldom/xmldom"
+      },
+      "symbols": [
+        "normalize"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "xmldom"
+      },
+      "symbols": [
+        "normalize"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the public `normalize()` API"
+  }
+}

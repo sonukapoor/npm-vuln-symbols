@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7mwh-4pqv-wmr8",
+  "aliases": [
+    "CVE-2022-25758"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "scss-tokenizer"
+      },
+      "symbols": [
+        "loadAnnotation"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `loadAnnotation()` function"
+  }
+}

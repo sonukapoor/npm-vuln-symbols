@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-69xw-7hcm-h432",
+  "aliases": [
+    "CVE-2026-44455"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "hono"
+      },
+      "symbols": [
+        "createElement"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the programmatic `jsx()` or `createElement()` APIs"
+  }
+}

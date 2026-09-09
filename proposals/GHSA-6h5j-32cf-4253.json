@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6h5j-32cf-4253",
+  "aliases": [
+    "CVE-2026-53609"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "apostrophe"
+      },
+      "symbols": [
+        "publicApiCheck"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `publicApiCheck()` causes this to bypass authorization on all piece-type REST API"
+  }
+}

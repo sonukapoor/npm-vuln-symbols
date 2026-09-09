@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-42m6-g935-5vmq",
+  "aliases": [
+    "CVE-2021-23397"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@ianwalter/merge"
+      },
+      "symbols": [
+        "merge"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via `merge` function"
+  }
+}

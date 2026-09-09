@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vp77-fqqp-79j8",
+  "aliases": [
+    "CVE-2020-28449"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "decal"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the set function"
+  }
+}

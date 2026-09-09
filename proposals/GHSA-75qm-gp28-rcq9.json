@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-75qm-gp28-rcq9",
+  "aliases": [
+    "CVE-2026-59206"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "n8n"
+      },
+      "symbols": [
+        "workflow"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the workflow API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3xgx-r9j4-qw9w",
+  "aliases": [
+    "CVE-2022-21189"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "dexie"
+      },
+      "symbols": [
+        "keyPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the Dexie.setByKeyPath(obj, keyPath, value) function"
+  }
+}

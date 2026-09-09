@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-v62p-rq8g-8h59",
+  "aliases": [
+    "CVE-2025-6547"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "pbkdf2"
+      },
+      "symbols": [
+        "toBuffer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `toBuffer` method"
+  }
+}

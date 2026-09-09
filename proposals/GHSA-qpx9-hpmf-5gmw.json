@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-qpx9-hpmf-5gmw",
+  "aliases": [
+    "CVE-2026-27601"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "underscore"
+      },
+      "symbols": [
+        "flatten",
+        "isEqual"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In affected versions of Underscore, the `_.flatten` and `_.isEqual` functions"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4gp3-p7ph-x2jr",
+  "aliases": [
+    "CVE-2019-10778"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "devcert-sanscache"
+      },
+      "symbols": [
+        "exec"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the exec function"
+  }
+}

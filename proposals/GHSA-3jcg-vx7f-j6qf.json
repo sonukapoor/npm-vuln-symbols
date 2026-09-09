@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3jcg-vx7f-j6qf",
+  "aliases": [
+    "CVE-2024-41945"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@fuel-ts/account"
+      },
+      "symbols": [
+        "question"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in question, from fuel's graphql api"
+  }
+}

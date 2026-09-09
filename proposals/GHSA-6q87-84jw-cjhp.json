@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6q87-84jw-cjhp",
+  "aliases": [
+    "CVE-2025-32388"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@sveltejs/kit"
+      },
+      "symbols": [
+        "load"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "inside a server `load` function"
+  }
+}

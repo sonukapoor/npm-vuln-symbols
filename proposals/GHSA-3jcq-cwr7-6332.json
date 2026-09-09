@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3jcq-cwr7-6332",
+  "aliases": [
+    "CVE-2013-2022"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jplayer"
+      },
+      "symbols": [
+        "alert"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the alert function"
+  }
+}

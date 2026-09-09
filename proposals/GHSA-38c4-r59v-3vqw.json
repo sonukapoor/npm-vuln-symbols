@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-38c4-r59v-3vqw",
+  "aliases": [
+    "CVE-2026-2327"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "markdown-it"
+      },
+      "symbols": [
+        "linkify"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the linkify function"
+  }
+}

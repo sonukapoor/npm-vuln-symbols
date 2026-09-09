@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-48q3-prgv-gm4w",
+  "aliases": [
+    "BIT-parse-2025-53364",
+    "CVE-2025-53364"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parse-server"
+      },
+      "symbols": [
+        "GraphQL"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via GraphQL API"
+  }
+}

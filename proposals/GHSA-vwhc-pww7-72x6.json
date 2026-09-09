@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vwhc-pww7-72x6",
+  "aliases": [
+    "CVE-2021-32831"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "total.js"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In total.js framework before version 3.4.9, calling the utils.set function"
+  }
+}

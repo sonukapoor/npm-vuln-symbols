@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-v245-v573-v5vm",
+  "aliases": [
+    "CVE-2026-59887"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "linkify-it"
+      },
+      "symbols": [
+        "test",
+        "match"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the documented `.test()`/`.match()` API"
+  }
+}

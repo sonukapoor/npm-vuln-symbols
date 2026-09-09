@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-wg6g-ppvx-927h",
+  "aliases": [
+    "CVE-2021-23518"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "cached-path-relative"
+      },
+      "symbols": [
+        "cachedPathRelative"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the cachedPathRelative function"
+  }
+}

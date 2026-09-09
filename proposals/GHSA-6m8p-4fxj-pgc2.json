@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-6m8p-4fxj-pgc2",
+  "aliases": [
+    "CVE-2020-7688",
+    "SNYK-JS-MVERSION-573174"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mversion"
+      },
+      "symbols": [
+        "exec"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "inside the exec function"
+  }
+}

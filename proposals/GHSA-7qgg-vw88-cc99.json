@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7qgg-vw88-cc99",
+  "aliases": [
+    "CVE-2024-57077"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "utils-extend"
+      },
+      "symbols": [
+        "entry"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through the entry function"
+  }
+}

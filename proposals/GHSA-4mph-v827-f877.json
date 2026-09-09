@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-4mph-v827-f877",
+  "aliases": [
+    "CVE-2026-33993"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "locutus"
+      },
+      "symbols": [
+        "parse_str",
+        "unserialize"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `parse_str` (GHSA-f98m-q3hr-p5wq, GHSA-rxrv-835q-v5mh) — `unserialize` is a different function"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "GHSA-82x6-q7mm-w9cf",
+  "aliases": [
+    "CVE-2026-77465"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "toml"
+      },
+      "symbols": [
+        "peg$parsevalue",
+        "peg$parsearray",
+        "peg$parseinline_table"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `peg$parsevalue`/`peg$parsearray`/`peg$parseinline_table` and cannot be fixed by editing a hand-written function"
+  }
+}

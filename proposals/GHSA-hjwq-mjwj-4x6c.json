@@ -1,0 +1,49 @@
+{
+  "id": "GHSA-hjwq-mjwj-4x6c",
+  "aliases": [
+    "CVE-2024-52810"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@intlify/shared"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@intlify/vue-i18n-core"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "petite-vue-i18n"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vue-i18n"
+      },
+      "symbols": [
+        "entry"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through the entry function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fr3w-2p22-6w7p",
+  "aliases": [
+    "CVE-2024-28239"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "directus"
+      },
+      "symbols": [
+        "Auth"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the Auth API"
+  }
+}

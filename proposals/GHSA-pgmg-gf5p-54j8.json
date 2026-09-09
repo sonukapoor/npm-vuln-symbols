@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-pgmg-gf5p-54j8",
+  "aliases": [
+    "CVE-2020-7718"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "gammautils"
+      },
+      "symbols": [
+        "deepSet",
+        "deepMerge"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `deepSet` and `deepMerge` functions"
+  }
+}

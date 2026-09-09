@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-64vr-4gr2-m642",
+  "aliases": [
+    "CVE-2026-30635"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "automagik-genie"
+      },
+      "symbols": [
+        "readTranscriptFromCommit"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the readTranscriptFromCommit function"
+  }
+}

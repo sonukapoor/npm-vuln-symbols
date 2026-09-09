@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-c6h4-gc3f-hgjq",
+  "aliases": [
+    "CVE-2021-23574"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "js-data"
+      },
+      "symbols": [
+        "deepFillIn"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the deepFillIn and the set functions"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-g3vf-47fv-8f3c",
+  "aliases": [
+    "CVE-2021-26505"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "hellojs"
+      },
+      "symbols": [
+        "extend"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via `hello.utils.extend` function"
+  }
+}

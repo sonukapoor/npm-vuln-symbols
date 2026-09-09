@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-f6hc-c5jr-878p",
+  "aliases": [
+    "CVE-2026-41276"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "resetPassword"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "within the resetPassword method"
+  }
+}

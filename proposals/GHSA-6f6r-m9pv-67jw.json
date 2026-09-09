@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6f6r-m9pv-67jw",
+  "aliases": [
+    "CVE-2025-52573"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ios-simulator-mcp"
+      },
+      "symbols": [
+        "exec"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via exec API"
+  }
+}

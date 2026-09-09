@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-3fw4-4h3m-892h",
+  "aliases": [
+    "CVE-2019-10804",
+    "SNYK-JS-SERIALNUMBER-559010"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "serial-number"
+      },
+      "symbols": [
+        "serialNumber"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in serialNumber function"
+  }
+}

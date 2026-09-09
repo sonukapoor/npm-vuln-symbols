@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xf7w-r453-m56c",
+  "aliases": [
+    "CVE-2019-13173"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fstream"
+      },
+      "symbols": [
+        "DirWriter"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "The `fstream.DirWriter()` function is vulnerable"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-hr5v-j9h9-xjhg",
+  "aliases": [
+    "CVE-2026-35668"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "openclaw"
+      },
+      "symbols": [
+        "handlePluginAction"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In `src/infra/outbound/message-action-runner.ts`, the `handlePluginAction` function"
+  }
+}

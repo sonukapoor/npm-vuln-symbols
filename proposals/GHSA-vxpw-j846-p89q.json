@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vxpw-j846-p89q",
+  "aliases": [
+    "CVE-2026-12151"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "undici"
+      },
+      "symbols": [
+        "WebSocketStream"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the undici WebSocket client (`new WebSocket(...)`) or the `WebSocketStream` API"
+  }
+}

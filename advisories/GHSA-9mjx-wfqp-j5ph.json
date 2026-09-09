@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-9mjx-wfqp-j5ph",
+  "aliases": [
+    "CVE-2022-25926"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "window-control"
+      },
+      "symbols": [
+        "sendKeys"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `sendKeys` function"
+  }
+}

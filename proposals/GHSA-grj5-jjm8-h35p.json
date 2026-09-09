@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-grj5-jjm8-h35p",
+  "aliases": [
+    "CVE-2026-24118"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vm2"
+      },
+      "symbols": [
+        "apply"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the host `apply` method"
+  }
+}

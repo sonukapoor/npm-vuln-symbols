@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-j8g8-j7fc-43v6",
+  "aliases": [
+    "CVE-2026-30821"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "WHITELIST_URLS"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `WHITELIST_URLS`, allowing unauthenticated access to the file upload API"
+  }
+}

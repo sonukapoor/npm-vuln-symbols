@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-8j8c-7jfh-h6hx",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "js-yaml"
+      },
+      "symbols": [
+        "load"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through the `load()` function"
+  }
+}

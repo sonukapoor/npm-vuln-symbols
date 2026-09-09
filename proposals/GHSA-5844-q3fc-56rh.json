@@ -1,0 +1,24 @@
+{
+  "id": "GHSA-5844-q3fc-56rh",
+  "aliases": [
+    "CVE-2023-26154",
+    "GO-2023-2385",
+    "PYSEC-2026-1807"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "pubnub"
+      },
+      "symbols": [
+        "getKey"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the getKey function"
+  }
+}

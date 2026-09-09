@@ -1,0 +1,21 @@
+{
+  "id": "GHSA-5mrr-rgp6-x4gr",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "marsdb"
+      },
+      "symbols": [
+        "DocumentMatcher",
+        "$where"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In the `DocumentMatcher` class, selectors on `$where` clauses are passed to a Function"
+  }
+}

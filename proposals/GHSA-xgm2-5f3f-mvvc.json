@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xgm2-5f3f-mvvc",
+  "aliases": [
+    "CVE-2026-59897"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "hono"
+      },
+      "symbols": [
+        "AWS"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the AWS API"
+  }
+}

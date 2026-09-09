@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-wxrr-jp8m-qq7f",
+  "aliases": [
+    "CVE-2026-46480"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "documented"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the documented API"
+  }
+}

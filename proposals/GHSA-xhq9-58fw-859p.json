@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xhq9-58fw-859p",
+  "aliases": [
+    "CVE-2026-33888"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "apostrophe"
+      },
+      "symbols": [
+        "REST"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the REST API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-68f8-9mhj-h2mp",
+  "aliases": [
+    "CVE-2026-35619"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "openclaw"
+      },
+      "symbols": [
+        "operators"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in operators, this includes required method"
+  }
+}

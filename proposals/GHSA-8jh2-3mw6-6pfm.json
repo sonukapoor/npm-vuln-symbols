@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8jh2-3mw6-6pfm",
+  "aliases": [
+    "CVE-2025-63705"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "node-ts-ocr"
+      },
+      "symbols": [
+        "invokeImageOcr"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the invokeImageOcr function"
+  }
+}

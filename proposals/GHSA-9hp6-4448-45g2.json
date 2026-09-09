@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-9hp6-4448-45g2",
+  "aliases": [
+    "CVE-2025-58362"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "hono"
+      },
+      "symbols": [
+        "getPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `getPath` utility function"
+  }
+}

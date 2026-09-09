@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-54j7-grvr-9xwg",
+  "aliases": [
+    "CVE-2025-59834"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "adb-mcp"
+      },
+      "symbols": [
+        "exec"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via string as a parameter and wraps the promise-based `exec` function"
+  }
+}

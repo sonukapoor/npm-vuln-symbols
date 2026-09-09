@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-vpj2-qq7w-5qq6",
+  "aliases": [
+    "BIT-parse-2026-34532",
+    "CVE-2026-34532"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parse-server"
+      },
+      "symbols": [
+        "function"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `function` keyword and its validator is a plain object or arrow function"
+  }
+}

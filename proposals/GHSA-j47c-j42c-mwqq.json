@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-j47c-j42c-mwqq",
+  "aliases": [
+    "CVE-2022-35917"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@solana/pay"
+      },
+      "symbols": [
+        "validateTransfer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the supplied [`validateTransfer` function"
+  }
+}

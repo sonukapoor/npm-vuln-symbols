@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cxrg-g7r8-w69p",
+  "aliases": [
+    "CVE-2026-22031"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@fastify/middie"
+      },
+      "symbols": [
+        "Holder"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "inside Holder function"
+  }
+}

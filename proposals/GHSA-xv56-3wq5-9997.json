@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xv56-3wq5-9997",
+  "aliases": [
+    "CVE-2026-76229"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "renovate"
+      },
+      "symbols": [
+        "quote"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `quote` function"
+  }
+}

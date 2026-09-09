@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-22g5-r2x5-97cx",
+  "aliases": [
+    "CVE-2026-59710"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "showdown"
+      },
+      "symbols": [
+        "parseHeaders"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the parseHeaders function"
+  }
+}

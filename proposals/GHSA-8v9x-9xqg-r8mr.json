@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8v9x-9xqg-r8mr",
+  "aliases": [
+    "CVE-2020-8268"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "json8-merge-patch"
+      },
+      "symbols": [
+        "modify"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in json8-merge-patch npm package < 1.0.3 may allow attackers to inject or modify methods"
+  }
+}

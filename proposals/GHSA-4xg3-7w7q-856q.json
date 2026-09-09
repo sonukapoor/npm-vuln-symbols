@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4xg3-7w7q-856q",
+  "aliases": [
+    "CVE-2024-36582"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@alexbinary/object-deep-assign"
+      },
+      "symbols": [
+        "extend"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the extend() method"
+  }
+}

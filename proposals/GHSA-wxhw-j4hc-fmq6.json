@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-wxhw-j4hc-fmq6",
+  "aliases": [
+    "CVE-2026-23830"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@nyariv/sandboxjs"
+      },
+      "symbols": [
+        "constructor"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "inside the sandbox accesses `.constructor` on an async function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6jcc-xgcr-q3h4",
+  "aliases": [
+    "CVE-2025-54888"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@fedify/fedify"
+      },
+      "symbols": [
+        "handleInboxInternal"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in handleInboxInternal function"
+  }
+}

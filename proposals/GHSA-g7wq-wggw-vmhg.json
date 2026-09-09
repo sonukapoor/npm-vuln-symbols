@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-g7wq-wggw-vmhg",
+  "aliases": [
+    "CVE-2025-57351"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ts-fns"
+      },
+      "symbols": [
+        "assign"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the assign function"
+  }
+}

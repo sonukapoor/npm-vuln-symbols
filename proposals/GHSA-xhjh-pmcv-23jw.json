@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xhjh-pmcv-23jw",
+  "aliases": [
+    "CVE-2026-42040"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "axios"
+      },
+      "symbols": [
+        "encode"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in AxiosURLSearchParams\n\n## Summary\n\nThe `encode()` function"
+  }
+}

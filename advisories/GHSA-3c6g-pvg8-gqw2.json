@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3c6g-pvg8-gqw2",
+  "aliases": [
+    "CVE-2020-7712"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "json"
+      },
+      "symbols": [
+        "parseLookup"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the parseLookup function"
+  }
+}

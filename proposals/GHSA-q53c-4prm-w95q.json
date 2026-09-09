@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-q53c-4prm-w95q",
+  "aliases": [
+    "CVE-2026-73411"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "shescape"
+      },
+      "symbols": [
+        "escape",
+        "escapeAll"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `escape` and `escapeAll` APIs"
+  }
+}

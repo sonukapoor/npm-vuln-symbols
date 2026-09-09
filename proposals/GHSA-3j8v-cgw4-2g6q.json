@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3j8v-cgw4-2g6q",
+  "aliases": [
+    "CVE-2026-35040"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fast-jwt"
+      },
+      "symbols": [
+        "verify"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in verify functions"
+  }
+}

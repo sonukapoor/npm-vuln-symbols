@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-h2p3-h48h-9jj7",
+  "aliases": [
+    "CVE-2017-1000220"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "pidusage"
+      },
+      "symbols": [
+        "ps"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `ps` method"
+  }
+}

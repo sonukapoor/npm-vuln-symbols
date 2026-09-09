@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-g5xx-pwrp-g3fv",
+  "aliases": [
+    "CVE-2026-31860"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "unhead"
+      },
+      "symbols": [
+        "acceptDataAttrs"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via `data-*` attribute name injection**\n\nThe `acceptDataAttrs` function"
+  }
+}

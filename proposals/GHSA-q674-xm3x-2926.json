@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-q674-xm3x-2926",
+  "aliases": [
+    "CVE-2021-23490"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parse-link-header"
+      },
+      "symbols": [
+        "checkHeader"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the checkHeader function"
+  }
+}

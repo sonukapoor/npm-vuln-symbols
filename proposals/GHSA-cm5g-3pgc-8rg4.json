@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cm5g-3pgc-8rg4",
+  "aliases": [
+    "CVE-2024-10491"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "express"
+      },
+      "symbols": [
+        "links"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the Express response.links function"
+  }
+}

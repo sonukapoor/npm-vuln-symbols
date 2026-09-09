@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-444r-cwp2-x5xf",
+  "aliases": [
+    "CVE-2026-3635"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fastify"
+      },
+      "symbols": [
+        "trustProxy"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in checks, URL construction, host-based routing) are affected when `trustProxy` is configured with a restrictive trust function"
+  }
+}

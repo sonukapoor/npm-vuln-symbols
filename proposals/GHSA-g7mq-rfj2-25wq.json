@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-g7mq-rfj2-25wq",
+  "aliases": [
+    "CVE-2021-23390"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "total4"
+      },
+      "symbols": [
+        "set",
+        "get"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `U.set()` and `U.get()` functions"
+  }
+}

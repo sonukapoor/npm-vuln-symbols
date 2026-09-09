@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-p6jh-p7q8-pcrg",
+  "aliases": [
+    "CVE-2020-7722"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nodee-utils"
+      },
+      "symbols": [
+        "deepSet"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the deepSet function"
+  }
+}

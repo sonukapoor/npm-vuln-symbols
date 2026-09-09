@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-xh2p-7p87-fhgh",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@liquity/contracts"
+      },
+      "symbols": [
+        "batchLiquidateTroves"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `batchLiquidateTroves` function"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "GHSA-88g8-f5mf-f5rj",
+  "aliases": [
+    "CVE-2021-46320",
+    "CVE-2022-39384",
+    "GHSA-9c22-pwxw-p6hx"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@openzeppelin/contracts"
+      },
+      "symbols": [
+        "initializer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In OpenZeppelin <=v4.4.0, initializer functions"
+  }
+}

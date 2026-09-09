@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-8344-3jmq-59r6",
+  "aliases": [
+    "CVE-2026-83613"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@xmldom/xmldom"
+      },
+      "symbols": [
+        "getNamedItemNS"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "xmldom"
+      },
+      "symbols": [
+        "getNamedItemNS"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via\n`getNamedItem(attr.nodeName)` instead of `getNamedItemNS`, but that method"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-6jrj-vc65-c983",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "unzip-stream"
+      },
+      "symbols": [
+        "Extract"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `Extract()` method"
+  }
+}

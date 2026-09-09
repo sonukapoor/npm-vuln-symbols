@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-jfm8-hwhg-r6gg",
+  "aliases": [
+    "CVE-2022-25171"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "p4"
+      },
+      "symbols": [
+        "run"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the run() function"
+  }
+}

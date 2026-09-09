@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-m7jm-9gc2-mpf2",
+  "aliases": [
+    "CVE-2026-25896"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fast-xml-parser"
+      },
+      "symbols": [
+        "validateEntityName"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the v6 codebase - `EntitiesParser.js` has a `validateEntityName` function"
+  }
+}

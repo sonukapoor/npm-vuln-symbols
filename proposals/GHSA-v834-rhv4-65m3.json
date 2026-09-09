@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-v834-rhv4-65m3",
+  "aliases": [
+    "CVE-2023-26152"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "static-server"
+      },
+      "symbols": [
+        "validPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `validPath` function"
+  }
+}

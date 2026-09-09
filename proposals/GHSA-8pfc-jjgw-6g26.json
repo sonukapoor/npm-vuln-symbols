@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8pfc-jjgw-6g26",
+  "aliases": [
+    "CVE-2026-34211"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@nyariv/sandboxjs"
+      },
+      "symbols": [
+        "restOfExp"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `restOfExp` function"
+  }
+}

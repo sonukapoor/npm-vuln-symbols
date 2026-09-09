@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vp4f-wxgw-7x8x",
+  "aliases": [
+    "CVE-2023-41049"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@dcl/single-sign-on-client"
+      },
+      "symbols": [
+        "init"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `init` function"
+  }
+}

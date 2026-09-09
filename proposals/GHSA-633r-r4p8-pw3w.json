@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-633r-r4p8-pw3w",
+  "aliases": [
+    "CVE-2022-41376"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "metro4"
+      },
+      "symbols": [
+        "Javascript"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the Javascript function"
+  }
+}

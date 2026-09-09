@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8gq3-vp5j-2grp",
+  "aliases": [
+    "CVE-2026-77413"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jsonata"
+      },
+      "symbols": [
+        "lookup"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `lookup` function"
+  }
+}

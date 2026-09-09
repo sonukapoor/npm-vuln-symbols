@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5mx2-w598-339m",
+  "aliases": [
+    "CVE-2026-27022"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@langchain/langgraph-checkpoint-redis"
+      },
+      "symbols": [
+        "list"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `list()` methods"
+  }
+}

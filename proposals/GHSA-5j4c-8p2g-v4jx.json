@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5j4c-8p2g-v4jx",
+  "aliases": [
+    "CVE-2024-9506"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vue"
+      },
+      "symbols": [
+        "parseHTML"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the parseHTML function"
+  }
+}

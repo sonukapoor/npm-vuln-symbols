@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-w5m3-xh75-mp55",
+  "aliases": [
+    "CVE-2023-26487"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vega"
+      },
+      "symbols": [
+        "lassoAppend"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vega-functions"
+      },
+      "symbols": [
+        "lassoAppend"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `lassoAppend` function"
+  }
+}

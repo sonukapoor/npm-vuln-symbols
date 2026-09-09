@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-9r2w-394v-53qc",
+  "aliases": [
+    "CVE-2021-37701"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tar"
+      },
+      "symbols": [
+        "path"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in issues if `entry.path` is compared against a path string coming from some other API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-crh9-3gjh-m6gc",
+  "aliases": [
+    "CVE-2026-5832"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "api-lab-mcp"
+      },
+      "symbols": [
+        "atototo"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in atototo api"
+  }
+}

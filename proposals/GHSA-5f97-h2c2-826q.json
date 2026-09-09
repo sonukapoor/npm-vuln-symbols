@@ -1,0 +1,25 @@
+{
+  "id": "GHSA-5f97-h2c2-826q",
+  "aliases": [
+    "CVE-2024-29651"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@apidevtools/json-schema-ref-parser"
+      },
+      "symbols": [
+        "bundle",
+        "parse",
+        "resolve",
+        "dereference"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `bundle()`, `parse()`, `resolve()`, `dereference()` functions"
+  }
+}
