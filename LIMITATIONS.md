@@ -7,15 +7,23 @@ This is the open question that decides whether the approach is practical.
 The analyzer can be run two ways, and neither is currently both correct and
 affordable on a real project:
 
-| Mode | Cost on a 365-package project | Sound for transitive paths |
-|---|---|---|
-| Full analysis | Exhausted a 16 GB V8 heap, never completed | Yes |
-| `--include-packages <vulnerable ones>` | 791 ms, 202 MB | **No** |
+| Mode | Cost on a 365-package project | Packages in scope | Sound |
+|---|---|---|---|
+| Full analysis | Never completed, OOM at 16 GB | all | yes |
+| `--ignore-dependencies` | 101 ms, 48 MB | 1 module, 29 functions | no, and useless |
+| `--include-packages <vulnerable>` | 791 ms, 202 MB | 1,177 functions, intermediates dropped | no |
+| `--max-indirections 1` (**current default**) | 1,325 ms, 352 MB | 2,722 functions, all packages | no, but bounded |
 
-Bounding the analysis to the vulnerable packages is what makes it affordable,
-but it removes the intermediate packages a call path would travel through. It
-therefore answers "does application code call this directly" rather than "can
-this be reached at all".
+`--max-indirections 1` is the best of these and is what `scripts/probe.ts` uses.
+It keeps every package in scope and bounds how far indirect flows are followed.
+Jelly's own documentation is explicit that this produces "partial (unsound)
+results", so a not-reachable verdict under it is weaker than one from a full
+analysis.
+
+Every affordable mode is explicitly unsound. `--include-packages` is the worst
+of them, because it removes the intermediate packages a call path would travel
+through, and so answers "does application code call this directly" rather than
+"can this be reached at all".
 
 That is the unsafe direction. A path like
 

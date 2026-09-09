@@ -31,11 +31,25 @@ const JSON_EXTENSION = ".json";
 const JSON_INDENT = 2;
 const JELLY_MAX_BUFFER_BYTES = 64 * 1024 * 1024;
 
+/**
+ * Bounds how far the analyzer follows indirect flows.
+ *
+ * A full analysis keeps every package in scope but did not complete on a
+ * 365-package project even with a 16 GB heap. This bound keeps every package in
+ * scope and completes in about a second. Jelly's own documentation is explicit
+ * that this yields partial, unsound results, so a "not reachable" verdict under
+ * this setting is weaker than one from a full analysis and must not be treated
+ * as proof. It is the difference between a probe and a suppression tool.
+ */
+const DEFAULT_MAX_INDIRECTIONS = "1";
+
 interface ProbeOptions {
   readonly projectPath: string;
   readonly datasetDir: string;
   readonly osvDir: string | null;
   readonly entry: string;
+  /** Empty string requests a full, unbounded analysis. */
+  readonly maxIndirections: string;
 }
 
 function readFlag(argv: readonly string[], flag: string): string | null {
@@ -56,6 +70,7 @@ function parseArgs(argv: readonly string[]): ProbeOptions {
     datasetDir: readFlag(argv, "--dataset") ?? ADVISORIES_DIR,
     osvDir: readFlag(argv, "--osv-dir"),
     entry: readFlag(argv, "--entry") ?? projectPath,
+    maxIndirections: readFlag(argv, "--max-indirections") ?? DEFAULT_MAX_INDIRECTIONS,
   };
 }
 
@@ -81,8 +96,18 @@ async function resolveAffected(
  * Its diagnostics are the only signal when an analysis aborts, so swallowing
  * them makes a failure impossible to diagnose.
  */
-function runJelly(vulnsPath: string, matchesPath: string, entry: string): void {
-  execFileSync("npx", ["jelly", "-v", vulnsPath, "--matches-file", matchesPath, entry], {
+function runJelly(
+  vulnsPath: string,
+  matchesPath: string,
+  entry: string,
+  maxIndirections: string,
+): void {
+  const args = ["jelly", "-v", vulnsPath, "--matches-file", matchesPath];
+  if (maxIndirections !== "") {
+    args.push("--max-indirections", maxIndirections);
+  }
+  args.push(entry);
+  execFileSync("npx", args, {
     stdio: ["ignore", "inherit", "inherit"],
     maxBuffer: JELLY_MAX_BUFFER_BYTES,
   });
@@ -97,7 +122,16 @@ function report(candidates: number, result: Tally): void {
   process.stdout.write(`package is imported              : ${imported.length}\n`);
   process.stdout.write(`vulnerable symbol is reached     : ${reachable.length}\n`);
   process.stdout.write(`eliminated by symbol analysis    : ${eliminated}\n`);
-  process.stdout.write(`elimination rate                 : ${rate.toFixed(1)}%\n\n`);
+  process.stdout.write(`elimination rate                 : ${rate.toFixed(1)}%\n`);
+  if (imported.length === 0) {
+    // Distinguishing "nothing to eliminate" from "the analysis found nothing"
+    // matters: both print zero, and only one of them is a result.
+    process.stdout.write(
+      "\nNo package was imported from the entry point, so there was nothing to\n" +
+        "eliminate. This is not an elimination rate of zero, it is no measurement.\n",
+    );
+  }
+  process.stdout.write("\n");
 
   const reachableSet = new Set(reachable);
   for (const id of imported) {
@@ -140,7 +174,7 @@ async function run(): Promise<void> {
   const matchesPath = path.join(workDir, "matches.json");
   writeFileSync(vulnsPath, JSON.stringify(entries, null, JSON_INDENT), "utf8");
 
-  runJelly(vulnsPath, matchesPath, options.entry);
+  runJelly(vulnsPath, matchesPath, options.entry, options.maxIndirections);
 
   const matches = JSON.parse(readFileSync(matchesPath, "utf8")) as Record<string, unknown[]>;
   report(entries.length / 2, tally(matches));
