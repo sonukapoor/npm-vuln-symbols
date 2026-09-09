@@ -1,0 +1,24 @@
+{
+  "id": "GHSA-wmm3-h9qj-p5v6",
+  "aliases": [
+    "CVE-2026-44648"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "sillytavern"
+      },
+      "symbols": [
+        "Firefox",
+        "g",
+        "view"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In Firefox, refresh the page or perform a protected action (e.g., view API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-hc5w-c9f8-9cc4",
+  "aliases": [
+    "CVE-2024-7774"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "langchain"
+      },
+      "symbols": [
+        "getFullPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `getFullPath` method"
+  }
+}

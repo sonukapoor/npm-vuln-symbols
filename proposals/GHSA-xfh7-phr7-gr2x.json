@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-xfh7-phr7-gr2x",
+  "aliases": [
+    "BIT-parse-2026-30228",
+    "CVE-2026-30228"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parse-server"
+      },
+      "symbols": [
+        "readOnlyMasterKey"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using `readOnlyMasterKey`, or restricting network access to the Files API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-p9cg-vqcc-grcx",
+  "aliases": [
+    "CVE-2024-39687"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@fedify/fedify"
+      },
+      "symbols": [
+        "fetch"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the DocLoader [1] [2], the `fetch` API"
+  }
+}

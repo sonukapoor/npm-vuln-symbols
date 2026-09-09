@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-36rg-gfq2-3h56",
+  "aliases": [
+    "CVE-2025-53535"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "better-auth"
+      },
+      "symbols": [
+        "originCheck"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `originCheck` middleware function"
+  }
+}

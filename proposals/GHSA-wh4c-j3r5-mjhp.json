@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-wh4c-j3r5-mjhp",
+  "aliases": [
+    "CVE-2026-34601"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@xmldom/xmldom"
+      },
+      "symbols": [
+        "mutation"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "xmldom"
+      },
+      "symbols": [
+        "mutation"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in mutation methods"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-995x-33wq-8gc9",
+  "aliases": [
+    "CVE-2022-24377"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "cycle-import-check"
+      },
+      "symbols": [
+        "writeFileToTmpDirAndOpenIt"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `writeFileToTmpDirAndOpenIt` function"
+  }
+}

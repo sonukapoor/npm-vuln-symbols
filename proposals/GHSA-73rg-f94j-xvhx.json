@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-73rg-f94j-xvhx",
+  "aliases": [
+    "CVE-2024-47061"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@udecode/plate-core"
+      },
+      "symbols": [
+        "getRenderNodeProps"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `getRenderNodeProps` function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vh25-5764-9wcr",
+  "aliases": [
+    "CVE-2025-59433"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@conventional-changelog/git-client"
+      },
+      "symbols": [
+        "another"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In another API"
+  }
+}

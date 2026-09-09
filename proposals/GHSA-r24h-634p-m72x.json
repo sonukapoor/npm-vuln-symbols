@@ -1,0 +1,24 @@
+{
+  "id": "GHSA-r24h-634p-m72x",
+  "aliases": [
+    "CVE-2019-10781",
+    "SNYK-JS-SCHEMAINSPECTOR-536970"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "schema-inspector"
+      },
+      "symbols": [
+        "sanitize",
+        "validate"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In schema-inspector before 1.6.9, a maliciously crafted JavaScript object can bypass the `sanitize()` and the `validate()` function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fgx4-p8xf-qhp9",
+  "aliases": [
+    "CVE-2025-62505"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@lobehub/chat"
+      },
+      "symbols": [
+        "PoC"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In the PoC, this was used to successfully retrieve the internal API"
+  }
+}

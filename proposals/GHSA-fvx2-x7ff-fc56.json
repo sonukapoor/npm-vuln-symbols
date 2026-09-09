@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fvx2-x7ff-fc56",
+  "aliases": [
+    "CVE-2025-48996"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@haxtheweb/open-apis"
+      },
+      "symbols": [
+        "haxPsuUsage"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via haxPsuUsage API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vj72-mwrj-m2xq",
+  "aliases": [
+    "CVE-2021-23417"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "deepmergefn"
+      },
+      "symbols": [
+        "deepMerge"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via deepMerge function"
+  }
+}

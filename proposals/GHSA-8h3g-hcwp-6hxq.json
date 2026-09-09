@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8h3g-hcwp-6hxq",
+  "aliases": [
+    "CVE-2022-25853"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "semver-tags"
+      },
+      "symbols": [
+        "getGitTagsRemote"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the getGitTagsRemote function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-f3pp-32qc-36w4",
+  "aliases": [
+    "CVE-2021-23444"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jointjs"
+      },
+      "symbols": [
+        "setByPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the setByPath function"
+  }
+}

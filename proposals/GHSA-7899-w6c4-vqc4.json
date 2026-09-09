@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7899-w6c4-vqc4",
+  "aliases": [
+    "CVE-2025-46553"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@misskey-dev/summaly"
+      },
+      "symbols": [
+        "summaly"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the main `summaly` function"
+  }
+}

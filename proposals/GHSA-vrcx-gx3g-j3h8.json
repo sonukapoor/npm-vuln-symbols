@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-vrcx-gx3g-j3h8",
+  "aliases": [
+    "CVE-2024-46488",
+    "PYSEC-2026-1938"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "sqlite-vec"
+      },
+      "symbols": [
+        "npy_token_next"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the npy_token_next function"
+  }
+}

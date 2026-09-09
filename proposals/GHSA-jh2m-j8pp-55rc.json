@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-jh2m-j8pp-55rc",
+  "aliases": [
+    "CVE-2020-7727"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "gedi"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the set function"
+  }
+}

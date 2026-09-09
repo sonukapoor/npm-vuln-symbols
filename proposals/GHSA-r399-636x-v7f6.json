@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-r399-636x-v7f6",
+  "aliases": [
+    "CVE-2025-68665"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@langchain/core"
+      },
+      "symbols": [
+        "toJSON"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "langchain"
+      },
+      "symbols": [
+        "toJSON"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in LangChain JS's `toJSON()` method"
+  }
+}

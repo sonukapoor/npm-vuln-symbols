@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5gvr-v6qv-h5mm",
+  "aliases": [
+    "CVE-2026-11330"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "claude-mem"
+      },
+      "symbols": [
+        "computeObservationContentHash"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "The computeObservationContentHash Function is Vulnerable"
+  }
+}

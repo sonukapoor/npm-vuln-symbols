@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7f6v-3gx7-27q8",
+  "aliases": [
+    "CVE-2026-33331"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@orpc/openapi"
+      },
+      "symbols": [
+        "unauthorized"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in their browser, potentially leading to session hijacking or unauthorized API"
+  }
+}

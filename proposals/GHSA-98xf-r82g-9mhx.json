@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-98xf-r82g-9mhx",
+  "aliases": [
+    "CVE-2026-48121"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@langchain/langgraph-checkpoint-mongodb"
+      },
+      "symbols": [
+        "depth"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in depth, validate identifier fields at API"
+  }
+}

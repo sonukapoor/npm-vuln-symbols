@@ -37,11 +37,17 @@ jobs:
       - name: Propose symbol records
         run: npx tsx scripts/extract.ts --osv-dir osv-feed --out proposals
 
-      - name: Drop proposals already present in the dataset
+      - name: Drop proposals already reviewed or already queued
         run: |
+          git checkout -- proposals 2>/dev/null || true
           for f in proposals/*.json; do
             [ -e "$f" ] || continue
-            if [ -e "advisories/$(basename "$f")" ]; then rm "$f"; fi
+            name=$(basename "$f")
+            # Already promoted into the dataset, so it is settled.
+            if [ -e "advisories/$name" ]; then rm "$f"; continue; fi
+            # Already queued and unchanged, so re-proposing it only adds noise.
+            if git ls-files --error-unmatch "proposals/$name" >/dev/null 2>&1 \
+               && git diff --quiet -- "proposals/$name"; then rm "$f"; fi
           done
 
       - name: Clean up the feed before committing

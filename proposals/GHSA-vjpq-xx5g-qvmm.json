@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-vjpq-xx5g-qvmm",
+  "aliases": [
+    "CVE-2025-69287"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@bsv/sdk"
+      },
+      "symbols": [
+        "processInitialRequest",
+        "processInitialResponse"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `processInitialRequest` and `processInitialResponse` methods"
+  }
+}

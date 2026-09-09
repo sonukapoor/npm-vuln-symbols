@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-88qf-5f3v-pm6m",
+  "aliases": [
+    "CVE-2023-29566"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "dawnsparks-node-tesseract"
+      },
+      "symbols": [
+        "child_process"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the child_process function"
+  }
+}

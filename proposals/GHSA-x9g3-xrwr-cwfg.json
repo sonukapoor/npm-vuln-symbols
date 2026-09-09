@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-x9g3-xrwr-cwfg",
+  "aliases": [
+    "CVE-2026-55388"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "piscina"
+      },
+      "symbols": [
+        "filename"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the constructor's `options.filename` read at line 92 of `dist/index.js`, present since the worker-pool API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xx4g-r65p-3qf2",
+  "aliases": [
+    "CVE-2025-57323"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mpregular"
+      },
+      "symbols": [
+        "addEventHandler"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the mp.addEventHandler function"
+  }
+}

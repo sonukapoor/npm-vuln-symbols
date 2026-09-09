@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xh92-rqrq-227v",
+  "aliases": [
+    "CVE-2025-61685"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@mastra/mcp-docs-server"
+      },
+      "symbols": [
+        "readMdxContent"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "within the `readMdxContent` function"
+  }
+}

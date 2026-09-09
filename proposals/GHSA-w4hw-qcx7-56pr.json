@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-w4hw-qcx7-56pr",
+  "aliases": [
+    "CVE-2026-73414"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "shescape"
+      },
+      "symbols": [
+        "escape",
+        "escapeAll"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `escape` and `escapeAll` APIs"
+  }
+}

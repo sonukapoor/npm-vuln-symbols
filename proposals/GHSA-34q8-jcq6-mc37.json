@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-34q8-jcq6-mc37",
+  "aliases": [
+    "CVE-2024-21489"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "uplot"
+      },
+      "symbols": [
+        "assign"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the uplot.assign function"
+  }
+}

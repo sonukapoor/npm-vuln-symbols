@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-8qff-qr5q-5pr8",
+  "aliases": [
+    "CVE-2025-47934"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "openpgp"
+      },
+      "symbols": [
+        "decrypt",
+        "verificationKeys"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using `openpgp.decrypt` with `verificationKeys`) to be spoofed, since both functions"
+  }
+}

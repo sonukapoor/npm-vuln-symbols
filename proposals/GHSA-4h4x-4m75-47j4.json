@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-4h4x-4m75-47j4",
+  "aliases": [
+    "CVE-2024-38985"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "cool-path"
+      },
+      "symbols": [
+        "set"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "depath"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via `set()` Method"
+  }
+}

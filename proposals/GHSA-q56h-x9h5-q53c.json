@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-q56h-x9h5-q53c",
+  "aliases": [
+    "CVE-2022-31830"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "kityminder"
+      },
+      "symbols": [
+        "init"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the init function"
+  }
+}

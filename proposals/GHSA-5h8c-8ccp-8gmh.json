@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5h8c-8ccp-8gmh",
+  "aliases": [
+    "CVE-2022-25916"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mt7688-wiscan"
+      },
+      "symbols": [
+        "scan"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the 'wiscan.scan' function"
+  }
+}

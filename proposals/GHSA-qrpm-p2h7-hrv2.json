@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-qrpm-p2h7-hrv2",
+  "aliases": [
+    "CVE-2021-23566"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nanoid"
+      },
+      "symbols": [
+        "valueOf"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the valueOf() function"
+  }
+}

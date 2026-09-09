@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fpg4-jhqr-589c",
+  "aliases": [
+    "CVE-2026-82259"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@sveltejs/kit"
+      },
+      "symbols": [
+        "form"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in unvalidated `form` remote function"
+  }
+}

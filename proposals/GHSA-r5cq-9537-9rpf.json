@@ -1,0 +1,21 @@
+{
+  "id": "GHSA-r5cq-9537-9rpf",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mixme"
+      },
+      "symbols": [
+        "mutate",
+        "merge"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through the mutate() and merge() functions"
+  }
+}

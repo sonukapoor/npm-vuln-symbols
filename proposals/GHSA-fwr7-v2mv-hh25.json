@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fwr7-v2mv-hh25",
+  "aliases": [
+    "CVE-2021-43138"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "async"
+      },
+      "symbols": [
+        "mapValues"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `mapValues()` method"
+  }
+}

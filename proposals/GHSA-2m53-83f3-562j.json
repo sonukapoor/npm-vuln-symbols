@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-2m53-83f3-562j",
+  "aliases": [
+    "CVE-2021-23460"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "min-dash"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "The `set` method is vulnerable"
+  }
+}

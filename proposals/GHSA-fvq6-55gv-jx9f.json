@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fvq6-55gv-jx9f",
+  "aliases": [
+    "CVE-2015-9244"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mysql"
+      },
+      "symbols": [
+        "escape"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `mysql.escape()` function"
+  }
+}

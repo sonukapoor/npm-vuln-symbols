@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-9f2h-7v79-mxw3",
+  "aliases": [
+    "CVE-2025-62374"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parse"
+      },
+      "symbols": [
+        "Object"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `Parse.Object` and internal APIs"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-vgj7-895j-gpr6",
+  "aliases": [
+    "CVE-2022-30618"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/strapi"
+      },
+      "symbols": [
+        "panel"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "strapi"
+      },
+      "symbols": [
+        "panel"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in panel and API"
+  }
+}

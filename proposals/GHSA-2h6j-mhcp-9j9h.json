@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-2h6j-mhcp-9j9h",
+  "aliases": [
+    "CVE-2025-56015"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "genieacs"
+      },
+      "symbols": [
+        "NBI"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the NBI API"
+  }
+}

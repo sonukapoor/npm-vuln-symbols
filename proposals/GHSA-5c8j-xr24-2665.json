@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5c8j-xr24-2665",
+  "aliases": [
+    "CVE-2014-3741"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "printer"
+      },
+      "symbols": [
+        "printDirect"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `printDirect()` function"
+  }
+}

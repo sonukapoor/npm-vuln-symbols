@@ -1,5 +1,12 @@
 # Contributing
 
+## Current state
+
+`advisories/` was seeded by picking records whose advisory text named the
+export unambiguously. That selection was made by reading excerpts, not by
+verifying exports against the packages, so those 11 records still need the same
+review as anything in `proposals/`.
+
 ## The two directories
 
 - **`advisories/`** is the dataset. Human-reviewed records only.

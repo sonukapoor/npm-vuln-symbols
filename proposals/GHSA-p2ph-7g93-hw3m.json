@@ -1,0 +1,67 @@
+{
+  "id": "GHSA-p2ph-7g93-hw3m",
+  "aliases": [
+    "CVE-2025-27597"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@intlify/core"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@intlify/core-base"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@intlify/message-resolver"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@intlify/vue-i18n-core"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "petite-vue-i18n"
+      },
+      "symbols": [
+        "entry"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vue-i18n"
+      },
+      "symbols": [
+        "entry"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through the entry function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-hpcf-8vf9-q4gj",
+  "aliases": [
+    "CVE-2016-7103"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jquery-ui"
+      },
+      "symbols": [
+        "dialog"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `dialog` function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-wf6c-hrhf-86cw",
+  "aliases": [
+    "CVE-2025-27506"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nocodb"
+      },
+      "symbols": [
+        "insecure"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the insecure function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-h452-7996-h45h",
+  "aliases": [
+    "CVE-2022-25901"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "cookiejar"
+      },
+      "symbols": [
+        "parse"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via Cookie.parse function"
+  }
+}

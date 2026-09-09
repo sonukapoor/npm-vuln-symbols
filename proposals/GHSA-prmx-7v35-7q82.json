@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-prmx-7v35-7q82",
+  "aliases": [
+    "CVE-2026-5323"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "a11y-mcp"
+      },
+      "symbols": [
+        "A11yServer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in A11yServer function"
+  }
+}

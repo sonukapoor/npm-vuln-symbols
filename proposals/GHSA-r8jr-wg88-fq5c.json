@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-r8jr-wg88-fq5c",
+  "aliases": [
+    "BIT-keycloak-2026-2366",
+    "CVE-2026-2366"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@keycloak/keycloak-admin-client"
+      },
+      "symbols": [
+        "Admin"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the Admin API"
+  }
+}

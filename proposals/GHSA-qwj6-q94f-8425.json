@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-qwj6-q94f-8425",
+  "aliases": [
+    "CVE-2025-29049"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mathlive"
+      },
+      "symbols": [
+        "test"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `test` folder, no functions"
+  }
+}

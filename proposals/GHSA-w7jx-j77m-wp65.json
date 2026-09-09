@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-w7jx-j77m-wp65",
+  "aliases": [
+    "CVE-2024-21911"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tinymce"
+      },
+      "symbols": [
+        "embed"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using a node filter\n```js\neditor.parser.addNodeFilter('iframe,object,embed', function"
+  }
+}

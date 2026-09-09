@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-39q2-94rc-95cp",
+  "aliases": [
+    "CVE-2026-65903"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "dompurify"
+      },
+      "symbols": [
+        "ADD_TAGS"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using both `ADD_TAGS` as a function"
+  }
+}

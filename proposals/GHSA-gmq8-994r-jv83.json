@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-gmq8-994r-jv83",
+  "aliases": [
+    "CVE-2026-31988"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "yauzl"
+      },
+      "symbols": [
+        "getLastModDate"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "within the getLastModDate() function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-549h-r7g9-2qpf",
+  "aliases": [
+    "CVE-2023-26127"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "n158"
+      },
+      "symbols": [
+        "exports"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the 'module.exports' function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-w9j2-pvgh-6h63",
+  "aliases": [
+    "CVE-2026-42041"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "axios"
+      },
+      "symbols": [
+        "validateStatus"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the stack, Axios will automatically inherit the polluted `validateStatus` function"
+  }
+}

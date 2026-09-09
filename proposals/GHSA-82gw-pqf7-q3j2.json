@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-82gw-pqf7-q3j2",
+  "aliases": [
+    "CVE-2018-1000086"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "pym.js"
+      },
+      "symbols": [
+        "_onNavigateToMessage"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in Pym.js `_onNavigateToMessage` function"
+  }
+}

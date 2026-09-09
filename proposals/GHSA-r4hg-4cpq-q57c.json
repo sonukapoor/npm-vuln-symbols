@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-r4hg-4cpq-q57c",
+  "aliases": [
+    "CVE-2022-25979"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jsuites"
+      },
+      "symbols": [
+        "Editor"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the Editor() function"
+  }
+}

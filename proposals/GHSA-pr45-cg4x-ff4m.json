@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-pr45-cg4x-ff4m",
+  "aliases": [
+    "CVE-2024-21533"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ggit"
+      },
+      "symbols": [
+        "clone"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the clone() API"
+  }
+}

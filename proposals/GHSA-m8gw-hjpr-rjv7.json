@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-m8gw-hjpr-rjv7",
+  "aliases": [
+    "CVE-2021-23450"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "dojo"
+      },
+      "symbols": [
+        "setObject"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the setObject function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-h63v-hw6g-x8hp",
+  "aliases": [
+    "CVE-2024-53441"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "cookie-encrypter"
+      },
+      "symbols": [
+        "encryption"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the encryption method"
+  }
+}

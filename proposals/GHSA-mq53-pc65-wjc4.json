@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-mq53-pc65-wjc4",
+  "aliases": [
+    "CVE-2026-46479"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "documented"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the documented API"
+  }
+}

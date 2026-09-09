@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-jxfh-8wgv-vfr2",
+  "aliases": [
+    "CVE-2020-5258"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "dojo"
+      },
+      "symbols": [
+        "deepCopy"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "the deepCopy method is vulnerable"
+  }
+}

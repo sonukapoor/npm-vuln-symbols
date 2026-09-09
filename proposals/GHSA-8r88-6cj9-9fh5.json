@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8r88-6cj9-9fh5",
+  "aliases": [
+    "CVE-2025-48370"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@supabase/auth-js"
+      },
+      "symbols": [
+        "wrong"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the wrong API"
+  }
+}

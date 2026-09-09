@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7f53-fmmv-mfjv",
+  "aliases": [
+    "CVE-2020-1920"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "react-native"
+      },
+      "symbols": [
+        "validateBaseUrl"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the validateBaseUrl function"
+  }
+}

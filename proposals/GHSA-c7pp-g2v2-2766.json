@@ -1,0 +1,24 @@
+{
+  "id": "GHSA-c7pp-g2v2-2766",
+  "aliases": [
+    "CVE-2016-1000228"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "gmail-js"
+      },
+      "symbols": [
+        "parse_response",
+        "visible_emails_post",
+        "email_data_post"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `tools.parse_response`, `helper.get.visible_emails_post`, and `helper.get.email_data_post` functions"
+  }
+}

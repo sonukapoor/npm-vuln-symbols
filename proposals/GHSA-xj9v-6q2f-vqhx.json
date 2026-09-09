@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xj9v-6q2f-vqhx",
+  "aliases": [
+    "CVE-2022-25890"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "wifey"
+      },
+      "symbols": [
+        "connect"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `connect()` function"
+  }
+}

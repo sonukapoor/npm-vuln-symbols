@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-x43g-gj9x-838x",
+  "aliases": [
+    "CVE-2019-17221"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "phantomjs"
+      },
+      "symbols": [
+        "open"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `page.open()` function"
+  }
+}

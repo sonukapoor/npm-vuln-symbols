@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4vjr-hfpp-2m7w",
+  "aliases": [
+    "CVE-2025-3197"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "expand-object"
+      },
+      "symbols": [
+        "expand"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the expand() Function"
+  }
+}

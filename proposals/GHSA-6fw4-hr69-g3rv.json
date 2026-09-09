@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6fw4-hr69-g3rv",
+  "aliases": [
+    "CVE-2020-7707"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "property-expr"
+      },
+      "symbols": [
+        "setter"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the setter function"
+  }
+}

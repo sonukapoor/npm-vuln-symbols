@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-hcrg-fc28-fcg5",
+  "aliases": [
+    "CVE-2025-25283"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parse-duration"
+      },
+      "symbols": [
+        "parse"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the text passed to the library's `parse()` function"
+  }
+}

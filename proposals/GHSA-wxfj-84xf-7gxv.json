@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-wxfj-84xf-7gxv",
+  "aliases": [
+    "CVE-2023-26105"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "utilities"
+      },
+      "symbols": [
+        "_mix"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the _mix function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xrh7-m5pp-39r6",
+  "aliases": [
+    "CVE-2023-23630"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "eta"
+      },
+      "symbols": [
+        "Express"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the Express API"
+  }
+}

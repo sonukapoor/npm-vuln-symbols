@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-h3rx-g5c9-8q4x",
+  "aliases": [
+    "CVE-2020-7736",
+    "SNYK-JS-BMOOR-598664"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "bmoor"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the set function"
+  }
+}

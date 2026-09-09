@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-v37h-5mfm-c47c",
+  "aliases": [
+    "CVE-2026-24781"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vm2"
+      },
+      "symbols": [
+        "Inspect"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "Through Inspect Function"
+  }
+}

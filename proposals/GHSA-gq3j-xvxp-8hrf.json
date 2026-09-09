@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-gq3j-xvxp-8hrf",
+  "aliases": [
+    "CVE-2026-56764"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "hono"
+      },
+      "symbols": [
+        "timingSafeEqual"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "inside the `timingSafeEqual` function"
+  }
+}

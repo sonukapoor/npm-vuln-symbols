@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-32x6-qvw6-mxj4",
+  "aliases": [
+    "CVE-2022-24719"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fluture-node"
+      },
+      "symbols": [
+        "followRedirectsWith"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `followRedirectsWith` function"
+  }
+}

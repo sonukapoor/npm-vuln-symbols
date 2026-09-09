@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-2mjp-6q6p-2qxm",
+  "aliases": [
+    "CVE-2026-1525"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "undici"
+      },
+      "symbols": [
+        "request",
+        "Client"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using `undici.request()`, `undici.Client`, or similar low-level APIs"
+  }
+}

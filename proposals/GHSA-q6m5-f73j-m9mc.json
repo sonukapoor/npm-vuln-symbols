@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-q6m5-f73j-m9mc",
+  "aliases": [
+    "CVE-2026-54257"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "electron"
+      },
+      "symbols": [
+        "Buffer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the Node.js `Buffer` API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6v32-fjc9-9qf6",
+  "aliases": [
+    "CVE-2026-54281"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@nestjs/platform-fastify"
+      },
+      "symbols": [
+        "forRoutes"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through NestJS's `MiddlewareConsumer.forRoutes()` API"
+  }
+}

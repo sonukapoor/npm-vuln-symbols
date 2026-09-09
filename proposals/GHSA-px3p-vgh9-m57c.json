@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-px3p-vgh9-m57c",
+  "aliases": [
+    "CVE-2026-34156"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@nocobase/plugin-workflow-javascript"
+      },
+      "symbols": [
+        "prepareStackTrace",
+        "getThis"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via stderr)\n- `Error.prepareStackTrace` + `CallSite.getThis()` (V8 CallSite API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vc7j-h8xg-fv5x",
+  "aliases": [
+    "CVE-2023-38691"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "matrix-appservice-bridge"
+      },
+      "symbols": [
+        "provisioning"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the provisioning API"
+  }
+}

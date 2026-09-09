@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vccv-cmxp-4j9h",
+  "aliases": [
+    "CVE-2026-53606"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "sanitize-html"
+      },
+      "symbols": [
+        "escapeHtml"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through unmodified\n\nThe `escapeHtml()` function"
+  }
+}

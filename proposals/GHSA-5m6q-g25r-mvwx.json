@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5m6q-g25r-mvwx",
+  "aliases": [
+    "CVE-2026-33891"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "node-forge"
+      },
+      "symbols": [
+        "modInverse"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the BigInteger.modInverse() function"
+  }
+}

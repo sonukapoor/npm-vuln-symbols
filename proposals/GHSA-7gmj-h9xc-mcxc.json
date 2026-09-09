@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7gmj-h9xc-mcxc",
+  "aliases": [
+    "CVE-2026-3455"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mailparser"
+      },
+      "symbols": [
+        "textToHtml"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the textToHtml() function"
+  }
+}

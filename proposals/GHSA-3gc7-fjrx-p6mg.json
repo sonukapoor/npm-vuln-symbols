@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3gc7-fjrx-p6mg",
+  "aliases": [
+    "CVE-2025-3194"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "bigint-buffer"
+      },
+      "symbols": [
+        "toBigIntLE"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via toBigIntLE() Function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-frq9-3hp2-xvxg",
+  "aliases": [
+    "CVE-2025-5276"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mcp-markdownify-server"
+      },
+      "symbols": [
+        "get"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the Markdownify.get() function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-rx8g-88g5-qh64",
+  "aliases": [
+    "CVE-2025-57352"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "min-document"
+      },
+      "symbols": [
+        "removeAttributeNS"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the removeAttributeNS method"
+  }
+}

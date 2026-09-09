@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7r96-8g3x-g36m",
+  "aliases": [
+    "CVE-2021-32685"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tenvoy"
+      },
+      "symbols": [
+        "verification"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "within the verification method"
+  }
+}

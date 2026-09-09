@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-7j65-65cr-6644",
+  "aliases": [
+    "CVE-2026-46478"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "documented"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the documented API"
+  }
+}

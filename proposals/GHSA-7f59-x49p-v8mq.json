@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-7f59-x49p-v8mq",
+  "aliases": [
+    "CVE-2016-1000226"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "swagger-ui"
+      },
+      "symbols": [
+        "consumes",
+        "produces"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in both the `consumes` and `produces` parameters of the swagger JSON document for a given API"
+  }
+}

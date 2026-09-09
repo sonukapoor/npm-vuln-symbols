@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cmh5-qc8w-xvcq",
+  "aliases": [
+    "CVE-2017-16010"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "i18next"
+      },
+      "symbols": [
+        "init"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `.init` method"
+  }
+}

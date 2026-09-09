@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3mpr-hq3p-49h9",
+  "aliases": [
+    "CVE-2018-3719"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mixin-deep"
+      },
+      "symbols": [
+        "merging"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via merging functions"
+  }
+}

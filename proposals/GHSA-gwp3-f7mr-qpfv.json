@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-gwp3-f7mr-qpfv",
+  "aliases": [
+    "CVE-2021-34084"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "s3-uploader"
+      },
+      "symbols": [
+        "metadata"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the metadata() function"
+  }
+}

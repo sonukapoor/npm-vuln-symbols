@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-f38q-mgvj-vph7",
+  "aliases": [
+    "CVE-2026-54269"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "protobufjs"
+      },
+      "symbols": [
+        "service"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "protobufjs-cli"
+      },
+      "symbols": [
+        "service"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through protobufjs JSON/reflection descriptors, and service methods"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-h42x-xx2q-6v6g",
+  "aliases": [
+    "CVE-2025-71333"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "comment"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the comment, to construct the directory, the function"
+  }
+}

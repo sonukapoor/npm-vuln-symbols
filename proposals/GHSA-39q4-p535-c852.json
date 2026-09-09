@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-39q4-p535-c852",
+  "aliases": [
+    "CVE-2021-23392",
+    "SNYK-JS-LOCUTUS-1090597"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "locutus"
+      },
+      "symbols": [
+        "gopher_parsedir"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the gopher_parsedir function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-m9rg-mr6g-75gm",
+  "aliases": [
+    "CVE-2025-66648"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vega-functions"
+      },
+      "symbols": [
+        "setdata"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via `setdata` function"
+  }
+}

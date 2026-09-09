@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-pcw7-5633-82vv",
+  "aliases": [
+    "CVE-2026-22707"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/upload"
+      },
+      "symbols": [
+        "Content"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via Content API"
+  }
+}

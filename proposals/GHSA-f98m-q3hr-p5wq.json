@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-f98m-q3hr-p5wq",
+  "aliases": [
+    "CVE-2020-7719",
+    "SNYK-JS-LOCUTUS-598675"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "locutus"
+      },
+      "symbols": [
+        "parse_str"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the php.strings.parse_str function"
+  }
+}

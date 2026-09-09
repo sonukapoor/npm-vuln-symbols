@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-442j-39wm-28r2",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "handlebars"
+      },
+      "symbols": [
+        "lookup"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In `lib/handlebars/runtime.js`, the `container.lookup()` function"
+  }
+}

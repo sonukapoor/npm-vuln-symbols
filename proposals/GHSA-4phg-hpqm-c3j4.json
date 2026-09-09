@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-4phg-hpqm-c3j4",
+  "aliases": [
+    "CVE-2022-31367"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/strapi"
+      },
+      "symbols": [
+        "admin"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "strapi"
+      },
+      "symbols": [
+        "admin"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "within admin API"
+  }
+}

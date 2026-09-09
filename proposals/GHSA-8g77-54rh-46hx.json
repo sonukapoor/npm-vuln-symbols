@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8g77-54rh-46hx",
+  "aliases": [
+    "CVE-2025-25975"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parse-git-config"
+      },
+      "symbols": [
+        "expandKeys"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the expandKeys function"
+  }
+}

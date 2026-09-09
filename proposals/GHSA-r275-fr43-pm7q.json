@@ -1,0 +1,26 @@
+{
+  "id": "GHSA-r275-fr43-pm7q",
+  "aliases": [
+    "CVE-2026-28292"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "simple-git"
+      },
+      "symbols": [
+        "customArgs",
+        "clone",
+        "fetch",
+        "pull",
+        "push"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "the `customArgs`\nparameter of `clone()`, `fetch()`, `pull()`, `push()` or similar `simple-git`\nmethods is vulnerable"
+  }
+}

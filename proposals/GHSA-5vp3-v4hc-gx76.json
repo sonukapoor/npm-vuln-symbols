@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-5vp3-v4hc-gx76",
+  "aliases": [
+    "CVE-2021-41264"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@openzeppelin/contracts"
+      },
+      "symbols": [
+        "UUPSUpgradeable"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@openzeppelin/contracts-upgradeable"
+      },
+      "symbols": [
+        "UUPSUpgradeable"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using `UUPSUpgradeable` by invoking the initializer function"
+  }
+}

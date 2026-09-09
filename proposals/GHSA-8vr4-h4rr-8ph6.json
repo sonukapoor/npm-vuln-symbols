@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8vr4-h4rr-8ph6",
+  "aliases": [
+    "CVE-2024-24293"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@bit/loader"
+      },
+      "symbols": [
+        "M"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the M function"
+  }
+}

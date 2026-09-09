@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-p4cc-w597-6cpm",
+  "aliases": [
+    "CVE-2022-36045"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nodebb"
+      },
+      "symbols": [
+        "generateUUID"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In Brief\n`utils.generateUUID`, a helper function"
+  }
+}

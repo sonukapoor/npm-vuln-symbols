@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-8vw3-vxmj-h43w",
+  "aliases": [
+    "CVE-2023-26129"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "bwm-ng"
+      },
+      "symbols": [
+        "check"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the 'check' function"
+  }
+}

@@ -5,13 +5,17 @@ are actually vulnerable.
 
 > **Status: early, and not yet safe to suppress findings with.**
 >
-> The 11 records in `advisories/` are machine-extracted and **have not been
-> reviewed by a human**. They carry `confidence: medium` and no `reviewedBy`
-> field. Extraction measures at roughly 75 percent precision, so expect
-> about one record in four to be wrong.
+> Nothing here has been reviewed by a human yet.
 >
-> Do not wire this into anything that silences vulnerability alerts yet.
-> Review is what makes a record trustworthy, and that work has not been done.
+> - `advisories/` holds 11 records, hand-picked from extractor output because
+>   their advisory text named the export unambiguously. That was a judgement
+>   call by eye, not a review.
+> - `proposals/` holds 565 records straight from the extractor, awaiting review.
+>
+> Extraction measures at roughly 75 percent precision on a held-out sample, so
+> expect about one record in four to be wrong. Do not wire this into anything
+> that silences vulnerability alerts. Review is what makes a record
+> trustworthy, and that work has not started.
 
 ## The problem
 

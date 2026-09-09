@@ -1,0 +1,33 @@
+{
+  "id": "GHSA-4j8x-x6v7-w9rq",
+  "aliases": [
+    "CVE-2026-69264"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "globalThis",
+        "eval"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise-components"
+      },
+      "symbols": [
+        "globalThis",
+        "eval"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "inside Pyodide bridges to `globalThis`, exposing the JS `eval` function"
+  }
+}

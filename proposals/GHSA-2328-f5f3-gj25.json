@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-2328-f5f3-gj25",
+  "aliases": [
+    "CVE-2026-33896"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "node-forge"
+      },
+      "symbols": [
+        "verifyCertificateChain"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "In `lib/x509.js`, the `verifyCertificateChain()` function"
+  }
+}

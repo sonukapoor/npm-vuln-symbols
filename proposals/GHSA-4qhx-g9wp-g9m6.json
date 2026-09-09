@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-4qhx-g9wp-g9m6",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "squel"
+      },
+      "symbols": [
+        "setFields"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the `setFields` method"
+  }
+}

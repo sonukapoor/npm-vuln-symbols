@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-8cf7-32gw-wr33",
+  "aliases": [
+    "CVE-2022-23539"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jsonwebtoken"
+      },
+      "symbols": [
+        "sign",
+        "verify"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `sign()` and/or `verify()` functions"
+  }
+}

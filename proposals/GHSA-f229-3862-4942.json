@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-f229-3862-4942",
+  "aliases": [
+    "CVE-2026-27597"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@enclave-vm/core"
+      },
+      "symbols": [
+        "host"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the host function"
+  }
+}

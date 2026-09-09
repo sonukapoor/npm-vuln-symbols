@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-rj7m-2p3g-fjxg",
+  "aliases": [
+    "CVE-2022-25855"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "create-choo-app3"
+      },
+      "symbols": [
+        "devInstall"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the devInstall function"
+  }
+}

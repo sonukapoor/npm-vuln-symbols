@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-m272-9rp6-32mc",
+  "aliases": [
+    "CVE-2026-28794"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@orpc/client"
+      },
+      "symbols": [
+        "deserialize"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `deserialize()` method"
+  }
+}

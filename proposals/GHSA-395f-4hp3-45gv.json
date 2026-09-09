@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-395f-4hp3-45gv",
+  "aliases": [
+    "CVE-2026-13311"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "shell-quote"
+      },
+      "symbols": [
+        "exports"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `module.exports` wrapper (lines 211–224, reached only when `env` is a function"
+  }
+}

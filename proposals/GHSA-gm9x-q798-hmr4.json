@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-gm9x-q798-hmr4",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "git-tags-remote"
+      },
+      "symbols": [
+        "repo"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the system if the `repo` value passed to the function"
+  }
+}

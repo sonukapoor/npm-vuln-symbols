@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4q97-fh3f-j294",
+  "aliases": [
+    "CVE-2020-7724"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tiny-conf"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the set function"
+  }
+}

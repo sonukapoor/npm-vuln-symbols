@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5p42-m6f3-hpmj",
+  "aliases": [
+    "CVE-2023-38894"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tree-kit"
+      },
+      "symbols": [
+        "extend"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the extend function"
+  }
+}

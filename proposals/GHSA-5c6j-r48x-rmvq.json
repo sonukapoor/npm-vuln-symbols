@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-5c6j-r48x-rmvq",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "serialize-javascript"
+      },
+      "symbols": [
+        "eval"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via `eval`, `new Function"
+  }
+}

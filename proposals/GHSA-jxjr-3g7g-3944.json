@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-jxjr-3g7g-3944",
+  "aliases": [
+    "CVE-2026-83617"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@xmldom/xmldom"
+      },
+      "symbols": [
+        "createElement",
+        "setAttribute"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through `createElement` / `setAttribute` are never validated at creation — those APIs"
+  }
+}

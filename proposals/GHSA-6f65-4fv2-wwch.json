@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-6f65-4fv2-wwch",
+  "aliases": [
+    "CVE-2026-25050"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@vendure/core"
+      },
+      "symbols": [
+        "authenticate"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "The `NativeAuthenticationStrategy.authenticate()` method is vulnerable"
+  }
+}

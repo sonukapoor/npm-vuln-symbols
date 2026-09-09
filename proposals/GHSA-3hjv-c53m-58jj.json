@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-3hjv-c53m-58jj",
+  "aliases": [
+    "CVE-2026-41264"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "run"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise-components"
+      },
+      "symbols": [
+        "run"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "within the `run` method"
+  }
+}

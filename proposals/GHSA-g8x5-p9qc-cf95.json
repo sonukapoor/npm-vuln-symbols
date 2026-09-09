@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-g8x5-p9qc-cf95",
+  "aliases": [
+    "CVE-2023-31999"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@fastify/oauth2"
+      },
+      "symbols": [
+        "checkStateFunction"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `checkStateFunction` function"
+  }
+}

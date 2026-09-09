@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-38cw-85xc-xr9x",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@veramo/data-store"
+      },
+      "symbols": [
+        "decorateQB"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `decorateQB()` function"
+  }
+}

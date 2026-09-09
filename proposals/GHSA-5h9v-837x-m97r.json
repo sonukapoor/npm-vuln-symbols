@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5h9v-837x-m97r",
+  "aliases": [
+    "CVE-2026-46477"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "flowise"
+      },
+      "symbols": [
+        "documented"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the documented API"
+  }
+}

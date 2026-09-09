@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4rch-2fh8-94vw",
+  "aliases": [
+    "CVE-2024-21511"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mysql2"
+      },
+      "symbols": [
+        "readCodeFor"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the readCodeFor function"
+  }
+}

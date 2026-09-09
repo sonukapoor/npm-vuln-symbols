@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4gxf-g5gf-22h4",
+  "aliases": [
+    "CVE-2023-26132"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "dottie"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the `set()` function"
+  }
+}

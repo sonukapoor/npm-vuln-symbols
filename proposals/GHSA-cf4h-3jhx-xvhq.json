@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cf4h-3jhx-xvhq",
+  "aliases": [
+    "CVE-2021-23358"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "underscore"
+      },
+      "symbols": [
+        "template"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the template function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-vrhw-v2hw-jffx",
+  "aliases": [
+    "CVE-2026-25228"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "signalk-server"
+      },
+      "symbols": [
+        "applicationData"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in SignalK Server's `applicationData` API"
+  }
+}

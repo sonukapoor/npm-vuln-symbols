@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3wc5-fcw2-2329",
+  "aliases": [
+    "CVE-2024-28246"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "katex"
+      },
+      "symbols": [
+        "trust"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the output, even if the `trust` function"
+  }
+}

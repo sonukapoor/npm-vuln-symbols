@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-2vx9-7wpg-88jq",
+  "aliases": [
+    "CVE-2026-56352"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "n8n"
+      },
+      "symbols": [
+        "REST"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the REST API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-cq8r-fc3q-6hg2",
+  "aliases": [
+    "CVE-2020-28479"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jointjs"
+      },
+      "symbols": [
+        "unsetByPath"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the unsetByPath function"
+  }
+}

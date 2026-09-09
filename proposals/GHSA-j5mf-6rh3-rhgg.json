@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-j5mf-6rh3-rhgg",
+  "aliases": [
+    "CVE-2026-26861"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "clevertap-web-sdk"
+      },
+      "symbols": [
+        "handleCustomHtmlPreviewPostMessageEvent"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via handleCustomHtmlPreviewPostMessageEvent function"
+  }
+}

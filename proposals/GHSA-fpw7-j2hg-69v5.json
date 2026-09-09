@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fpw7-j2hg-69v5",
+  "aliases": [
+    "CVE-2024-21508"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mysql2"
+      },
+      "symbols": [
+        "readCodeFor"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the readCodeFor function"
+  }
+}

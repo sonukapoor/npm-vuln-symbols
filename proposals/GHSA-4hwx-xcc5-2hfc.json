@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4hwx-xcc5-2hfc",
+  "aliases": [
+    "CVE-2025-31475"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tarteaucitronjs"
+      },
+      "symbols": [
+        "addOrUpdate"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in `tarteaucitron.js`, where the `addOrUpdate` function"
+  }
+}

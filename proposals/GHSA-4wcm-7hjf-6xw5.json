@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-4wcm-7hjf-6xw5",
+  "aliases": [
+    "CVE-2025-59046"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "interactive-git-checkout"
+      },
+      "symbols": [
+        "exec"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the Node.js child process module's `exec()` function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fhv8-fx5f-7fxf",
+  "aliases": [
+    "CVE-2021-39227"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "zrender"
+      },
+      "symbols": [
+        "merge"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the merge and clone helper methods"
+  }
+}

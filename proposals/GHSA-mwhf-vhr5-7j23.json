@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-mwhf-vhr5-7j23",
+  "aliases": [
+    "CVE-2024-45607"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "whatsapp-api-js"
+      },
+      "symbols": [
+        "post",
+        "verifyRequestSignature"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the post or verifyRequestSignature methods"
+  }
+}

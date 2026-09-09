@@ -1,0 +1,20 @@
+{
+  "id": "GHSA-62gx-5q78-wrvx",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "obsidian-local-rest-api"
+      },
+      "symbols": [
+        "enabled"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in enabled and its configured API"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-ph28-wwfj-fv7f",
+  "aliases": [
+    "CVE-2022-25862"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "sds"
+      },
+      "symbols": [
+        "set"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the set function"
+  }
+}

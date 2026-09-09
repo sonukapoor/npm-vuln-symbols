@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-5rq4-664w-9x2c",
+  "aliases": [
+    "CVE-2026-27699"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "basic-ftp"
+      },
+      "symbols": [
+        "downloadToDir"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the `downloadToDir()` method"
+  }
+}

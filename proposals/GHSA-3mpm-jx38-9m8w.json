@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-3mpm-jx38-9m8w",
+  "aliases": [
+    "CVE-2025-57326"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "sassdoc-extras"
+      },
+      "symbols": [
+        "byGroupAndType"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the byGroupAndType function"
+  }
+}

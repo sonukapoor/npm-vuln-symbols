@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-xj5x-m3f3-5x3h",
+  "aliases": [
+    "CVE-2026-34778"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "electron"
+      },
+      "symbols": [
+        "executeJavaScript"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in a session could spoof reply messages on the internal IPC channel used by `webContents.executeJavaScript()` and related methods"
+  }
+}

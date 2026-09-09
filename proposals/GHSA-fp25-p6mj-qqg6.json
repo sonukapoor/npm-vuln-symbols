@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fp25-p6mj-qqg6",
+  "aliases": [
+    "CVE-2026-29091"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "locutus"
+      },
+      "symbols": [
+        "call_user_func_array"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "within the `call_user_func_array` function"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-79h2-v6hh-wq23",
+  "aliases": [
+    "CVE-2024-57066"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@ndhoule/defaults"
+      },
+      "symbols": [
+        "deep"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in the lib.deep function"
+  }
+}

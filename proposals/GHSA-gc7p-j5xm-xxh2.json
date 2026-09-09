@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-gc7p-j5xm-xxh2",
+  "aliases": [
+    "CVE-2023-39345"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/plugin-users-permissions"
+      },
+      "symbols": [
+        "sanitizeInput"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@strapi/strapi"
+      },
+      "symbols": [
+        "sanitizeInput"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "using the sanitizeInput function"
+  }
+}

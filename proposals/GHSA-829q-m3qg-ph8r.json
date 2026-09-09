@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-829q-m3qg-ph8r",
+  "aliases": [
+    "CVE-2025-65110"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vega-selections"
+      },
+      "symbols": [
+        "map"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in some applications, a crafted object that sets a `map` value with a function"
+  }
+}

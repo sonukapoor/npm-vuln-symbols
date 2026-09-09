@@ -1,0 +1,31 @@
+{
+  "id": "GHSA-3cgp-3xvw-98x8",
+  "aliases": [
+    "CVE-2025-59057"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@remix-run/react"
+      },
+      "symbols": [
+        "meta"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "react-router"
+      },
+      "symbols": [
+        "meta"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "in React Router's `meta()`/`<Meta>` APIs"
+  }
+}
