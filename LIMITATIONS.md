@@ -63,6 +63,34 @@ answer soundly.
 - A project with vulnerable **direct** dependencies, which would at least
   produce a real number for the case that does work today.
 
+## Coverage is the binding constraint, not the analysis
+
+Measured end to end against OWASP Juice Shop v20.2.0 (1,179 packages).
+
+| Stage | Count | |
+|---|---|---|
+| Distinct advisory ids in the findings | 113 | what a developer faces |
+| Covered by this dataset | **5** | **4.4%** |
+| Of those, package imported from the entry point | 2 | |
+| Of those, vulnerable symbol reached | 2 | |
+| Eliminated | **0** | **0.0%** |
+
+Even with a perfect reachability engine, 95.6% of that queue is untouchable,
+because the dataset has no symbols for those advisories. Extraction recall is
+7.9% against GHSA and translates to roughly 4.4% against a real project's
+findings.
+
+That is the number that decides whether this is worth pursuing. The analysis
+works; there is simply almost nothing for it to work on. Useful coverage means
+something in the 50 to 80 percent range, and prose extraction plateaus far below
+that, so reaching it needs fix-commit analysis or sustained manual curation
+rather than the cheap path.
+
+### Scaling, by contrast, is fine
+
+Juice Shop analysed in 20.5 s and 3,477 MB with `--max-indirections 1`. The
+earlier heap exhaustion is not a blocker for applications of this size.
+
 ## Not every vulnerability is a call to a named export
 
 Found by running the probe against OWASP Juice Shop, and it is the most
