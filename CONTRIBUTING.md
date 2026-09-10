@@ -37,7 +37,14 @@ For each file in `proposals/`:
 1. Open the advisory and confirm the named symbols are the vulnerable exports,
    not config keys, class names used in passing, or prose words.
 2. Confirm the symbols are actually exported by each affected package. A symbol
-   valid for `lodash` may not exist in `lodash.template`.
+   valid for `lodash` may not exist in `lodash.template`. `scripts/check-exports.ts`
+   does this mechanically where it can, writing `study/export-check.json`:
+
+   - `confirmed` means the symbol really is an export. Nothing to decide.
+   - `not_found` means it was not found in a surface the parser can see. That is
+     a **suspicion, not proof**, and it is the queue worth reading first.
+   - `unknown` means the export surface could not be read at all, which proves
+     nothing either way. Roughly two thirds of packages land here.
 3. Check the `excerpt` supports the claim rather than contradicting it.
    Advisories often describe what is *not* affected.
 4. If it holds, move the file to `advisories/`, set `reviewedBy` and
