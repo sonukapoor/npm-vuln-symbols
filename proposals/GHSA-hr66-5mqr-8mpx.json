@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `PUBLIC_ENDPOINTS` list with a `TODO` comment acknowledging it \"should be an internal API"
+    "excerpt": "in the `PUBLIC_ENDPOINTS` list with a `TODO` comment acknowledging it \"should be an internal API",
+    "fixCommit": "https://github.com/Budibase/budibase/commit/e6bf245fbfdaa35804ef7ee901103282edf0c381"
   }
 }

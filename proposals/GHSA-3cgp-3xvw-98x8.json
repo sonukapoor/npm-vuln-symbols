@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in React Router's `meta()`/`<Meta>` APIs"
+    "excerpt": "in React Router's `meta()`/`<Meta>` APIs",
+    "fixCommit": "https://github.com/remix-run/react-router/commit/0e774855797fcb3c7538c269158f4541beb55a1b"
   }
 }

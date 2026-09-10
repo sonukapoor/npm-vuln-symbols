@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the TechDocs API"
+    "excerpt": "via the TechDocs API",
+    "fixCommit": "https://github.com/backstage/backstage/commit/aad98c544e59369901fe9e0a85f6357644dceb5c"
   }
 }

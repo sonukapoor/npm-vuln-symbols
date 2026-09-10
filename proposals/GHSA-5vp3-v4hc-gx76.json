@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using `UUPSUpgradeable` by invoking the initializer function"
+    "excerpt": "using `UUPSUpgradeable` by invoking the initializer function",
+    "fixCommit": "https://github.com/OpenZeppelin/openzeppelin-contracts/commit/024cc50df478d2e8f78539819749e94d6df60592"
   }
 }

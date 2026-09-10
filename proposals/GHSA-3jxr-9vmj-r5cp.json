@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In `expand_`, `post` is computed unconditionally at the top of the function"
+    "excerpt": "In `expand_`, `post` is computed unconditionally at the top of the function",
+    "fixCommit": "https://github.com/juliangruber/brace-expansion/commit/835d6be91201122d9adffb0c0c8c094189ace265"
   }
 }

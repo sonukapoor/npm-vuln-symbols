@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the customAlphabet and nanoid functions"
+    "excerpt": "in the customAlphabet and nanoid functions",
+    "fixCommit": "https://github.com/ai/nanoid/commit/6ccc67bbaba71d3d77a21d9b636f4171a268ce49"
   }
 }

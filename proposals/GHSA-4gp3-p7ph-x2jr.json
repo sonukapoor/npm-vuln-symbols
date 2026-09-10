@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the exec function"
+    "excerpt": "via the exec function",
+    "fixCommit": "https://github.com/guybedford/devcert/commit/571f4e6d077f7f21c6aed655ae380d85a7a5d3b8"
   }
 }

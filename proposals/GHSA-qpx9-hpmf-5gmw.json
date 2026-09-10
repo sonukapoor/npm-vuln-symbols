@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In affected versions of Underscore, the `_.flatten` and `_.isEqual` functions"
+    "excerpt": "In affected versions of Underscore, the `_.flatten` and `_.isEqual` functions",
+    "fixCommit": "https://github.com/jashkenas/underscore/commit/411e222eb0ca5d570cc4f6315c02c05b830ed2b4"
   }
 }

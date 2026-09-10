@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in Pym.js `_onNavigateToMessage` function"
+    "excerpt": "in Pym.js `_onNavigateToMessage` function",
+    "fixCommit": "https://github.com/nprapps/pym.js/commit/c3552a6cf2532664c17bd6a318fb3cf8e4cf2f97"
   }
 }

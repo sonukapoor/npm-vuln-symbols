@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the gopher_parsedir function"
+    "excerpt": "via the gopher_parsedir function",
+    "fixCommit": "https://github.com/locutusjs/locutus/commit/eb863321990e7e5514aa14f68b8d9978ece9e65e"
   }
 }

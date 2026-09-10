@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the source\nfunction"
+    "excerpt": "in the source\nfunction",
+    "fixCommit": "https://github.com/whyour/qinglong/commit/6bec52dca158481258315ba0fc2f11206df7b719"
   }
 }

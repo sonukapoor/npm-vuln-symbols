@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in v0.2.136** — The `gql` function"
+    "excerpt": "in v0.2.136** \u2014 The `gql` function",
+    "fixCommit": "https://github.com/asymmetric-effort/specifyjs/commit/25d1fb491d99479efdf501f5f75e0bb80c908f0a"
   }
 }

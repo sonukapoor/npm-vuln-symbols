@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via `createDocumentType` API"
+    "excerpt": "via `createDocumentType` API",
+    "fixCommit": "https://github.com/xmldom/xmldom/commit/372008f9ae0e20fd69f761c7b79e202598267314"
   }
 }

@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the _transformMeasurements function"
+    "excerpt": "via the _transformMeasurements function",
+    "fixCommit": "https://github.com/LLK/scratch-svg-renderer/commit/9ebf57588aa596c4fa3bb64209e10ade395aee90"
   }
 }

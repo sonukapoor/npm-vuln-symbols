@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the parse function"
+    "excerpt": "via the parse function",
+    "fixCommit": "https://github.com/fb55/css-what/commit/dc510929790da6617e7aa93a616498b22f6a6b72"
   }
 }

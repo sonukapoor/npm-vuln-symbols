@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the text passed to the library's `parse()` function"
+    "excerpt": "in the text passed to the library's `parse()` function",
+    "fixCommit": "https://github.com/jkroso/parse-duration/commit/9e88421bfd41806fa4b473bfb28a9ee9dafc27d7"
   }
 }

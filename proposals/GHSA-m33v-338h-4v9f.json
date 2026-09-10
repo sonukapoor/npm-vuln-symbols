@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the Projects API"
+    "excerpt": "via the Projects API",
+    "fixCommit": "https://github.com/node-red/node-red/commit/74db3e17d075f23d9c95d7871586cf461524c456"
   }
 }

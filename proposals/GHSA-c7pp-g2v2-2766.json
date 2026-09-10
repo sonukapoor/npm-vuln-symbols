@@ -19,6 +19,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `tools.parse_response`, `helper.get.visible_emails_post`, and `helper.get.email_data_post` functions"
+    "excerpt": "in the `tools.parse_response`, `helper.get.visible_emails_post`, and `helper.get.email_data_post` functions",
+    "fixCommit": "https://github.com/KartikTalwar/gmail.js/commit/a83436f499f9c01b04280af945a5a81137b6baf1"
   }
 }

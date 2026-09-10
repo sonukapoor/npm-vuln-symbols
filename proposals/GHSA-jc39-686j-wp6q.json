@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the REST API"
+    "excerpt": "via the REST API",
+    "fixCommit": "https://github.com/parse-community/parse-server/commit/26b628c8fb3cc79ea955374769eebcff6f8a8a73"
   }
 }

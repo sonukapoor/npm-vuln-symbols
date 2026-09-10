@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via `.data =` or `CharacterData` mutation methods"
+    "excerpt": "via `.data =` or `CharacterData` mutation methods",
+    "fixCommit": "https://github.com/xmldom/xmldom/commit/7207a4b0e0bcc228868075ed991665ef9f73b1c2"
   }
 }

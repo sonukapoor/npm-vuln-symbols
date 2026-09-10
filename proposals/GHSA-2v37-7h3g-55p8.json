@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the customAlphabet and customRandom functions"
+    "excerpt": "in the customAlphabet and customRandom functions",
+    "fixCommit": "https://github.com/ai/nanoid/commit/cb3626d0f3342fdf179cd425fd9c4fbb92c7d0e7"
   }
 }

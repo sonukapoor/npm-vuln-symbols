@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in SignalK Server's `applicationData` API"
+    "excerpt": "in SignalK Server's `applicationData` API",
+    "fixCommit": "https://github.com/SignalK/signalk-server/commit/9bcf61c8fe2cb8a40998b913a02fb64dff9e86c7"
   }
 }

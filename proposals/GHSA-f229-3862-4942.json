@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the host function"
+    "excerpt": "via the host function",
+    "fixCommit": "https://github.com/agentfront/enclave/commit/09afbebe4cb6d0586c1145aa71ffabd2103932db"
   }
 }

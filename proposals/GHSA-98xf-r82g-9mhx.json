@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in depth, validate identifier fields at API"
+    "excerpt": "in depth, validate identifier fields at API",
+    "fixCommit": "https://github.com/langchain-ai/langgraphjs/commit/284226c7ca164b3c81fe2d9e32b10f1fc6b99a3c"
   }
 }

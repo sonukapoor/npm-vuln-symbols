@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the DocLoader [1] [2], the `fetch` API"
+    "excerpt": "via the DocLoader [1] [2], the `fetch` API",
+    "fixCommit": "https://github.com/dahlia/fedify/commit/30f9cf4a175704a04c874f3ea88414c5f1e00b28"
   }
 }

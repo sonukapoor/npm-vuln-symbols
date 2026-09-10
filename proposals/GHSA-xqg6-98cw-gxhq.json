@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `formToObj()` function"
+    "excerpt": "in the `formToObj()` function",
+    "fixCommit": "https://github.com/QwikDev/qwik/commit/5f65bae2bc33e6ca0c21e4cfcf9eae05077716f7"
   }
 }

@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the v6 codebase - `EntitiesParser.js` has a `validateEntityName` function"
+    "excerpt": "in the v6 codebase - `EntitiesParser.js` has a `validateEntityName` function",
+    "fixCommit": "https://github.com/NaturalIntelligence/fast-xml-parser/commit/943ef0eb1b2d3284e72dd74f44a042ee9f07026e"
   }
 }

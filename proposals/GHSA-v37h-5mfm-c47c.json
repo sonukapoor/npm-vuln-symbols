@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "Through Inspect Function"
+    "excerpt": "Through Inspect Function",
+    "fixCommit": "https://github.com/patriksimek/vm2/commit/8d30d93213c1898b3e035298b89a814970dd1189"
   }
 }

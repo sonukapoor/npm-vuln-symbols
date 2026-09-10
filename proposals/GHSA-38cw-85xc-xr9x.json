@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `decorateQB()` function"
+    "excerpt": "in the `decorateQB()` function",
+    "fixCommit": "https://github.com/decentralized-identity/veramo/commit/067e39dd76f11ee2d25b99c8361d4f02a4223e3b"
   }
 }

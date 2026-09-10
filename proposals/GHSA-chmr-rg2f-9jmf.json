@@ -35,6 +35,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the bootstrap functions"
+    "excerpt": "in the bootstrap functions",
+    "fixCommit": "https://github.com/strapi/strapi/commit/2fa8f30371bfd1db44c15e5747860ee5789096de"
   }
 }

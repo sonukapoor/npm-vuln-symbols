@@ -19,6 +19,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the plugin (AI, styles, prompts, context, and the Next.js API"
+    "excerpt": "in the plugin (AI, styles, prompts, context, and the Next.js API",
+    "fixCommit": "https://github.com/delmaredigital/payload-puck/commit/9148201c6bbfa140d44546438027a2f8a70f79a4"
   }
 }

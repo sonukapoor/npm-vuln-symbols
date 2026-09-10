@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `_utils.setDeepProperty` function"
+    "excerpt": "via the `_utils.setDeepProperty` function",
+    "fixCommit": "https://github.com/Blackprint/engine-js/commit/bd6b965b03c467e7a58ab0cb89b9172fa5e07013"
   }
 }

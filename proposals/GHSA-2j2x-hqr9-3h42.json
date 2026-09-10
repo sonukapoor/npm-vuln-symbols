@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in URLs passed to the `redirect` function"
+    "excerpt": "in URLs passed to the `redirect` function",
+    "fixCommit": "https://github.com/remix-run/react-router/commit/d77f6b1"
   }
 }

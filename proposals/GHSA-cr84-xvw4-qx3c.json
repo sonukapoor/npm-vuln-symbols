@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using the `escape` or `escapeAll` functions"
+    "excerpt": "using the `escape` or `escapeAll` functions",
+    "fixCommit": "https://github.com/ericcornelissen/shescape/commit/552e8eab56861720b1d4e5474fb65741643358f9"
   }
 }

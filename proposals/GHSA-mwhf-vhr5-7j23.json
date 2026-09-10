@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using the post or verifyRequestSignature methods"
+    "excerpt": "using the post or verifyRequestSignature methods",
+    "fixCommit": "https://github.com/Secreto31126/whatsapp-api-js/commit/56620c65126427496a94d176082fbd8393a95b6d"
   }
 }

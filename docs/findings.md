@@ -200,6 +200,32 @@ records, and leaves them in the queue.
 How large this category is across npm advisories is **unmeasured**, and it is
 the most interesting open question here.
 
+## Finding 4: the fix commits are there, but nothing labels them
+
+The OSV schema defines a `FIX` reference type for the commit that resolves an
+advisory. Across all **7,020 live GHSA advisories in the npm feed it is used
+zero times**. Every reference is `WEB`, `ADVISORY` or `PACKAGE`.
+
+Yet **51.2% of advisories do link their fixing commit**, filed under `WEB`
+alongside vendor bulletins and NVD mirrors:
+
+```
+GHSA-35jh-r3h4-6jhm references:
+  ADVISORY  https://nvd.nist.gov/vuln/detail/CVE-2021-23337
+  WEB       https://github.com/lodash/lodash/commit/3469357c...   <- the fix
+  WEB       https://www.oracle.com/security-alerts/cpuoct2021.html
+  PACKAGE   https://github.com/lodash/lodash
+```
+
+This project's own code filtered on `type === "FIX"` and therefore found a fix
+commit for exactly none of them, silently, until someone asked to see a raw
+record. Matching by URL shape instead recovers a commit for 56% of the proposed
+records.
+
+It is the same gap as the missing symbol field, in a different place. The
+information exists and is not machine-addressable, so every consumer has to
+re-derive it with a heuristic.
+
 ## What this means
 
 For anyone hoping to use open data for npm reachability today: the data does not

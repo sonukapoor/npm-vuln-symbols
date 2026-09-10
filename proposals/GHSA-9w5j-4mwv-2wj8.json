@@ -20,6 +20,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the clone(), pull(), push() and listRemote() methods"
+    "excerpt": "via the clone(), pull(), push() and listRemote() methods",
+    "fixCommit": "https://github.com/steveukx/git-js/commit/ec97a39ab60b89e870c5170121cd9c1603cc1951"
   }
 }

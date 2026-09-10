@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `setValue` method"
+    "excerpt": "via the `setValue` method",
+    "fixCommit": "https://github.com/Qwerios/madlib-object-utils/commit/8d5d54c11c8fb9a7980a99778329acd13e3ef98f"
   }
 }

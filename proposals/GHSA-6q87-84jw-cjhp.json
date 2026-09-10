@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "inside a server `load` function"
+    "excerpt": "inside a server `load` function",
+    "fixCommit": "https://github.com/sveltejs/kit/commit/d3300c6a67908590266c363dba7b0835d9a194cf"
   }
 }

@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in exploit function"
+    "excerpt": "in exploit function",
+    "fixCommit": "https://github.com/fedify-dev/fedify/commit/2bdcb24d7d6d5886e0214ed504b63a6dc5488779"
   }
 }

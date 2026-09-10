@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the lib.createUploader function"
+    "excerpt": "in the lib.createUploader function",
+    "fixCommit": "https://github.com/rpldy/react-uploady/commit/386e0a80c428eb988e89fd2acf9bb0b786ac8028"
   }
 }

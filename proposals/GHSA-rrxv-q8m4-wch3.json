@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the renew function"
+    "excerpt": "in the renew function",
+    "fixCommit": "https://github.com/ensdomains/ens-contracts/commit/e6b136e979084de3761c125142620304173990ca"
   }
 }

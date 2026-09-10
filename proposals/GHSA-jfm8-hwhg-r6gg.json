@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the run() function"
+    "excerpt": "via the run() function",
+    "fixCommit": "https://github.com/natelong/p4/commit/ae42e251beabf67c00539ec0e1d7aa149ca445fb"
   }
 }

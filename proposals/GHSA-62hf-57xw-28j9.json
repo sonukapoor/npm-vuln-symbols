@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `toFormData`'s `build` function"
+    "excerpt": "in `toFormData`'s `build` function",
+    "fixCommit": "https://github.com/axios/axios/commit/85132ffba1a77609ea5d101c8a413dea7174932f"
   }
 }

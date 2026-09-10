@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in timing, plugin path handling, API"
+    "excerpt": "in timing, plugin path handling, API",
+    "fixCommit": "https://github.com/ether/etherpad/commit/7ea99706483443239bbbc0f2df9aff8ab5de4805"
   }
 }

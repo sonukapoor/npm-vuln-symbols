@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `parseFormData` function"
+    "excerpt": "in `parseFormData` function",
+    "fixCommit": "https://github.com/ciscoheat/sveltekit-superforms/commit/4a1310dd1a94176bb22036662c530dad48059ca4"
   }
 }

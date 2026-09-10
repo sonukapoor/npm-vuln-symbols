@@ -20,6 +20,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `bundle()`, `parse()`, `resolve()`, `dereference()` functions"
+    "excerpt": "via the `bundle()`, `parse()`, `resolve()`, `dereference()` functions",
+    "fixCommit": "https://github.com/APIDevTools/json-schema-ref-parser/commit/8cad7f72c15b198f4d0b5b1c8a3a979b2e4baa82"
   }
 }

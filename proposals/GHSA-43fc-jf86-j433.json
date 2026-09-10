@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in mergeConfig\n\n### Summary\n\nThe `mergeConfig` function"
+    "excerpt": "in mergeConfig\n\n### Summary\n\nThe `mergeConfig` function",
+    "fixCommit": "https://github.com/axios/axios/commit/28c721588c7a77e7503d0a434e016f852c597b57"
   }
 }

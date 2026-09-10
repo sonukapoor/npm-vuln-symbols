@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using toString(), divmod(), and other methods"
+    "excerpt": "using toString(), divmod(), and other methods",
+    "fixCommit": "https://github.com/indutny/bn.js/commit/33df26b5771e824f303a79ec6407409376baa64b"
   }
 }

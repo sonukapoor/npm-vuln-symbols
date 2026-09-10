@@ -50,6 +50,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `_.unset` and `_.omit` functions"
+    "excerpt": "in `_.unset` and `_.omit` functions",
+    "fixCommit": "https://github.com/lodash/lodash/commit/edadd452146f7e4bad4ea684e955708931d84d81"
   }
 }

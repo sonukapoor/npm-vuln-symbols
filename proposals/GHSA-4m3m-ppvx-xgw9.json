@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in and user validation are performed by the `authenticate` function"
+    "excerpt": "in and user validation are performed by the `authenticate` function",
+    "fixCommit": "https://github.com/fastify/fastify-passport/commit/43c82c321db58ea3e375dd475de60befbfcf2a11"
   }
 }

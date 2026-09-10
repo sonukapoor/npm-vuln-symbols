@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In the send function"
+    "excerpt": "In the send function",
+    "fixCommit": "https://github.com/louislam/uptime-kuma/commit/7a9191761dbef6551c2a0aa6eed5f693ba48d688"
   }
 }

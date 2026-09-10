@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `writeFileToTmpDirAndOpenIt` function"
+    "excerpt": "via the `writeFileToTmpDirAndOpenIt` function",
+    "fixCommit": "https://github.com/Soontao/cycle-import-check/commit/1ca97b59df7e9c704471fcb4cf042ce76d7c9890"
   }
 }

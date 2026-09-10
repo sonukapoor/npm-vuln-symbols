@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `lassoAppend` function"
+    "excerpt": "in `lassoAppend` function",
+    "fixCommit": "https://github.com/vega/vega/commit/01adb034f24727d3bb321bbbb6696a7f4cd91689"
   }
 }

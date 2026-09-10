@@ -20,6 +20,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the graphVizPath option parameter which, when the .image(), .svg() or .dot() functions"
+    "excerpt": "via the graphVizPath option parameter which, when the .image(), .svg() or .dot() functions",
+    "fixCommit": "https://github.com/pahen/madge/commit/da5cbc9ab30372d687fa7c324b22af7ffa5c6332"
   }
 }

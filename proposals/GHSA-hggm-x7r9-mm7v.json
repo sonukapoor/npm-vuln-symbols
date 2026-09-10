@@ -19,6 +19,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the isLikelyLocalPath() and isValidMedia() functions"
+    "excerpt": "in the isLikelyLocalPath() and isValidMedia() functions",
+    "fixCommit": "https://github.com/openclaw/openclaw/commit/4797bbc5b96e2cca5532e43b58915c051746fe37"
   }
 }

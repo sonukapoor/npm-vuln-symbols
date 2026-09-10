@@ -35,6 +35,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `verifySessionJWT` to verify that a user is actually still active and allowed to access the API"
+    "excerpt": "in `verifySessionJWT` to verify that a user is actually still active and allowed to access the API",
+    "fixCommit": "https://github.com/directus/directus/commit/ef179931c55b50c110feca8404901d5633940771"
   }
 }

@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `originCheck` middleware function"
+    "excerpt": "in the `originCheck` middleware function",
+    "fixCommit": "https://github.com/better-auth/better-auth/commit/9801d1be53d9da04686b94c6286c53ec97496740"
   }
 }

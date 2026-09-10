@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using the alert function"
+    "excerpt": "using the alert function",
+    "fixCommit": "https://github.com/happyworm/jPlayer/commit/c5fe17bb4459164bd59153b57248cf94b8867373"
   }
 }

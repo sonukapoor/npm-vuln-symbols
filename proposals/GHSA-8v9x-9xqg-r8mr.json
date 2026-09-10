@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in json8-merge-patch npm package < 1.0.3 may allow attackers to inject or modify methods"
+    "excerpt": "in json8-merge-patch npm package < 1.0.3 may allow attackers to inject or modify methods",
+    "fixCommit": "https://github.com/sonnyp/JSON8/commit/2e890261b66cbc54ae01d0c79c71b0fd18379e7e#diff-faa7bef039022bc7ca1c613331b2373950ddd3d65ebf25d1699fbdf89773a387"
   }
 }

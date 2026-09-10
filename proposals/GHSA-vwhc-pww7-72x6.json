@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In total.js framework before version 3.4.9, calling the utils.set function"
+    "excerpt": "In total.js framework before version 3.4.9, calling the utils.set function",
+    "fixCommit": "https://github.com/totaljs/framework/commit/887b0fa9e162ef7a2dd9cec20a5ca122726373b3"
   }
 }

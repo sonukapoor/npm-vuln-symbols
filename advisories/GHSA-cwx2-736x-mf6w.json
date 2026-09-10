@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `object-path` <= 0.11.4 affecting the `set()` method"
+    "excerpt": "in `object-path` <= 0.11.4 affecting the `set()` method",
+    "fixCommit": "https://github.com/mariocasciaro/object-path/commit/2be3354c6c46215c7635eb1b76d80f1319403c68"
   }
 }

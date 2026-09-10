@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the REST API"
+    "excerpt": "in the REST API",
+    "fixCommit": "https://github.com/apostrophecms/apostrophe/commit/00d472804bb622df36a761b6f2cf2b33b2d4ce80"
   }
 }

@@ -30,13 +30,36 @@ export interface OsvRecord {
   readonly withdrawn?: string;
 }
 
-/** OSV reference type marking the commit that fixed the advisory. */
-const REFERENCE_TYPE_FIX = "FIX";
+/**
+ * Matches a commit URL on the common forges.
+ *
+ * Reference *type* cannot be used to find these. The OSV schema defines a FIX
+ * type, but across all 7,020 live GHSA advisories in the npm feed it is used
+ * exactly zero times: every reference is WEB, ADVISORY or PACKAGE. Meanwhile
+ * 51.2% of advisories do link their fixing commit, filed under WEB alongside
+ * vendor bulletins and NVD mirrors.
+ *
+ * So the commit has to be recognised by URL shape. That is a heuristic, and it
+ * is weaker than reading a schema field would have been.
+ */
+const COMMIT_URL_PATTERN =
+  /^https?:\/\/(?:github\.com|gitlab\.com|bitbucket\.org|git\.[^/]+)\/[^/]+\/[^/]+\/(?:commit|commits|-\/commit)\/[0-9a-f]{7,40}/i;
 
-/** Returns the fix commit URL when the advisory records one. */
+/**
+ * Returns the URL of the commit that fixed the advisory, when one is linked.
+ *
+ * Prefers a reference explicitly typed FIX, in case the field ever starts being
+ * populated, and otherwise falls back to URL shape.
+ */
 export function findFixCommitUrl(record: OsvRecord): string | null {
-  for (const reference of record.references ?? []) {
-    if (reference.type === REFERENCE_TYPE_FIX && reference.url !== undefined) {
+  const references = record.references ?? [];
+  for (const reference of references) {
+    if (reference.type === "FIX" && reference.url !== undefined) {
+      return reference.url;
+    }
+  }
+  for (const reference of references) {
+    if (reference.url !== undefined && COMMIT_URL_PATTERN.test(reference.url)) {
       return reference.url;
     }
   }

@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the parseHeaders function"
+    "excerpt": "in the parseHeaders function",
+    "fixCommit": "https://github.com/showdownjs/showdown/commit/e5cab1e9a5dcea2bb3cbf888863fa7e65ab37edf"
   }
 }

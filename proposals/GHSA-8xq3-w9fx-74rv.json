@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In addition, the way that the function"
+    "excerpt": "In addition, the way that the function",
+    "fixCommit": "https://github.com/silverbucket/webfinger.js/commit/b5f2f2c957297d25f4d76072963fccaee2e3095a"
   }
 }

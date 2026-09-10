@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `downloadToDir()` method"
+    "excerpt": "in the `downloadToDir()`\u00a0method",
+    "fixCommit": "https://github.com/patrickjuchli/basic-ftp/commit/2a2a0e6514357b9eda07c2f8afbd3f04727a7cd9"
   }
 }

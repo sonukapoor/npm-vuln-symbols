@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In this case, the resulting `deriveKey` method"
+    "excerpt": "In this case, the resulting `deriveKey` method",
+    "fixCommit": "https://github.com/browserify/pbkdf2/commit/9699045c37a07f8319cfb8d44e2ff4252d7a7078"
   }
 }

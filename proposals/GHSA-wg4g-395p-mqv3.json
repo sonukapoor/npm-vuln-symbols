@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "through `n8n_manage_credentials`\n- per-tenant API"
+    "excerpt": "through `n8n_manage_credentials`\n- per-tenant API",
+    "fixCommit": "https://github.com/czlonkowski/n8n-mcp/commit/59b665bda36797823df238aeaf20adb862c9f451"
   }
 }
