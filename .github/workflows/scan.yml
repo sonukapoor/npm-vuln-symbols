@@ -1,0 +1,26 @@
+name: scan
+
+# Dogfooding: this repo is scanned by CVE Lite CLI, the OWASP scanner whose
+# findings the dataset is meant to narrow.
+#
+# Informational only. fail-on is deliberately unset so a devDependency advisory
+# does not block work on a dataset repo, and --usage is enabled to show the
+# package-level baseline that symbol-level reachability improves on.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 7 * * 1"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: OWASP/cve-lite-cli@v1
+        with:
+          path: "."
+          usage: "true"
+          all: "true"
