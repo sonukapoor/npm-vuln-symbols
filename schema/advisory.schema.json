@@ -108,6 +108,13 @@
     "reviewedAt": {
       "type": "string",
       "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "trigger": {
+      "enum": [
+        "call",
+        "data_value"
+      ],
+      "description": "How the vulnerability is triggered. Defaults to 'call'. A 'data_value' record is triggered by passing a value or option key and cannot be resolved by call-pattern reachability, so it must never be used to eliminate a finding."
     }
   }
 }

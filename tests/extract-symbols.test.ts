@@ -103,3 +103,13 @@ describe("negation", () => {
     expect(extractSymbolsFromText(details).symbols).toEqual(["merge"]);
   });
 });
+
+describe("query operators", () => {
+  it("rejects $-prefixed operator names", () => {
+    // "selectors on `$where` clauses are passed to a Function" describes a data
+    // key, not an export. A call pattern for it can never match, and that
+    // no-match would read as proof of safety.
+    const details = "In the DocumentMatcher class, selectors on `$where` clauses are passed to a Function.";
+    expect(extractSymbolsFromText(details).symbols).not.toContain("$where");
+  });
+});

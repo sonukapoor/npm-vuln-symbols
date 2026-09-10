@@ -32,6 +32,28 @@ export const EvidenceSource = {
 
 export type EvidenceSource = (typeof EvidenceSource)[keyof typeof EvidenceSource];
 
+/**
+ * How a vulnerability is triggered.
+ *
+ * Reachability by call pattern only answers for `Call`. Some advisories are
+ * triggered by passing a value, not by invoking an export: marsdb's
+ * GHSA-5mrr-rgp6-x4gr fires when a query object contains a `$where` key, which
+ * no call to a named export can express.
+ *
+ * The distinction is safety-critical. On OWASP Juice Shop that advisory was
+ * reported "not reachable" while `routes/chat.ts:149` passes `$where` with
+ * concatenated user input, which is a live NoSQL injection. Marking the trigger
+ * lets a consumer report "cannot determine" instead of silently clearing it.
+ */
+export const Trigger = {
+  /** Calling a named export. Resolvable by call-pattern reachability. */
+  Call: "call",
+  /** Passing a value or option key. NOT resolvable by call patterns. */
+  DataValue: "data_value",
+} as const;
+
+export type Trigger = (typeof Trigger)[keyof typeof Trigger];
+
 /** The only ecosystem this dataset covers. */
 export const ECOSYSTEM_NPM = "npm";
 
@@ -81,6 +103,11 @@ export interface SymbolRecord {
   readonly id: string;
   readonly aliases: readonly string[];
   readonly affected: readonly AffectedPackage[];
+  /**
+   * Defaults to Call when absent. A DataValue record must never be used to
+   * eliminate a finding, because absence of a matching call proves nothing.
+   */
+  readonly trigger?: Trigger;
   readonly evidence: Evidence;
   readonly notes?: string;
   readonly reviewedBy?: string;

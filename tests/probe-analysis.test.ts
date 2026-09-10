@@ -72,3 +72,26 @@ describe("eliminationRate", () => {
     expect(eliminationRate({ imported: ["a"], reachable: ["a"] })).toBe(0);
   });
 });
+
+describe("data-triggered advisories", () => {
+  it("never builds call patterns for a data-triggered record", () => {
+    // marsdb GHSA-5mrr-rgp6-x4gr fires on a $where key in a query object.
+    // A call pattern cannot match it, and the resulting no-match reads as
+    // "not reachable". Verified against OWASP Juice Shop, where the advisory
+    // is genuinely exploitable at routes/chat.ts:149.
+    const record: SymbolRecord = {
+      id: "GHSA-5mrr-rgp6-x4gr",
+      aliases: [],
+      affected: [
+        { package: { ecosystem: ECOSYSTEM_NPM, name: "marsdb" }, symbols: ["DocumentMatcher"] },
+      ],
+      trigger: "data_value",
+      evidence: { source: EvidenceSource.AdvisoryText, confidence: Confidence.Medium },
+    };
+    expect(buildEntries(record, [{ package: { name: "marsdb" } }])).toEqual([]);
+  });
+
+  it("still builds patterns when the trigger is a call", () => {
+    expect(buildEntries(lodashTemplate, lodashAffected)).toHaveLength(2);
+  });
+});

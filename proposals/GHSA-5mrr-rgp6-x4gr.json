@@ -8,8 +8,7 @@
         "name": "marsdb"
       },
       "symbols": [
-        "DocumentMatcher",
-        "$where"
+        "DocumentMatcher"
       ]
     }
   ],
@@ -17,5 +16,7 @@
     "source": "advisory_text",
     "confidence": "medium",
     "excerpt": "In the `DocumentMatcher` class, selectors on `$where` clauses are passed to a Function"
-  }
+  },
+  "trigger": "data_value",
+  "notes": "Triggered by a $where key in a query object, not by calling an export. Verified against OWASP Juice Shop routes/chat.ts:149, which passes $where with concatenated user input and is exploitable, while a call-pattern analysis reported it not reachable. Must never be used to eliminate a finding."
 }
