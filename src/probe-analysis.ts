@@ -1,6 +1,6 @@
 import { buildCallPattern } from "./jelly-vulnerability.js";
 import type { OsvAffectedEntry } from "./osv-ranges.js";
-import type { SymbolRecord } from "./types.js";
+import { Trigger, type SymbolRecord } from "./types.js";
 
 /**
  * Pure logic behind the reachability probe, separated from process handling so
@@ -27,6 +27,12 @@ export function buildEntries(
   record: SymbolRecord,
   affected: readonly OsvAffectedEntry[],
 ): JellyEntry[] {
+  // A data-triggered advisory cannot be answered by a call pattern, so running
+  // one would produce a no-match that reads as "not reachable". Excluding it
+  // keeps it in the queue, which is the safe direction.
+  if (record.trigger === Trigger.DataValue) {
+    return [];
+  }
   const names = new Set(record.affected.map(entry => entry.package.name));
   const relevant = affected.filter(entry => names.has(entry.package.name));
   if (relevant.length === 0) {

@@ -90,6 +90,14 @@ const SENTENCE_BREAK_PATTERN = /\.\s/g;
 const MAX_SYMBOL_LENGTH = 64;
 
 /**
+ * Names beginning with `$` are overwhelmingly query or template operators
+ * (`$where`, `$gt`, `$ne`), which are data keys rather than callable exports.
+ * A call pattern for one can never match, and the resulting no-match reads as
+ * "not reachable". Rejecting them keeps the finding in the queue instead.
+ */
+const OPERATOR_PREFIX = "$";
+
+/**
  * Phrases marking a span as describing what is *not* vulnerable.
  *
  * Advisories routinely contrast the broken path with a safe one ("callers
@@ -119,6 +127,9 @@ function normaliseCandidate(raw: string, isMarkedAsCode: boolean): string | null
     return null;
   }
   if (!IDENTIFIER_PATTERN.test(lastSegment)) {
+    return null;
+  }
+  if (lastSegment.startsWith(OPERATOR_PREFIX)) {
     return null;
   }
   const lowered = lastSegment.toLowerCase();

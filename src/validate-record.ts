@@ -1,4 +1,4 @@
-import { Confidence, ECOSYSTEM_NPM, EvidenceSource, type SymbolRecord } from "./types.js";
+import { Confidence, ECOSYSTEM_NPM, EvidenceSource, Trigger, type SymbolRecord } from "./types.js";
 
 /**
  * Shape validation for a dataset record.
@@ -14,6 +14,7 @@ const IDENTIFIER_PATTERN = /^[A-Za-z_$][A-Za-z0-9_$]*$/;
 
 const CONFIDENCE_VALUES = new Set<string>(Object.values(Confidence));
 const EVIDENCE_SOURCE_VALUES = new Set<string>(Object.values(EvidenceSource));
+const TRIGGER_VALUES = new Set<string>(Object.values(Trigger));
 
 function isRecordObject(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -95,6 +96,13 @@ function validateEvidence(record: Record<string, unknown>, errors: string[]): vo
   }
 }
 
+function validateTrigger(record: Record<string, unknown>, errors: string[]): void {
+  const trigger = record["trigger"];
+  if (trigger !== undefined && (typeof trigger !== "string" || !TRIGGER_VALUES.has(trigger))) {
+    errors.push("trigger must be 'call' or 'data_value'");
+  }
+}
+
 function validateReview(record: Record<string, unknown>, errors: string[]): void {
   const reviewedAt = record["reviewedAt"];
   if (reviewedAt !== undefined && (typeof reviewedAt !== "string" || !ISO_DATE_PATTERN.test(reviewedAt))) {
@@ -111,6 +119,7 @@ export function validateRecord(value: unknown): string[] {
   validateIdentity(value, errors);
   validateAffected(value, errors);
   validateEvidence(value, errors);
+  validateTrigger(value, errors);
   validateReview(value, errors);
   return errors;
 }

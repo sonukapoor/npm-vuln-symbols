@@ -63,6 +63,53 @@ answer soundly.
 - A project with vulnerable **direct** dependencies, which would at least
   produce a real number for the case that does work today.
 
+## Not every vulnerability is a call to a named export
+
+Found by running the probe against OWASP Juice Shop, and it is the most
+important failure this project has hit.
+
+marsdb's GHSA-5mrr-rgp6-x4gr says:
+
+> In the `DocumentMatcher` class, selectors on `$where` clauses are passed to a
+> Function
+
+Extraction read that as symbols `DocumentMatcher` and `$where`, which is
+linguistically correct and semantically wrong. `$where` is a **key in a query
+object**, not a callable export. No call pattern can ever match it.
+
+The probe therefore reported the advisory **not reachable** on Juice Shop, while
+`routes/chat.ts:149` does:
+
+```js
+db.reviewsCollection.find({ $where: 'this.product == ' + productId })
+```
+
+That is concatenated user input reaching a `$where` sink. It is a live NoSQL
+injection and one of Juice Shop's own challenges. The tool cleared a real,
+exploitable vulnerability.
+
+### Why the precision measurement missed it
+
+Extraction precision was assessed by asking "do these look like function names".
+These did. The wrongness is in whether they are *callable exports a reachability
+analysis can match*, which is a different question and one that sampling prose
+never tested.
+
+### What changed
+
+- `SymbolRecord.trigger` distinguishes `call` from `data_value`.
+- `buildEntries` refuses to construct patterns for a `data_value` record, so it
+  stays in the queue rather than being silently cleared.
+- The extractor rejects `$`-prefixed names, which are almost always query or
+  template operators.
+- Both are covered by regression tests built from this exact case.
+
+### What has not been solved
+
+Data-triggered vulnerabilities still have **no** reachability story. They can be
+flagged as unanswerable, which is the safe behaviour, but the dataset cannot
+help with them. How large that category is across npm advisories is unmeasured.
+
 ## Extraction precision
 
 Records in `proposals/` are machine-extracted at roughly 75 percent precision
