@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, readdirSync, readFileSync, rmSync, existsSync, writeFileSync } from "node:fs";
+import { mkdtempSync, readdirSync, readFileSync, rmSync, existsSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
@@ -123,15 +123,32 @@ function findEntryFile(packageDir: string): string | null {
       continue;
     }
     const direct = path.join(packageDir, candidate);
-    if (existsSync(direct) && !direct.endsWith("/")) {
+    if (isReadableFile(direct)) {
       return direct;
     }
-    const asIndex = path.join(direct, "index.js");
-    if (existsSync(asIndex)) {
-      return asIndex;
+    for (const suffix of [".js", ".cjs", ".mjs", "/index.js", "/index.cjs", "/index.mjs"]) {
+      const withSuffix = `${direct}${suffix}`;
+      if (isReadableFile(withSuffix)) {
+        return withSuffix;
+      }
     }
   }
   return null;
+}
+
+/**
+ * True only for a readable regular file.
+ *
+ * `existsSync` is true for directories too, so a candidate like
+ * `lib/parser` that happens to be a folder passed the check and then threw
+ * EISDIR on read, aborting a full run partway through.
+ */
+function isReadableFile(candidate: string): boolean {
+  try {
+    return existsSync(candidate) && statSync(candidate).isFile();
+  } catch {
+    return false;
+  }
 }
 
 /** Resolves a relative specifier to a file, trying the usual extensions. */
@@ -142,14 +159,8 @@ function resolveRelative(fromDir: string, specifier: string): string | null {
   const base = path.resolve(fromDir, specifier);
   const candidates = [base, `${base}.js`, `${base}.cjs`, `${base}.mjs`, path.join(base, "index.js")];
   for (const candidate of candidates) {
-    if (existsSync(candidate) && !candidate.endsWith(path.sep)) {
-      try {
-        if (readFileSync(candidate, "utf8").length > 0) {
-          return candidate;
-        }
-      } catch {
-        continue;
-      }
+    if (isReadableFile(candidate)) {
+      return candidate;
     }
   }
   return null;
@@ -219,7 +230,14 @@ async function checkPackage(
       ? { verdict: Verdict.Confirmed, missing: [] }
       : { verdict: Verdict.NotFound, missing };
   } finally {
-    rmSync(workDir, { recursive: true, force: true });
+    // Cleanup must never abort the run. Some packages ship read-only files, and
+    // an EACCES while unlinking a README killed a full pass partway through.
+    // A leaked temp directory is a far smaller problem than a lost run.
+    try {
+      rmSync(workDir, { recursive: true, force: true });
+    } catch {
+      process.stderr.write(`could not remove ${workDir}\n`);
+    }
   }
 }
 
@@ -283,7 +301,19 @@ async function run(): Promise<void> {
           break;
         }
         const { fixed, lastAffected } = boundsFor(affected, entry.package.name);
-        const outcome = await checkPackage(entry.package.name, entry.symbols, fixed, lastAffected);
+        // One unusual package must not end the pass. Anything unexpected is
+        // recorded as unknown, which is the honest verdict for "we could not
+        // look", and the run continues.
+        let outcome: CheckOutcome;
+        try {
+          outcome = await checkPackage(entry.package.name, entry.symbols, fixed, lastAffected);
+        } catch (error) {
+          outcome = {
+            verdict: Verdict.Unknown,
+            missing: [],
+            reason: `check failed: ${(error as Error).message.slice(0, 80)}`,
+          };
+        }
         rows.push({
           id: record.id,
           package: entry.package.name,

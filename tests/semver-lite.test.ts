@@ -61,3 +61,29 @@ describe("newestAffected, prerelease bounds", () => {
     expect(newestAffected(["1.0.0", "1.1.0", "2.0.0"], "1.1.0", null)).toBe("1.0.0");
   });
 });
+
+describe("resolution robustness", () => {
+  it("does not treat a directory as a module file", async () => {
+    // existsSync is true for directories, so a candidate like "lib/parser"
+    // that happens to be a folder passed the check and threw EISDIR on read,
+    // aborting a full run partway through.
+    const { mkdtempSync, mkdirSync, existsSync, statSync } = await import("node:fs");
+    const { tmpdir } = await import("node:os");
+    const path = (await import("node:path")).default;
+
+    const dir = mkdtempSync(path.join(tmpdir(), "resolve-"));
+    const asDirectory = path.join(dir, "parser");
+    mkdirSync(asDirectory);
+
+    const isReadableFile = (candidate: string): boolean => {
+      try {
+        return existsSync(candidate) && statSync(candidate).isFile();
+      } catch {
+        return false;
+      }
+    };
+
+    expect(existsSync(asDirectory)).toBe(true);
+    expect(isReadableFile(asDirectory)).toBe(false);
+  });
+});
