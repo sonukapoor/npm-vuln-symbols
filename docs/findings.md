@@ -98,9 +98,15 @@ symmetric. A missing record leaves a finding in the queue, which is annoying and
 safe. A wrong record marks a real vulnerability as unreachable, which is silent
 and unsafe.
 
-## Finding 2: coverage of a real queue is 4.4%
+## Finding 2: coverage of one real queue was 4.4%
 
-Measured against OWASP Juice Shop v20.2.0, 1,179 installed packages.
+**One project. n=1. This number does not generalise and should not be quoted as
+if it did.**
+
+OWASP Juice Shop v20.2.0, 1,179 installed packages. It is deliberately stuffed
+with outdated vulnerable dependencies, so its finding mix is not typical of a
+maintained codebase. A different project would give a different figure, and
+nobody has measured the spread.
 
 | Stage | Count | |
 |---|---|---|
@@ -110,8 +116,13 @@ Measured against OWASP Juice Shop v20.2.0, 1,179 installed packages.
 | Of those, vulnerable symbol reached | 2 | |
 | Eliminated | **0** | **0.0%** |
 
-**Coverage is the binding constraint, not the analysis.** Even a flawless engine
-cannot touch 95.6 percent of that queue, because no symbols exist for it.
+**On this project, coverage was the binding constraint rather than the
+analysis.** A flawless engine could not have touched 95.6 percent of that
+queue, because no symbols existed for it.
+
+What generalises here is the *reason* coverage is low, which is Finding 3: most
+advisories name no callable function, so no dataset can ever cover them. The
+specific 4.4 percent is one observation of that.
 
 The engine itself worked well. It located `jwt.sign` and `jwt.verify` at
 `lib/insecurity.ts:54`, `:189`, `routes/verify.ts:125` and inside
@@ -253,6 +264,21 @@ tool reports for those, it is not derived from finding or not finding a call,
 because there is no call to look for. Any share of them reported as eliminated
 is a false negative that looks exactly like a win.
 
+## Which numbers generalise
+
+Not all of these carry the same weight, and the two quoted most often in
+conversation are the two that do not.
+
+| Number | Basis | Generalises |
+|---|---|---|
+| 82.7% name no callable | random sample of 150 advisories, kappa 0.81 | yes, to npm advisories |
+| ~1,170 achievable set | derived from that sample | yes |
+| 49% of achievable held | measured against the whole feed | yes |
+| ~75% extraction precision | held-out samples, four rounds | reasonably |
+| 51.2% link a fix commit | whole feed | yes |
+| **4.4% coverage of a queue** | **one project** | **no** |
+| **0% elimination** | **two advisories** | **no** |
+
 ## Reproducing this
 
 ```bash
@@ -279,9 +305,12 @@ Lite CLI saw 4 packages instead of 1,179.
 ## Limitations of this study
 
 - **One application.** Juice Shop is deliberately vulnerable and not
-  representative. The 4.4 percent coverage figure is one data point.
+  representative. The 4.4 percent coverage figure is a single observation, not
+  a measurement of the ecosystem, and it is reported here only as an
+  illustration of the mechanism.
 - **Small sample.** Two advisories reached the reachability stage. No
-  elimination rate computed from that would be meaningful, including this one.
+  elimination rate computed from that would be meaningful, including the 0
+  percent reported above.
 - **Unsound analysis mode.** `--max-indirections 1` gives partial results by
   design, so individual not-reachable verdicts are weaker than a full analysis.
 - **Unreviewed dataset.** No record has been human-reviewed. The marsdb defect
