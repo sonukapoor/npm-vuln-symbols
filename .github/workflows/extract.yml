@@ -34,26 +34,34 @@ jobs:
           mkdir -p osv-feed
           unzip -q -o npm-all.zip -d osv-feed
 
+      # Extract into a scratch directory, never over the tracked one. Writing
+      # into proposals/ and then trying to reconcile it against git is what
+      # produced a pull request deleting all 565 records.
       - name: Propose symbol records
-        run: npx tsx scripts/extract.ts --osv-dir osv-feed --out proposals
+        run: npx tsx scripts/extract.ts --osv-dir osv-feed --out _new-proposals
 
-      - name: Drop proposals already reviewed or already queued
+      - name: Keep only records that are genuinely new
         run: |
-          git checkout -- proposals 2>/dev/null || true
-          for f in proposals/*.json; do
-            [ -e "$f" ] || continue
+          set -euo pipefail
+          added=0
+          for f in _new-proposals/*.json; do
+            if [ ! -e "$f" ]; then continue; fi
             name=$(basename "$f")
-            # Already promoted into the dataset, so it is settled.
-            if [ -e "advisories/$name" ]; then rm "$f"; continue; fi
-            # Already queued and unchanged, so re-proposing it only adds noise.
-            if git ls-files --error-unmatch "proposals/$name" >/dev/null 2>&1 \
-               && git diff --quiet -- "proposals/$name"; then rm "$f"; fi
+            # Already reviewed and promoted, so it is settled.
+            if [ -e "advisories/$name" ]; then continue; fi
+            # Already sitting in the review queue.
+            if [ -e "proposals/$name" ]; then continue; fi
+            cp "$f" "proposals/$name"
+            added=$((added + 1))
           done
+          echo "new records: $added"
+          echo "NEW_RECORDS=$added" >> "$GITHUB_ENV"
 
       - name: Clean up the feed before committing
-        run: rm -rf osv-feed npm-all.zip
+        run: rm -rf osv-feed npm-all.zip _new-proposals
 
       - name: Open a pull request
+        if: env.NEW_RECORDS != '0'
         uses: peter-evans/create-pull-request@v8
         with:
           branch: extract/proposals
