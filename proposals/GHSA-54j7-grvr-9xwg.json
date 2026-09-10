@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via string as a parameter and wraps the promise-based `exec` function"
+    "excerpt": "via string as a parameter and wraps the promise-based `exec` function",
+    "fixCommit": "https://github.com/srmorete/adb-mcp/commit/041729c0b25432df3199ff71b3163a307cf4c28c"
   }
 }

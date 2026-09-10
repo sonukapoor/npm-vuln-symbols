@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the child_process function"
+    "excerpt": "via the child_process function",
+    "fixCommit": "https://github.com/rona-dinihari/dawnsparks-node-tesseract/commit/81d1664f0b9fe521534acfae1d5b9c40127b36c1"
   }
 }

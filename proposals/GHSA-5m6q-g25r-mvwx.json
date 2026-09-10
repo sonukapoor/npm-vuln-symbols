@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the BigInteger.modInverse() function"
+    "excerpt": "in the BigInteger.modInverse() function",
+    "fixCommit": "https://github.com/digitalbazaar/forge/commit/9bb8d67b99d17e4ebb5fd7596cd699e11f25d023"
   }
 }

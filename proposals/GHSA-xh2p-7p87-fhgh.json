@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `batchLiquidateTroves` function"
+    "excerpt": "in the `batchLiquidateTroves` function",
+    "fixCommit": "https://github.com/liquity/dev/commit/c69d0bae30b5457e89724d880851a03ba7477905"
   }
 }

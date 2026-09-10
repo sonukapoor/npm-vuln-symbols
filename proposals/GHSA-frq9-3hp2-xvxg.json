@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the Markdownify.get() function"
+    "excerpt": "via the Markdownify.get() function",
+    "fixCommit": "https://github.com/zcaceres/markdownify-mcp/commit/0284aa8f34d32c65e20d8cda2d429b7943c9af03"
   }
 }

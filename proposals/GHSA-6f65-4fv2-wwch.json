@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "The `NativeAuthenticationStrategy.authenticate()` method is vulnerable"
+    "excerpt": "The `NativeAuthenticationStrategy.authenticate()` method is vulnerable",
+    "fixCommit": "https://github.com/vendurehq/vendure/commit/7f0c5556ecddb44a5d5208677a45fdd5923b0cc9"
   }
 }

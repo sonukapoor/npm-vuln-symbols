@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in question, from fuel's graphql api"
+    "excerpt": "in question, from fuel's graphql api",
+    "fixCommit": "https://github.com/FuelLabs/fuels-ts/commit/16ee1bfe66733551d00f0a76c21e8a09ea33006f"
   }
 }

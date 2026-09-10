@@ -19,6 +19,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `peg$parsevalue`/`peg$parsearray`/`peg$parseinline_table` and cannot be fixed by editing a hand-written function"
+    "excerpt": "in `peg$parsevalue`/`peg$parsearray`/`peg$parseinline_table` and cannot be fixed by editing a hand-written function",
+    "fixCommit": "https://github.com/BinaryMuse/toml-node/commit/967b8b06754f3ecd9863cea118dc50792a8c353f"
   }
 }

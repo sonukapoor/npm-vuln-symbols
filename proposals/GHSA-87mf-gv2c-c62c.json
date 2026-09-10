@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in Object.prototype methods"
+    "excerpt": "in Object.prototype methods",
+    "fixCommit": "https://github.com/voodoocreation/ts-deepmerge/commit/305a05831a462fb2c353d3cbbff55a0733286f8c"
   }
 }

@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the system if the `repo` value passed to the function"
+    "excerpt": "in the system if the `repo` value passed to the function",
+    "fixCommit": "https://github.com/sh0ji/git-tags-remote/commit/a20488960cbd2c98455386108253094897ebfc1c"
   }
 }

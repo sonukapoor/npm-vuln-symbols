@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in cases where an application passes user-supplied input directly to an `import()` function"
+    "excerpt": "in cases where an application passes user-supplied input directly to an `import()` function",
+    "fixCommit": "https://github.com/open-telemetry/opentelemetry-js/commit/ffe641c08c69f41ca8d292221dc1804d511efb28"
   }
 }

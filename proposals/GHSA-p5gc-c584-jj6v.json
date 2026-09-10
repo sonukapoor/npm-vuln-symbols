@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In versions 3.9.17 and lower of vm2 it was possible to get a read-write reference to the node `inspect` method"
+    "excerpt": "In versions 3.9.17 and lower of vm2 it was possible to get a read-write reference to the node `inspect` method",
+    "fixCommit": "https://github.com/patriksimek/vm2/commit/5206ba25afd86ef547a2c9d48d46ca7a9e6ec238"
   }
 }

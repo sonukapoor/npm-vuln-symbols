@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "inside browsers, where it mirrors the DOM API"
+    "excerpt": "inside browsers, where it mirrors the DOM API",
+    "fixCommit": "https://github.com/xmldom/xmldom/commit/cba1321218b069182695813fa7565653708e172e"
   }
 }

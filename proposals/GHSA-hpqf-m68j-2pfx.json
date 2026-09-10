@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "through the entry function"
+    "excerpt": "through the entry function",
+    "fixCommit": "https://github.com/rrainn/js-object-utilities/commit/05ca694207270b7de275767f3fc93a2a643692a7"
   }
 }

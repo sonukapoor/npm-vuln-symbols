@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `getWindowsIEEE8021x` function"
+    "excerpt": "in the `getWindowsIEEE8021x` function",
+    "fixCommit": "https://github.com/sebhildebrandt/systeminformation/commit/f7af0a67b78e7894335a6cad510566a25e06ae41"
   }
 }

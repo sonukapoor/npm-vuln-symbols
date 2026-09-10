@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "The computeObservationContentHash Function is Vulnerable"
+    "excerpt": "The computeObservationContentHash Function is Vulnerable",
+    "fixCommit": "https://github.com/thedotmack/claude-mem/commit/f32fda8b35e9fe9329f87da65c31149362a03f97"
   }
 }

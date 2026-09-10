@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `setIn` method"
+    "excerpt": "via the `setIn` method",
+    "fixCommit": "https://github.com/ahdinosaur/set-in/commit/6bad255961d379e4b1f5fbc52ef9dc8420816f24"
   }
 }

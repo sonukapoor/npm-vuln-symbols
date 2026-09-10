@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In the delete function"
+    "excerpt": "In the delete function",
+    "fixCommit": "https://github.com/fastify/fastify-secure-session/commit/56d66642ecc633cff0606927601e81cdac361370"
   }
 }

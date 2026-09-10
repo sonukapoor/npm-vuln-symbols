@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in operators, this includes required method"
+    "excerpt": "in operators, this includes required method",
+    "fixCommit": "https://github.com/openclaw/openclaw/commit/06de515b6c42816b62ec752e1c221cab67b38501"
   }
 }

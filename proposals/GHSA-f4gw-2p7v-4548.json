@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in panels, or microservice APIs"
+    "excerpt": "in panels, or microservice APIs",
+    "fixCommit": "https://github.com/axios/axios/commit/1417285c69344bbcc6420a021f67dee0c6fedb2d"
   }
 }

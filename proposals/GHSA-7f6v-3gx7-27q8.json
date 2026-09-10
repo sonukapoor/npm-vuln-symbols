@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in their browser, potentially leading to session hijacking or unauthorized API"
+    "excerpt": "in their browser, potentially leading to session hijacking or unauthorized API",
+    "fixCommit": "https://github.com/middleapi/orpc/commit/4f0efa8a1d3fa8e8317a4b03cc3945a5dfd68add"
   }
 }

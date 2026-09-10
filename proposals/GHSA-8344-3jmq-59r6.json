@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via\n`getNamedItem(attr.nodeName)` instead of `getNamedItemNS`, but that method"
+    "excerpt": "via\n`getNamedItem(attr.nodeName)` instead of `getNamedItemNS`, but that method",
+    "fixCommit": "https://github.com/xmldom/xmldom/commit/2c548f200cfec991cd5846627ef8f03542309213"
   }
 }

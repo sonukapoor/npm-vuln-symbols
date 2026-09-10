@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the comment, to construct the directory, the function"
+    "excerpt": "in the comment, to construct the directory, the function",
+    "fixCommit": "https://github.com/FlowiseAI/Flowise/commit/c2b830f279e454e8b758da441016b2234f220ac7"
   }
 }

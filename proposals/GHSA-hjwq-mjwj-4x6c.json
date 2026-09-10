@@ -44,6 +44,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "through the entry function"
+    "excerpt": "through the entry function",
+    "fixCommit": "https://github.com/intlify/vue-i18n/commit/9f20909ef8c9232a1072d7818e12ed6d6451024d"
   }
 }

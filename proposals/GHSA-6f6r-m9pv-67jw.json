@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via exec API"
+    "excerpt": "via exec API",
+    "fixCommit": "https://github.com/joshuayoes/ios-simulator-mcp/commit/eb53a4f2cc8bbeb13e8d6d930f00167befcdb809"
   }
 }

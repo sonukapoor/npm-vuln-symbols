@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the line break characters `\\r`, `\\u2028`, or `\\u2029` can cause the `parsePatch` method"
+    "excerpt": "in the line break characters `\\r`, `\\u2028`, or `\\u2029` can cause the `parsePatch` method",
+    "fixCommit": "https://github.com/kpdecker/jsdiff/commit/15a1585230748c8ae6f8274c202e0c87309142f5"
   }
 }

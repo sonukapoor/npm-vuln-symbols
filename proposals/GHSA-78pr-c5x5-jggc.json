@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the documented API"
+    "excerpt": "via the documented API",
+    "fixCommit": "https://github.com/FlowiseAI/Flowise/commit/1cf247eab35c7c3d4db381d23e4dca682fba527b"
   }
 }

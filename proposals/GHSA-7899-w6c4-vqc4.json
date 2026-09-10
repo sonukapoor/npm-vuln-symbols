@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the main `summaly` function"
+    "excerpt": "in the main `summaly` function",
+    "fixCommit": "https://github.com/misskey-dev/summaly/commit/45153b4f08a772c395a13f7a25399dd87ed022ed"
   }
 }

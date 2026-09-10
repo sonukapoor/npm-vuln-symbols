@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In the standard API"
+    "excerpt": "In the standard API",
+    "fixCommit": "https://github.com/honojs/node-server/commit/dd9b9a9b23e3896403c90a740e7f1f0892feb402"
   }
 }

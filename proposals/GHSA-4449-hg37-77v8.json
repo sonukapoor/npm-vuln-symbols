@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the image.pipe and image.stream functions"
+    "excerpt": "in the image.pipe and image.stream functions",
+    "fixCommit": "https://github.com/totaljs/framework/commit/6192491ab2631e7c1d317c221f18ea613e2c18a5"
   }
 }

@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `mapValues()` method"
+    "excerpt": "via the `mapValues()` method",
+    "fixCommit": "https://github.com/caolan/async/commit/8f7f90342a6571ba1c197d747ebed30c368096d2"
   }
 }

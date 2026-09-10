@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "through `createHTML`, but its default value is the identity function"
+    "excerpt": "through `createHTML`, but its default value is the identity function",
+    "fixCommit": "https://github.com/arnog/mathlive/commit/5fe1c46153883f9ec0249a5c8c34e64aaae9cfb8"
   }
 }

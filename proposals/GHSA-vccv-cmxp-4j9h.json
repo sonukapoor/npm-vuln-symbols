@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "through unmodified\n\nThe `escapeHtml()` function"
+    "excerpt": "through unmodified\n\nThe `escapeHtml()` function",
+    "fixCommit": "https://github.com/apostrophecms/apostrophe/commit/5a88e9630cbbdde33154ef8abe7557ddf7be418b"
   }
 }

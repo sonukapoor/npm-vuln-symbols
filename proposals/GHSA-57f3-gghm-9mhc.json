@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the addImage function"
+    "excerpt": "via the addImage function",
+    "fixCommit": "https://github.com/MrRio/jsPDF/commit/d8bb3b39efcd129994f7a3b01b632164144ec43e"
   }
 }

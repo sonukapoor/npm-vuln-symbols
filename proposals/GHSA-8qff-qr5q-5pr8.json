@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using `openpgp.decrypt` with `verificationKeys`) to be spoofed, since both functions"
+    "excerpt": "using `openpgp.decrypt` with `verificationKeys`) to be spoofed, since both functions",
+    "fixCommit": "https://github.com/openpgpjs/openpgpjs/commit/43f5f4e2bd67d0514d06acc60b6ee571a049c229"
   }
 }

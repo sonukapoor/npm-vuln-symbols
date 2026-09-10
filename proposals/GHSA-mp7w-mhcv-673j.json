@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the vlSelectionTuples function"
+    "excerpt": "via the vlSelectionTuples function",
+    "fixCommit": "https://github.com/vega/vega/commit/9fb9ea07e27984394e463d286eb73944fa61411e"
   }
 }

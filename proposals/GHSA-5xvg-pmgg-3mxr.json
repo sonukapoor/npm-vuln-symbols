@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "within the run method"
+    "excerpt": "within the run method",
+    "fixCommit": "https://github.com/FlowiseAI/Flowise/commit/f4e2794f6a576b94578f2fdafbf49c2fb304626c"
   }
 }

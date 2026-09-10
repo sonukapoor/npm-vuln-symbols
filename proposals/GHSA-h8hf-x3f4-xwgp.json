@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "The `Schema.path()` function is vulnerable"
+    "excerpt": "The `Schema.path()` function is vulnerable",
+    "fixCommit": "https://github.com/Automattic/mongoose/commit/6a197316564742c0422309e1b5fecfa4faec126e"
   }
 }

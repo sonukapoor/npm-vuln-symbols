@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the deepSet function"
+    "excerpt": "via the deepSet function",
+    "fixCommit": "https://github.com/nodee-apps/utils/commit/52460d936c52f03c9907bc99ac5e890970cef83c"
   }
 }

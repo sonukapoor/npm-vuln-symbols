@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `followRedirectsWith` function"
+    "excerpt": "via the `followRedirectsWith` function",
+    "fixCommit": "https://github.com/fluture-js/fluture-node/commit/0c99bc511533d48be17dc6bfe641f7d0aeb34d77"
   }
 }

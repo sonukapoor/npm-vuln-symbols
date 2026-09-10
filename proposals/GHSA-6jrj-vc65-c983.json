@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using the `Extract()` method"
+    "excerpt": "using the `Extract()` method",
+    "fixCommit": "https://github.com/mhr3/unzip-stream/commit/ab67989719abb4dcc774d02de266151905b8d45a"
   }
 }

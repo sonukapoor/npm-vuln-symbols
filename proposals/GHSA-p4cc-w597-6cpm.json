@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In Brief\n`utils.generateUUID`, a helper function"
+    "excerpt": "In Brief\n`utils.generateUUID`, a helper function",
+    "fixCommit": "https://github.com/NodeBB/NodeBB/commit/81e3c1ba488d03371a5ce8d0ebb5c5803026e0f9"
   }
 }

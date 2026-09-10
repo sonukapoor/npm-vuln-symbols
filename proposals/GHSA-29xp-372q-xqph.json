@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in an `onReadEntry` method"
+    "excerpt": "in an `onReadEntry` method",
+    "fixCommit": "https://github.com/isaacs/node-tar/commit/5330eb04bc43014f216e5c271b40d5c00d45224d"
   }
 }

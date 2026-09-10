@@ -21,6 +21,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "the `customArgs`\nparameter of `clone()`, `fetch()`, `pull()`, `push()` or similar `simple-git`\nmethods is vulnerable"
+    "excerpt": "the `customArgs`\nparameter of `clone()`, `fetch()`, `pull()`, `push()` or similar `simple-git`\nmethods is vulnerable",
+    "fixCommit": "https://github.com/steveukx/git-js/commit/f7042088aa2dac59e3c49a84d7a2f4b26048a257"
   }
 }

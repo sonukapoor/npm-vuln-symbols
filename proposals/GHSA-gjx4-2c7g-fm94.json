@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in a server-side context (e.g., API"
+    "excerpt": "in a server-side context (e.g., API",
+    "fixCommit": "https://github.com/bencevans/screenshot-desktop/commit/59c87b0c175eec76090e6ccde313f4fc5d569b78"
   }
 }

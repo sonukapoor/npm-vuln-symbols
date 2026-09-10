@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In Plotly plotly.js before 2.25.2, plot API"
+    "excerpt": "In Plotly plotly.js before 2.25.2, plot API",
+    "fixCommit": "https://github.com/plotly/plotly.js/commit/02498404c8ad7a3395191e65694fb142a37b0fe9"
   }
 }

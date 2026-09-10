@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `escapeValue()` function"
+    "excerpt": "in the `escapeValue()` function",
+    "fixCommit": "https://github.com/hypequery/hypequery/commit/2879161a810fed2c2222f785816ff05510976960"
   }
 }

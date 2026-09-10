@@ -26,6 +26,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the Custom Function"
+    "excerpt": "via the Custom Function",
+    "fixCommit": "https://github.com/FlowiseAI/Flowise/commit/3f257bdc8196082a178da7134a075824401b13b9"
   }
 }

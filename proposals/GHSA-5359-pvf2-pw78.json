@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using the `editor.parser.addNodeFilter` and `editor.serializer.addNodeFilter` APIs"
+    "excerpt": "using the `editor.parser.addNodeFilter` and `editor.serializer.addNodeFilter` APIs",
+    "fixCommit": "https://github.com/tinymce/tinymce/commit/bcdea2ad14e3c2cea40743fb48c63bba067ae6d1"
   }
 }

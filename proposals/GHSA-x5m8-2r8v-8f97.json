@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the set function"
+    "excerpt": "via the set function",
+    "fixCommit": "https://github.com/dominictarr/libnested/commit/c1129865d75fbe52b5a4f755ad3110ca5420f2e1"
   }
 }

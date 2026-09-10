@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using the AWS API"
+    "excerpt": "using the AWS API",
+    "fixCommit": "https://github.com/honojs/hono/commit/aa921770d09bc35970362d5a2630a878f6d982fd"
   }
 }

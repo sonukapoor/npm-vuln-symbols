@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `BEFORE_REQUEST_VALIDATORS` is `(path, method"
+    "excerpt": "in `BEFORE_REQUEST_VALIDATORS` is `(path, method",
+    "fixCommit": "https://github.com/mlflow/mlflow/commit/5c34aec5669e2386b38b5ee0855cd61174e27693"
   }
 }

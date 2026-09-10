@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the setPath method"
+    "excerpt": "via the setPath method",
+    "fixCommit": "https://github.com/skratchdot/object-path-set/commit/2d67a714159c4099589b6661fa84e6d2adc31761"
   }
 }

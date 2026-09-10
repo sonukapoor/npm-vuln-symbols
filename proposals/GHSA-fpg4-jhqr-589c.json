@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in unvalidated `form` remote function"
+    "excerpt": "in unvalidated `form` remote function",
+    "fixCommit": "https://github.com/sveltejs/kit/commit/faba869db3644077169bf5d7c6e41fd5f3d6c65e"
   }
 }

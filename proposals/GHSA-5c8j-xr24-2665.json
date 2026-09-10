@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the `printDirect()` function"
+    "excerpt": "in the `printDirect()` function",
+    "fixCommit": "https://github.com/tojocky/node-printer/commit/e001e38738c17219a1d9dd8c31f7d82b9c0013c7"
   }
 }

@@ -15,6 +15,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "In the `countDepth` function"
+    "excerpt": "In the `countDepth` function",
+    "fixCommit": "https://github.com/Escape-Technologies/graphql-armor/commit/998986109f8c2313bd61325ddfe7f5dcd48f9232"
   }
 }

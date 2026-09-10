@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "using the supplied [`validateTransfer` function"
+    "excerpt": "using the supplied [`validateTransfer` function",
+    "fixCommit": "https://github.com/solana-labs/solana-pay/commit/ac6ce0d0a81137700874a8bf5a7caac3be999fad"
   }
 }

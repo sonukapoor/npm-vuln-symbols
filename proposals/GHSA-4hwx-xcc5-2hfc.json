@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `tarteaucitron.js`, where the `addOrUpdate` function"
+    "excerpt": "in `tarteaucitron.js`, where the `addOrUpdate` function",
+    "fixCommit": "https://github.com/AmauriC/tarteaucitron.js/commit/74c354c413ee3f82dff97a15a0a43942887c2b5b"
   }
 }

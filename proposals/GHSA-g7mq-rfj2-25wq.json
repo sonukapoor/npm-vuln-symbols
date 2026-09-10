@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `U.set()` and `U.get()` functions"
+    "excerpt": "via the `U.set()` and `U.get()` functions",
+    "fixCommit": "https://github.com/totaljs/framework4/commit/8a72d8c20f38bbcac031a76a51238aa528f68821"
   }
 }

@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in the cachedPathRelative function"
+    "excerpt": "in the cachedPathRelative function",
+    "fixCommit": "https://github.com/ashaffer/cached-path-relative/commit/40c73bf70c58add5aec7d11e4f36b93d144bb760"
   }
 }

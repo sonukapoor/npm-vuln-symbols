@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "The Dojox jQuery wrapper `jqMix` mixin method is vulnerable"
+    "excerpt": "The Dojox jQuery wrapper `jqMix` mixin method is vulnerable",
+    "fixCommit": "https://github.com/dojo/dojox/commit/47d1b302b5b23d94e875b77b9b9a8c4f5622c9da"
   }
 }

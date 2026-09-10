@@ -18,6 +18,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "in `formDataToJSON`, the helper behind the public `axios.formToJSON()` / named `formToJSON` API"
+    "excerpt": "in `formDataToJSON`, the helper behind the public `axios.formToJSON()` / named `formToJSON` API",
+    "fixCommit": "https://github.com/axios/axios/commit/1417285c69344bbcc6420a021f67dee0c6fedb2d"
   }
 }

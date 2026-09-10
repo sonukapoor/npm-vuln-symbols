@@ -17,6 +17,7 @@
   "evidence": {
     "source": "advisory_text",
     "confidence": "medium",
-    "excerpt": "via the `sendKeys` function"
+    "excerpt": "via the `sendKeys` function",
+    "fixCommit": "https://github.com/bruno-robert/window-control/commit/075c854534a749d887655a906759f5a7eee95173"
   }
 }
