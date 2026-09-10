@@ -1,4 +1,9 @@
-# Known limitations
+---
+id: limitations
+title: Known limitations
+sidebar_label: Limitations
+sidebar_position: 2
+---
 
 ## Transitive reachability has no scalable sound answer yet
 
