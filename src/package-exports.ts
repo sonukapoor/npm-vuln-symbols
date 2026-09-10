@@ -17,6 +17,22 @@ import ts from "typescript";
 /** Bundled or minified files cannot be read for exports meaningfully. */
 const MINIFIED_LINE_LENGTH = 2000;
 
+/**
+ * Below this size, finding few exports is unremarkable.
+ */
+const LARGE_FILE_BYTES = 50_000;
+
+/**
+ * A large file yielding very few names means the parser did not model how this
+ * module assembles its exports.
+ *
+ * lodash is the case that forced this. Its 530KB entry builds the export
+ * surface inside a UMD closure, so the parser recovers about thirty prototype
+ * methods and none of the main functions. Reporting `template` absent on that
+ * basis would tell a reviewer to delete a verified-correct record.
+ */
+const SUSPICIOUS_BYTES_PER_NAME = 5_000;
+
 export const ExportScanResult = {
   /** Exports were enumerated. `names` is meaningful. */
   Parsed: "parsed",
@@ -30,6 +46,15 @@ export interface ExportScan {
   readonly result: ExportScanResult;
   readonly names: readonly string[];
   readonly reason?: string;
+  /**
+   * Module specifiers this file hands its export surface to, such as
+   * `module.exports = require("./lib")` or `export * from "./core"`.
+   *
+   * A caller that can resolve paths should follow these. Twelve of the first
+   * twenty-seven unreadable packages failed for exactly this reason, so giving
+   * up here discards the largest recoverable group.
+   */
+  readonly delegatesTo?: readonly string[];
 }
 
 function addName(names: Set<string>, name: string | undefined): void {
@@ -39,7 +64,7 @@ function addName(names: Set<string>, name: string | undefined): void {
 }
 
 /** ESM: export function x, export const x, export { x }, export * from. */
-function collectEsmExports(node: ts.Node, names: Set<string>): boolean {
+function collectEsmExports(node: ts.Node, names: Set<string>, delegates: Set<string>): boolean {
   let sawReExport = false;
   if (ts.isExportDeclaration(node)) {
     if (node.exportClause !== undefined && ts.isNamedExports(node.exportClause)) {
@@ -49,6 +74,10 @@ function collectEsmExports(node: ts.Node, names: Set<string>): boolean {
     } else {
       // `export * from "./other"` hides names in another file.
       sawReExport = true;
+      const specifier = node.moduleSpecifier;
+      if (specifier !== undefined && ts.isStringLiteral(specifier)) {
+        delegates.add(specifier.text);
+      }
     }
   }
   if (ts.isFunctionDeclaration(node) || ts.isClassDeclaration(node)) {
@@ -83,8 +112,56 @@ function collectObjectLiteralKeys(expression: ts.Expression, names: Set<string>)
   }
 }
 
+/**
+ * Methods reachable through an exported object, rather than exported directly.
+ *
+ * `web3-core-subscriptions` exports a constructor whose prototype carries
+ * `attachToObject`, and `linkify-it` exports an instance whose prototype
+ * carries `test`. Both are the functions their advisories name.
+ *
+ * Only object literals assigned to a prototype count. An earlier version
+ * collected every object literal in the file, which harvested lodash's HTML
+ * entity table as 258 "exports" and then declared `template` absent with
+ * apparent confidence. Confident wrong answers are worse than honest unknowns.
+ */
+function collectMethodNames(node: ts.Node, names: Set<string>): void {
+  // Foo.prototype.bar = ...
+  if (
+    ts.isBinaryExpression(node) &&
+    node.operatorToken.kind === ts.SyntaxKind.EqualsToken &&
+    ts.isPropertyAccessExpression(node.left) &&
+    ts.isPropertyAccessExpression(node.left.expression) &&
+    node.left.expression.name.text === "prototype"
+  ) {
+    addName(names, node.left.name.text);
+    return;
+  }
+  // Foo.prototype = { bar() {} }
+  if (
+    ts.isBinaryExpression(node) &&
+    node.operatorToken.kind === ts.SyntaxKind.EqualsToken &&
+    ts.isPropertyAccessExpression(node.left) &&
+    node.left.name.text === "prototype"
+  ) {
+    collectObjectLiteralKeys(node.right, names);
+    return;
+  }
+  // class Foo { bar() {} }
+  if (ts.isClassDeclaration(node) || ts.isClassExpression(node)) {
+    for (const member of node.members) {
+      if (
+        (ts.isMethodDeclaration(member) || ts.isPropertyDeclaration(member)) &&
+        member.name !== undefined &&
+        (ts.isIdentifier(member.name) || ts.isStringLiteral(member.name))
+      ) {
+        addName(names, member.name.text);
+      }
+    }
+  }
+}
+
 /** CommonJS: exports.x =, module.exports.x =, module.exports = { x }. */
-function collectCommonJsExports(node: ts.Node, names: Set<string>): boolean {
+function collectCommonJsExports(node: ts.Node, names: Set<string>, delegates: Set<string>): boolean {
   let sawOpaqueAssignment = false;
   if (!ts.isBinaryExpression(node) || node.operatorToken.kind !== ts.SyntaxKind.EqualsToken) {
     return false;
@@ -118,6 +195,16 @@ function collectCommonJsExports(node: ts.Node, names: Set<string>): boolean {
       // Assigned a function, a require() call, or something computed. The real
       // export surface is elsewhere and cannot be read from here.
       sawOpaqueAssignment = true;
+      if (
+        ts.isCallExpression(node.right) &&
+        ts.isIdentifier(node.right.expression) &&
+        node.right.expression.text === "require"
+      ) {
+        const arg = node.right.arguments[0];
+        if (arg !== undefined && ts.isStringLiteral(arg)) {
+          delegates.add(arg.text);
+        }
+      }
     }
   }
   return sawOpaqueAssignment;
@@ -141,15 +228,17 @@ export function scanExports(fileName: string, source: string): ExportScan {
 
   const sourceFile = ts.createSourceFile(fileName, source, ts.ScriptTarget.Latest, true);
   const names = new Set<string>();
+  const delegates = new Set<string>();
   let incomplete = false;
 
   const visit = (node: ts.Node): void => {
-    if (collectEsmExports(node, names)) {
+    if (collectEsmExports(node, names, delegates)) {
       incomplete = true;
     }
-    if (collectCommonJsExports(node, names)) {
+    if (collectCommonJsExports(node, names, delegates)) {
       incomplete = true;
     }
+    collectMethodNames(node, names);
     ts.forEachChild(node, visit);
   };
   visit(sourceFile);
@@ -157,12 +246,20 @@ export function scanExports(fileName: string, source: string): ExportScan {
   if (incomplete) {
     return {
       result: ExportScanResult.Unknown,
-      names: [...names],
+      names: [...names].sort(),
       reason: "module re-exports or assigns exports opaquely",
+      ...(delegates.size > 0 ? { delegatesTo: [...delegates] } : {}),
     };
   }
   if (names.size === 0) {
     return { result: ExportScanResult.Unknown, names: [], reason: "no exports found" };
+  }
+  if (source.length > LARGE_FILE_BYTES && source.length / names.size > SUSPICIOUS_BYTES_PER_NAME) {
+    return {
+      result: ExportScanResult.Unknown,
+      names: [...names].sort(),
+      reason: "large file yielded few exports, so the module shape was not understood",
+    };
   }
   return { result: ExportScanResult.Parsed, names: [...names].sort() };
 }

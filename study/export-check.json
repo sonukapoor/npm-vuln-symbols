@@ -1,0 +1,6632 @@
+[
+  {
+    "id": "GHSA-29mw-wpgm-hmr9",
+    "package": "lodash",
+    "symbols": [
+      "toNumber",
+      "trim",
+      "trimEnd"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-29mw-wpgm-hmr9",
+    "package": "lodash-es",
+    "symbols": [
+      "toNumber",
+      "trim",
+      "trimEnd"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-29mw-wpgm-hmr9",
+    "package": "lodash.trim",
+    "symbols": [
+      "toNumber",
+      "trim",
+      "trimEnd"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-29mw-wpgm-hmr9",
+    "package": "lodash.trimend",
+    "symbols": [
+      "toNumber",
+      "trim",
+      "trimEnd"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-35jh-r3h4-6jhm",
+    "package": "lodash",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-35jh-r3h4-6jhm",
+    "package": "lodash-es",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-35jh-r3h4-6jhm",
+    "package": "lodash-template",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-35jh-r3h4-6jhm",
+    "package": "lodash.template",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3c6g-pvg8-gqw2",
+    "package": "json",
+    "symbols": [
+      "parseLookup"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-6956-83fg-5wc5",
+    "package": "set-in",
+    "symbols": [
+      "setIn"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-6f9p-g466-f8v8",
+    "package": "blamer",
+    "symbols": [
+      "blameByFile"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-9mjx-wfqp-j5ph",
+    "package": "window-control",
+    "symbols": [
+      "sendKeys"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-cwx2-736x-mf6w",
+    "package": "object-path",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-hhf6-3xpg-pggx",
+    "package": "web3-core-subscriptions",
+    "symbols": [
+      "attachToObject"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-j977-g5vj-j27g",
+    "package": "scratch-svg-renderer",
+    "symbols": [
+      "_transformMeasurements"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-m44r-7c5h-m6mj",
+    "package": "@medplum/core",
+    "symbols": [
+      "getClientRedirectUri"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-v9p9-535w-4285",
+    "package": "litespeed.js",
+    "symbols": [
+      "getJsonFromUrl"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-2238-xc5r-v9hj",
+    "package": "@tinacms/graphql",
+    "symbols": [
+      "GitHub"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "GitHub"
+    ]
+  },
+  {
+    "id": "GHSA-224p-v68g-5g8f",
+    "package": "@escape.tech/graphql-armor-max-depth",
+    "symbols": [
+      "countDepth"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-22g5-r2x5-97cx",
+    "package": "showdown",
+    "symbols": [
+      "parseHeaders"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-22p9-wv53-3rq4",
+    "package": "linkify-it",
+    "symbols": [
+      "test"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-2328-f5f3-gj25",
+    "package": "node-forge",
+    "symbols": [
+      "verifyCertificateChain"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "verifyCertificateChain"
+    ]
+  },
+  {
+    "id": "GHSA-248r-7h7q-cr24",
+    "package": "vm2",
+    "symbols": [
+      "return"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "return"
+    ]
+  },
+  {
+    "id": "GHSA-26f5-8h2x-34xh",
+    "package": "h3",
+    "symbols": [
+      "requireBasicAuth"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-2733-6c58-pf27",
+    "package": "deephas",
+    "symbols": [
+      "add"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "add"
+    ]
+  },
+  {
+    "id": "GHSA-28mc-g557-92m7",
+    "package": "@75lb/deep-merge",
+    "symbols": [
+      "merge"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-28wg-ghj8-5hjv",
+    "package": "nanoid",
+    "symbols": [
+      "customAlphabet"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-29xp-372q-xqph",
+    "package": "tar",
+    "symbols": [
+      "onReadEntry"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "onReadEntry"
+    ]
+  },
+  {
+    "id": "GHSA-2cg4-7q4x-7rr2",
+    "package": "mc-kill-port",
+    "symbols": [
+      "kill"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-2cjr-5v3h-v2w4",
+    "package": "@evomap/evolver",
+    "symbols": [
+      "_applyUpdate",
+      "_updateRecord"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "_applyUpdate",
+      "_updateRecord"
+    ]
+  },
+  {
+    "id": "GHSA-2h6j-mhcp-9j9h",
+    "package": "genieacs",
+    "symbols": [
+      "NBI"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-2j2x-hqr9-3h42",
+    "package": "@remix-run/router",
+    "symbols": [
+      "redirect"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-2j2x-hqr9-3h42",
+    "package": "react-router",
+    "symbols": [
+      "redirect"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-2j4c-9qqq-896r",
+    "package": "web3-core-method",
+    "symbols": [
+      "attachToObject"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-2j6q-whv2-gh6w",
+    "package": "h3",
+    "symbols": [
+      "mount"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-2m53-83f3-562j",
+    "package": "min-dash",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-2mjp-6q6p-2qxm",
+    "package": "undici",
+    "symbols": [
+      "request",
+      "Client"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-2v37-7h3g-55p8",
+    "package": "nanoid",
+    "symbols": [
+      "customAlphabet",
+      "customRandom"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-2vx9-7wpg-88jq",
+    "package": "n8n",
+    "symbols": [
+      "REST"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-32x6-qvw6-mxj4",
+    "package": "fluture-node",
+    "symbols": [
+      "followRedirectsWith"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-34gh-3cwv-wvp2",
+    "package": "rollup-plugin-server",
+    "symbols": [
+      "readFileFromContentBase"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-34q3-8x9v-j957",
+    "package": "toggle-array",
+    "symbols": [
+      "enable",
+      "disable"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-34q8-jcq6-mc37",
+    "package": "uplot",
+    "symbols": [
+      "assign"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-34w8-mcwr-vg29",
+    "package": "codeceptjs",
+    "symbols": [
+      "emptyFolder"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "emptyFolder"
+    ]
+  },
+  {
+    "id": "GHSA-36hm-qxxp-pg3m",
+    "package": "preact",
+    "symbols": [
+      "your"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-36j9-mx87-2cff",
+    "package": "renovate",
+    "symbols": [
+      "quote"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-36rg-gfq2-3h56",
+    "package": "better-auth",
+    "symbols": [
+      "originCheck"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "originCheck"
+    ]
+  },
+  {
+    "id": "GHSA-378v-28hj-76wf",
+    "package": "bn.js",
+    "symbols": [
+      "toString",
+      "divmod"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-38c4-r59v-3vqw",
+    "package": "markdown-it",
+    "symbols": [
+      "linkify"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "linkify"
+    ]
+  },
+  {
+    "id": "GHSA-38cw-85xc-xr9x",
+    "package": "@veramo/data-store",
+    "symbols": [
+      "decorateQB"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "decorateQB"
+    ]
+  },
+  {
+    "id": "GHSA-38f9-m297-6q9g",
+    "package": "@nozbe/watermelondb",
+    "symbols": [
+      "pullChanges"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "pullChanges"
+    ]
+  },
+  {
+    "id": "GHSA-395f-4hp3-45gv",
+    "package": "shell-quote",
+    "symbols": [
+      "exports"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "exports"
+    ]
+  },
+  {
+    "id": "GHSA-39q2-94rc-95cp",
+    "package": "dompurify",
+    "symbols": [
+      "ADD_TAGS"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-39q4-p535-c852",
+    "package": "locutus",
+    "symbols": [
+      "gopher_parsedir"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-3c3p-xh4f-pfh7",
+    "package": "json-schema-editor-visual",
+    "symbols": [
+      "setData",
+      "deleteData"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3cgp-3xvw-98x8",
+    "package": "@remix-run/react",
+    "symbols": [
+      "meta"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "meta"
+    ]
+  },
+  {
+    "id": "GHSA-3cgp-3xvw-98x8",
+    "package": "react-router",
+    "symbols": [
+      "meta"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "meta"
+    ]
+  },
+  {
+    "id": "GHSA-3ch2-jxxc-v4xf",
+    "package": "@akoskm/create-mcp-server-stdio",
+    "symbols": [
+      "exec"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-3f44-xw83-3pmg",
+    "package": "renovate",
+    "symbols": [
+      "quote"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-3fw4-4h3m-892h",
+    "package": "serial-number",
+    "symbols": [
+      "serialNumber"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3gc7-fjrx-p6mg",
+    "package": "bigint-buffer",
+    "symbols": [
+      "toBigIntLE"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-3hjv-c53m-58jj",
+    "package": "flowise",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "run"
+    ]
+  },
+  {
+    "id": "GHSA-3hjv-c53m-58jj",
+    "package": "flowise-components",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-3hq6-rmv7-39vh",
+    "package": "op-browser",
+    "symbols": [
+      "url"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "url"
+    ]
+  },
+  {
+    "id": "GHSA-3hvj-2783-34x2",
+    "package": "njwt",
+    "symbols": [
+      "parse"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3hw5-q855-g6cw",
+    "package": "dojox",
+    "symbols": [
+      "jqMix"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-3j8v-cgw4-2g6q",
+    "package": "fast-jwt",
+    "symbols": [
+      "verify"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "verify"
+    ]
+  },
+  {
+    "id": "GHSA-3jcg-vx7f-j6qf",
+    "package": "@fuel-ts/account",
+    "symbols": [
+      "question"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "question"
+    ]
+  },
+  {
+    "id": "GHSA-3jcq-cwr7-6332",
+    "package": "jplayer",
+    "symbols": [
+      "alert"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-3jxr-9vmj-r5cp",
+    "package": "brace-expansion",
+    "symbols": [
+      "expand_",
+      "post"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "expand_",
+      "post"
+    ]
+  },
+  {
+    "id": "GHSA-3mpm-jx38-9m8w",
+    "package": "sassdoc-extras",
+    "symbols": [
+      "byGroupAndType"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3mpr-hq3p-49h9",
+    "package": "mixin-deep",
+    "symbols": [
+      "merging"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3p34-w4f6-5xh2",
+    "package": "better-helperjs",
+    "symbols": [
+      "safeStaticPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "safeStaticPath"
+    ]
+  },
+  {
+    "id": "GHSA-3p64-6gvh-82v5",
+    "package": "mlflow",
+    "symbols": [
+      "BEFORE_REQUEST_VALIDATORS"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3qmc-2r76-4rqp",
+    "package": "@redwoodjs/api",
+    "symbols": [
+      "handler"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "handler"
+    ]
+  },
+  {
+    "id": "GHSA-3w5v-p54c-f74x",
+    "package": "ejs",
+    "symbols": [
+      "renderFile"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "could not unpack the tarball"
+  },
+  {
+    "id": "GHSA-3wc5-fcw2-2329",
+    "package": "katex",
+    "symbols": [
+      "trust"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-3xgx-r9j4-qw9w",
+    "package": "dexie",
+    "symbols": [
+      "keyPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "keyPath"
+    ]
+  },
+  {
+    "id": "GHSA-4228-7qvx-f4rq",
+    "package": "devcert",
+    "symbols": [
+      "certificateFor"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-42h9-826w-cgv3",
+    "package": "axios",
+    "symbols": [
+      "formDataToJSON",
+      "formToJSON"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-43f8-2h32-f4cj",
+    "package": "hosted-git-info",
+    "symbols": [
+      "fromUrl"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-43fc-jf86-j433",
+    "package": "axios",
+    "symbols": [
+      "mergeConfig"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-43p4-m455-4f4j",
+    "package": "@trpc/server",
+    "symbols": [
+      "formDataToObject"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "formDataToObject"
+    ]
+  },
+  {
+    "id": "GHSA-442j-39wm-28r2",
+    "package": "handlebars",
+    "symbols": [
+      "lookup"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4449-hg37-77v8",
+    "package": "total.js",
+    "symbols": [
+      "pipe",
+      "stream"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-444r-cwp2-x5xf",
+    "package": "fastify",
+    "symbols": [
+      "trustProxy"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-446w-rrm4-r47f",
+    "package": "shescape",
+    "symbols": [
+      "escape",
+      "escapeAll"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-44fc-8fm5-q62h",
+    "package": "convict",
+    "symbols": [
+      "startsWith"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-47pj-q2vm-46xc",
+    "package": "collection.js",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-48q3-prgv-gm4w",
+    "package": "parse-server",
+    "symbols": [
+      "GraphQL"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-49mg-94fc-2fx6",
+    "package": "npm-git-publish",
+    "symbols": [
+      "publish"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-4g53-vp7q-gfjv",
+    "package": "@worker-tools/stripe-webhook",
+    "symbols": [
+      "constructEvent"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-4g7x-7vgq-3j28",
+    "package": "aaptjs",
+    "symbols": [
+      "list"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-4gp3-p7ph-x2jr",
+    "package": "devcert-sanscache",
+    "symbols": [
+      "exec"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4gxf-g5gf-22h4",
+    "package": "dottie",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4h4x-4m75-47j4",
+    "package": "cool-path",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "set"
+    ]
+  },
+  {
+    "id": "GHSA-4h4x-4m75-47j4",
+    "package": "depath",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "set"
+    ]
+  },
+  {
+    "id": "GHSA-4hwx-xcc5-2hfc",
+    "package": "tarteaucitronjs",
+    "symbols": [
+      "addOrUpdate"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-4j8x-x6v7-w9rq",
+    "package": "flowise",
+    "symbols": [
+      "globalThis",
+      "eval"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "globalThis",
+      "eval"
+    ]
+  },
+  {
+    "id": "GHSA-4j8x-x6v7-w9rq",
+    "package": "flowise-components",
+    "symbols": [
+      "globalThis",
+      "eval"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-4jpm-cgx2-8h37",
+    "package": "flowise",
+    "symbols": [
+      "Unstructured"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Unstructured"
+    ]
+  },
+  {
+    "id": "GHSA-4m3m-ppvx-xgw9",
+    "package": "@fastify/passport",
+    "symbols": [
+      "authenticate"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4m6q-rxhm-675w",
+    "package": "adb-driver",
+    "symbols": [
+      "command"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "command"
+    ]
+  },
+  {
+    "id": "GHSA-4m8h-h59m-m34j",
+    "package": "bmoor",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4mph-v827-f877",
+    "package": "locutus",
+    "symbols": [
+      "parse_str",
+      "unserialize"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4phg-hpqm-c3j4",
+    "package": "@strapi/strapi",
+    "symbols": [
+      "admin"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4phg-hpqm-c3j4",
+    "package": "strapi",
+    "symbols": [
+      "admin"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4q97-fh3f-j294",
+    "package": "tiny-conf",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4qhx-g9wp-g9m6",
+    "package": "squel",
+    "symbols": [
+      "setFields"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4qwq-q4pr-rr7r",
+    "package": "aaptjs",
+    "symbols": [
+      "packageCmd"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-4rch-2fh8-94vw",
+    "package": "mysql2",
+    "symbols": [
+      "readCodeFor"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "readCodeFor"
+    ]
+  },
+  {
+    "id": "GHSA-4vjr-hfpp-2m7w",
+    "package": "expand-object",
+    "symbols": [
+      "expand"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4w3w-2rp5-g8jm",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "browsers"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "browsers"
+    ]
+  },
+  {
+    "id": "GHSA-4w3w-2rp5-g8jm",
+    "package": "xmldom",
+    "symbols": [
+      "browsers"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "browsers"
+    ]
+  },
+  {
+    "id": "GHSA-4wcm-7hjf-6xw5",
+    "package": "interactive-git-checkout",
+    "symbols": [
+      "exec"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-4xg3-7w7q-856q",
+    "package": "@alexbinary/object-deep-assign",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-4xw9-cx39-r355",
+    "package": "json-web-token",
+    "symbols": [
+      "decode"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-5226-3rvg-hp4x",
+    "package": "fast-filesystem-mcp",
+    "symbols": [
+      "handleGetDiskUsage"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-529q-4j3p-7c5r",
+    "package": "algoliasearch-helper",
+    "symbols": [
+      "_merge"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-52v5-jr5w-gjxr",
+    "package": "sigstore",
+    "symbols": [
+      "verify"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-5359-pvf2-pw78",
+    "package": "tinymce",
+    "symbols": [
+      "addNodeFilter"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-549h-r7g9-2qpf",
+    "package": "n158",
+    "symbols": [
+      "exports"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-54j7-grvr-9xwg",
+    "package": "adb-mcp",
+    "symbols": [
+      "exec"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-54jw-jqr9-6cj9",
+    "package": "vagrant.js",
+    "symbols": [
+      "boxAdd"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-554w-wpv2-vw27",
+    "package": "node-forge",
+    "symbols": [
+      "fromDer"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "fromDer"
+    ]
+  },
+  {
+    "id": "GHSA-56p6-qw3c-fq2g",
+    "package": "@directus/api",
+    "symbols": [
+      "verifySessionJWT"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "verifySessionJWT"
+    ]
+  },
+  {
+    "id": "GHSA-56p6-qw3c-fq2g",
+    "package": "@directus/types",
+    "symbols": [
+      "verifySessionJWT"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-56p6-qw3c-fq2g",
+    "package": "directus",
+    "symbols": [
+      "verifySessionJWT"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-5777-rcjj-9p22",
+    "package": "mattermost-desktop",
+    "symbols": [
+      "JavaScript"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-57f3-gghm-9mhc",
+    "package": "jspdf",
+    "symbols": [
+      "addImage"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-5844-q3fc-56rh",
+    "package": "pubnub",
+    "symbols": [
+      "getKey"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-5c6j-r48x-rmvq",
+    "package": "serialize-javascript",
+    "symbols": [
+      "eval"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-5c7w-4wm3-85vw",
+    "package": "@asymmetric-effort/specifyjs",
+    "symbols": [
+      "gql"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "gql"
+    ]
+  },
+  {
+    "id": "GHSA-5c8j-xr24-2665",
+    "package": "printer",
+    "symbols": [
+      "printDirect"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-5cp4-xmrw-59wf",
+    "package": "angular",
+    "symbols": [
+      "JQLite"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-5f53-522j-j454",
+    "package": "flowise",
+    "symbols": [
+      "NVIDIA"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "GHSA-5f92-jrq3-28rc",
+    "package": "parse-server",
+    "symbols": [
+      "REST"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-5f97-h2c2-826q",
+    "package": "@apidevtools/json-schema-ref-parser",
+    "symbols": [
+      "bundle",
+      "parse",
+      "resolve",
+      "dereference"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-5fpj-28rv-84r7",
+    "package": "@budibase/server",
+    "symbols": [
+      "REST"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-5g97-whc9-8g7j",
+    "package": "@nubosoftware/node-static",
+    "symbols": [
+      "startsWith"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "startsWith"
+    ]
+  },
+  {
+    "id": "GHSA-5g97-whc9-8g7j",
+    "package": "node-static",
+    "symbols": [
+      "startsWith"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "startsWith"
+    ]
+  },
+  {
+    "id": "GHSA-5gfm-wpxj-wjgq",
+    "package": "node-forge",
+    "symbols": [
+      "validate"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "validate"
+    ]
+  },
+  {
+    "id": "GHSA-5gvr-v6qv-h5mm",
+    "package": "claude-mem",
+    "symbols": [
+      "computeObservationContentHash"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-5h4j-qrvg-9xhw",
+    "package": "node-jose",
+    "symbols": [
+      "modInverse"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "modInverse"
+    ]
+  },
+  {
+    "id": "GHSA-5h8c-8ccp-8gmh",
+    "package": "mt7688-wiscan",
+    "symbols": [
+      "scan"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-5h9v-837x-m97r",
+    "package": "flowise",
+    "symbols": [
+      "documented"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "documented"
+    ]
+  },
+  {
+    "id": "GHSA-5j4c-8p2g-v4jx",
+    "package": "vue",
+    "symbols": [
+      "parseHTML"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "parseHTML"
+    ]
+  },
+  {
+    "id": "GHSA-5jx8-q4cp-rhh6",
+    "package": "jsrsasign",
+    "symbols": [
+      "getRandomBigIntegerZeroToMax",
+      "getRandomBigIntegerMinToMax"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-5m6q-g25r-mvwx",
+    "package": "node-forge",
+    "symbols": [
+      "modInverse"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "modInverse"
+    ]
+  },
+  {
+    "id": "GHSA-5mrr-rgp6-x4gr",
+    "package": "marsdb",
+    "symbols": [
+      "DocumentMatcher"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "DocumentMatcher"
+    ]
+  },
+  {
+    "id": "GHSA-5mx2-w598-339m",
+    "package": "@langchain/langgraph-checkpoint-redis",
+    "symbols": [
+      "list"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-5p42-m6f3-hpmj",
+    "package": "tree-kit",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-5q53-78f2-6gf8",
+    "package": "apidoc-core",
+    "symbols": [
+      "preProcess"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "preProcess"
+    ]
+  },
+  {
+    "id": "GHSA-5rq4-664w-9x2c",
+    "package": "basic-ftp",
+    "symbols": [
+      "downloadToDir"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "downloadToDir"
+    ]
+  },
+  {
+    "id": "GHSA-5vp3-v4hc-gx76",
+    "package": "@openzeppelin/contracts",
+    "symbols": [
+      "UUPSUpgradeable"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-5vp3-v4hc-gx76",
+    "package": "@openzeppelin/contracts-upgradeable",
+    "symbols": [
+      "UUPSUpgradeable"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-5vv4-hvf7-2h46",
+    "package": "systeminformation",
+    "symbols": [
+      "versions"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-5xjx-4xcm-hpcm",
+    "package": "ts-nodash",
+    "symbols": [
+      "Merge"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-5xpp-75jx-m839",
+    "package": "systeminformation",
+    "symbols": [
+      "checkLinuxDCHPInterfaces",
+      "readFileSync"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "checkLinuxDCHPInterfaces",
+      "readFileSync"
+    ]
+  },
+  {
+    "id": "GHSA-5xvg-pmgg-3mxr",
+    "package": "flowise",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "run"
+    ]
+  },
+  {
+    "id": "GHSA-5xvg-pmgg-3mxr",
+    "package": "flowise-components",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-624g-8qjg-8qxf",
+    "package": "@conform-to/dom",
+    "symbols": [
+      "setValue"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setValue"
+    ]
+  },
+  {
+    "id": "GHSA-624g-8qjg-8qxf",
+    "package": "@conform-to/yup",
+    "symbols": [
+      "setValue"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setValue"
+    ]
+  },
+  {
+    "id": "GHSA-624g-8qjg-8qxf",
+    "package": "@conform-to/zod",
+    "symbols": [
+      "setValue"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setValue"
+    ]
+  },
+  {
+    "id": "GHSA-62gx-5q78-wrvx",
+    "package": "obsidian-local-rest-api",
+    "symbols": [
+      "enabled"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "enabled"
+    ]
+  },
+  {
+    "id": "GHSA-62hf-57xw-28j9",
+    "package": "axios",
+    "symbols": [
+      "toFormData",
+      "build"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "build"
+    ]
+  },
+  {
+    "id": "GHSA-633r-r4p8-pw3w",
+    "package": "metro4",
+    "symbols": [
+      "Javascript"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-64vr-4gr2-m642",
+    "package": "automagik-genie",
+    "symbols": [
+      "readTranscriptFromCommit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-654m-c8p4-x5fp",
+    "package": "axios",
+    "symbols": [
+      "setProxy"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setProxy"
+    ]
+  },
+  {
+    "id": "GHSA-65ch-62r8-g69g",
+    "package": "node-forge",
+    "symbols": [
+      "derToOid"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "derToOid"
+    ]
+  },
+  {
+    "id": "GHSA-65rp-mhqf-8gj3",
+    "package": "rangy",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-65w6-pf7x-5g85",
+    "package": "@delmaredigital/payload-puck",
+    "symbols": [
+      "styles",
+      "prompts",
+      "context"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-667w-mmh7-mrr4",
+    "package": "studiocms",
+    "symbols": [
+      "Insecure"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Insecure"
+    ]
+  },
+  {
+    "id": "GHSA-68f8-9mhj-h2mp",
+    "package": "openclaw",
+    "symbols": [
+      "operators"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "operators"
+    ]
+  },
+  {
+    "id": "GHSA-69f2-4375-qv9h",
+    "package": "smartctl",
+    "symbols": [
+      "info"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-69xw-7hcm-h432",
+    "package": "hono",
+    "symbols": [
+      "createElement"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "createElement"
+    ]
+  },
+  {
+    "id": "GHSA-6f65-4fv2-wwch",
+    "package": "@vendure/core",
+    "symbols": [
+      "authenticate"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "authenticate"
+    ]
+  },
+  {
+    "id": "GHSA-6f6r-m9pv-67jw",
+    "package": "ios-simulator-mcp",
+    "symbols": [
+      "exec"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-6fw4-hr69-g3rv",
+    "package": "property-expr",
+    "symbols": [
+      "setter"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-6gww-qpm6-mc2g",
+    "package": "ssrf-agent",
+    "symbols": [
+      "defaultIpChecker"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-6h5j-32cf-4253",
+    "package": "apostrophe",
+    "symbols": [
+      "publicApiCheck"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-6hw5-45gm-fj88",
+    "package": "@fastify/express",
+    "symbols": [
+      "enhanceRequest"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-6jcc-xgcr-q3h4",
+    "package": "@fedify/fedify",
+    "symbols": [
+      "handleInboxInternal"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-6jrj-vc65-c983",
+    "package": "unzip-stream",
+    "symbols": [
+      "Extract"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-6m85-wvcr-pgw3",
+    "package": "safetydance",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-6m8p-4fxj-pgc2",
+    "package": "mversion",
+    "symbols": [
+      "exec"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "exec"
+    ]
+  },
+  {
+    "id": "GHSA-6q48-vjq2-mwcj",
+    "package": "umount",
+    "symbols": [
+      "device"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "device"
+    ]
+  },
+  {
+    "id": "GHSA-6q87-84jw-cjhp",
+    "package": "@sveltejs/kit",
+    "symbols": [
+      "load"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-6v32-fjc9-9qf6",
+    "package": "@nestjs/platform-fastify",
+    "symbols": [
+      "forRoutes"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-6v5v-wf23-fmfq",
+    "package": "markdown-it",
+    "symbols": [
+      "replaceAt"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "replaceAt"
+    ]
+  },
+  {
+    "id": "GHSA-6vh2-wg4h-4vwj",
+    "package": "flowise",
+    "symbols": [
+      "Prediction"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Prediction"
+    ]
+  },
+  {
+    "id": "GHSA-6vp2-6r7m-2jvx",
+    "package": "@budibase/backend-core",
+    "symbols": [
+      "unAssign"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-6wcc-39rp-hh9p",
+    "package": "@hypequery/clickhouse",
+    "symbols": [
+      "escapeValue"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-6x33-pw7p-hmpq",
+    "package": "http-proxy",
+    "symbols": [
+      "setHeader"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-728h-4mwj-f2p4",
+    "package": "flowise",
+    "symbols": [
+      "documented"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "documented"
+    ]
+  },
+  {
+    "id": "GHSA-73rg-f94j-xvhx",
+    "package": "@udecode/plate-core",
+    "symbols": [
+      "getRenderNodeProps"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getRenderNodeProps"
+    ]
+  },
+  {
+    "id": "GHSA-73rr-hh4g-fpgx",
+    "package": "diff",
+    "symbols": [
+      "parsePatch"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-753c-phhg-cj29",
+    "package": "madge",
+    "symbols": [
+      "image",
+      "svg",
+      "dot"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-75px-5xx7-5xc7",
+    "package": "protobufjs",
+    "symbols": [
+      "decode"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-75qm-gp28-rcq9",
+    "package": "n8n",
+    "symbols": [
+      "workflow"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-76g8-235f-gj6p",
+    "package": "dref",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-78pr-c5x5-jggc",
+    "package": "flowise",
+    "symbols": [
+      "documented"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "documented"
+    ]
+  },
+  {
+    "id": "GHSA-79h2-v6hh-wq23",
+    "package": "@ndhoule/defaults",
+    "symbols": [
+      "deep"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-79jw-6wg7-r9g4",
+    "package": "mixme",
+    "symbols": [
+      "mutate",
+      "merge"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-7f53-fmmv-mfjv",
+    "package": "react-native",
+    "symbols": [
+      "validateBaseUrl"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "validateBaseUrl"
+    ]
+  },
+  {
+    "id": "GHSA-7f59-x49p-v8mq",
+    "package": "swagger-ui",
+    "symbols": [
+      "consumes",
+      "produces"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-7f6v-3gx7-27q8",
+    "package": "@orpc/openapi",
+    "symbols": [
+      "unauthorized"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "unauthorized"
+    ]
+  },
+  {
+    "id": "GHSA-7fm6-gxqg-2pwr",
+    "package": "total.js",
+    "symbols": [
+      "set",
+      "get"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-7fw7-gh23-f832",
+    "package": "aaptjs",
+    "symbols": [
+      "singleCrunch"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-7gmj-h9xc-mcxc",
+    "package": "mailparser",
+    "symbols": [
+      "textToHtml"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "textToHtml"
+    ]
+  },
+  {
+    "id": "GHSA-7hh3-3x64-v2g9",
+    "package": "remult",
+    "symbols": [
+      "apiPrefilter"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "apiPrefilter"
+    ]
+  },
+  {
+    "id": "GHSA-7j65-65cr-6644",
+    "package": "flowise",
+    "symbols": [
+      "documented"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "documented"
+    ]
+  },
+  {
+    "id": "GHSA-7mwh-4pqv-wmr8",
+    "package": "scss-tokenizer",
+    "symbols": [
+      "loadAnnotation"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-7px2-3c2p-q4v4",
+    "package": "flatnest",
+    "symbols": [
+      "nest"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-7qgg-vw88-cc99",
+    "package": "utils-extend",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "entry"
+    ]
+  },
+  {
+    "id": "GHSA-7r96-8g3x-g36m",
+    "package": "tenvoy",
+    "symbols": [
+      "verification"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-7r9x-hr76-jr96",
+    "package": "giting",
+    "symbols": [
+      "pull"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-7xr2-q9vf-x4r5",
+    "package": "openclaw",
+    "symbols": [
+      "create",
+      "update"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "create",
+      "update"
+    ]
+  },
+  {
+    "id": "GHSA-7xrj-f5rp-j55h",
+    "package": "transpile",
+    "symbols": [
+      "to"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-829q-m3qg-ph8r",
+    "package": "vega-selections",
+    "symbols": [
+      "map"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "map"
+    ]
+  },
+  {
+    "id": "GHSA-82gw-pqf7-q3j2",
+    "package": "pym.js",
+    "symbols": [
+      "_onNavigateToMessage"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-82jv-9wjw-pqh6",
+    "package": "derby",
+    "symbols": [
+      "emit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-82x6-q7mm-w9cf",
+    "package": "toml",
+    "symbols": [
+      "peg$parsevalue",
+      "peg$parsearray",
+      "peg$parseinline_table"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "peg$parsevalue",
+      "peg$parsearray",
+      "peg$parseinline_table"
+    ]
+  },
+  {
+    "id": "GHSA-8344-3jmq-59r6",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "getNamedItemNS"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getNamedItemNS"
+    ]
+  },
+  {
+    "id": "GHSA-8344-3jmq-59r6",
+    "package": "xmldom",
+    "symbols": [
+      "getNamedItemNS"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getNamedItemNS"
+    ]
+  },
+  {
+    "id": "GHSA-876p-c77m-x2hc",
+    "package": "ag-grid-community",
+    "symbols": [
+      "mergeDeep"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "mergeDeep"
+    ]
+  },
+  {
+    "id": "GHSA-876p-c77m-x2hc",
+    "package": "ag-grid-enterprise",
+    "symbols": [
+      "mergeDeep"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "mergeDeep"
+    ]
+  },
+  {
+    "id": "GHSA-87mf-gv2c-c62c",
+    "package": "ts-deepmerge",
+    "symbols": [
+      "prototype"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-88g8-f5mf-f5rj",
+    "package": "@openzeppelin/contracts",
+    "symbols": [
+      "initializer"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-88qf-5f3v-pm6m",
+    "package": "dawnsparks-node-tesseract",
+    "symbols": [
+      "child_process"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "child_process"
+    ]
+  },
+  {
+    "id": "GHSA-88qh-cphv-996c",
+    "package": "fuxa-server",
+    "symbols": [
+      "Upload"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-89fp-f5mx-748x",
+    "package": "vxe-table",
+    "symbols": [
+      "install"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8cf7-32gw-wr33",
+    "package": "jsonwebtoken",
+    "symbols": [
+      "sign",
+      "verify"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-8g77-54rh-46hx",
+    "package": "parse-git-config",
+    "symbols": [
+      "expandKeys"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8g7p-jf3g-gxcp",
+    "package": "jsrsasign",
+    "symbols": [
+      "bnModInverse"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-8gc5-j5rx-235r",
+    "package": "fast-xml-parser",
+    "symbols": [
+      "replaceEntitiesValue"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "replaceEntitiesValue"
+    ]
+  },
+  {
+    "id": "GHSA-8ghr-w65f-j3qr",
+    "package": "fuxa-server",
+    "symbols": [
+      "Scheduler"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-8gj2-2cvc-6xx7",
+    "package": "flowise",
+    "symbols": [
+      "ElevenLabs"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "ElevenLabs"
+    ]
+  },
+  {
+    "id": "GHSA-8gq3-vp5j-2grp",
+    "package": "jsonata",
+    "symbols": [
+      "lookup"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8h3g-hcwp-6hxq",
+    "package": "semver-tags",
+    "symbols": [
+      "getGitTagsRemote"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8j2w-6fmm-m587",
+    "package": "openclaw",
+    "symbols": [
+      "channel"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "channel"
+    ]
+  },
+  {
+    "id": "GHSA-8j8c-7jfh-h6hx",
+    "package": "js-yaml",
+    "symbols": [
+      "load"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8jh2-3mw6-6pfm",
+    "package": "node-ts-ocr",
+    "symbols": [
+      "invokeImageOcr"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-8m3c-c648-2xjj",
+    "package": "nodemailer",
+    "symbols": [
+      "resolveAll",
+      "_convertDataImages"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "resolveAll",
+      "_convertDataImages"
+    ]
+  },
+  {
+    "id": "GHSA-8mrf-64fw-2x75",
+    "package": "fs-path",
+    "symbols": [
+      "copy",
+      "copySync",
+      "remove",
+      "removeSync"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8pfc-jjgw-6g26",
+    "package": "@nyariv/sandboxjs",
+    "symbols": [
+      "restOfExp"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "restOfExp"
+    ]
+  },
+  {
+    "id": "GHSA-8qff-qr5q-5pr8",
+    "package": "openpgp",
+    "symbols": [
+      "decrypt",
+      "verificationKeys"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-8r88-6cj9-9fh5",
+    "package": "@supabase/auth-js",
+    "symbols": [
+      "wrong"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "wrong"
+    ]
+  },
+  {
+    "id": "GHSA-8v5f-hp78-jgxq",
+    "package": "jwt-simple",
+    "symbols": [
+      "decode"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8v9x-9xqg-r8mr",
+    "package": "json8-merge-patch",
+    "symbols": [
+      "modify"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "modify"
+    ]
+  },
+  {
+    "id": "GHSA-8vr4-h4rr-8ph6",
+    "package": "@bit/loader",
+    "symbols": [
+      "M"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-8vw3-vxmj-h43w",
+    "package": "bwm-ng",
+    "symbols": [
+      "check"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-8xq3-w9fx-74rv",
+    "package": "webfinger.js",
+    "symbols": [
+      "addition"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-92hr-gmr6-h8cp",
+    "package": "ep_etherpad-lite",
+    "symbols": [
+      "timing"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-92xj-mqp7-vmcj",
+    "package": "node-forge",
+    "symbols": [
+      "setPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setPath"
+    ]
+  },
+  {
+    "id": "GHSA-934x-72xh-5hrg",
+    "package": "aws-lambda",
+    "symbols": [
+      "exec"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-93r5-fhx6-vmg9",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "normalize"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "normalize"
+    ]
+  },
+  {
+    "id": "GHSA-93r5-fhx6-vmg9",
+    "package": "xmldom",
+    "symbols": [
+      "normalize"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "normalize"
+    ]
+  },
+  {
+    "id": "GHSA-9829-jj5p-j6hf",
+    "package": "worksmith",
+    "symbols": [
+      "setValue"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-98xf-r82g-9mhx",
+    "package": "@langchain/langgraph-checkpoint-mongodb",
+    "symbols": [
+      "depth"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "depth"
+    ]
+  },
+  {
+    "id": "GHSA-995x-33wq-8gc9",
+    "package": "cycle-import-check",
+    "symbols": [
+      "writeFileToTmpDirAndOpenIt"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-9c47-m6qq-7p4h",
+    "package": "json5",
+    "symbols": [
+      "Parse"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-9c4c-g95m-c8cp",
+    "package": "flowise",
+    "symbols": [
+      "importChatflows"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "importChatflows"
+    ]
+  },
+  {
+    "id": "GHSA-9c88-49p5-5ggf",
+    "package": "systeminformation",
+    "symbols": [
+      "wifiNetworks"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-9cq3-fj2h-ggj5",
+    "package": "aaptjs",
+    "symbols": [
+      "remove"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-9crc-q9x8-hgqq",
+    "package": "vitest",
+    "symbols": [
+      "saveTestFile"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "saveTestFile"
+    ]
+  },
+  {
+    "id": "GHSA-9f2h-7v79-mxw3",
+    "package": "parse",
+    "symbols": [
+      "Object"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-9g8m-v378-pcg3",
+    "package": "parse",
+    "symbols": [
+      "initializeState"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-9g9w-hmvj-5h57",
+    "package": "merge-deep",
+    "symbols": [
+      "merging"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-9gh8-wp53-ccc6",
+    "package": "ghost",
+    "symbols": [
+      "our"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-9hc2-hjx8-q6pv",
+    "package": "tidgi",
+    "symbols": [
+      "startup"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-9hp6-4448-45g2",
+    "package": "hono",
+    "symbols": [
+      "getPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getPath"
+    ]
+  },
+  {
+    "id": "GHSA-9jh3-4pc9-hq29",
+    "package": "node-bluetooth-serial-port",
+    "symbols": [
+      "findSerialPortChannel"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-9jm3-5835-537m",
+    "package": "apex-publish-static-files",
+    "symbols": [
+      "publish"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-9p95-fxvg-qgq2",
+    "package": "simple-git",
+    "symbols": [
+      "clone"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-9px9-f7jw-fwhj",
+    "package": "priest-runner",
+    "symbols": [
+      "createChild"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-9r2w-394v-53qc",
+    "package": "tar",
+    "symbols": [
+      "path"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "path"
+    ]
+  },
+  {
+    "id": "GHSA-9vjf-qc39-jprp",
+    "package": "jspdf",
+    "symbols": [
+      "addJS"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-9w5j-4mwv-2wj8",
+    "package": "simple-git",
+    "symbols": [
+      "clone",
+      "pull",
+      "push",
+      "listRemote"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-9wmw-9wph-2vwp",
+    "package": "dagu",
+    "symbols": [
+      "secrets",
+      "credentials"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "secrets",
+      "credentials"
+    ]
+  },
+  {
+    "id": "GHSA-9wwp-q7wq-jx35",
+    "package": "@fastify/secure-session",
+    "symbols": [
+      "delete"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-c2rm-g55x-8hr5",
+    "package": "nuxt-og-image",
+    "symbols": [
+      "dashboards"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "dashboards"
+    ]
+  },
+  {
+    "id": "GHSA-c3px-v9c7-m734",
+    "package": "mithril",
+    "symbols": [
+      "toString"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "toString"
+    ]
+  },
+  {
+    "id": "GHSA-c429-5p7v-vgjp",
+    "package": "@hapi/hoek",
+    "symbols": [
+      "clone"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-c429-5p7v-vgjp",
+    "package": "hoek",
+    "symbols": [
+      "clone"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-c6h4-gc3f-hgjq",
+    "package": "js-data",
+    "symbols": [
+      "deepFillIn"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-c6rx-gxqv-vr5j",
+    "package": "nemo-appium",
+    "symbols": [
+      "setup"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-c7m7-4257-h698",
+    "package": "templ8",
+    "symbols": [
+      "parse"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-c7pp-g2v2-2766",
+    "package": "gmail-js",
+    "symbols": [
+      "parse_response",
+      "visible_emails_post",
+      "email_data_post"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-c83v-7274-4vgp",
+    "package": "opencode-ai",
+    "symbols": [
+      "OpenCode"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-cf4h-3jhx-xvhq",
+    "package": "underscore",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-cg42-4wrc-gp47",
+    "package": "node-extend",
+    "symbols": [
+      "eval"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-cgpp-wm2h-6hqx",
+    "package": "waterline-sequel",
+    "symbols": [
+      "like",
+      "contains",
+      "startsWith",
+      "endsWith"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-chfm-xgc4-47rj",
+    "package": "openclaw",
+    "symbols": [
+      "Graph"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Graph"
+    ]
+  },
+  {
+    "id": "GHSA-chmr-rg2f-9jmf",
+    "package": "@strapi/database",
+    "symbols": [
+      "bootstrap"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "bootstrap"
+    ]
+  },
+  {
+    "id": "GHSA-chmr-rg2f-9jmf",
+    "package": "@strapi/strapi",
+    "symbols": [
+      "bootstrap"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-chmr-rg2f-9jmf",
+    "package": "@strapi/utils",
+    "symbols": [
+      "bootstrap"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "bootstrap"
+    ]
+  },
+  {
+    "id": "GHSA-cjw8-79x6-5cj4",
+    "package": "jspdf",
+    "symbols": [
+      "addJS"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-cm5g-3pgc-8rg4",
+    "package": "express",
+    "symbols": [
+      "links"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-cmh5-qc8w-xvcq",
+    "package": "i18next",
+    "symbols": [
+      "init"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-cmj3-wx7h-ffvg",
+    "package": "parse-server",
+    "symbols": [
+      "REST",
+      "GraphQL"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-cq8r-fc3q-6hg2",
+    "package": "jointjs",
+    "symbols": [
+      "unsetByPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "unsetByPath"
+    ]
+  },
+  {
+    "id": "GHSA-cr7h-93fh-whwm",
+    "package": "magix-combine-ex",
+    "symbols": [
+      "addFileDepend"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "addFileDepend"
+    ]
+  },
+  {
+    "id": "GHSA-cr84-xvw4-qx3c",
+    "package": "shescape",
+    "symbols": [
+      "escape",
+      "escapeAll"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-crh9-3gjh-m6gc",
+    "package": "api-lab-mcp",
+    "symbols": [
+      "atototo"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "atototo"
+    ]
+  },
+  {
+    "id": "GHSA-cv76-rv4h-4mqc",
+    "package": "proctree",
+    "symbols": [
+      "fix"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-cvv5-9h9w-qp2m",
+    "package": "systeminformation",
+    "symbols": [
+      "getWindowsIEEE8021x"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getWindowsIEEE8021x"
+    ]
+  },
+  {
+    "id": "GHSA-cxrg-g7r8-w69p",
+    "package": "@fastify/middie",
+    "symbols": [
+      "Holder"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-cxx3-36qc-m6qm",
+    "package": "node-bluetooth",
+    "symbols": [
+      "findSerialPortChannel"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-f229-3862-4942",
+    "package": "@enclave-vm/core",
+    "symbols": [
+      "host"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "host"
+    ]
+  },
+  {
+    "id": "GHSA-f23m-r3pf-42rh",
+    "package": "lodash",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-f23m-r3pf-42rh",
+    "package": "lodash-amd",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-f23m-r3pf-42rh",
+    "package": "lodash-es",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-f23m-r3pf-42rh",
+    "package": "lodash.unset",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-f38q-mgvj-vph7",
+    "package": "protobufjs",
+    "symbols": [
+      "service"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-f38q-mgvj-vph7",
+    "package": "protobufjs-cli",
+    "symbols": [
+      "service"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "service"
+    ]
+  },
+  {
+    "id": "GHSA-f3pp-32qc-36w4",
+    "package": "jointjs",
+    "symbols": [
+      "setByPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setByPath"
+    ]
+  },
+  {
+    "id": "GHSA-f4gw-2p7v-4548",
+    "package": "axios",
+    "symbols": [
+      "panels",
+      "microservice"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "panels",
+      "microservice"
+    ]
+  },
+  {
+    "id": "GHSA-f5w6-r7rg-mcgq",
+    "package": "validator",
+    "symbols": [
+      "isURL"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-f6fm-r26q-p747",
+    "package": "@strapi/strapi",
+    "symbols": [
+      "panel"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-f6fm-r26q-p747",
+    "package": "strapi",
+    "symbols": [
+      "panel"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-f6hc-c5jr-878p",
+    "package": "flowise",
+    "symbols": [
+      "resetPassword"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "resetPassword"
+    ]
+  },
+  {
+    "id": "GHSA-f6ww-3ggp-fr8h",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "createDocumentType"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "createDocumentType"
+    ]
+  },
+  {
+    "id": "GHSA-f6ww-3ggp-fr8h",
+    "package": "xmldom",
+    "symbols": [
+      "createDocumentType"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "createDocumentType"
+    ]
+  },
+  {
+    "id": "GHSA-f772-66g8-q5h3",
+    "package": "undici",
+    "symbols": [
+      "request"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-f825-f98c-gj3g",
+    "package": "mongoose",
+    "symbols": [
+      "path"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-f8pq-3926-8gx5",
+    "package": "@opentelemetry/instrumentation",
+    "symbols": [
+      "import"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "import"
+    ]
+  },
+  {
+    "id": "GHSA-f8r4-mf27-rf7m",
+    "package": "financejs",
+    "symbols": [
+      "IRR"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-f98m-q3hr-p5wq",
+    "package": "locutus",
+    "symbols": [
+      "parse_str"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-f9cv-665r-275h",
+    "package": "merge-change",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-ffh4-j6h5-pg66",
+    "package": "vm2",
+    "symbols": [
+      "constructor"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "constructor"
+    ]
+  },
+  {
+    "id": "GHSA-fg4m-w35q-vfg2",
+    "package": "@zag-js/core",
+    "symbols": [
+      "deepMerge"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-fgx4-p8xf-qhp9",
+    "package": "@lobehub/chat",
+    "symbols": [
+      "PoC"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-fhv8-fx5f-7fxf",
+    "package": "zrender",
+    "symbols": [
+      "merge"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "merge"
+    ]
+  },
+  {
+    "id": "GHSA-fhwm-pc6r-4h2f",
+    "package": "commandkit",
+    "symbols": [
+      "commandName"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "commandName"
+    ]
+  },
+  {
+    "id": "GHSA-fm7p-gw32-828p",
+    "package": "mathlive",
+    "symbols": [
+      "createHTML"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-fmrr-mx6j-h3h5",
+    "package": "confucious",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-fp25-p6mj-qqg6",
+    "package": "locutus",
+    "symbols": [
+      "call_user_func_array"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "call_user_func_array"
+    ]
+  },
+  {
+    "id": "GHSA-fpg4-jhqr-589c",
+    "package": "@sveltejs/kit",
+    "symbols": [
+      "form"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-fph2-r4qg-9576",
+    "package": "parse-server",
+    "symbols": [
+      "REST"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-fpw7-j2hg-69v5",
+    "package": "mysql2",
+    "symbols": [
+      "readCodeFor"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "readCodeFor"
+    ]
+  },
+  {
+    "id": "GHSA-fq9m-v26v-2m4f",
+    "package": "lilconfig",
+    "symbols": [
+      "dynamicImport"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "dynamicImport"
+    ]
+  },
+  {
+    "id": "GHSA-fr3w-2p22-6w7p",
+    "package": "directus",
+    "symbols": [
+      "Auth"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-fr4j-65pv-gjjj",
+    "package": "renovate",
+    "symbols": [
+      "quote"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-frpw-jrwx-hcfv",
+    "package": "node-red-contrib-huemagic",
+    "symbols": [
+      "sendFile"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-frq9-3hp2-xvxg",
+    "package": "mcp-markdownify-server",
+    "symbols": [
+      "get"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-fvcw-9w9r-pxc7",
+    "package": "flowise",
+    "symbols": [
+      "g",
+      "Jenkins",
+      "Kubernetes"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "g",
+      "Jenkins",
+      "Kubernetes"
+    ]
+  },
+  {
+    "id": "GHSA-fvcw-9w9r-pxc7",
+    "package": "flowise-components",
+    "symbols": [
+      "g",
+      "Jenkins",
+      "Kubernetes"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-fvq6-55gv-jx9f",
+    "package": "mysql",
+    "symbols": [
+      "escape"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "escape"
+    ]
+  },
+  {
+    "id": "GHSA-fvx2-x7ff-fc56",
+    "package": "@haxtheweb/open-apis",
+    "symbols": [
+      "haxPsuUsage"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-fwr7-v2mv-hh25",
+    "package": "async",
+    "symbols": [
+      "mapValues"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-g3q2-vcjq-rgrc",
+    "package": "@blackprint/engine",
+    "symbols": [
+      "setDeepProperty"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-g3vf-47fv-8f3c",
+    "package": "hellojs",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-g5qr-xgg7-8q2w",
+    "package": "puppet-facter",
+    "symbols": [
+      "getFact"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-g5xx-pwrp-g3fv",
+    "package": "unhead",
+    "symbols": [
+      "acceptDataAttrs"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "acceptDataAttrs"
+    ]
+  },
+  {
+    "id": "GHSA-g77h-45rf-hcx4",
+    "package": "exifreader",
+    "symbols": [
+      "load"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-g7mq-rfj2-25wq",
+    "package": "total4",
+    "symbols": [
+      "set",
+      "get"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-g7wq-wggw-vmhg",
+    "package": "ts-fns",
+    "symbols": [
+      "assign"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-g8wj-3cr3-6w7v",
+    "package": "@nuxt/nitro-server",
+    "symbols": [
+      "ohash"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "ohash"
+    ]
+  },
+  {
+    "id": "GHSA-g8wj-3cr3-6w7v",
+    "package": "nuxt",
+    "symbols": [
+      "ohash"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-g8x5-p9qc-cf95",
+    "package": "@fastify/oauth2",
+    "symbols": [
+      "checkStateFunction"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-g956-2f74-rmv7",
+    "package": "hashi-vault-js",
+    "symbols": [
+      "encodeURIComponent"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "encodeURIComponent"
+    ]
+  },
+  {
+    "id": "GHSA-g974-hxvm-x689",
+    "package": "node-gettext",
+    "symbols": [
+      "addTranslations"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-gc7p-j5xm-xxh2",
+    "package": "@strapi/plugin-users-permissions",
+    "symbols": [
+      "sanitizeInput"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-gc7p-j5xm-xxh2",
+    "package": "@strapi/strapi",
+    "symbols": [
+      "sanitizeInput"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-gcg3-c5p2-cqgg",
+    "package": "oneuptime",
+    "symbols": [
+      "_aggregateBy"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-ggv3-vmgw-xv2q",
+    "package": "@tanstack/form-core",
+    "symbols": [
+      "mutateMergeDeep"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-gjm5-83cw-p3p2",
+    "package": "extend2",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-gjx4-2c7g-fm94",
+    "package": "screenshot-desktop",
+    "symbols": [
+      "g"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-gm68-572p-q28r",
+    "package": "@vendure/admin-ui-plugin",
+    "symbols": [
+      "shipping"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-gm9x-q798-hmr4",
+    "package": "git-tags-remote",
+    "symbols": [
+      "repo"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "repo"
+    ]
+  },
+  {
+    "id": "GHSA-gmq8-994r-jv83",
+    "package": "yauzl",
+    "symbols": [
+      "getLastModDate"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-gpvc-mx6g-cchv",
+    "package": "underscore-keypath",
+    "symbols": [
+      "setProperty"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-gq3j-xvxp-8hrf",
+    "package": "hono",
+    "symbols": [
+      "timingSafeEqual"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "timingSafeEqual"
+    ]
+  },
+  {
+    "id": "GHSA-gr58-j5wh-m333",
+    "package": "nis-utils",
+    "symbols": [
+      "setValue"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setValue"
+    ]
+  },
+  {
+    "id": "GHSA-grj5-jjm8-h35p",
+    "package": "vm2",
+    "symbols": [
+      "apply"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "apply"
+    ]
+  },
+  {
+    "id": "GHSA-gwhp-pf74-vj37",
+    "package": "@fastify/http-proxy",
+    "symbols": [
+      "rewriteRequestHeaders"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-gwhp-pf74-vj37",
+    "package": "@fastify/reply-from",
+    "symbols": [
+      "rewriteRequestHeaders"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-gwp3-f7mr-qpfv",
+    "package": "s3-uploader",
+    "symbols": [
+      "metadata"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-h2p3-h48h-9jj7",
+    "package": "pidusage",
+    "symbols": [
+      "ps"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "ps"
+    ]
+  },
+  {
+    "id": "GHSA-h3rx-g5c9-8q4x",
+    "package": "bmoor",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-h42x-xx2q-6v6g",
+    "package": "flowise",
+    "symbols": [
+      "comment"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "comment"
+    ]
+  },
+  {
+    "id": "GHSA-h452-7996-h45h",
+    "package": "cookiejar",
+    "symbols": [
+      "parse"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-h63v-hw6g-x8hp",
+    "package": "cookie-encrypter",
+    "symbols": [
+      "encryption"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-h6pr-c536-6rjg",
+    "package": "object-path-set",
+    "symbols": [
+      "setPath"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-h7cp-r72f-jxh6",
+    "package": "pbkdf2",
+    "symbols": [
+      "deriveKey"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "deriveKey"
+    ]
+  },
+  {
+    "id": "GHSA-h8hf-x3f4-xwgp",
+    "package": "mongoose",
+    "symbols": [
+      "path"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-h9w6-f932-gq62",
+    "package": "ses",
+    "symbols": [
+      "Compartment"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-hc5w-c9f8-9cc4",
+    "package": "langchain",
+    "symbols": [
+      "getFullPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getFullPath"
+    ]
+  },
+  {
+    "id": "GHSA-hcg3-56jf-x4vh",
+    "package": "safe-eval",
+    "symbols": [
+      "safeEval"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-hcrg-fc28-fcg5",
+    "package": "parse-duration",
+    "symbols": [
+      "parse"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-hf66-r44g-p7j9",
+    "package": "handsontable",
+    "symbols": [
+      "isNumeric"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-hfpr-jhpq-x4rm",
+    "package": "openclaw",
+    "symbols": [
+      "send"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "send"
+    ]
+  },
+  {
+    "id": "GHSA-hfq9-rfpv-j8r8",
+    "package": "pidusage",
+    "symbols": [
+      "ps"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "ps"
+    ]
+  },
+  {
+    "id": "GHSA-hfxh-rjv7-2369",
+    "package": "uptime-kuma",
+    "symbols": [
+      "codebase"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-hggm-x7r9-mm7v",
+    "package": "openclaw",
+    "symbols": [
+      "isLikelyLocalPath",
+      "isValidMedia"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "isLikelyLocalPath",
+      "isValidMedia"
+    ]
+  },
+  {
+    "id": "GHSA-hgqx-r2hp-jr38",
+    "package": "tinymce",
+    "symbols": [
+      "open"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-hjwc-26pj-v3pm",
+    "package": "@agenticmail/api",
+    "symbols": [
+      "AgenticMail"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-hjwq-mjwj-4x6c",
+    "package": "@intlify/shared",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "entry"
+    ]
+  },
+  {
+    "id": "GHSA-hjwq-mjwj-4x6c",
+    "package": "@intlify/vue-i18n-core",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-hjwq-mjwj-4x6c",
+    "package": "petite-vue-i18n",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "entry"
+    ]
+  },
+  {
+    "id": "GHSA-hjwq-mjwj-4x6c",
+    "package": "vue-i18n",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-hmgh-466j-fx4c",
+    "package": "flowise",
+    "symbols": [
+      "Dynamic"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Dynamic"
+    ]
+  },
+  {
+    "id": "GHSA-hpcf-8vf9-q4gj",
+    "package": "jquery-ui",
+    "symbols": [
+      "dialog"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-hpqf-m68j-2pfx",
+    "package": "js-object-utilities",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "entry"
+    ]
+  },
+  {
+    "id": "GHSA-hqq7-2q2v-82xq",
+    "package": "@braintree/sanitize-url",
+    "symbols": [
+      "sanitizeUrl"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-hr2q-hp5q-x767",
+    "package": "astro",
+    "symbols": [
+      "createRequest"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "createRequest"
+    ]
+  },
+  {
+    "id": "GHSA-hr5v-j9h9-xjhg",
+    "package": "openclaw",
+    "symbols": [
+      "handlePluginAction"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "handlePluginAction"
+    ]
+  },
+  {
+    "id": "GHSA-hr66-5mqr-8mpx",
+    "package": "@budibase/server",
+    "symbols": [
+      "PUBLIC_ENDPOINTS",
+      "TODO"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-hrwm-hgmj-7p9c",
+    "package": "@fastify/express",
+    "symbols": [
+      "onRegister"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-hw46-vg6w-88fj",
+    "package": "replicator",
+    "symbols": [
+      "fromSerializable"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-hwmc-4c8j-xxj7",
+    "package": "sveltekit-superforms",
+    "symbols": [
+      "parseFormData"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "parseFormData"
+    ]
+  },
+  {
+    "id": "GHSA-hx7h-9vf7-5xhg",
+    "package": "uptime-kuma",
+    "symbols": [
+      "send"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-j28q-p8ww-cp87",
+    "package": "merge-deep2",
+    "symbols": [
+      "mergeDeep"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-j32x-j8pj-pg2h",
+    "package": "decal",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-j47c-j42c-mwqq",
+    "package": "@solana/pay",
+    "symbols": [
+      "validateTransfer"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-j4fx-xxwh-2485",
+    "package": "jsondiffpatch",
+    "symbols": [
+      "patch"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-j4r3-hg7j-8chg",
+    "package": "re2",
+    "symbols": [
+      "Buffer"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-j4rj-2jr5-m439",
+    "package": "ssrfcheck",
+    "symbols": [
+      "privIp6"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "privIp6"
+    ]
+  },
+  {
+    "id": "GHSA-j4rv-pr9g-q8jv",
+    "package": "mxgraph",
+    "symbols": [
+      "setTooltips"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-j4rw-x3vg-c8r7",
+    "package": "node-oojs",
+    "symbols": [
+      "setPath"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-j5c2-hm46-wp5c",
+    "package": "ghost",
+    "symbols": [
+      "integrations"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-j5mf-6rh3-rhgg",
+    "package": "clevertap-web-sdk",
+    "symbols": [
+      "handleCustomHtmlPreviewPostMessageEvent"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-j7cg-h9v9-6vqp",
+    "package": "@irrelon/path",
+    "symbols": [
+      "set",
+      "unSet",
+      "pushVal",
+      "pullVal"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-j7cg-h9v9-6vqp",
+    "package": "irrelon-path",
+    "symbols": [
+      "set",
+      "unSet",
+      "pushVal",
+      "pullVal"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "unSet",
+      "pushVal",
+      "pullVal"
+    ]
+  },
+  {
+    "id": "GHSA-j8g8-j7fc-43v6",
+    "package": "flowise",
+    "symbols": [
+      "WHITELIST_URLS"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "WHITELIST_URLS"
+    ]
+  },
+  {
+    "id": "GHSA-j8wr-fwf2-vvr9",
+    "package": "create-choo-electron",
+    "symbols": [
+      "devInstall"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-jc39-686j-wp6q",
+    "package": "parse-server",
+    "symbols": [
+      "REST"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-jc5m-wrp2-qq38",
+    "package": "flowise",
+    "symbols": [
+      "forgotPassword"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "forgotPassword"
+    ]
+  },
+  {
+    "id": "GHSA-jchw-25xp-jwwc",
+    "package": "follow-redirects",
+    "symbols": [
+      "parse"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-jcw8-r9xm-32c6",
+    "package": "dns-sync",
+    "symbols": [
+      "resolve"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-jfm8-hwhg-r6gg",
+    "package": "p4",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-jfqg-hf23-qpw2",
+    "package": "electron",
+    "symbols": [
+      "VideoFrame"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-jgw5-rp4p-qhp6",
+    "package": "quill-mention",
+    "symbols": [
+      "renderList"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "renderList"
+    ]
+  },
+  {
+    "id": "GHSA-jh2m-j8pp-55rc",
+    "package": "gedi",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-jpq3-xf27-5jf2",
+    "package": "safe-object2",
+    "symbols": [
+      "setter"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-jv3g-j58f-9mq9",
+    "package": "jose",
+    "symbols": [
+      "decryption"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "decryption"
+    ]
+  },
+  {
+    "id": "GHSA-jv3g-j58f-9mq9",
+    "package": "jose-browser-runtime",
+    "symbols": [
+      "decryption"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-jv3g-j58f-9mq9",
+    "package": "jose-node-cjs-runtime",
+    "symbols": [
+      "decryption"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-jv3g-j58f-9mq9",
+    "package": "jose-node-esm-runtime",
+    "symbols": [
+      "decryption"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-jxfh-8wgv-vfr2",
+    "package": "dojo",
+    "symbols": [
+      "deepCopy"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-jxjr-3g7g-3944",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "createElement",
+      "setAttribute"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "createElement",
+      "setAttribute"
+    ]
+  },
+  {
+    "id": "GHSA-m272-9rp6-32mc",
+    "package": "@orpc/client",
+    "symbols": [
+      "deserialize"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "deserialize"
+    ]
+  },
+  {
+    "id": "GHSA-m33v-338h-4v9f",
+    "package": "@node-red/runtime",
+    "symbols": [
+      "Projects"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Projects"
+    ]
+  },
+  {
+    "id": "GHSA-m4ch-4m5f-2gp6",
+    "package": "bootbox",
+    "symbols": [
+      "confirm",
+      "prompt"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-m5v8-wpw4-rj3x",
+    "package": "abacus-ext-cmdline",
+    "symbols": [
+      "execute"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-m6w8-fq7v-ph4m",
+    "package": "@openzeppelin/contracts",
+    "symbols": [
+      "explicit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-m6w8-fq7v-ph4m",
+    "package": "@openzeppelin/contracts-upgradeable",
+    "symbols": [
+      "explicit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-m7jm-9gc2-mpf2",
+    "package": "fast-xml-parser",
+    "symbols": [
+      "validateEntityName"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "validateEntityName"
+    ]
+  },
+  {
+    "id": "GHSA-m7p2-ghfh-pjvx",
+    "package": "aaptjs",
+    "symbols": [
+      "crunch"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-m8gw-hjpr-rjv7",
+    "package": "dojo",
+    "symbols": [
+      "setObject"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-m9rg-mr6g-75gm",
+    "package": "vega-functions",
+    "symbols": [
+      "setdata"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-mh8j-9jvh-gjf6",
+    "package": "mockjs",
+    "symbols": [
+      "extend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-mhwj-73qx-jqxm",
+    "package": "@theecryptochad/merge-guard",
+    "symbols": [
+      "deepMerge"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "package not on the registry"
+  },
+  {
+    "id": "GHSA-mjjj-6p43-vhhv",
+    "package": "deep-get-set",
+    "symbols": [
+      "deep"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-mjr5-v9c9-mm7g",
+    "package": "joplin",
+    "symbols": [
+      "openExternal"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-mp7w-mhcv-673j",
+    "package": "vega",
+    "symbols": [
+      "vlSelectionTuples"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-mp7w-mhcv-673j",
+    "package": "vega-selections",
+    "symbols": [
+      "vlSelectionTuples"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "vlSelectionTuples"
+    ]
+  },
+  {
+    "id": "GHSA-mpgr-2cx9-327h",
+    "package": "ssb-db",
+    "symbols": [
+      "get"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "get"
+    ]
+  },
+  {
+    "id": "GHSA-mpjm-v997-c4h4",
+    "package": "electron",
+    "symbols": [
+      "nativeImage"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-mq53-pc65-wjc4",
+    "package": "flowise",
+    "symbols": [
+      "documented"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "documented"
+    ]
+  },
+  {
+    "id": "GHSA-mqgv-67vx-g4m5",
+    "package": "js-data",
+    "symbols": [
+      "deepFillIn"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-mqr2-w7wj-jjgr",
+    "package": "mysql2",
+    "symbols": [
+      "keyFromFields"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "keyFromFields"
+    ]
+  },
+  {
+    "id": "GHSA-mr5m-2385-2vcp",
+    "package": "xdlocalstorage",
+    "symbols": [
+      "postMessage"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-mvhf-547c-h55r",
+    "package": "thumbler",
+    "symbols": [
+      "thumbnail"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-mwhf-vhr5-7j23",
+    "package": "whatsapp-api-js",
+    "symbols": [
+      "post",
+      "verifyRequestSignature"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-mxjx-28vx-xjjj",
+    "package": "network-ai",
+    "symbols": [
+      "ApprovalInbox"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-p28h-cc7q-c4fg",
+    "package": "css-what",
+    "symbols": [
+      "parse"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-p28v-f755-9qrg",
+    "package": "@trigger.dev/core",
+    "symbols": [
+      "logs"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "logs"
+    ]
+  },
+  {
+    "id": "GHSA-p2ph-7g93-hw3m",
+    "package": "@intlify/core",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-p2ph-7g93-hw3m",
+    "package": "@intlify/core-base",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-p2ph-7g93-hw3m",
+    "package": "@intlify/message-resolver",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "entry"
+    ]
+  },
+  {
+    "id": "GHSA-p2ph-7g93-hw3m",
+    "package": "@intlify/vue-i18n-core",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-p2ph-7g93-hw3m",
+    "package": "petite-vue-i18n",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "entry"
+    ]
+  },
+  {
+    "id": "GHSA-p2ph-7g93-hw3m",
+    "package": "vue-i18n",
+    "symbols": [
+      "entry"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-p4cc-w597-6cpm",
+    "package": "nodebb",
+    "symbols": [
+      "generateUUID"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-p5g2-jm85-8g35",
+    "package": "oneuptime",
+    "symbols": [
+      "append"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-p5gc-c584-jj6v",
+    "package": "vm2",
+    "symbols": [
+      "inspect"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "inspect"
+    ]
+  },
+  {
+    "id": "GHSA-p6jh-p7q8-pcrg",
+    "package": "nodee-utils",
+    "symbols": [
+      "deepSet"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "deepSet"
+    ]
+  },
+  {
+    "id": "GHSA-p8v3-m643-4xqx",
+    "package": "directus",
+    "symbols": [
+      "alias"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-p9cg-vqcc-grcx",
+    "package": "@fedify/fedify",
+    "symbols": [
+      "fetch"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "fetch"
+    ]
+  },
+  {
+    "id": "GHSA-pc47-g7gv-4gpw",
+    "package": "@rpldy/uploader",
+    "symbols": [
+      "createUploader"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-pcw7-5633-82vv",
+    "package": "@strapi/upload",
+    "symbols": [
+      "Content"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Content"
+    ]
+  },
+  {
+    "id": "GHSA-pfv6-prqm-85q8",
+    "package": "madlib-object-utils",
+    "symbols": [
+      "setValue"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-pgmg-gf5p-54j8",
+    "package": "gammautils",
+    "symbols": [
+      "deepSet",
+      "deepMerge"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "deepSet",
+      "deepMerge"
+    ]
+  },
+  {
+    "id": "GHSA-ph28-wwfj-fv7f",
+    "package": "sds",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-pr45-cg4x-ff4m",
+    "package": "ggit",
+    "symbols": [
+      "clone"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-prmx-7v35-7q82",
+    "package": "a11y-mcp",
+    "symbols": [
+      "A11yServer"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "A11yServer"
+    ]
+  },
+  {
+    "id": "GHSA-prp4-2f49-fcgp",
+    "package": "@actual-app/sync-server",
+    "symbols": [
+      "password"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-pwhf-39xg-4rxw",
+    "package": "@backstage/techdocs-common",
+    "symbols": [
+      "TechDocs"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "TechDocs"
+    ]
+  },
+  {
+    "id": "GHSA-px3p-vgh9-m57c",
+    "package": "@nocobase/plugin-workflow-javascript",
+    "symbols": [
+      "prepareStackTrace",
+      "getThis"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-q4h9-46xg-m3x9",
+    "package": "@openzeppelin/contracts-upgradeable",
+    "symbols": [
+      "UUPSUpgradeable"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-q4q5-c5cv-2p68",
+    "package": "vuetify",
+    "symbols": [
+      "eventName"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-q53c-4prm-w95q",
+    "package": "shescape",
+    "symbols": [
+      "escape",
+      "escapeAll"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-q56h-x9h5-q53c",
+    "package": "kityminder",
+    "symbols": [
+      "init"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-q5j8-9m9g-x2jh",
+    "package": "module-from-string",
+    "symbols": [
+      "requireFromString"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-q5mq-6fjg-4mw8",
+    "package": "thinkjs",
+    "symbols": [
+      "increment",
+      "decrement"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-q674-xm3x-2926",
+    "package": "parse-link-header",
+    "symbols": [
+      "checkHeader"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-q6m5-f73j-m9mc",
+    "package": "electron",
+    "symbols": [
+      "Buffer"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-qc59-cxj2-c2w4",
+    "package": "aws-cdk-lib",
+    "symbols": [
+      "CDK"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-qf3q-9f3h-cjp9",
+    "package": "nextchat",
+    "symbols": [
+      "PUT"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "package not on the registry"
+  },
+  {
+    "id": "GHSA-qj83-cq47-w5f8",
+    "package": "axios",
+    "symbols": [
+      "getSession"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getSession"
+    ]
+  },
+  {
+    "id": "GHSA-qpx9-hpmf-5gmw",
+    "package": "underscore",
+    "symbols": [
+      "flatten",
+      "isEqual"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-qr4m-jcvc-3382",
+    "package": "dot-notes",
+    "symbols": [
+      "create"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-qrpm-p2h7-hrv2",
+    "package": "nanoid",
+    "symbols": [
+      "valueOf"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "valueOf"
+    ]
+  },
+  {
+    "id": "GHSA-qwj6-q94f-8425",
+    "package": "mathlive",
+    "symbols": [
+      "test"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-qwph-4952-7xr6",
+    "package": "jsonwebtoken",
+    "symbols": [
+      "verify"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-r24h-634p-m72x",
+    "package": "schema-inspector",
+    "symbols": [
+      "sanitize",
+      "validate"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-r275-fr43-pm7q",
+    "package": "simple-git",
+    "symbols": [
+      "customArgs",
+      "clone",
+      "fetch",
+      "pull",
+      "push"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-r2rv-8pp3-65xw",
+    "package": "spmrc",
+    "symbols": [
+      "set",
+      "config"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-r399-636x-v7f6",
+    "package": "@langchain/core",
+    "symbols": [
+      "toJSON"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "toJSON"
+    ]
+  },
+  {
+    "id": "GHSA-r399-636x-v7f6",
+    "package": "langchain",
+    "symbols": [
+      "toJSON"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "toJSON"
+    ]
+  },
+  {
+    "id": "GHSA-r496-7hgp-53wf",
+    "package": "aaptjs",
+    "symbols": [
+      "dump"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-r4hg-4cpq-q57c",
+    "package": "jsuites",
+    "symbols": [
+      "Editor"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-r5cq-9537-9rpf",
+    "package": "mixme",
+    "symbols": [
+      "mutate",
+      "merge"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-r6ch-mqf9-qc9w",
+    "package": "undici",
+    "symbols": [
+      "headerValueNormalize"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "headerValueNormalize"
+    ]
+  },
+  {
+    "id": "GHSA-r7jx-5m6m-cpg9",
+    "package": "eazy-logger",
+    "symbols": [
+      "Logger"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-r7x9-8ph7-w8cg",
+    "package": "agents",
+    "symbols": [
+      "createHeaderBasedEmailResolver"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-r8jr-wg88-fq5c",
+    "package": "@keycloak/keycloak-admin-client",
+    "symbols": [
+      "Admin"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Admin"
+    ]
+  },
+  {
+    "id": "GHSA-rchf-xwx2-hm93",
+    "package": "@fedify/fedify",
+    "symbols": [
+      "exploit"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "exploit"
+    ]
+  },
+  {
+    "id": "GHSA-rgfv-v3jh-7ffp",
+    "package": "deeps",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-rj5f-7c8x-gjg4",
+    "package": "promisehelpers",
+    "symbols": [
+      "insert"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-rj7m-2p3g-fjxg",
+    "package": "create-choo-app3",
+    "symbols": [
+      "devInstall"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-rjq5-w47x-x359",
+    "package": "@hono/node-server",
+    "symbols": [
+      "standard"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-rjvj-673q-4hfw",
+    "package": "traceroute",
+    "symbols": [
+      "trace"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-rmhg-2cvv-q7vx",
+    "package": "dot-lens",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-rrj2-ph5q-jxw2",
+    "package": "jquery-validation",
+    "symbols": [
+      "showLabel"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-rrxv-q8m4-wch3",
+    "package": "@ensdomains/ens-contracts",
+    "symbols": [
+      "renew"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "renew"
+    ]
+  },
+  {
+    "id": "GHSA-rv5g-f82m-qrvv",
+    "package": "liquidjs",
+    "symbols": [
+      "sort_natural"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "sort_natural"
+    ]
+  },
+  {
+    "id": "GHSA-rwrp-9823-p2xq",
+    "package": "flowise",
+    "symbols": [
+      "plainDataObj"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "plainDataObj"
+    ]
+  },
+  {
+    "id": "GHSA-rx8g-88g5-qh64",
+    "package": "min-document",
+    "symbols": [
+      "removeAttributeNS"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-v245-v573-v5vm",
+    "package": "linkify-it",
+    "symbols": [
+      "test",
+      "match"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-v2v4-37r5-5v8g",
+    "package": "ip-address",
+    "symbols": [
+      "comparison"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "comparison"
+    ]
+  },
+  {
+    "id": "GHSA-v37h-5mfm-c47c",
+    "package": "vm2",
+    "symbols": [
+      "Inspect"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Inspect"
+    ]
+  },
+  {
+    "id": "GHSA-v38x-c887-992f",
+    "package": "flowise",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "run"
+    ]
+  },
+  {
+    "id": "GHSA-v38x-c887-992f",
+    "package": "flowise-components",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-v52w-28xh-v562",
+    "package": "@kozou/api",
+    "symbols": [
+      "call"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "call"
+    ]
+  },
+  {
+    "id": "GHSA-v52w-28xh-v562",
+    "package": "@kozou/core",
+    "symbols": [
+      "call"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "call"
+    ]
+  },
+  {
+    "id": "GHSA-v52w-28xh-v562",
+    "package": "@kozou/mcp",
+    "symbols": [
+      "call"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "call"
+    ]
+  },
+  {
+    "id": "GHSA-v52w-28xh-v562",
+    "package": "kozou",
+    "symbols": [
+      "call"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "call"
+    ]
+  },
+  {
+    "id": "GHSA-v62p-rq8g-8h59",
+    "package": "pbkdf2",
+    "symbols": [
+      "toBuffer"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "toBuffer"
+    ]
+  },
+  {
+    "id": "GHSA-v65r-p3vv-jjfv",
+    "package": "tinymce",
+    "symbols": [
+      "getContent"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-v667-gc2r-2xm7",
+    "package": "@whyour/qinglong",
+    "symbols": [
+      "source"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-v834-rhv4-65m3",
+    "package": "static-server",
+    "symbols": [
+      "validPath"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-v8vm-cqh8-q87q",
+    "package": "@nocobase/plugin-collection-sql",
+    "symbols": [
+      "checkSQL"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-v8wj-f5c7-pvxf",
+    "package": "@strapi/admin",
+    "symbols": [
+      "Webhook"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Webhook"
+    ]
+  },
+  {
+    "id": "GHSA-v9xm-ffx2-7h35",
+    "package": "apostrophe",
+    "symbols": [
+      "getBearer"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vc7j-h8xg-fv5x",
+    "package": "matrix-appservice-bridge",
+    "symbols": [
+      "provisioning"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "provisioning"
+    ]
+  },
+  {
+    "id": "GHSA-vc8f-x9pp-wf5p",
+    "package": "locutus",
+    "symbols": [
+      "parse_str"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vccv-cmxp-4j9h",
+    "package": "sanitize-html",
+    "symbols": [
+      "escapeHtml"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vcxh-qvgr-9fw9",
+    "package": "m.static",
+    "symbols": [
+      "requestFile"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "requestFile"
+    ]
+  },
+  {
+    "id": "GHSA-vffh-c9pq-4crh",
+    "package": "uptime-kuma",
+    "symbols": [
+      "send"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no affected version to inspect"
+  },
+  {
+    "id": "GHSA-vghf-hv5q-vc2g",
+    "package": "validator",
+    "symbols": [
+      "isLength"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vgj7-895j-gpr6",
+    "package": "@strapi/strapi",
+    "symbols": [
+      "panel"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vgj7-895j-gpr6",
+    "package": "strapi",
+    "symbols": [
+      "panel"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vh25-5764-9wcr",
+    "package": "@conventional-changelog/git-client",
+    "symbols": [
+      "another"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vh3f-qppr-j97f",
+    "package": "@meshconnect/web-link-sdk",
+    "symbols": [
+      "openLink"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "openLink"
+    ]
+  },
+  {
+    "id": "GHSA-vj5c-m527-mpff",
+    "package": "style-dictionary",
+    "symbols": [
+      "Expand"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Expand"
+    ]
+  },
+  {
+    "id": "GHSA-vj72-mwrj-m2xq",
+    "package": "deepmergefn",
+    "symbols": [
+      "deepMerge"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vjc7-jrh9-9j86",
+    "package": "9router",
+    "symbols": [
+      "responses"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-vjpq-xx5g-qvmm",
+    "package": "@bsv/sdk",
+    "symbols": [
+      "processInitialRequest",
+      "processInitialResponse"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "processInitialRequest",
+      "processInitialResponse"
+    ]
+  },
+  {
+    "id": "GHSA-vm32-vv63-w422",
+    "package": "jspdf",
+    "symbols": [
+      "addMetadata"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-vp4f-wxgw-7x8x",
+    "package": "@dcl/single-sign-on-client",
+    "symbols": [
+      "init"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-vp56-6g26-6827",
+    "package": "node-fetch",
+    "symbols": [
+      "isOriginPotentiallyTrustworthy"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "isOriginPotentiallyTrustworthy"
+    ]
+  },
+  {
+    "id": "GHSA-vp77-fqqp-79j8",
+    "package": "decal",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vpj2-qq7w-5qq6",
+    "package": "parse-server",
+    "symbols": [
+      "function"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-vqgr-mfxm-47f3",
+    "package": "git-archive",
+    "symbols": [
+      "exports"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vr98-27qj-3c8q",
+    "package": "rollup-plugin-server",
+    "symbols": [
+      "readFileFromContentBase"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-vrcx-gx3g-j3h8",
+    "package": "sqlite-vec",
+    "symbols": [
+      "npy_token_next"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "npy_token_next"
+    ]
+  },
+  {
+    "id": "GHSA-vrhw-v2hw-jffx",
+    "package": "signalk-server",
+    "symbols": [
+      "applicationData"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vrm6-8vpv-qv8q",
+    "package": "undici",
+    "symbols": [
+      "decompress"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "decompress"
+    ]
+  },
+  {
+    "id": "GHSA-vvxf-wj5w-6gj5",
+    "package": "hemmelig",
+    "symbols": [
+      "isPublicUrl"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "isPublicUrl"
+    ]
+  },
+  {
+    "id": "GHSA-vwhc-pww7-72x6",
+    "package": "total.js",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-vwrp-x96c-mhwq",
+    "package": "vm2",
+    "symbols": [
+      "prototype"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "prototype"
+    ]
+  },
+  {
+    "id": "GHSA-vxpw-j846-p89q",
+    "package": "undici",
+    "symbols": [
+      "WebSocketStream"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "WebSocketStream"
+    ]
+  },
+  {
+    "id": "GHSA-vxr4-rxw7-g7v6",
+    "package": "comb",
+    "symbols": [
+      "deepMerge"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-w2rr-34g9-rvrj",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "browsers"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "browsers"
+    ]
+  },
+  {
+    "id": "GHSA-w2rr-34g9-rvrj",
+    "package": "xmldom",
+    "symbols": [
+      "browsers"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "browsers"
+    ]
+  },
+  {
+    "id": "GHSA-w4hw-qcx7-56pr",
+    "package": "shescape",
+    "symbols": [
+      "escape",
+      "escapeAll"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-w4pp-8pjf-rmxw",
+    "package": "pacote",
+    "symbols": [
+      "addGitSha"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "addGitSha"
+    ]
+  },
+  {
+    "id": "GHSA-w52v-v783-gw97",
+    "package": "ghost",
+    "symbols": [
+      "Content"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-w5m3-xh75-mp55",
+    "package": "vega",
+    "symbols": [
+      "lassoAppend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-w5m3-xh75-mp55",
+    "package": "vega-functions",
+    "symbols": [
+      "lassoAppend"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "lassoAppend"
+    ]
+  },
+  {
+    "id": "GHSA-w7jx-j77m-wp65",
+    "package": "tinymce",
+    "symbols": [
+      "embed"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-w9j2-pvgh-6h63",
+    "package": "axios",
+    "symbols": [
+      "validateStatus"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "validateStatus"
+    ]
+  },
+  {
+    "id": "GHSA-wf6c-hrhf-86cw",
+    "package": "nocodb",
+    "symbols": [
+      "insecure"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-wg4g-395p-mqv3",
+    "package": "n8n-mcp",
+    "symbols": [
+      "n8n_manage_credentials"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "n8n_manage_credentials"
+    ]
+  },
+  {
+    "id": "GHSA-wg6g-ppvx-927h",
+    "package": "cached-path-relative",
+    "symbols": [
+      "cachedPathRelative"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-wg86-r78f-74mp",
+    "package": "flowise",
+    "symbols": [
+      "Custom"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Custom"
+    ]
+  },
+  {
+    "id": "GHSA-wg86-r78f-74mp",
+    "package": "flowise-components",
+    "symbols": [
+      "Custom"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-wh4c-j3r5-mjhp",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "mutation"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "mutation"
+    ]
+  },
+  {
+    "id": "GHSA-wh4c-j3r5-mjhp",
+    "package": "xmldom",
+    "symbols": [
+      "mutation"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "mutation"
+    ]
+  },
+  {
+    "id": "GHSA-wj56-g96r-673q",
+    "package": "studiocms",
+    "symbols": [
+      "REST"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "REST"
+    ]
+  },
+  {
+    "id": "GHSA-wjc4-73q6-gv3m",
+    "package": "plotly.js",
+    "symbols": [
+      "plot"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-wjpc-cgvw-xx23",
+    "package": "sey",
+    "symbols": [
+      "deepmerge"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-wm5r-5qp3-5vxf",
+    "package": "dbgate-api",
+    "symbols": [
+      "import"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "import"
+    ]
+  },
+  {
+    "id": "GHSA-wmm3-h9qj-p5v6",
+    "package": "sillytavern",
+    "symbols": [
+      "Firefox",
+      "g",
+      "view"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-wq8f-xmq3-5vq9",
+    "package": "broccoli-compass",
+    "symbols": [
+      "child_process"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-wqq3-wfmp-v85g",
+    "package": "mojic",
+    "symbols": [
+      "getDecryptStream"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-wvr6-395c-5pxr",
+    "package": "cedipay-core",
+    "symbols": [
+      "transaction"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "package not on the registry"
+  },
+  {
+    "id": "GHSA-wxfj-84xf-7gxv",
+    "package": "utilities",
+    "symbols": [
+      "_mix"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "could not unpack the tarball"
+  },
+  {
+    "id": "GHSA-wxgw-qj99-44c2",
+    "package": "node-forge",
+    "symbols": [
+      "setPath"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "setPath"
+    ]
+  },
+  {
+    "id": "GHSA-wxhw-j4hc-fmq6",
+    "package": "@nyariv/sandboxjs",
+    "symbols": [
+      "constructor"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "constructor"
+    ]
+  },
+  {
+    "id": "GHSA-wxrr-jp8m-qq7f",
+    "package": "flowise",
+    "symbols": [
+      "documented"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "documented"
+    ]
+  },
+  {
+    "id": "GHSA-x2fc-mxcx-w4mf",
+    "package": "mathjs",
+    "symbols": [
+      "deepExtend"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-x369-mcw8-8rvj",
+    "package": "darkreader",
+    "symbols": [
+      "setFetchMethod"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-x43g-gj9x-838x",
+    "package": "phantomjs",
+    "symbols": [
+      "open"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "open"
+    ]
+  },
+  {
+    "id": "GHSA-x4c5-c7rf-jjgv",
+    "package": "@octokit/endpoint",
+    "symbols": [
+      "parse"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "parse"
+    ]
+  },
+  {
+    "id": "GHSA-x5m8-2r8v-8f97",
+    "package": "libnested",
+    "symbols": [
+      "set"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-x6wf-f3px-wcqx",
+    "package": "@xmldom/xmldom",
+    "symbols": [
+      "CharacterData"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "CharacterData"
+    ]
+  },
+  {
+    "id": "GHSA-x6wf-f3px-wcqx",
+    "package": "xmldom",
+    "symbols": [
+      "CharacterData"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "CharacterData"
+    ]
+  },
+  {
+    "id": "GHSA-x9g3-xrwr-cwfg",
+    "package": "piscina",
+    "symbols": [
+      "filename"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-x9w5-v3q2-3rhw",
+    "package": "browserify-sign",
+    "symbols": [
+      "dsaVerify"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "dsaVerify"
+    ]
+  },
+  {
+    "id": "GHSA-xcvv-84j5-jw9h",
+    "package": "assign-deep",
+    "symbols": [
+      "merging"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-xf7w-r453-m56c",
+    "package": "fstream",
+    "symbols": [
+      "DirWriter"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-xfh7-phr7-gr2x",
+    "package": "parse-server",
+    "symbols": [
+      "readOnlyMasterKey"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "file appears minified or bundled"
+  },
+  {
+    "id": "GHSA-xgm2-5f3f-mvvc",
+    "package": "hono",
+    "symbols": [
+      "AWS"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "AWS"
+    ]
+  },
+  {
+    "id": "GHSA-xh2p-7p87-fhgh",
+    "package": "@liquity/contracts",
+    "symbols": [
+      "batchLiquidateTroves"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "batchLiquidateTroves"
+    ]
+  },
+  {
+    "id": "GHSA-xh87-mx6m-69f3",
+    "package": "hono",
+    "symbols": [
+      "getConnInfo"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "getConnInfo"
+    ]
+  },
+  {
+    "id": "GHSA-xh92-rqrq-227v",
+    "package": "@mastra/mcp-docs-server",
+    "symbols": [
+      "readMdxContent"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no exports found"
+  },
+  {
+    "id": "GHSA-xhjh-pmcv-23jw",
+    "package": "axios",
+    "symbols": [
+      "encode"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "encode"
+    ]
+  },
+  {
+    "id": "GHSA-xhq9-58fw-859p",
+    "package": "apostrophe",
+    "symbols": [
+      "REST"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-xj5x-m3f3-5x3h",
+    "package": "electron",
+    "symbols": [
+      "executeJavaScript"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-xj9v-6q2f-vqhx",
+    "package": "wifey",
+    "symbols": [
+      "connect"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-xjr7-3c3g-m763",
+    "package": "renovate",
+    "symbols": [
+      "quote"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-xmxh-g7wj-8m4m",
+    "package": "curling",
+    "symbols": [
+      "run"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "run"
+    ]
+  },
+  {
+    "id": "GHSA-xp9c-82x8-7f67",
+    "package": "@node-red/runtime",
+    "symbols": [
+      "admin"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "admin"
+    ]
+  },
+  {
+    "id": "GHSA-xq4f-3jxp-qv6m",
+    "package": "csvjson",
+    "symbols": [
+      "toCsv"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-xq4x-622m-q8fq",
+    "package": "@lobehub/lobehub",
+    "symbols": [
+      "runCommand"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-xqg6-98cw-gxhq",
+    "package": "@builder.io/qwik-city",
+    "symbols": [
+      "formToObj"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "formToObj"
+    ]
+  },
+  {
+    "id": "GHSA-xrh7-m5pp-39r6",
+    "package": "eta",
+    "symbols": [
+      "Express"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "Express"
+    ]
+  },
+  {
+    "id": "GHSA-xrxm-cp7j-8xf6",
+    "package": "@angular/platform-server",
+    "symbols": [
+      "url"
+    ],
+    "verdict": "not_found",
+    "missing": [
+      "url"
+    ]
+  },
+  {
+    "id": "GHSA-xv56-3wq5-9997",
+    "package": "renovate",
+    "symbols": [
+      "quote"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "no resolvable entry point"
+  },
+  {
+    "id": "GHSA-xx4g-r65p-3qf2",
+    "package": "mpregular",
+    "symbols": [
+      "addEventHandler"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-xxjr-mmjv-4gpg",
+    "package": "lodash",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-xxjr-mmjv-4gpg",
+    "package": "lodash-amd",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "large file yielded few exports, so the module shape was not understood"
+  },
+  {
+    "id": "GHSA-xxjr-mmjv-4gpg",
+    "package": "lodash-es",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-xxjr-mmjv-4gpg",
+    "package": "lodash.unset",
+    "symbols": [
+      "unset",
+      "omit"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  }
+]
