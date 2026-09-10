@@ -142,11 +142,42 @@ They did. The question that mattered was "are these callable exports a
 reachability analysis can match", which sampling prose never tested. The
 measurement was answering an easier question than the one that decides safety.
 
-### The category
+### The category, measured
+
+A 150-advisory random sample from the 7,020 live GHSA records in the OSV npm
+feed, classified twice, independently, on reshuffled batches:
+
+| | Round 1 | Round 2 |
+|---|---|---|
+| Names a callable ("call") | 19 (12.7%) | 25 (16.7%) |
+| Names no callable ("data") | 127 (84.7%) | **124 (82.7%)** |
+| Unclear | 4 | 1 |
+
+**82.7% of npm advisories do not name a function a developer's code would
+call** (95% CI 76.7 to 88.7%). Only about one in six is the shape a reachability
+tool can answer.
+
+Reliability: **92% agreement** between rounds, **Cohen's kappa 0.81**, which is
+conventionally "almost perfect". Round 1 was less reliable, with per-batch call
+rates of 18%, 12% and 8%, because the rubric conflated "does it name something
+callable" with "is calling it sufficient to be exploited". Only the first is a
+question reachability answers. Round 2 asks that alone and its per-batch rates
+tightened to 9, 8 and 8.
+
+The share is flat across package popularity, staying near 85% even for packages
+with over a million weekly downloads, so it is not an artefact of sampling
+obscure packages.
+
+Every advisory's two classifications, package kind and download count are in
+`study/classification.json`, and `scripts/sample-advisories.ts` regenerates the
+identical sample from seed 20260910. Individual calls can be disputed.
+
+### Why it happens
 
 Some vulnerabilities are triggered by **passing a value**, not by invoking an
-export: query operators, configuration keys, option flags, template strings. For
-these, absence of a matching call proves nothing at all.
+export: query operators, configuration keys, option flags, template strings.
+Others live in servers, CLIs and application frameworks with no library API at
+all. For all of these, absence of a matching call proves nothing.
 
 Any reachability system that treats "no call found" as "not affected" will
 silently clear them. This repository now models the distinction explicitly
@@ -168,10 +199,11 @@ The published false-positive reduction figures are not wrong. They assume the
 vulnerable-function data as an input. For npm, that assumption is the whole
 problem.
 
-And the reduction figures may be optimistic for a second reason: if a
-meaningful share of advisories are data-triggered rather than call-triggered,
-then some portion of what a reachability tool "eliminates" is not eliminated at
-all. It is a false negative that looks exactly like a win.
+And the reduction figures may be optimistic for a second reason. Roughly five
+in six npm advisories name no callable function at all. Whatever a reachability
+tool reports for those, it is not derived from finding or not finding a call,
+because there is no call to look for. Any share of them reported as eliminated
+is a false negative that looks exactly like a win.
 
 ## Reproducing this
 
@@ -207,6 +239,13 @@ Lite CLI saw 4 packages instead of 1,179.
 - **Unreviewed dataset.** No record has been human-reviewed. The marsdb defect
   is exactly what review exists to catch.
 - **Precision measured by one person** reading 20 records per round.
+- **The trigger classification was made by language models** reading advisory
+  prose, twice, not by a domain expert. Agreement was 92% with kappa 0.81, and
+  the full per-advisory record is published for dispute, but it is not the same
+  as expert adjudication.
+- **Classification used only the advisory text**, capped at 420 characters. A
+  longer description or the linked patch might name a callable the digest
+  omitted, which would bias the result toward "data".
 
 ## Repository
 
