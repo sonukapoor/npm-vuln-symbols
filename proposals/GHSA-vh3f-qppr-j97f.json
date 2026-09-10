@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `createLink.openLink` function",
     "fixCommit": "https://github.com/FrontFin/mesh-web-sdk/commit/7f22148516d58e21a8b7670dde927d614c0d15c2"
   }

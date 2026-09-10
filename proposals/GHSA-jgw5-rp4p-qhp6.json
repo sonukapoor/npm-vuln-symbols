@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the renderList function",
     "fixCommit": "https://github.com/quill-mention/quill-mention/commit/e85262ddced0a7f0b6fc8350d236a68bd1e28385"
   }

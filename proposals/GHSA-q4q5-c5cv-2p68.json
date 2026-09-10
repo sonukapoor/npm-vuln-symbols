@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the 'eventName' function",
     "fixCommit": "https://github.com/vuetifyjs/vuetify/commit/ade1434927f55a0eccf3d54f900f24c5fa85a176"
   }

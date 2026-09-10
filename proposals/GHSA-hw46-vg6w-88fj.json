@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the fromSerializable function",
     "fixCommit": "https://github.com/inikulin/replicator/commit/2c626242fb4a118855262c64b5731b2ce98e521b"
   }

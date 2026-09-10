@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `getFullPath` method",
     "fixCommit": "https://github.com/langchain-ai/langchainjs/commit/a0fad77d6b569e5872bd4a9d33be0c0785e538a9"
   }

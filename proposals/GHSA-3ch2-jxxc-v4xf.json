@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "through `exec` API",
     "fixCommit": "https://github.com/akoskm/create-mcp-server-stdio/commit/48c26bbe1f8c62764e4592f33c8300d1cadd2eac"
   }

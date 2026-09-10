@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the output, even if the `trust` function",
     "fixCommit": "https://github.com/KaTeX/KaTeX/commit/fc5af64183a3ceb9be9d1c23a275999a728593de"
   }

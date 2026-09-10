@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "within the getLastModDate() function",
     "fixCommit": "https://github.com/thejoshwolfe/yauzl/commit/c4695215b05c6adffda613b9051a2a85429b33fe"
   }

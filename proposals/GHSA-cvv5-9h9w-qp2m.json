@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `getWindowsIEEE8021x` function",
     "fixCommit": "https://github.com/sebhildebrandt/systeminformation/commit/f7af0a67b78e7894335a6cad510566a25e06ae41"
   }

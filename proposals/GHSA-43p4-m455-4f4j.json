@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in `@trpc/server`'s `formDataToObject` function",
     "fixCommit": "https://github.com/trpc/trpc/commit/78629d524968ef8db5a7adf68d8b95a44369d77e"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the 'wiscan.scan' function",
     "fixCommit": "https://github.com/simenkid/mt7688-wiscan/commit/ff6d6567c65b4e972916a8fbc4533212f20a2fa5"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `init` function",
     "fixCommit": "https://github.com/decentraland/single-sign-on-client/commit/bd20ea9533d0cda30809d929db85b1b76cef855a"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the jsondiffpatch.patch() and jsondiffpatch/formatters/jsonpatch.patch() APIs",
     "fixCommit": "https://github.com/benjamine/jsondiffpatch/commit/381c0125efab49f6f0dbc08317d01d55717672af"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `Http2Sessions.getSession()` method",
     "fixCommit": "https://github.com/axios/axios/commit/0588880ac7ddba7594ef179930493884b7e90bf5"
   }

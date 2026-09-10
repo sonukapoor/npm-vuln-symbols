@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "inside the `timingSafeEqual` function",
     "fixCommit": "https://github.com/honojs/hono/commit/91def7cab654bad5eecc9270e6620d577971ff5e"
   }

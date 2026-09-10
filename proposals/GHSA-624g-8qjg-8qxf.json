@@ -33,8 +33,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the above PoC triggers the `setValue` function",
     "fixCommit": "https://github.com/edmundhung/conform/commit/4819d51b5a53fd5486fc85c17cdc148eb160e3de"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the bnModInverse function",
     "fixCommit": "https://github.com/kjur/jsrsasign/commit/ca5b027240287a1e71fe63019fc4400332594323"
   }

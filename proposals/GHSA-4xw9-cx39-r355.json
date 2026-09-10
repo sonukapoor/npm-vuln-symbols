@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the decode function",
     "fixCommit": "https://github.com/joaquimserafim/json-web-token/commit/b6e56b1346f48432d29133c76b65222ad93956b7"
   }

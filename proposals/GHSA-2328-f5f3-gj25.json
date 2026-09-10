@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "In `lib/x509.js`, the `verifyCertificateChain()` function",
     "fixCommit": "https://github.com/digitalbazaar/forge/commit/2e492832fb25227e6b647cbe1ac981c123171e90"
   }

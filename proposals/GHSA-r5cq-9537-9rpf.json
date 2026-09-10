@@ -14,8 +14,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "through the mutate() and merge() functions",
     "fixCommit": "https://github.com/adaltas/node-mixme/commit/cfd5fbfc32368bcf7e06d1c5985ea60e34cd4028"
   }

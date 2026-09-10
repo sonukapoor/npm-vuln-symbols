@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "using the host `apply` method",
     "fixCommit": "https://github.com/patriksimek/vm2/commit/2b5f3e3a060d9088f5e1cdd585d683d491f990a3"
   }

@@ -13,8 +13,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `decode()` function",
     "fixCommit": "https://github.com/hokaccha/node-jwt-simple/commit/ead36e1d687645da9c3be8befdaaef622ea33106"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "inside the sandbox accesses `.constructor` on an async function",
     "fixCommit": "https://github.com/nyariv/SandboxJS/commit/345aee6566e47979dee5c337b925b141e7f78ccd"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the setByPath function",
     "fixCommit": "https://github.com/clientIO/joint/commit/e5bf89efef6d5ea572d66870ffd86560de7830a8"
   }

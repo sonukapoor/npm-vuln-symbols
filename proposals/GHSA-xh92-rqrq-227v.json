@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "within the `readMdxContent` function",
     "fixCommit": "https://github.com/mastra-ai/mastra/commit/7f2b528ba82db512d68832d2f8ad6cbc8bb46cd4"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "using the `modInverse` function",
     "fixCommit": "https://github.com/cisco/node-jose/commit/901d91508a70e3b9bdfc45688ea07bb4e1b8210d"
   }

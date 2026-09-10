@@ -16,8 +16,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in `checkLinuxDCHPInterfaces()` with a non-shell `fs.readFileSync` read and adds a Linux regression test that points the function",
     "fixCommit": "https://github.com/sebhildebrandt/systeminformation/commit/bbfddde48672d0ee124fefdb3cb4442fd9dd4f03"
   }

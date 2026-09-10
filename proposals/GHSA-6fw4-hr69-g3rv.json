@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the setter function",
     "fixCommit": "https://github.com/jquense/expr/commit/df846910915d59f711ce63c1f817815bceab5ff7"
   }

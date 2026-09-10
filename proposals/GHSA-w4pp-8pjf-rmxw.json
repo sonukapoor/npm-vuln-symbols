@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the addGitSha function",
     "fixCommit": "https://github.com/npm/pacote/commit/627a7dc1a214d857472a13b48e42559c75288c9e"
   }

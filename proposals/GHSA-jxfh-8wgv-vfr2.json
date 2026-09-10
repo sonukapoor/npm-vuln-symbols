@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "the deepCopy method is vulnerable",
     "fixCommit": "https://github.com/dojo/dojo/commit/20a00afb68f5587946dc76fbeaa68c39bda2171d"
   }

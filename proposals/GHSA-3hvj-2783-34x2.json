@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `Parser.prototype.parse` method",
     "fixCommit": "https://github.com/jwtk/njwt/commit/ec9483b6eec1150d56f772ddd308c2bbdf2f98f4"
   }

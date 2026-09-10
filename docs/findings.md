@@ -237,6 +237,50 @@ It is the same gap as the missing symbol field, in a different place. The
 information exists and is not machine-addressable, so every consumer has to
 re-derive it with a heuristic.
 
+## Finding 5: agreement between sources is a usable triage signal
+
+Fetching the fix commit for every record that links one, and checking whether
+the diff references the symbol the prose named:
+
+| | |
+|---|---|
+| Records with a fix commit | 324 |
+| Patch fetched | 320 |
+| **Diff confirms every named symbol** | **171** (53%) |
+| **Diff confirms nothing** | **153** (47%) |
+
+The 171 reach `confidence: high`, which nothing could previously do because
+only the prose half of the definition existed.
+
+The 153 are the more useful half. Reading a sample, they split roughly evenly:
+
+**Extraction errors the diff correctly refused to confirm**
+
+```
+@fuel-ts/account   question    from "the package in question, from fuel's graphql api"
+flowise            comment     from "in the comment, to construct the directory"
+flowise            documented  from "via the documented API"
+mlflow             BEFORE_REQUEST_VALIDATORS   a constant, not a function
+@misskey-dev/summaly  summaly   the package's own name
+```
+
+**Correct symbols the matcher simply missed**
+
+```
+simple-git    clone, pull, push, listRemote
+nodemailer    resolveAll
+mathlive      createHTML
+```
+
+So corroboration does not verify a record, but disagreement concentrates the
+errors. That makes it a **prioritised review queue**: the uncorroborated pile
+carries a much higher error rate than the corroborated one, and a human should
+read it first.
+
+The `@misskey-dev/summaly` case also exposed a real bug. Package-name rejection
+compared against the full scoped name, so a symbol matching the unscoped part
+survived. Fixed, with two records dropped.
+
 ## What this means
 
 For anyone hoping to use open data for npm reachability today: the data does not

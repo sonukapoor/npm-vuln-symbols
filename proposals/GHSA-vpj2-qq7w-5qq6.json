@@ -16,8 +16,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "using the `function` keyword and its validator is a plain object or arrow function",
     "fixCommit": "https://github.com/parse-community/parse-server/commit/4fc48cf28f22eea200d74d883505f485234a48d7"
   }

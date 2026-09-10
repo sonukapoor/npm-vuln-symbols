@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via `data-*` attribute name injection**\n\nThe `acceptDataAttrs` function",
     "fixCommit": "https://github.com/unjs/unhead/commit/9ecc4f9568b0e23938f36d4b23fcfa4a18a89045"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the checkHeader function",
     "fixCommit": "https://github.com/thlorenz/parse-link-header/commit/72f05c717b3f129c5331a07bf300ed8886eb8ae1"
   }

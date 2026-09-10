@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in version 0.20.6\n\n### Workarounds\nSet the `apiPrefilter` option to a filter object instead of a function",
     "fixCommit": "https://github.com/remult/remult/commit/6892ae97134126d8710ef7302bb2fc37730994c5"
   }

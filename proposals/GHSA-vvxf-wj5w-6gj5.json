@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `isPublicUrl` function",
     "fixCommit": "https://github.com/HemmeligOrg/Hemmelig.app/commit/6c909e571d0797ee3bbd2c72e4eb767b57378228"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `wifiNetworks()` function",
     "fixCommit": "https://github.com/sebhildebrandt/systeminformation/commit/22242aa56188f2bffcbd7d265a11e1ebb808b460"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `deserialize()` method",
     "fixCommit": "https://github.com/middleapi/orpc/commit/1dba06fc6f938c2486de303c2fa096bc1c8418b5"
   }

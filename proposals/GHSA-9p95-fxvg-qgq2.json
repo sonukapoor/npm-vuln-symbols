@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via `clone()` method",
     "fixCommit": "https://github.com/steveukx/git-js/commit/774648049eb3e628379e292ea172dccaba610504"
   }

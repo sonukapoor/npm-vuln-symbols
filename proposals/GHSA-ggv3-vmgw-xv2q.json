@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the lib.mutateMergeDeep function",
     "fixCommit": "https://github.com/TanStack/form/commit/455522c8f3272787668f3d1afd6adbc6dc1b9e8a"
   }
