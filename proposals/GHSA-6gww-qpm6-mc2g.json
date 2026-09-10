@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the defaultIpChecker function",
     "fixCommit": "https://github.com/welefen/ssrf-agent/commit/9607175acd0647d821bae4e8fcc3b712aca3fd2d#diff-e727e4bdf3657fd1d798edcd6b099d6e092f8573cba266154583a746bba0f346"
   }

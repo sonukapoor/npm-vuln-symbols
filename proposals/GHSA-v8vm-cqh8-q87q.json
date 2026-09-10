@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via SQL Blacklist Bypass\n\n## Summary\n\nThe `checkSQL()` function",
     "fixCommit": "https://github.com/nocobase/nocobase/commit/4aecb60d151a9002004dcf984f63d62f17a6cb45"
   }

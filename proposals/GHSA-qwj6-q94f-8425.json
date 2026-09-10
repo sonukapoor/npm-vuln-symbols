@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text+fix_commit",
-    "confidence": "high",
+    "source": "advisory_text",
+    "confidence": "medium",
     "excerpt": "in the `test` folder, no functions",
     "fixCommit": "https://github.com/arnog/mathlive/commit/abc26056fd5e29a99edfa96a0bbe855ea2a8b678"
   }

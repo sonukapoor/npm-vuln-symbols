@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text+fix_commit",
-    "confidence": "high",
+    "source": "advisory_text",
+    "confidence": "medium",
     "excerpt": "in the wild.**\n\nThe `get()` method",
     "fixCommit": "https://github.com/ssbc/ssb-db/commit/43334d0871c9cc6220e0f6d6338499060f7761d4"
   }

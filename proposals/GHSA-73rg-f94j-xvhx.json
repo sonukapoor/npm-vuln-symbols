@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `getRenderNodeProps` function",
     "fixCommit": "https://github.com/udecode/plate/commit/16df6074edac22d56c60e0283eae0740230401c9"
   }

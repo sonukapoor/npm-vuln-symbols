@@ -62,3 +62,31 @@ describe("isFullyCorroborated", () => {
     expect(isFullyCorroborated(LODASH_PATCH, [])).toBe(false);
   });
 });
+
+describe("short symbols need declaration-strength evidence", () => {
+  // Names like set, get and add appear in a calling position in almost any
+  // JavaScript diff, so a member access is a coincidence rather than
+  // corroboration. 50 of 171 upgraded records had a symbol of five characters
+  // or fewer, which made their "high" confidence unfounded.
+
+  it("does not corroborate a short symbol from a member access alone", () => {
+    const patch = "+  cache.set(key, value);\n+  other.set(a, b);";
+    expect(corroborateSymbols(patch, ["set"]).corroborated).toEqual([]);
+  });
+
+  it("does corroborate a short symbol that is declared in the diff", () => {
+    const patch = "+exports.set = function (obj, path, value) {";
+    expect(corroborateSymbols(patch, ["set"]).corroborated).toEqual(["set"]);
+  });
+
+  it("corroborates a short symbol defined as an arrow function", () => {
+    const patch = "+const exec = (cmd) => spawn(cmd);";
+    expect(corroborateSymbols(patch, ["exec"]).corroborated).toEqual(["exec"]);
+  });
+
+  it("still corroborates a distinctive symbol from use alone", () => {
+    // "zipObjectDeep" appearing anywhere in a diff is informative by itself.
+    const patch = "+  const result = _.zipObjectDeep(props, values);";
+    expect(corroborateSymbols(patch, ["zipObjectDeep"]).corroborated).toEqual(["zipObjectDeep"]);
+  });
+});

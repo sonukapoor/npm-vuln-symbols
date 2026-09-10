@@ -20,23 +20,56 @@ function escapeForPattern(symbol: string): string {
 }
 
 /**
+ * Symbols at or below this length are too common for a loose match to mean
+ * anything. Names like `set`, `get`, `add`, `exec` and `parse` appear in almost
+ * any JavaScript diff, so `.set(` is a coincidence rather than corroboration.
+ */
+const SHORT_SYMBOL_LENGTH = 5;
+
+/**
+ * Matches that only count as evidence for a distinctive name.
+ *
+ * A member access or a bare call is weak: it says the token appears in a
+ * calling position somewhere in the diff, which for a common name is nearly
+ * guaranteed.
+ */
+function looseMentionPatterns(name: string): RegExp[] {
+  return [
+    new RegExp(`\\.${name}\\s*[(=,;)\\]}]`),
+    new RegExp(`\\.${name}\\b`),
+    new RegExp(`\\b${name}\\s*\\(`),
+  ];
+}
+
+/**
+ * Matches that state the symbol is defined or exported here, not merely used.
+ * These are the only ones trusted for a short, common name.
+ */
+function declarationPatterns(name: string): RegExp[] {
+  return [
+    new RegExp(`\\bfunction\\s+${name}\\b`),
+    new RegExp(`\\bexports\\.${name}\\s*=`),
+    new RegExp(`\\bmodule\\.exports\\.${name}\\s*=`),
+    new RegExp(`\\b${name}\\s*[:=]\\s*(?:async\\s+)?function\\b`),
+    new RegExp(`\\b${name}\\s*[:=]\\s*\\([^)]*\\)\\s*=>`),
+    new RegExp(`\\b(?:const|let|var)\\s+${name}\\s*=`),
+    new RegExp(`\\bclass\\s+${name}\\b`),
+  ];
+}
+
+/**
  * Contexts that mark a mention as code rather than coincidence.
  *
- * A bare word match is far too loose: "template" appears inside
- * `INVALID_TEMPL_VAR_ERROR_TEXT` and in prose comments that have nothing to do
- * with the export. Requiring a call, a member access, a declaration or an
- * object key keeps the signal meaningful.
+ * Distinctive names may be recognised by use, since seeing `zipObjectDeep` in a
+ * diff is itself informative. Short names must be seen being defined.
  */
 function buildMentionPatterns(symbol: string): RegExp[] {
   const name = escapeForPattern(symbol);
-  return [
-    new RegExp(`\\bfunction\\s+${name}\\b`),
-    new RegExp(`\\.${name}\\s*[(=,;)\\]}]`),
-    new RegExp(`\\.${name}\\b`),
-    new RegExp(`\\b${name}\\s*[:=]\\s*function\\b`),
-    new RegExp(`\\bexports\\.${name}\\b`),
-    new RegExp(`\\b${name}\\s*\\(`),
-  ];
+  const declarations = declarationPatterns(name);
+  if (symbol.length <= SHORT_SYMBOL_LENGTH) {
+    return declarations;
+  }
+  return [...declarations, ...looseMentionPatterns(name)];
 }
 
 /** Only added and removed lines count. Context lines were not changed. */

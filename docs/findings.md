@@ -244,15 +244,31 @@ the diff references the symbol the prose named:
 
 | | |
 |---|---|
-| Records with a fix commit | 324 |
-| Patch fetched | 320 |
-| **Diff confirms every named symbol** | **171** (53%) |
-| **Diff confirms nothing** | **153** (47%) |
+| Records with a fix commit | 323 |
+| Patch fetched | 319 |
+| **Diff confirms every named symbol** | **162** (51%) |
+| **Diff confirms nothing** | **145** (45%) |
 
-The 171 reach `confidence: high`, which nothing could previously do because
+The 162 reach `confidence: high`, which nothing could previously do because
 only the prose half of the definition existed.
 
-The 153 are the more useful half. Reading a sample, they split roughly evenly:
+A first attempt upgraded 171, and 50 of those had a symbol of five characters
+or fewer: `set`, `get`, `add`, `exec`, `parse`. Almost any JavaScript diff
+contains `.set(` somewhere, so for those the match was a coincidence rather
+than evidence, and the confidence was unfounded.
+
+Distinctive names like `zipObjectDeep` are still recognised from use, since
+seeing that token in a diff is informative by itself. Short names must now be
+seen being **defined**, as `exports.set =` or `function set(`, not merely
+called. Nine upgrades disappeared, and the 36 short-name records that survived
+carry real declaration evidence:
+
+```
+set-in     function setIn (object, path, value) {
+total4     exports.set = function(obj, path, value) {
+```
+
+The 145 that corroborate nothing are the more useful half. Reading a sample, they split roughly evenly:
 
 **Extraction errors the diff correctly refused to confirm**
 

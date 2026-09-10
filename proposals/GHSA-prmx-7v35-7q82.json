@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in A11yServer function",
     "fixCommit": "https://github.com/priyankark/a11y-mcp/commit/e3e11c9e8482bd06b82fd9fced67be4856f0dffc"
   }

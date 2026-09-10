@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the dynamicImport function",
     "fixCommit": "https://github.com/antonk52/lilconfig/commit/2c68a1ab8764fc74acc46771e1ad39ab07a9b0a7"
   }
