@@ -46,6 +46,15 @@ export interface ExportScan {
   readonly result: ExportScanResult;
   readonly names: readonly string[];
   readonly reason?: string;
+  /**
+   * Module specifiers this file hands its export surface to, such as
+   * `module.exports = require("./lib")` or `export * from "./core"`.
+   *
+   * A caller that can resolve paths should follow these. Twelve of the first
+   * twenty-seven unreadable packages failed for exactly this reason, so giving
+   * up here discards the largest recoverable group.
+   */
+  readonly delegatesTo?: readonly string[];
 }
 
 function addName(names: Set<string>, name: string | undefined): void {
@@ -55,7 +64,7 @@ function addName(names: Set<string>, name: string | undefined): void {
 }
 
 /** ESM: export function x, export const x, export { x }, export * from. */
-function collectEsmExports(node: ts.Node, names: Set<string>): boolean {
+function collectEsmExports(node: ts.Node, names: Set<string>, delegates: Set<string>): boolean {
   let sawReExport = false;
   if (ts.isExportDeclaration(node)) {
     if (node.exportClause !== undefined && ts.isNamedExports(node.exportClause)) {
@@ -65,6 +74,10 @@ function collectEsmExports(node: ts.Node, names: Set<string>): boolean {
     } else {
       // `export * from "./other"` hides names in another file.
       sawReExport = true;
+      const specifier = node.moduleSpecifier;
+      if (specifier !== undefined && ts.isStringLiteral(specifier)) {
+        delegates.add(specifier.text);
+      }
     }
   }
   if (ts.isFunctionDeclaration(node) || ts.isClassDeclaration(node)) {
@@ -148,7 +161,7 @@ function collectMethodNames(node: ts.Node, names: Set<string>): void {
 }
 
 /** CommonJS: exports.x =, module.exports.x =, module.exports = { x }. */
-function collectCommonJsExports(node: ts.Node, names: Set<string>): boolean {
+function collectCommonJsExports(node: ts.Node, names: Set<string>, delegates: Set<string>): boolean {
   let sawOpaqueAssignment = false;
   if (!ts.isBinaryExpression(node) || node.operatorToken.kind !== ts.SyntaxKind.EqualsToken) {
     return false;
@@ -182,6 +195,16 @@ function collectCommonJsExports(node: ts.Node, names: Set<string>): boolean {
       // Assigned a function, a require() call, or something computed. The real
       // export surface is elsewhere and cannot be read from here.
       sawOpaqueAssignment = true;
+      if (
+        ts.isCallExpression(node.right) &&
+        ts.isIdentifier(node.right.expression) &&
+        node.right.expression.text === "require"
+      ) {
+        const arg = node.right.arguments[0];
+        if (arg !== undefined && ts.isStringLiteral(arg)) {
+          delegates.add(arg.text);
+        }
+      }
     }
   }
   return sawOpaqueAssignment;
@@ -205,13 +228,14 @@ export function scanExports(fileName: string, source: string): ExportScan {
 
   const sourceFile = ts.createSourceFile(fileName, source, ts.ScriptTarget.Latest, true);
   const names = new Set<string>();
+  const delegates = new Set<string>();
   let incomplete = false;
 
   const visit = (node: ts.Node): void => {
-    if (collectEsmExports(node, names)) {
+    if (collectEsmExports(node, names, delegates)) {
       incomplete = true;
     }
-    if (collectCommonJsExports(node, names)) {
+    if (collectCommonJsExports(node, names, delegates)) {
       incomplete = true;
     }
     collectMethodNames(node, names);
@@ -222,8 +246,9 @@ export function scanExports(fileName: string, source: string): ExportScan {
   if (incomplete) {
     return {
       result: ExportScanResult.Unknown,
-      names: [...names],
+      names: [...names].sort(),
       reason: "module re-exports or assigns exports opaquely",
+      ...(delegates.size > 0 ? { delegatesTo: [...delegates] } : {}),
     };
   }
   if (names.size === 0) {

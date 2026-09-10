@@ -12,6 +12,41 @@
     "reason": "large file yielded few exports, so the module shape was not understood"
   },
   {
+    "id": "GHSA-29mw-wpgm-hmr9",
+    "package": "lodash-es",
+    "symbols": [
+      "toNumber",
+      "trim",
+      "trimEnd"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-29mw-wpgm-hmr9",
+    "package": "lodash.trim",
+    "symbols": [
+      "toNumber",
+      "trim",
+      "trimEnd"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-29mw-wpgm-hmr9",
+    "package": "lodash.trimend",
+    "symbols": [
+      "toNumber",
+      "trim",
+      "trimEnd"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
     "id": "GHSA-35jh-r3h4-6jhm",
     "package": "lodash",
     "symbols": [
@@ -22,6 +57,35 @@
     "reason": "large file yielded few exports, so the module shape was not understood"
   },
   {
+    "id": "GHSA-35jh-r3h4-6jhm",
+    "package": "lodash-es",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-35jh-r3h4-6jhm",
+    "package": "lodash-template",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
+    "id": "GHSA-35jh-r3h4-6jhm",
+    "package": "lodash.template",
+    "symbols": [
+      "template"
+    ],
+    "verdict": "unknown",
+    "missing": [],
+    "reason": "module re-exports or assigns exports opaquely"
+  },
+  {
     "id": "GHSA-3c6g-pvg8-gqw2",
     "package": "json",
     "symbols": [
@@ -29,7 +93,7 @@
     ],
     "verdict": "unknown",
     "missing": [],
-    "reason": "file appears minified or bundled"
+    "reason": "large file yielded few exports, so the module shape was not understood"
   },
   {
     "id": "GHSA-6956-83fg-5wc5",
@@ -87,7 +151,7 @@
     ],
     "verdict": "unknown",
     "missing": [],
-    "reason": "module re-exports or assigns exports opaquely"
+    "reason": "no resolvable entry point"
   },
   {
     "id": "GHSA-m44r-7c5h-m6mj",
@@ -154,9 +218,10 @@
     "symbols": [
       "verifyCertificateChain"
     ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "module re-exports or assigns exports opaquely"
+    "verdict": "not_found",
+    "missing": [
+      "verifyCertificateChain"
+    ]
   },
   {
     "id": "GHSA-248r-7h7q-cr24",
@@ -164,9 +229,10 @@
     "symbols": [
       "return"
     ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "module re-exports or assigns exports opaquely"
+    "verdict": "not_found",
+    "missing": [
+      "return"
+    ]
   },
   {
     "id": "GHSA-26f5-8h2x-34xh",
@@ -214,9 +280,10 @@
     "symbols": [
       "onReadEntry"
     ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "file appears minified or bundled"
+    "verdict": "not_found",
+    "missing": [
+      "onReadEntry"
+    ]
   },
   {
     "id": "GHSA-2cg4-7q4x-7rr2",
@@ -235,9 +302,11 @@
       "_applyUpdate",
       "_updateRecord"
     ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "module re-exports or assigns exports opaquely"
+    "verdict": "not_found",
+    "missing": [
+      "_applyUpdate",
+      "_updateRecord"
+    ]
   },
   {
     "id": "GHSA-2h6j-mhcp-9j9h",
@@ -252,6 +321,15 @@
   {
     "id": "GHSA-2j2x-hqr9-3h42",
     "package": "@remix-run/router",
+    "symbols": [
+      "redirect"
+    ],
+    "verdict": "confirmed",
+    "missing": []
+  },
+  {
+    "id": "GHSA-2j2x-hqr9-3h42",
+    "package": "react-router",
     "symbols": [
       "redirect"
     ],
@@ -325,77 +403,5 @@
     ],
     "verdict": "confirmed",
     "missing": []
-  },
-  {
-    "id": "GHSA-34gh-3cwv-wvp2",
-    "package": "rollup-plugin-server",
-    "symbols": [
-      "readFileFromContentBase"
-    ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "no exports found"
-  },
-  {
-    "id": "GHSA-34q3-8x9v-j957",
-    "package": "toggle-array",
-    "symbols": [
-      "enable",
-      "disable"
-    ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "module re-exports or assigns exports opaquely"
-  },
-  {
-    "id": "GHSA-34q8-jcq6-mc37",
-    "package": "uplot",
-    "symbols": [
-      "assign"
-    ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "large file yielded few exports, so the module shape was not understood"
-  },
-  {
-    "id": "GHSA-34w8-mcwr-vg29",
-    "package": "codeceptjs",
-    "symbols": [
-      "emptyFolder"
-    ],
-    "verdict": "not_found",
-    "missing": [
-      "emptyFolder"
-    ]
-  },
-  {
-    "id": "GHSA-36hm-qxxp-pg3m",
-    "package": "preact",
-    "symbols": [
-      "your"
-    ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "file appears minified or bundled"
-  },
-  {
-    "id": "GHSA-36j9-mx87-2cff",
-    "package": "renovate",
-    "symbols": [
-      "quote"
-    ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "no resolvable entry point"
-  },
-  {
-    "id": "GHSA-36rg-gfq2-3h56",
-    "package": "better-auth",
-    "symbols": [
-      "originCheck"
-    ],
-    "verdict": "unknown",
-    "missing": [],
-    "reason": "module re-exports or assigns exports opaquely"
   }
 ]

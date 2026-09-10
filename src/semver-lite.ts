@@ -63,17 +63,30 @@ export function newestAffected(
   fixed: string | null,
   lastAffected: string | null,
 ): string | null {
-  if (lastAffected !== null && available.includes(lastAffected)) {
-    return lastAffected;
-  }
-  const candidates = available.filter(version => {
+  // Prefer the newest affected stable release. Taking `last_affected`
+  // literally can land on a prerelease: web3-core-subscriptions records
+  // `2.0.0-alpha.1`, and inspecting an alpha instead of the release people
+  // install reported its real `attachToObject` method as not found.
+  const stable = available.filter(version => {
     if (parseVersion(version)?.prerelease != null) {
       return false;
     }
-    return fixed === null || compareVersions(version, fixed) < 0;
+    if (fixed !== null) {
+      return compareVersions(version, fixed) < 0;
+    }
+    if (lastAffected !== null) {
+      return compareVersions(version, lastAffected) <= 0;
+    }
+    return true;
   });
-  if (candidates.length === 0) {
-    return null;
+  const newestStable = [...stable].sort(compareVersions).at(-1);
+  if (newestStable !== undefined) {
+    return newestStable;
   }
-  return [...candidates].sort(compareVersions).at(-1) ?? null;
+  // Only when no stable release is affected at all does the prerelease bound
+  // become the best available answer.
+  if (lastAffected !== null && available.includes(lastAffected)) {
+    return lastAffected;
+  }
+  return null;
 }

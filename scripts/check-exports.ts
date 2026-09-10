@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 
 import { scanExports, ExportScanResult } from "../src/package-exports.js";
+import { readAffectedFromDir, fetchAffected, type OsvAffectedEntry } from "../src/osv-ranges.js";
 import { newestAffected } from "../src/semver-lite.js";
 import type { SymbolRecord } from "../src/types.js";
 
@@ -84,15 +85,39 @@ function unpackTarball(tarballUrl: string, workDir: string): string | null {
   return existsSync(root) ? root : null;
 }
 
+/**
+ * Pulls candidate paths out of a conditional `exports` field.
+ *
+ * Modern packages declare no `main` at all, which is why five of the first
+ * forty had "no resolvable entry point".
+ */
+function candidatesFromExportsField(value: unknown, found: string[]): void {
+  if (typeof value === "string") {
+    found.push(value);
+    return;
+  }
+  if (typeof value !== "object" || value === null || Array.isArray(value)) {
+    return;
+  }
+  for (const [key, nested] of Object.entries(value as Record<string, unknown>)) {
+    // Skip anything that is not the root or a runtime condition we care about.
+    if (key.startsWith(".") || ["import", "require", "default", "node"].includes(key)) {
+      candidatesFromExportsField(nested, found);
+    }
+  }
+}
+
 /** Resolves the module file a consumer would load. */
 function findEntryFile(packageDir: string): string | null {
-  let manifest: { main?: unknown; module?: unknown } = {};
+  let manifest: { main?: unknown; module?: unknown; exports?: unknown } = {};
   try {
     manifest = JSON.parse(readFileSync(path.join(packageDir, "package.json"), "utf8")) as typeof manifest;
   } catch {
     return null;
   }
-  const candidates = [manifest.module, manifest.main, "index.js", "index.mjs", "index.cjs"];
+  const fromExports: string[] = [];
+  candidatesFromExportsField(manifest.exports, fromExports);
+  const candidates = [manifest.module, manifest.main, ...fromExports, "index.js", "index.mjs", "index.cjs"];
   for (const candidate of candidates) {
     if (typeof candidate !== "string") {
       continue;
@@ -104,6 +129,27 @@ function findEntryFile(packageDir: string): string | null {
     const asIndex = path.join(direct, "index.js");
     if (existsSync(asIndex)) {
       return asIndex;
+    }
+  }
+  return null;
+}
+
+/** Resolves a relative specifier to a file, trying the usual extensions. */
+function resolveRelative(fromDir: string, specifier: string): string | null {
+  if (!specifier.startsWith(".")) {
+    return null;
+  }
+  const base = path.resolve(fromDir, specifier);
+  const candidates = [base, `${base}.js`, `${base}.cjs`, `${base}.mjs`, path.join(base, "index.js")];
+  for (const candidate of candidates) {
+    if (existsSync(candidate) && !candidate.endsWith(path.sep)) {
+      try {
+        if (readFileSync(candidate, "utf8").length > 0) {
+          return candidate;
+        }
+      } catch {
+        continue;
+      }
     }
   }
   return null;
@@ -142,10 +188,32 @@ async function checkPackage(
       return { verdict: Verdict.Unknown, missing: [], reason: "no resolvable entry point" };
     }
     const scan = scanExports(entry, readFileSync(entry, "utf8"));
-    if (scan.result === ExportScanResult.Unknown) {
+    const names = new Set(scan.names);
+    let resolved = scan.result;
+
+    // A module that hands its exports to another file is the largest single
+    // reason a scan fails. Following one level recovers most of them without
+    // reimplementing Node's resolver.
+    if (resolved === ExportScanResult.Unknown && scan.delegatesTo !== undefined) {
+      for (const specifier of scan.delegatesTo) {
+        const target = resolveRelative(path.dirname(entry), specifier);
+        if (target === null) {
+          continue;
+        }
+        const inner = scanExports(target, readFileSync(target, "utf8"));
+        for (const name of inner.names) {
+          names.add(name);
+        }
+        if (inner.result === ExportScanResult.Parsed) {
+          resolved = ExportScanResult.Parsed;
+        }
+      }
+    }
+
+    if (resolved === ExportScanResult.Unknown) {
       return { verdict: Verdict.Unknown, missing: [], reason: scan.reason ?? "exports unreadable" };
     }
-    const exported = new Set(scan.names);
+    const exported = names;
     const missing = symbols.filter(symbol => !exported.has(symbol));
     return missing.length === 0
       ? { verdict: Verdict.Confirmed, missing: [] }
@@ -164,8 +232,39 @@ interface ReportRow {
   readonly reason?: string;
 }
 
+/**
+ * Reads the version bounds for one package out of the advisory.
+ *
+ * Without these the newest release gets inspected, which is the version *after*
+ * the fix. A fix may rename or delete the vulnerable function, so checking it
+ * would report correct records as not found.
+ */
+function boundsFor(
+  affected: readonly OsvAffectedEntry[],
+  packageName: string,
+): { fixed: string | null; lastAffected: string | null } {
+  for (const entry of affected) {
+    if (entry.package.name !== packageName) {
+      continue;
+    }
+    for (const range of entry.ranges ?? []) {
+      for (const event of range.events) {
+        if (event.fixed !== undefined) {
+          return { fixed: event.fixed, lastAffected: null };
+        }
+        if (event.last_affected !== undefined) {
+          return { fixed: null, lastAffected: event.last_affected };
+        }
+      }
+    }
+  }
+  return { fixed: null, lastAffected: null };
+}
+
 async function run(): Promise<void> {
-  const limit = Number(readFlag(process.argv.slice(2), "--limit") ?? Number.MAX_SAFE_INTEGER);
+  const argv = process.argv.slice(2);
+  const limit = Number(readFlag(argv, "--limit") ?? Number.MAX_SAFE_INTEGER);
+  const osvDir = readFlag(argv, "--osv-dir");
   const rows: ReportRow[] = [];
 
   for (const dir of DATA_DIRS) {
@@ -174,19 +273,26 @@ async function run(): Promise<void> {
         break;
       }
       const record = JSON.parse(readFileSync(path.join(dir, name), "utf8")) as SymbolRecord;
-      const first = record.affected[0];
-      if (first === undefined) {
-        continue;
+      const affected =
+        osvDir !== null ? readAffectedFromDir(osvDir, record.id) : await fetchAffected(record.id);
+
+      // Every affected package is checked, not only the first. A symbol valid
+      // for `lodash` may not exist in `lodash.template`.
+      for (const entry of record.affected) {
+        if (rows.length >= limit) {
+          break;
+        }
+        const { fixed, lastAffected } = boundsFor(affected, entry.package.name);
+        const outcome = await checkPackage(entry.package.name, entry.symbols, fixed, lastAffected);
+        rows.push({
+          id: record.id,
+          package: entry.package.name,
+          symbols: entry.symbols,
+          verdict: outcome.verdict,
+          missing: outcome.missing,
+          ...(outcome.reason !== undefined ? { reason: outcome.reason } : {}),
+        });
       }
-      const outcome = await checkPackage(first.package.name, first.symbols, null, null);
-      rows.push({
-        id: record.id,
-        package: first.package.name,
-        symbols: first.symbols,
-        verdict: outcome.verdict,
-        missing: outcome.missing,
-        ...(outcome.reason !== undefined ? { reason: outcome.reason } : {}),
-      });
     }
   }
 

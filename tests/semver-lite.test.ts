@@ -43,3 +43,21 @@ describe("newestAffected", () => {
     expect(newestAffected(["5.0.0"], "1.0.0", null)).toBeNull();
   });
 });
+
+describe("newestAffected, prerelease bounds", () => {
+  it("prefers the newest affected stable over a prerelease last_affected", () => {
+    // web3-core-subscriptions records last_affected 2.0.0-alpha.1. Inspecting
+    // that alpha rather than 1.10.4 reported its real attachToObject method as
+    // not found.
+    const versions = ["1.10.3", "1.10.4", "2.0.0-alpha.1", "2.0.0"];
+    expect(newestAffected(versions, null, "2.0.0-alpha.1")).toBe("1.10.4");
+  });
+
+  it("falls back to the prerelease when no stable release is affected", () => {
+    expect(newestAffected(["1.0.0-beta.1", "2.0.0"], null, "1.0.0-beta.1")).toBe("1.0.0-beta.1");
+  });
+
+  it("still respects a fixed bound over last_affected", () => {
+    expect(newestAffected(["1.0.0", "1.1.0", "2.0.0"], "1.1.0", null)).toBe("1.0.0");
+  });
+});
