@@ -1,4 +1,9 @@
-# Reachability analysis for npm has a data problem
+---
+id: findings
+title: Reachability analysis for npm has a data problem
+sidebar_label: Findings
+sidebar_position: 1
+---
 
 **Status:** measured, reproducible, and negative. September 2026.
 
@@ -73,8 +78,16 @@ advisories and 221,525 are malicious-package reports:
 | | |
 |---|---|
 | Records proposed | 576 |
-| Recall against GHSA | **7.8%** |
-| Precision, held-out sample of 20 | **~75%** |
+| Recall against all GHSA advisories | 7.8% |
+| **Recall against advisories that name a callable** | **49%** |
+| Same, discounted for precision | **37%** |
+| Precision, held-out sample of 20 | ~75% |
+
+The second figure is the meaningful one, and it only became computable after the
+classification below. Only advisories naming a callable function can ever have a
+symbol recorded, so the achievable set is roughly 1,170 advisories rather than
+7,020. Measuring against the larger number understates the result by a factor of
+six, which is how it was first reported here.
 
 Precision improved from 50% to 75% across four rounds of sampling real output
 and fixing what came back wrong, each round on a fresh random seed so the score
@@ -190,10 +203,19 @@ the most interesting open question here.
 ## What this means
 
 For anyone hoping to use open data for npm reachability today: the data does not
-exist at usable coverage, and the cheap way of producing it tops out under 10
-percent. Closing that gap needs fix-commit diff analysis or sustained manual
-curation across thousands of advisories, and the value only materialises near
-the end.
+exist at usable coverage. But the gap is smaller than it first appears, because
+most advisories can never be covered at all.
+
+The achievable set is roughly 1,170 advisories, not 7,020. This dataset already
+holds about a third to a half of it, and the remaining work is on the order of
+700 records rather than 6,400. That makes it a **completable** dataset with a
+measured, defensible boundary, which is a very different proposition from an
+open-ended curation effort.
+
+What it does not make it is a product. Even complete coverage of the achievable
+set touches roughly one advisory in six, and only some of those resolve to
+unreachable, so a realistic queue reduction is on the order of 10 percent rather
+than the 78 to 89 percent the literature reports.
 
 The published false-positive reduction figures are not wrong. They assume the
 vulnerable-function data as an input. For npm, that assumption is the whole

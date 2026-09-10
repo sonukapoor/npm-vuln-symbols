@@ -17,6 +17,32 @@ are actually vulnerable.
 > that silences vulnerability alerts. Review is what makes a record
 > trustworthy, and that work has not started.
 
+## Scope, and why it is smaller than it looks
+
+Most npm advisories can never appear in this dataset. **82.7 percent of them do
+not name a function a developer's code would call** (measured, 150-advisory
+sample, 92 percent inter-rater agreement, Cohen's kappa 0.81). They describe an
+option key, a config value, a crafted input, or an application's behaviour, and
+there is no symbol to record.
+
+That puts a hard ceiling on the whole idea:
+
+| | |
+|---|---|
+| Live GHSA npm advisories | 7,020 |
+| Of those, ones that can ever have a symbol | **~1,170** |
+| Records held here | 576 |
+| Share of the achievable set | **~49%**, or ~37% discounted for precision |
+| Records still to find | **~700** |
+
+So this is a **completable** dataset with a measured boundary, not an open-ended
+curation effort. It is also not a route to the 78 to 89 percent false-positive
+reduction reported in the literature: covering the achievable set entirely still
+only touches about one advisory in six.
+
+See [docs/findings.md](docs/findings.md) for the measurement and
+[docs/limitations.md](docs/limitations.md) for what is unsolved.
+
 ## The problem
 
 A security advisory today says:
@@ -107,17 +133,12 @@ elimination rate              : 50.0%
 That is the known-correct answer for that fixture. A package-level scan keeps
 both advisories, because lodash *is* imported.
 
-## What we found trying to build this
+## Documentation
 
-[FINDINGS.md](FINDINGS.md) reports the measurement: extraction reaches 7.8
-percent recall against GHSA, covers 4.4 percent of a real project's findings,
-and one of the five covered records silently cleared a live NoSQL injection
-because the vulnerability is not a function call at all.
-
-## Limitations
-
-Transitive reachability has no scalable sound answer yet, and that is the open
-question for the whole approach. See [LIMITATIONS.md](LIMITATIONS.md).
+- [Findings](docs/findings.md) - what measuring this actually showed, with
+  reproduction steps
+- [Limitations](docs/limitations.md) - transitive reachability, and the
+  categories this approach cannot answer
 
 ## Goal
 
