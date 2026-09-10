@@ -1,0 +1,1367 @@
+[
+  {
+    "id": "GHSA-82jf-8f24-xq9m",
+    "packages": [
+      "hexo-theme-anzhiyu"
+    ],
+    "digest": "hexo-theme-anzhiyu Cross-site Scripting vulnerability. Cross Site Scripting (XSS) vulnerability in hexo-theme-anzhiyu v1.6.12, allows remote attackers to execute arbitrary code via the algolia search function.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-g6w6-h933-4rc5",
+    "packages": [
+      "@soketi/soketi"
+    ],
+    "digest": "Soketi was exposed to Sandbox Escape vulnerability via vm2. ### Impact _What kind of vulnerability is it? Who is impacted?_ Anyone who might have used Soketi with the `cluster` driver (or through PM2). ### Patches _Has the problem been patched? What versions should users upgrade to?_ Get the latest version of Soketi. ### Workarounds _Is there a way for users to fix or remediate the vulnerability without upgrading?_ N",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-m794-qv59-gj7c",
+    "packages": [
+      "signqle"
+    ],
+    "digest": "Malicious Package in signqle. All versions of this package contained malware. The package was designed to find and exfiltrate cryptocurrency wallets. ## Recommendation Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9hjh-fr4f-gxc4",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw: Gateway Backend Reconnect lets Non-Admin Operator Scopes Self-Claim operator.admin. ## Summary Gateway Backend Reconnect lets Non-Admin Operator Scopes Self-Claim operator.admin ## Affected Packages / Versions - Package: `openclaw` - Affected versions: `<= 2026.3.24` - First patched version: `2026.3.25` - Latest published npm version at verification time: `2026.3.24` ## Details Backend-labeled reconnects co",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-3x62-x456-q2vm",
+    "packages": [
+      "git-pull-or-clone"
+    ],
+    "digest": "OS Command Injection in git-pull-or-clone. The package git-pull-or-clone before 2.0.2 is vulnerable to Command Injection due to the use of the --upload-pack feature of git which is also supported for git clone. The source includes the use of the secure child process API spawn(). However, the outpath parameter passed to it may be a command-line argument to the git clone command and result in arbitrary command injectio",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-h4hr-7fg3-h35w",
+    "packages": [
+      "prismjs"
+    ],
+    "digest": "Denial of service in prismjs. The package prismjs before 1.23.0 are vulnerable to Regular Expression Denial of Service (ReDoS) via the `prism-asciidoc`, `prism-rest`, `prism-tap` and `prism-eiffel` components.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9qm3-6qrr-c76m",
+    "packages": [
+      "@nyariv/sandboxjs"
+    ],
+    "digest": "@nyariv/sandboxjs has Prototype Pollution vulnerability that may lead to RCE. A prototype pollution vulnerability exists in @nyariv/sandboxjs versions <= 0.8.23, allowing attackers to inject arbitrary properties into Object.prototype via crafted JavaScript code. This can result in a denial-of-service (DoS) condition or, under certain conditions, escape the sandboxed environment intended to restrict code execution. Th",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9ccr-fpp6-78qf",
+    "packages": [
+      "parse-server"
+    ],
+    "digest": "Parse Server vulnerable to schema poisoning via prototype pollution in deep copy. ### Impact An attacker can bypass the default request keyword denylist protection and the class-level permission for adding fields by sending a crafted request that exploits prototype pollution in the deep copy mechanism. This allows injecting fields into class schemas that have field addition locked down, and can cause permanent schema",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-w868-4576-rv24",
+    "packages": [
+      "ntesseract"
+    ],
+    "digest": "ntesseract vulnerable to Command Injection. The package ntesseract before 0.2.9 is vulnerable to Command Injection via lib/tesseract.js.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-qqqw-gm93-qf6m",
+    "packages": [
+      "snyk-gradle-plugin"
+    ],
+    "digest": "OS Command Injection in Snyk gradle plugin. The Snyk gradle plugin is vulnerable to Code Injection when scanning an untrusted Gradle project. The vulnerability can be triggered if Snyk test is run inside the untrusted project due to the improper handling of the current working directory name. Snyk recommends only scanning trusted projects.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-q5f6-qxm2-mcqm",
+    "packages": [
+      "tarteaucitronjs"
+    ],
+    "digest": "tarteaucitron.js has Regular Expression Denial of Service (ReDoS) vulnerability. ## Summary A potential Regular Expression Denial of Service (ReDoS) vulnerability was identified in tarteaucitron.js in the handling of the `issuu_id` parameter. ## Details The issue was caused by the use of insufficiently constrained regular expressions applied to attacker-controlled input: if (issuu_id.match(/\\d+\\/\\d+/)) { issuu_embed ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-xmwj-c75x-6346",
+    "packages": [
+      "@lobehub/lobehub"
+    ],
+    "digest": "LobeHub: Unauthenticated SSRF in `/webapi/proxy`. ## Unauthenticated SSRF in /webapi/proxy allows anyone to proxy requests and inject cookies on lobehub.com ## Summary The `/webapi/proxy` endpoint on app.lobehub.com accepts a URL in the POST body and fetches it server-side without any authentication. This is the same proxy code that was vulnerable in CVE-2024-32964, where `/api/proxy` was fixed by adding auth middlew",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-wf6x-7x77-mvgw",
+    "packages": [
+      "immutable"
+    ],
+    "digest": "Immutable is vulnerable to Prototype Pollution. ## Impact _What kind of vulnerability is it? Who is impacted?_ A Prototype Pollution is possible in immutable via the mergeDeep(), mergeDeepWith(), merge(), Map.toJS(), and Map.toObject() APIs. ## Affected APIs | API | Notes | | --------------------------------------- | ----------------------------------------------------------- | | `mergeDeep(target, source)` | Iterate",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-xw5p-hw6r-2j98",
+    "packages": [
+      "fastify"
+    ],
+    "digest": "Denial of service in fastify. A denial of service vulnerability exists in Fastify v2.14.1 and v3.0.0-rc.4 that allows a malicious user to trigger resource exhaustion (when the allErrors option is used) with specially crafted schemas.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2m8v-572m-ff2v",
+    "packages": [
+      "systeminformation"
+    ],
+    "digest": "Command Injection Vulnerability. ### Impact command injection vulnerability ### Patches Problem was fixed with a parameter check. Please upgrade to version >= 5.3.1 ### Workarounds If you cannot upgrade, be sure to check or sanitize service parameters that are passed to si.inetLatency(), si.inetChecksite(), si.services(), si.processLoad() ... do only allow strings, reject any arrays. String sanitation works as expect",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-396q-4vc8-28x9",
+    "packages": [
+      "@microsoft/kiota-http-fetchlibrary"
+    ],
+    "digest": "@microsoft/kiota-http-fetchlibrary: Bearer token and Cookie leak across origin on redirect due to case-mismatched scrub in fetchRequestAdapter. ### Summary `@microsoft/kiota-http-fetchlibrary`'s `RedirectHandler` is documented as stripping `Authorization` and `Cookie` from cross-origin redirect targets, but the default `scrubSensitiveHeaders` callback in `RedirectHandlerOptions` uses case-sensitive property deletion ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-jvf5-q4h5-2jmj",
+    "packages": [
+      "madlib-object-utils"
+    ],
+    "digest": "Prototype Pollution in madlib-object-utils. madlib-object-utils before 0.1.7 is vulnerable to Prototype Pollution via setValue.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9cgf-pxwq-2cpw",
+    "packages": [
+      "stimulsoft-dashboards-js"
+    ],
+    "digest": "Stimulsoft Dashboard.JS Cross Site Scripting vulnerability. Cross Site Scripting vulnerability in Stimulsoft GmbH Stimulsoft Dashboard.JS before v.2024.1.2 allows a remote attacker to execute arbitrary code via a crafted payload to the ReportName field.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-x975-rgx4-5fh4",
+    "packages": [
+      "appium-mcp"
+    ],
+    "digest": "appium-mcp: Unescaped Locator Data XSS in MCP-UI Resource (createLocatorGeneratorUI). ## Unescaped Locator Data XSS in MCP-UI Resource (createLocatorGeneratorUI) ### Summary `appium-mcp`'s `createLocatorGeneratorUI` function interpolates attacker-controlled element attributes — `text`, `content-desc`, `resource-id`, and locator selector values — directly into an HTML template literal without any HTML or JavaScript co",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-f8r4-mf27-rf7m",
+    "packages": [
+      "financejs"
+    ],
+    "digest": "Finance.js vulnerable to DoS via the IRR function’s depth parameter. Finance.js v4.1.0 contains a Denial of Service (DoS) vulnerability via the IRR function’s depth parameter. Improper handling of the recursion/iteration limit can lead to excessive CPU usage, causing application stalls or crashes.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-p9ff-h696-f583",
+    "packages": [
+      "vite"
+    ],
+    "digest": "Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket. ### Summary [`server.fs`](https://vite.dev/config/server-options#server-fs-strict) check was not enforced to the `fetchModule` method that is exposed in Vite dev server's WebSocket. ### Impact Only apps that match the following conditions are affected: - explicitly exposes the Vite dev server to the network (using `--host` or [`server.host` config ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-6927-3vr9-fxf2",
+    "packages": [
+      "parse-server"
+    ],
+    "digest": "ZDI-CAN-19105: Parse Server literalizeRegexPart SQL Injection. ### Impact This vulnerability allows SQL injection when Parse Server is configured to use the PostgreSQL database. ### Patches The algorithm to detect SQL injection has been improved. ### Workarounds None. ### References - https://github.com/parse-community/parse-server/security/advisories/GHSA-6927-3vr9-fxf2 - https://github.com/parse-community/parse-ser",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-53xv-c2hx-5w6q",
+    "packages": [
+      "node-windows"
+    ],
+    "digest": "Command Injection in node-windows. lib/cmd.js in the node-windows package before 1.0.0-beta.6 for Node.js allows command injection via the PID parameter.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-j7h9-2jh7-g967",
+    "packages": [
+      "mcp-ssh-tool"
+    ],
+    "digest": "mcp-ssh-tool has file transfer path policy bypass and bearer token comparison hardening. ## Summary `mcp-ssh-tool` has released version `2.1.1` with security hardening for transfer path authorization and HTTP bearer authentication. The release addresses: - insufficient local path policy enforcement in transfer-related filesystem handling - incomplete canonicalization and segment-boundary handling for deny-prefix path",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-528h-pc64-c93x",
+    "packages": [
+      "stream-json"
+    ],
+    "digest": "stream-json: pick/ignore/filter/replace filters are O(depth²) on nested input — small crafted JSON blocks the event loop for seconds→minutes (DoS). ## Description The path filters `pick`, `ignore`, `filter`, and `replace` — the library's headline \"surgical extraction\" feature — recompute the full path string from the nesting stack on **every checkable token**. Because the stack length equals the current nesting depth",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-5359-pvf2-pw78",
+    "packages": [
+      "tinymce"
+    ],
+    "digest": "TinyMCE Cross-Site Scripting (XSS) vulnerability in handling external SVG files through Object or Embed elements. ### Impact A [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) vulnerability was discovered in TinyMCE’s content loading and content inserting code. A SVG image could be loaded though an `object` or `embed` element and that image could potentially contain a XSS payload. ### Fix Ti",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2hhw-p8mg-jrm6",
+    "packages": [
+      "http-live-simulator"
+    ],
+    "digest": "Path Traversal in http-live-simulator. Versions of `http-live-simulator` prior to 1.0.6 are vulnerable to Path Traversal. Due to insufficient input sanitization, attackers can access server files by using relative paths. ## Recommendation Upgrade to version 1.0.6",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-x4qj-2f4q-r4rx",
+    "packages": [
+      "parse-server"
+    ],
+    "digest": "Parse Server Vulnerable to Server-Side Request Forgery (SSRF) in File Upload via URI Format. ### Impact A Server-Side Request Forgery (SSRF) vulnerability in the file upload functionality when trying to upload a `Parse.File` with `uri` parameter allows to execute an arbitrary URI. The vulnerability stems from a file upload feature in which Parse Server retrieves the file data from a URI that is provided in the reques",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-3f62-qv96-4p78",
+    "packages": [
+      "@actual-app/sync-server"
+    ],
+    "digest": "@actual-app/sync-server's missing authorization on GET /secret/:name allows non-admin OpenID users to enumerate admin-configured bank-sync secrets. ## Summary In `@actual-app/sync-server`, the `GET /secret/:name` endpoint (`app-secrets.js:53`) checks only that the caller has a valid session — it does not verify the caller is an admin. The sibling `POST /secret/` handler does enforce an admin check in OpenID mode, exp",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-cr7h-93fh-whwm",
+    "packages": [
+      "magix-combine-ex"
+    ],
+    "digest": "magix-combine-ex vulnerable to prototype pollution. A Prototype Pollution vulnerability in the util-deps.addFileDepend function of magix-combine-ex versions through 2.2.2 allows attackers to inject properties on Object.prototype via supplying a crafted payload, causing denial of service (DoS) as the minimum consequence.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-hv96-xxx2-5v7w",
+    "packages": [
+      "nw"
+    ],
+    "digest": "Downloads Resources over HTTP in nw. Affected versions of `nw` insecurely download an executable over an unencrypted HTTP connection. In scenarios where an attacker has a privileged network position, it is possible to intercept the response and replace the executable with a malicious one, resulting in code execution on the system running `nw`. ## Recommendation Update to version 0.23.6-1 or later.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-8jr4-6r33-phwm",
+    "packages": [
+      "@steipete/summarize"
+    ],
+    "digest": "Summarize contains a path traversal vulnerability. Summarize prior to 0.15.0 contains a path traversal vulnerability in the /v1/summarize daemon endpoint that allows authenticated callers to write files to arbitrary directories by supplying an absolute path or directory traversal sequence in the slidesDir request parameter. Attackers can exploit this to write slide_*.png and slides.json files to any writable director",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-x3ff-w252-2g7j",
+    "packages": [
+      "@stablelib/ed25519"
+    ],
+    "digest": "StableLib Ed25519 Signature Malleability via Missing S < L Check. # Ed25519 Signature Malleability via Missing S < L Check -- Same Class as node-forge CVE-2026-33895 (CWE-347) ## Target - Repository: StableLib/stablelib (package: @stablelib/ed25519) - Platform: GitHub PVR - Bounty: CVE credit - CWE: CWE-347 (Improper Verification of Cryptographic Signature) - Version: 2.0.2 (latest, 2026-03-28) ## Root Cause The `ver",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-pr34-8jfr-xhv8",
+    "packages": [
+      "selenium-wrapper"
+    ],
+    "digest": "selenium-wrapper downloads Resources over HTTP. Affected versions of `selenium-wrapper` insecurely download an executable over an unencrypted HTTP connection. In scenarios where an attacker has a privileged network position, it is possible to intercept the response and replace the executable with a malicious one, resulting in code execution on the system running `selenium-wrapper`. ## Recommendation No patch is curre",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-f44m-65h3-99vc",
+    "packages": [
+      "tarteaucitronjs"
+    ],
+    "digest": "tarteaucitron.js vulnerable to Cross-site Scripting. Cross-site Scripting (XSS) - Stored in GitHub repository amauric/tarteaucitron.js prior to v1.13.1.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-3p68-rc4w-qgx5",
+    "packages": [
+      "axios"
+    ],
+    "digest": "Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF. Axios does not correctly handle hostname normalization when checking `NO_PROXY` rules. Requests to loopback addresses like `localhost.` (with a trailing dot) or `[::1]` (IPv6 literal) skip `NO_PROXY` matching and go through the configured proxy. This goes against what developers expect and lets attackers force requests through a proxy, even if `NO",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-jrvm-mcxc-mf6m",
+    "packages": [
+      "dom-iterator"
+    ],
+    "digest": "dom-iterator code execution vulnerability. Versions of the package dom-iterator before 1.0.1 are vulnerable to Arbitrary Code Execution due to use of the Function constructor without complete input sanitization. Function generates a new function body and thus care must be given to ensure that the inputs to Function are not attacker-controlled. The risks involved are similar to that of allowing attacker-controlled inp",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7pvx-4585-hqww",
+    "packages": [
+      "sequelize-typescript"
+    ],
+    "digest": "sequelize-typescript Prototype Pollution vulnerability. Prototype Pollution in GitHub repository robinbuschmann/sequelize-typescript prior to 2.1.6.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-g27f-9qjv-22pm",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw log poisoning (indirect prompt injection) via WebSocket headers. ### Summary In `openclaw` versions prior to `2026.2.13`, OpenClaw logged certain WebSocket request headers (including `Origin` and `User-Agent`) without neutralization or length limits on the \"closed before connect\" path. If an unauthenticated client can reach the gateway and send crafted header values, those values may be written into core log",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-36h3-7c54-j27r",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw has browser trace/download path symlink escape in temp output handling. ### Summary Browser trace/download output path handling allowed symlink-root and symlink-parent escapes from the managed temp root. ### Affected Packages / Versions - Package: `openclaw` (npm) - Latest published npm version: `2026.2.24` - Affected versions: `<= 2026.2.24` - Planned patched release: `2026.2.25` ### Impact An attacker with",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-4xcv-9jjx-gfj3",
+    "packages": [
+      "mem"
+    ],
+    "digest": "Denial of Service in mem. Versions of `mem` prior to 4.0.0 are vulnerable to Denial of Service (DoS). The package fails to remove old values from the cache even after a value passes its `maxAge` property. This may allow attackers to exhaust the system's memory if they are able to abuse the application logging. ## Recommendation Upgrade to version 4.0.0 or later.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-mc68-q9jw-2h3v",
+    "packages": [
+      "clawdbot"
+    ],
+    "digest": "OpenClaw/Clawdbot Docker Execution has Authenticated Command Injection via PATH Environment Variable. ### Summary A Command Injection vulnerability existed in Clawdbot’s Docker sandbox execution mechanism due to unsafe handling of the PATH environment variable when constructing shell commands. An authenticated user able to control environment variables could influence command execution within the container context. T",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-6fw7-3q8r-m5vj",
+    "packages": [
+      "flowise"
+    ],
+    "digest": "FlowiseAI has Mass Assignment in Variable Update Endpoint that Allows Cross-Workspace Resource Reassignment. ### Summary A Mass Assignment vulnerability exists in the variable update endpoint of FlowiseAI. The endpoint allows authenticated users to modify server-controlled properties such as workspaceId, createdDate, and updatedDate when updating a variable resource. Due to missing server-side validation and authoriz",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-cc8f-xg8v-72m3",
+    "packages": [
+      "compressing"
+    ],
+    "digest": "Compressing Vulnerable to Arbitrary File Write via Symlink Extraction. # Arbitrary File Write via Symlink Extraction in `github.com/node-modules/compressing` ## Brief Introduction The `compressing` npm package extracts TAR archives while restoring symbolic links without validating their targets. By embedding symlinks that resolve outside the intended extraction directory, an attacker can cause subsequent file entries",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-4h66-vghf-xg5x",
+    "packages": [
+      "get-npm-package-version"
+    ],
+    "digest": "get-npm-package-version Command Injection vulnerability. The package get-npm-package-version before 1.0.7 is vulnerable to Command Injection via the `main` function in index.js.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-j9fq-vwqv-2fm2",
+    "packages": [
+      "parse-url"
+    ],
+    "digest": "Server-Side Request Forgery (SSRF) in GitHub repository ionicabizau/parse-url. Server-Side Request Forgery (SSRF) in GitHub repository ionicabizau/parse-url prior to 8.1.0.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-r54r-wmmq-mh84",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw: ZIP extraction race could write outside destination via parent symlink rebind. ### Summary ZIP extraction in OpenClaw could be raced into writing outside the intended destination directory via parent-directory symlink rebind between validation and write. ### Affected Packages / Versions - Package: `openclaw` (npm) - Vulnerable versions: `<= 2026.3.1` - Latest published vulnerable version confirmed: `2026.3.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-3pcq-34w5-p4g2",
+    "packages": [
+      "modern-async"
+    ],
+    "digest": "modern-async's `forEachSeries` and `forEachLimit` functions do not limit the number of requests. ### Impact This is a bug affecting two of the functions in this library: `forEachSeries` and `forEachLimit`. They should limit the concurrency of some actions but, in practice, they don't. Any code calling these functions will be written thinking they would limit the concurrency but they won't. This could lead to potentia",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-4r8w-3jww-m2rp",
+    "packages": [
+      "@strapi/strapi"
+    ],
+    "digest": "Strapi is vulnerable to Insufficient Session Expiration. Strapi uses JSON Web Tokens (JWT) for authentication. After logout or account deactivation, the JWT is not invalidated, which allows an attacker who has stolen or intercepted the token to freely reuse it until its expiration date (which is set to 30 days by default, but can be changed). The existence of /admin/renew-token endpoint allows anyone to renew near-ex",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-qc2q-qhf3-235m",
+    "packages": [
+      "get-jwks"
+    ],
+    "digest": "get-jwks: poisoned JWKS cache allows post-fetch issuer validation bypass. ### Summary A vulnerability in `get-jwks` can lead to cache poisoning in the JWKS key-fetching mechanism. ### Details When the `iss` (issuer) claim is validated only after keys are retrieved from the cache, it is possible for cached keys from an unexpected issuer to be reused, resulting in a bypass of issuer validation. This design flaw enables",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2j4c-9qqq-896r",
+    "packages": [
+      "web3-core-method"
+    ],
+    "digest": "web3-core-method is vulnerable to prototype pollution. web3-core-method is a package designed to creates the methods on the web3 modules. A Prototype Pollution vulnerability in the attachToObject function of web3-core-method version 1.10.4 and before allows attackers to inject properties on Object.prototype via supplying a crafted payload, causing denial of service (DoS) as the minimum consequence.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-pxg6-pf52-xh8x",
+    "packages": [
+      "cookie"
+    ],
+    "digest": "cookie accepts cookie name, path, and domain with out of bounds characters. ### Impact The cookie name could be used to set other fields of the cookie, resulting in an unexpected cookie value. For example, `serialize(\"userName=<script>alert('XSS3')</script>; Max-Age=2592000; a\", value)` would result in `\"userName=<script>alert('XSS3')</script>; Max-Age=2592000; a=test\"`, setting `userName` cookie to `<script>` and ig",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-qf3q-9f3h-cjp9",
+    "packages": [
+      "nextchat"
+    ],
+    "digest": "NextChat has full-read SSRF and XSS vulnerability in /api/cors endpoint. NextChat, also known as ChatGPT-Next-Web, is a cross-platform chat user interface for use with ChatGPT. Versions 2.11.2 and prior are vulnerable to server-side request forgery and cross-site scripting. This vulnerability enables read access to internal HTTP endpoints but also write access using HTTP POST, PUT, and other methods. Attackers can al",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-jvwf-75h9-cwgg",
+    "packages": [
+      "protobufjs"
+    ],
+    "digest": "protobuf.js: Process-wide denial of service through unsafe option paths. ## Summary protobufjs allowed certain schema option paths to traverse through inherited object properties while applying options. A crafted protobuf schema or JSON descriptor could cause option handling to write to properties on global JavaScript constructors, corrupting process-wide built-in functionality. ## Impact An attacker who can provide ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7grx-f945-mj96",
+    "packages": [
+      "uptime-kuma"
+    ],
+    "digest": "Uptime Kuma vulnerable to authenticated remote code execution via malicious plugin installation. ### Summary Installation of a maliciously crafted plugin allows for remote code execution by an authenticated attacker. ### Details Uptime Kuma allows authenticated users to install plugins from an official list of plugins. This feature is currently disabled in the web interface, but the corresponding API endpoints are st",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2p49-hgcm-8545",
+    "packages": [
+      "svgo"
+    ],
+    "digest": "SVGO removeScripts plugin leaves some executable scripts intact. ### Summary SVGO's removeScripts plugin (disabled by default) removes scripts from the SVG, however executable scripts were left intact in some cases. If a consumer relied on this plugin for sanitization and served them to users, these SVGs could open up doors to XSS. ### Details SVGO has a plugin for removing scripts from an SVG, which removes: - `<scr",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2q6w-rxf3-4wc9",
+    "packages": [
+      "codify"
+    ],
+    "digest": "Malicious Package in codify. Version 0.3.1 of `codify` contained malicious code. The code when executed in the browser would enumerate password, cvc, cardnumber fields from forms and send the extracted values to `https://js-metrics.com/minjs.php?pl=` ## Recommendation If version 0.3.1 of this module is found installed you will want to replace it with a version before or after 0.3.1. In addition to replacing the insta",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-fg3m-vhrr-8gj6",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw has Windows Lobster shell fallback command injection in constrained fallback path. ### Summary On Windows, the Lobster extension previously retried certain spawn failures (`ENOENT`/`EINVAL`) with `shell: true` for wrapper compatibility. In that fallback path, tool-provided arguments could be interpreted by `cmd.exe` if fallback was triggered. ### Affected Packages / Versions - Package: `openclaw` (npm) - Lat",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-m874-69ww-w7jq",
+    "packages": [
+      "whispercast"
+    ],
+    "digest": "Directory Traversal in whispercast. Affected versions of `whispercast` resolve relative file paths, resulting in a directory traversal vulnerability. A malicious actor can use this vulnerability to access files outside of the intended directory root, which may result in the disclosure of private files on the vulnerable system. **Example request:** ```http GET /../../../../../../../../../../etc/passwd HTTP/1.1 host:fo",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-x5mm-wm4g-j5xv",
+    "packages": [
+      "ghost"
+    ],
+    "digest": "Ghost: Server-Side Request Forgery Mitigation Issue. ### Impact A validation issue allowed some functionality, such as Webmentions, to be abused by an unauthenticated user to make limited HTTP requests to hosts in the Ghost server's internal network. A successful attack would not result in any response data being returned. ### Vulnerable versions This vulnerability is present in Ghost from v6.26.0 up to v6.54.0. ### ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-4rc3-7j7w-m548",
+    "packages": [
+      "liquidjs"
+    ],
+    "digest": "liquidjs has a Denial of Service via circular block reference in layout. ### Summary A circular block reference in `{% layout %}` / `{% block %}` causes an infinite recursive loop, consuming all available memory (~4GB) and crashing the Node.js process with `FATAL ERROR: JavaScript heap out of memory`. This allows any user who can submit a Liquid template to perform a Denial of Service attack. ### Details In `src/tags",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9pcj-m5rr-p28g",
+    "packages": [
+      "textract"
+    ],
+    "digest": "textract is vulnerable to OS Command Injection. textract through 2.5.0 is vulnerable to OS Command Injection via the file path parameter in multiple extractors. When processing files with malicious filenames, the filePath is passed directly to child_process.exec() in lib/extractors/doc.js, rtf.js, dxf.js, images.js, and lib/util.js with inadequate sanitization",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9j9m-8wjc-ff96",
+    "packages": [
+      "apostrophe"
+    ],
+    "digest": "Apostrophe CMS Insufficient Session Expiration vulnerability. Apostrophe CMS versions between 2.63.0 to 3.3.1 affected by an insufficient session expiration vulnerability, which allows unauthenticated remote attackers to hijack recently logged-in users' sessions. As a mitigation for older releases the user account in question can be archived (3.x) or moved to the trash (2.x and earlier) which does disable the existin",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-8342-988q-86cr",
+    "packages": [
+      "n8n"
+    ],
+    "digest": "n8n: Account Takeover via Unverified Email Claim in Token Exchange Embed Login. ## Impact In an n8n instance, when a validly-signed incoming token was matched to a local account by its email claim, the service did not check that the trusted key's permitted role ceiling covered that account, nor that the email claim was verified. As a result, anyone able to obtain a token accepted by one of the configured trusted keys",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2gg9-6p7w-6cpj",
+    "packages": [
+      "@nyariv/sandboxjs"
+    ],
+    "digest": "SandboxJS: Sandbox integrity escape . ### Summary SandboxJS blocks direct assignment to global objects (for example `Math.random = ...`), but this protection can be bypassed through an exposed callable constructor path: `this.constructor.call(target, attackerObject)`. Because `this.constructor` resolves to the internal `SandboxGlobal` function and `Function.prototype.call` is allowed, attacker code can write arbitrar",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7q2j-c4q5-rm27",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw macOS deep link confirmation truncation can conceal executed agent message. ### Summary OpenClaw macOS desktop client registers the `openclaw://` URL scheme. For `openclaw://agent` deep links without an unattended `key`, the app shows a confirmation dialog that previously displayed only the first 240 characters of the message, but executed the full message after the user clicked \"Run\". At the time of writing",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-q5qw-h33p-qvwr",
+    "packages": [
+      "hono"
+    ],
+    "digest": "Hono vulnerable to arbitrary file access via serveStatic vulnerability . ## Summary When using `serveStatic` together with route-based middleware protections (e.g. `app.use('/admin/*', ...)`), inconsistent URL decoding allowed protected static resources to be accessed without authorization. The router used `decodeURI`, while `serveStatic` used `decodeURIComponent`. This mismatch allowed paths containing encoded slash",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-hf5h-hh56-3vrg",
+    "packages": [
+      "uws"
+    ],
+    "digest": "Denial of Service in uws. Affected versions of `uws` do not properly handle large websocket messages when `permessage-deflate` is enabled, which may result in a denial of service condition. If `uws` recieves a 256Mb websocket message when `permessage-deflate` is enabled, the server will compress the message prior to executing the length check, and subsequently extract the message prior to processing. This can result ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-r96p-v3cr-gfv8",
+    "packages": [
+      "@scullyio/scully",
+      "@scullyio/ng-lib"
+    ],
+    "digest": "Cross-site Scripting (XSS) in @scullyio/scully. This affects the package @scullyio/scully before 1.0.9. The transfer state is serialised with the JSON.stringify() function and then written into the HTML page.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-5888-ffcr-r425",
+    "packages": [
+      "superjson",
+      "blitz"
+    ],
+    "digest": "Prototype Pollution leading to Remote Code Execution in superjson. ### Impact This is critical vulnerability, as it allows to run arbitrary code on any server using superjson input, including a Blitz.js server, without prior authentication or knowledge. Attackers gain full control over the server so they could steal and manipulate data or attack further systems. The only requirement is that the server implements at l",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-mfwh-5m23-j46w",
+    "packages": [
+      "@actions/core"
+    ],
+    "digest": "Environment Variable Injection in GitHub Actions. ### Impact The `@actions/core` npm module `addPath` and `exportVariable` functions communicate with the Actions Runner over stdout by generating a string in a specific format. Workflows that log untrusted data to stdout may invoke these commands, resulting in the path or environment variables being modified without the intention of the workflow or action author. ### P",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-4f9j-vr4p-642r",
+    "packages": [
+      "@budibase/backend-core"
+    ],
+    "digest": "Budibase auth session cookies are set with httpOnly:false — any XSS can lead to full account takeover. ### Summary The `budibase:auth` cookie containing the JWT session token is set with `httpOnly: false` at `packages/backend-core/src/utils/utils.ts:218`. JavaScript can read this cookie via `document.cookie`. Given that Budibase has had XSS vulnerabilities (GHSA-gp5x-2v54-v2q5 — stored XSS via unsanitized entity name",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-mvhf-547c-h55r",
+    "packages": [
+      "thumbler"
+    ],
+    "digest": "thumbler allows OS Command Injection. thumbler through 1.1.2 allows OS command injection via the input, output, time, or size parameter in the thumbnail() function because user input is concatenated into a shell command string passed to child_process.exec() without proper sanitization or escaping.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-hc9w-4p87-j549",
+    "packages": [
+      "cached-path-relative"
+    ],
+    "digest": "Prototype Pollution in cached-path-relative. Version of `cached-path-relative` before 1.0.2 are vulnerable to prototype pollution. ## Recommendation Update to version 1.0.2 or later.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-mw96-cpmx-2vgc",
+    "packages": [
+      "rollup"
+    ],
+    "digest": "Rollup 4 has Arbitrary File Write via Path Traversal. ### Summary The Rollup module bundler (specifically v4.x and present in current source) is vulnerable to an Arbitrary File Write via Path Traversal. Insecure file name sanitization in the core engine allows an attacker to control output filenames (e.g., via CLI named inputs, manual chunk aliases, or malicious plugins) and use traversal sequences (`../`) to overwri",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-632p-p495-25m5",
+    "packages": [
+      "directus"
+    ],
+    "digest": "Directus is soft-locked by providing a string value to random string util. ### Describe the Bug Providing a non-numeric length value to the random string generation utility will create a memory issue breaking the capability to generate random strings platform wide. This creates a denial of service situation where logged in sessions can no longer be refreshed as sessions depend on the capability to generate a random s",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-hwx8-q9cg-mqmc",
+    "packages": [
+      "parse-server"
+    ],
+    "digest": "Parse Server: File metadata endpoint bypasses `beforeFind` / `afterFind` trigger authorization. ### Impact The file metadata endpoint (GET `/files/:appId/metadata/:filename`) does not enforce `beforeFind` / `afterFind` file triggers. When these triggers are used as access-control gates, the metadata endpoint bypasses them entirely, allowing unauthorized access to file metadata. This affects any deployment that relies",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-33vh-7x8q-mg35",
+    "packages": [
+      "safe-eval"
+    ],
+    "digest": "safe-eval vulnerable to Prototype Pollution. All versions of package safe-eval are vulnerable to Prototype Pollution which allows an attacker to add or modify properties of the Object.prototype.Consolidate when using the function safeEval. This is because the function uses vm variable, leading an attacker to modify properties of the Object.prototype.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2r8f-2665-3gxq",
+    "packages": [
+      "froever"
+    ],
+    "digest": "Malicious Package in froever. All versions of `froever` contain malicious code as a preinstall script. The package is malware designed to take advantage of users making a mistake when typing the name of a module to install. When installed, the package downloads a file from a remote server, executes it and opened a backdoor. ## Recommendation Any computer that has this package installed or running should be considered",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-68jh-rf6x-836f",
+    "packages": [
+      "@apollo/server"
+    ],
+    "digest": "@apollo/server vulnerable to unsafe application of Content Security Policy via reused nonces. ### Context Content Security Policies (CSP) are a defense-in-depth strategy against XSS attacks. Improper application of CSP isn't itself a vulnerability, but it does fail to prevent XSS in the event that there is a viable attack vector for an XSS attack. ### Impact There aren't any XSS attack vectors via the Apollo Server l",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9g95-qf3f-ggrw",
+    "packages": [
+      "n8n"
+    ],
+    "digest": "n8n has OS Command Injection in Git Node. ## Impact Vulnerabilities in the Git node allowed authenticated users with permission to create or modify workflows to execute arbitrary system commands or read arbitrary files on the n8n host. ## Patches The issue has been fixed in n8n versions 2.5.0, and 1.123.10. Users should upgrade to this version or later to remediate the vulnerability. ## Workarounds If upgrading is no",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-74hh-4rcv-pp27",
+    "packages": [
+      "bitconijs-lib"
+    ],
+    "digest": "Malicious Package in bitconijs-lib. All versions of this package contained malware. The package was designed to find and exfiltrate cryptocurrency wallets. ## Recommendation Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full contr",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7mc2-6phr-23xc",
+    "packages": [
+      "tiny-secp256k1"
+    ],
+    "digest": "tiny-secp256k1 vulnerable to private key extraction when signing a malicious JSON-stringifyable message in bundled environment. ### Summary Private key can be extracted on signing a malicious JSON-stringifiable object, when global Buffer is [`buffer` package](https://www.npmjs.com/package/buffer) ### Details This affects only environments where `require('buffer')` is <https://npmjs.com/buffer> E.g.: browser bundles, ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-8h8v-6qqm-fwpq",
+    "packages": [
+      "express-cart"
+    ],
+    "digest": "Path Traversal in express-cart. Versions of `express-cart` before 1.1.7 are vulnerable to Path Traversal. ## Recommendation Update to version 1.1.7 or later.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-363h-vj6q-3cmj",
+    "packages": [
+      "hapi"
+    ],
+    "digest": "Rosetta-Flash JSONP Vulnerability in hapi. This description taken from the pull request provided by Patrick Kettner. Versions 6.1.0 and earlier of hapi are vulnerable to a rosetta-flash attack, which can be used by attackers to send data across domains and break the browser same-origin-policy. ## Recommendation - Update hapi to version 6.1.1 or later. Alternatively, a solution previously implemented by Google, Facebo",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-crv8-r5wq-gv2w",
+    "packages": [
+      "webui-aria2"
+    ],
+    "digest": "webui-aria2 Path Traversal vulnerability. webui-aria2 commit 4fe2e was discovered to contain a path traversal vulnerability.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7jvx-f994-rfw2",
+    "packages": [
+      "materialize-css"
+    ],
+    "digest": "materialize-css vulnerable to cross-site Scripting (XSS) due to improper escape of user input. All versions of package materialize-css are vulnerable to Cross-site Scripting (XSS) due to improper escape of user input (such as &lt;not-a-tag /&gt;) that is being parsed as HTML/JavaScript, and inserted into the Document Object Model (DOM). This vulnerability can be exploited when the user-input is provided to the autoco",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-m6jq-g7gq-5w3c",
+    "packages": [
+      "@builder.io/qwik-city"
+    ],
+    "digest": "Qwik SSR XSS via Unsafe Virtual Node Serialization. ### Summary **Description** A Cross-site Scripting (CWE-79) vulnerability in Qwik.js' server-side rendering virtual attribute serialization allows a remote attacker to inject arbitrary web scripts into server-rendered pages via virtual attributes. Successful exploitation permits script execution in a victim's browser in the context of the affected origin. This affec",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-p6mc-m468-83gw",
+    "packages": [
+      "lodash",
+      "lodash-es",
+      "lodash.pick",
+      "lodash.set",
+      "lodash.setwith",
+      "lodash.update",
+      "lodash.updatewith"
+    ],
+    "digest": "Prototype Pollution in lodash. Versions of lodash prior to 4.17.19 are vulnerable to Prototype Pollution. The functions `pick`, `set`, `setWith`, `update`, `updateWith`, and `zipObjectDeep` allow a malicious user to modify the prototype of Object if the property identifiers are user-supplied. Being affected by this issue requires manipulating objects based on user-provided property values or arrays. This vulnerabilit",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-wfp2-v9c7-fh79",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw affected by SSRF via attachment/media URL hydration. ### Summary Versions of the `openclaw` npm package prior to `2026.2.2` could be coerced into fetching arbitrary `http(s)` URLs during attachment/media hydration. An attacker who can influence the media URL (for example via model-controlled `sendAttachment` or auto-reply media URLs) could trigger SSRF to internal resources and exfiltrate the fetched bytes a",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-w93q-cq9w-58p7",
+    "packages": [
+      "suneditor"
+    ],
+    "digest": "SunEditor Embed Plugin has DOM XSS via External Script Element After Iframe Embed. Summary A DOM-based Cross-Site Scripting (XSS) vulnerability exists in the SunEditor Embed plugin. Crafted iframe embed HTML followed by an external <script src=...> element bypasses the plugin’s sanitization logic. The plugin recreates and appends the attacker-controlled script element to the live DOM, causing JavaScript execution in ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-cmj3-wx7h-ffvg",
+    "packages": [
+      "parse-server"
+    ],
+    "digest": "Parse Server affected by denial-of-service via unbounded query complexity in REST and GraphQL API. ### Impact An unauthenticated attacker can exhaust Parse Server resources (CPU, memory, database connections) through crafted queries that exploit the lack of complexity limits in the REST and GraphQL APIs. All Parse Server deployments using the REST or GraphQL API are affected. ### Patches The vulnerability is fixed by",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-m866-6qv5-p2fg",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw host-env blocklist missing `GIT_TEMPLATE_DIR` and `AWS_CONFIG_FILE` allows code execution via env override. ## Summary Host execution env sanitization did not block `GIT_TEMPLATE_DIR` or `AWS_CONFIG_FILE`, even though both can redirect trusted tooling to attacker-controlled content. ## Impact An approved exec request could redirect git or AWS CLI behavior through attacker-controlled configuration and execute",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-3rmj-9m5h-8fpv",
+    "packages": [
+      "@astrojs/node"
+    ],
+    "digest": "Astro: Memory exhaustion DoS due to missing request body size limit in Server Islands. ### Summary Astro's Server Islands POST handler buffers and parses the full request body as JSON without enforcing a size limit. Because `JSON.parse()` allocates a V8 heap object for every element in the input, a crafted payload of many small JSON objects achieves ~15x memory amplification (wire bytes to heap bytes), allowing a sin",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9ww8-j8j2-3788",
+    "packages": [
+      "yui"
+    ],
+    "digest": "YUI Cross-site Scripting (XSS) vulnerability. Cross-site scripting (XSS) vulnerability in flashuploader.swf in the Uploader component in Yahoo! YUI 3.5.0 through 3.9.1, as used in Moodle through 2.1.10, 2.2.x before 2.2.11, 2.3.x before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.1, and other products, allows remote attackers to inject arbitrary web script or HTML via a crafted string in a URL.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-c4pw-33h3-35xw",
+    "packages": [
+      "astro"
+    ],
+    "digest": "Atro CSRF Middleware Bypass (security.checkOrigin). ### Summary A bug in Astro’s CSRF-protection middleware allows requests to bypass CSRF checks. ### Details When the `security.checkOrigin` configuration option is set to `true`, Astro middleware will perform a CSRF check. (Source code: https://github.com/withastro/astro/blob/6031962ab5f56457de986eb82bd24807e926ba1b/packages/astro/src/core/app/middlewares.ts) For exa",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7hv8-3fr9-j2hv",
+    "packages": [
+      "@backstage/core-components",
+      "@backstage/catalog-model",
+      "@backstage/plugin-catalog-backend"
+    ],
+    "digest": "Cross site scripting Vulnerability in backstage Software Catalog. ### Impact This vulnerability allows a malicious actor with access to add or modify content in an instance of the Backstage software catalog to inject script URLs in the entities stored in the catalog. If users of the catalog then click on said URLs, that can lead to an XSS attack. ### Patches This vulnerability has been patched in both the frontend an",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-r2qc-w64x-6j54",
+    "packages": [
+      "vega"
+    ],
+    "digest": "XSS in Vega. Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs. Vega in an npm package. In Vega before version 5.17.3 there is an XSS vulnerability in Vega expressions. Through a specially crafted Vega expression, an attacker could execute arbitrary javascript on a victim's machine. This is fixed in version 5.17.3",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-q3j5-8vrg-4p9q",
+    "packages": [
+      "n8n"
+    ],
+    "digest": "n8n: Shared Credential Header Leak via HTTP Request Pagination Expression. ## Impact An authenticated member with use-only editor access to a shared workflow could read credential-populated headers exposed via the `$request` object inside an HTTP Request node's pagination expression. When an HTTP Header Auth credential is applied to a paginated request, the secret is present in `$request.headers` when pagination expr",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-hf55-c445-2w97",
+    "packages": [
+      "@rocket.chat/livechat"
+    ],
+    "digest": "Cross-site Scripting in @rocket.chat/livechat. A blind self XSS vulnerability exists in RocketChat LiveChat versions lower than 1.9 that could allow an attacker to trick a victim pasting malicious code in their chat instance.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-f88m-g3jw-g9cj",
+    "packages": [
+      "sharp"
+    ],
+    "digest": "sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591. ### Impact A number of vulnerabilities, two rated as \"High\" severity using CVSSv4, have been discovered and fixed in the upstream libvips dependency. Those processing untrusted input with versions of sharp prior to 0.35.0 are affected. ### Patches #### Using prebuilt binaries provided by sharp? Most people rely",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-q4fm-pjq6-m63g",
+    "packages": [
+      "n8n"
+    ],
+    "digest": "n8n has a Stored XSS Vulnerability in its Form Trigger. ## Impact An authenticated user with permission to create or modify workflows could exploit a flaw in the Form Trigger node's CSS sanitization to store a cross-site scripting (XSS) payload. The injected script executes persistently for every visitor of the published form, enabling form submission hijacking and phishing. The existing Content Security Policy preve",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-crh9-3gjh-m6gc",
+    "packages": [
+      "api-lab-mcp"
+    ],
+    "digest": "api-lab-mcp vulnerable to SSRF. A weakness has been identified in atototo api-lab-mcp up to 0.2.1. This affects the function analyze_api_spec/generate_test_scenarios/test_http_endpoint of the file src/mcp/http-server.ts of the component HTTP Interface. This manipulation of the argument source/url causes server-side request forgery. The attack is possible to be carried out remotely. The exploit has been made available",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-qq9h-g4jm-xgf3",
+    "packages": [
+      "better-auth"
+    ],
+    "digest": "Better Auth: Account takeover via pre-account hijacking on magic-link and email-OTP sign-in. ### Am I affected You are affected if all of the following hold: - You run a `better-auth` version below 1.6.22, or a `1.7.0-beta` below `1.7.0-beta.10`. - You enable the magic-link plugin or the email-OTP plugin. - You also enable email and password sign-up with open registration. - An account can exist at an address before ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-rjjv-87mx-6x3h",
+    "packages": [
+      "@sveltejs/kit"
+    ],
+    "digest": "@sveltejs/kit vulnerable to XSS on dev mode 404 page. ### Summary \"Unsanitized input from *the request URL* flows into `end`, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).\" ### Details Source of potentially tainted data is in `packages/kit/src/exports/vite/dev/index.js`, line 437. This potentially tainted data is passed through a number of steps ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-mvmf-cvfx-qg55",
+    "packages": [
+      "bleach"
+    ],
+    "digest": "Regular Expression Denial of Service in bleach. All versions of the `bleach` package are vulnerable to a regular expression denial of service attack when certain types of input are passed into the sanitize function. ## Recommendation The `bleach` package is not currently maintained, and has not seen an update since 2014. To mitigate this issue, it is necessary to use an alternative module that is actively maintained ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-g5cg-6c7v-mmpw",
+    "packages": [
+      "hackmd-mcp"
+    ],
+    "digest": "HackMD MCP Server has Server-Side Request Forgery (SSRF) vulnerability. ### Impact A Server-Side Request Forgery (SSRF) vulnerability that affects all users running the HackMD MCP server in HTTP mode. Attackers could exploit this vulnerability by passing arbitrary `hackmdApiUrl` values through HTTP headers (`Hackmd-Api-Url`) or base64-encoded JSON query parameters. This allows malicious users to: - Redirect API calls",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-hcwq-x9fw-8cfq",
+    "packages": [
+      "@apostrophecms/cli"
+    ],
+    "digest": "@apostrophecms/cli: Command Injection in apos create via Unsanitized Password Input. Summary The @apostrophecms/cli package contains a command injection vulnerability in the apos create command. User-supplied input from the password prompt is embedded directly into a shell command without proper sanitization or escaping. This allows execution of arbitrary commands on the host system. ━━━━━━━━━━━━━━━━━━━━━━ Details Vu",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-9rmh-mm8f-r9h6",
+    "packages": [
+      "svelte"
+    ],
+    "digest": "Svelte: ReDoS in `<svelte:element>` Tag Validation. An internal regex in the Svelte runtime can take exponential time to test in `<svelte:element this={tag}></svelte:element>`. You are only vulnerable to this if you allow tags of unconstrained length. If your application only allows a predetermined list of tags or trims their length before passing them to `svelte:element`, you are safe.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-5h7x-68wj-jhwc",
+    "packages": [
+      "docsify"
+    ],
+    "digest": "Docsify vulnerable to cross-site scripting due to mishandled encoding. docsify versions 4.12.1 and earlier are vulnerable to cross-site scripting (XSS) because the search component does not appropriately encode Code Blocks and mishandles the `\"` character.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-8cw6-53m5-4932",
+    "packages": [
+      "studiocms"
+    ],
+    "digest": "StudioCMS has Authorization Bypass Through User-Controlled Key. ### Summary StudioCMS contains a Broken Object Level Authorization (BOLA) vulnerability in the Content Management feature that allows users with the \"Visitor\" role to access draft content created by Editor/Admin/Owner users. ### Details **The Issue:** The endpoint `/dashboard/content-management/edit?edit={UUID}` validates user authentication but does NOT",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-77q4-m83q-w76v",
+    "packages": [
+      "browserify-hmr"
+    ],
+    "digest": "Missing Origin Validation in browserify-hmr. Versions of `browserify-hmr` prior to 0.4.0 are missing origin validation on the websocket server. This vulnerability allows a remote attacker to steal a developer's source code because the origin of requests to the websocket server that is used for Hot Module Replacement (HMR) are not validated. ## Recommendation Upgrade to version 0.4.0 or later.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-xmhh-xrcc-mx36",
+    "packages": [
+      "@scrypted/server"
+    ],
+    "digest": "Scrypted Cross-site Scripting vulnerability. Scrypted is a home video integration and automation platform. In versions 0.55.0 and prior, a reflected cross-site scripting vulnerability exists in the plugin-http.ts file via the `owner' and 'pkg` parameters. An attacker can run arbitrary JavaScript code. As of time of publication, no known patches are available.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2fqv-h3r5-m4vf",
+    "packages": [
+      "plotly.js"
+    ],
+    "digest": "Cross Site Scripting (XSS) in plotly.js. Affected versions of `plotly.js` are vulnerable to cross-site scripting if an attacker can convince a user to visit a malicious plot on a site using this package. ## Recommendation Update to 1.16.0 or later.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-r4pf-3v7r-hh55",
+    "packages": [
+      "app-builder-lib"
+    ],
+    "digest": "electron-builder's NSIS installer - execute arbitrary code on the target machine (Windows only). ### Impact Windows-Only: The NSIS installer makes a system call to open cmd.exe via NSExec in the `.nsh` installer script. NSExec by default searches the current directory of where the installer is located before searching `PATH`. This means that if an attacker can place a malicious executable file named cmd.exe in the sa",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-583x-23h9-f5w7",
+    "packages": [
+      "@strapi/plugin-users-permissions"
+    ],
+    "digest": "Strapi does not verify the access or ID tokens issued during the OAuth flow. Strapi 3.2.1 until 4.6.0 does not verify the access or ID tokens issued during the OAuth flow when the AWS Cognito login provider is used for authentication. A remote attacker could forge an ID token that is signed using the 'None' type algorithm to bypass authentication and impersonate any user that use AWS Cognito for authentication.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-wj6h-7chw-x4h2",
+    "packages": [
+      "get-git-data"
+    ],
+    "digest": "Command injection in get-git-data. get-git-data through 1.3.1 is vulnerable to Command Injection. It is possible to inject arbitrary commands as part of the arguments provided to get-git-data.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-pv55-r6j3-wp94",
+    "packages": [
+      "eslint-config-eslint"
+    ],
+    "digest": "Malicious Package in eslint-config-eslint. Version 5.0.2 of `eslint-config-eslint` was published without authorization and was found to contain malicious code. This code would read the users `.npmrc` file and send any found authentication tokens to a remote server. ## Recommendation The best course of action if you found this package installed in your environment is to revoke all your npm tokens. You can find instruc",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-fwhp-2hqr-6g72",
+    "packages": [
+      "pk-app-wonderbox"
+    ],
+    "digest": "Downloads Resources over HTTP in pk-app-wonderbox. Affected versions of `pk-app-wonderbox` insecurely download an executable over an unencrypted HTTP connection. In scenarios where an attacker has a privileged network position, it is possible to intercept the response and replace the executable with a malicious one, resulting in code execution on the system running `pk-app-wonderbox`. ## Recommendation No patch is cu",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7xcv-wvr7-4h6p",
+    "packages": [
+      "an0n-chat-lib"
+    ],
+    "digest": "Malicious npm package: an0n-chat-lib. The npm `an0n-chat-lib` package has been identified as malicious and removed from the npm package registry. ## Remediation Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the com",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-mp66-rf4f-mhh8",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw: Google Chat app-url webhook auth accepted non-deployment add-on principals. ## Summary Google Chat app-url webhook verification accepted add-on principals outside the intended deployment binding. ## Affected Packages / Versions - Package: `openclaw` (npm) - Affected: < 2026.3.22 - Fixed: >= 2026.3.22 - Latest released tag checked: `v2026.3.23-2` (`630f1479c44f78484dfa21bb407cbe6f171dac87`) - Latest publishe",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-vr98-27qj-3c8q",
+    "packages": [
+      "rollup-plugin-server"
+    ],
+    "digest": "Directory traversal in rollup-plugin-server. This affects all versions of package rollup-plugin-dev-server. There is no path sanitization in `readFile` operation inside the `readFileFromContentBase` function.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-jh3h-rpxg-fr36",
+    "packages": [
+      "@haxtheweb/haxcms-nodejs",
+      "@haxtheweb/video-player",
+      "@haxtheweb/iframe-loader"
+    ],
+    "digest": "Stored XSS via <iframe> in HAX CMS allows access to sensitive client-side data and account takeover. ### Summary A stored cross-site scripting (XSS) vulnerability exists in HAX CMS due to improper sanitization of `<iframe>` elements. The application allows `javascript:` URIs in the `src` attribute, which are executed when a malicious page is viewed. This enables attackers to execute arbitrary JavaScript in the contex",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-cqp4-qqvg-3787",
+    "packages": [
+      "open-webui"
+    ],
+    "digest": "Open WebUI has Stored XSS in Banner Component via Improper Sanitization Order. ### Summary A Stored Cross-Site Scripting (XSS) vulnerability exists in the Banner component due to an improper sanitization order (specifically, DOMPurify is executed before the marked library). This vulnerability allows a compromised or malicious administrator to plant a malicious payload in the global banner. Crucially, this vector enab",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-7r7x-4c4q-c4qf",
+    "packages": [
+      "next-auth"
+    ],
+    "digest": "Missing proper state, nonce and PKCE checks for OAuth authentication. ### Impact `next-auth` applications using OAuth provider versions before `v4.20.1` are affected. A bad actor who can spy on the victim's network or able to social engineer the victim to click a manipulated login link could intercept and tamper with the authorization URL to **log in as the victim**, bypassing the CSRF protection. As an example, an a",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-97v6-998m-fp4g",
+    "packages": [
+      "apostrophe"
+    ],
+    "digest": "ApostropheCMS: Stored XSS via CSS Custom Property Injection in @apostrophecms/color-field Escaping Style Tag Context. ## Summary The `@apostrophecms/color-field` module bypasses color validation for values prefixed with `--` (intended for CSS custom properties), but performs no HTML sanitization on these values. When styles containing attacker-controlled color values are rendered into `<style>` tags — both in the glo",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-gprh-27j3-g5h4",
+    "packages": [
+      "nocodb"
+    ],
+    "digest": "NocoDB: Server-Side Request Forgery via Spreadsheet Fetch URL. ### Summary The spreadsheet-fetch endpoint (`axiosRequestMake`) accepted URLs whose path contained a permitted extension anywhere in the string, and applied a hand-rolled regex blocklist that omitted `127.0.0.0/8` and `169.254.0.0/16`, allowing the cloud-metadata endpoint to be reached with a crafted URL. ### Details The extension matcher is now anchored ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-23wc-v4mf-x7v4",
+    "packages": [
+      "intsol-package"
+    ],
+    "digest": "Directory Traversal in intsol-package. `intsol-package` is a file server. `intsol-package` is vulnerable to a directory traversal issue, giving an attacker access to the filesystem by placing \"../\" in the url. **Example Request:** ```http GET /../../../../../../../../../../etc/passwd HTTP/1.1 host:localhost ``` and the server's Response ```http HTTP/1.1 200 OK Date: Thu, 04 May 2017 23:59:18 GMT Connection: keep-aliv",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-m6wh-m8m8-6xx5",
+    "packages": [
+      "cofeescript"
+    ],
+    "digest": "cofeescript is malware. The `cofeescript` package is a piece of malware that steals sensitive data such as a user's private SSH key and bash history, sending them to attacker controlled locations. All versions have been unpublished from the npm registry. ## Recommendation If you have found `cofeescript` installed in your environment, you should: 1. Delete the package 2. Clear your npm cache 3. Ensure it is not presen",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-grw5-g9h2-wpg8",
+    "packages": [
+      "bootstrap-table"
+    ],
+    "digest": "Cross-site Scripting in bootstrap-table. Bootstrap Tables XSS vulnerability with Table Export plug-in when exportOptions: htmlContent is true in GitHub repository wenzhixin/bootstrap-table prior to 1.20.2. Disclosing session cookies, disclosing secure session data, exfiltrating data to third-parties.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-hhf6-3xpg-pggx",
+    "packages": [
+      "web3-core-subscriptions"
+    ],
+    "digest": "web3-core-subscriptions has a Prototype Pollution vulnerability. The web3-core-subscriptions is a package designed to manages web3 subscriptions. A Prototype Pollution vulnerability in the attachToObject function of web3-core-subscriptions version 1.10.4 and before allows attackers to inject properties on Object.prototype via supplying a crafted payload, causing denial of service (DoS) as the minimum consequence.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-x3h8-jrgh-p8jx",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw's exec allowlist analysis rejects shell expansion in unquoted heredocs. ## Summary Exec allowlist analysis rejects shell expansion in unquoted heredocs ## Affected Packages / Versions - Package: openclaw (npm) - Affected versions: <= 2026.4.21 - Fixed version: 2026.4.22 ## Impact An allowlisted command containing an unquoted heredoc could hide shell expansion in the heredoc body. That could make the approved",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-8mhj-rffc-rcvw",
+    "packages": [
+      "mppx"
+    ],
+    "digest": "mppx has Stripe charge credential replay via missing idempotency check. ### Impact The `stripe/charge` payment method did not check Stripe's `Idempotent-Replayed` response header when creating PaymentIntents. An attacker could replay a valid credential containing the same `spt` token against a new challenge, and the server would accept the replayed Stripe PaymentIntent as a new successful payment without actually cha",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-vx5p-q85x-xm3c",
+    "packages": [
+      "nocodb"
+    ],
+    "digest": "NocoDB has Stored Cross-site Scripting via Formula Cell. ### Summary A stored XSS vulnerability exists in the Formula virtual cell. Formula results containing `URI::()` patterns are rendered via `v-html` without sanitization, allowing injected HTML to execute. ### Details The `replaceUrlsWithLink()` function in `urlUtils.ts` converts `URI::(url)` patterns to `<a>` tags but passes all other HTML through unchanged. A u",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-247c-9743-5963",
+    "packages": [
+      "fastify"
+    ],
+    "digest": "Fastify has a Body Schema Validation Bypass via Leading Space in Content-Type Header. ### Summary A validation bypass vulnerability exists in Fastify v5.x where request body validation schemas specified via `schema.body.content` can be completely circumvented by prepending a single space character (`\\x20`) to the `Content-Type` header. The body is still parsed correctly as JSON (or any other content type), but schema",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-rpc5-pm7q-hjmp",
+    "packages": [
+      "billboard.js"
+    ],
+    "digest": "billboard.js is vulnerable to XSS during chart option binding. billboard.js before 3.18.0 allows an attacker to execute malicious JavaScript due to improper sanitization during chart option binding.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-h8mc-42c3-r72p",
+    "packages": [
+      "hubl-server"
+    ],
+    "digest": "hubl-server downloads resources over HTTP. Affected versions of `hubl-server` insecurely download dependencies over an unencrypted HTTP connection. In scenarios where an attacker has a privileged network position, it is possible to intercept the responses and replace the dependencies with malicious ones, resulting in code execution on the system running `hubl-server`. ## Recommendation No patch is currently available",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-jxr4-4prv-mh83",
+    "packages": [
+      "@mongodb-js/connection-form"
+    ],
+    "digest": "ejson shell parser in MongoDB Compass maybe bypassed. MongoDB Compass may be susceptible to code injection due to insufficient sandbox protection settings with the usage of ejson shell parser in Compass' connection handling. This issue affects MongoDB Compass versions prior to version 1.42.2.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-533p-g2hq-qr26",
+    "packages": [
+      "treekill"
+    ],
+    "digest": "Command Injection in treekill. All versions of `treekill` are vulnerable to Command Injection. The package fails to sanitize values passed to the `kill` function. If this value is user-controlled it may allow attackers to run arbitrary commands in the server. The issue only affects Windows systems. ## Recommendation No fix is currently available. Consider using an alternative package until a fix is made available.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-wvxp-jp4w-w8wg",
+    "packages": [
+      "mcp-server-kubernetes"
+    ],
+    "digest": "mcp-server-kubernetes has potential security issue in exec_in_pod tool. ### Summary A security issue exists in the `exec_in_pod` tool of the `mcp-server-kubernetes` MCP Server. The tool accepts user-provided commands in both array and string formats. When a string format is provided, it is passed directly to shell interpretation (`sh -c`) without input validation, allowing shell metacharacters to be interpreted. This",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-vrqm-gvq7-rrwh",
+    "packages": [
+      "@pdfme/pdf-lib"
+    ],
+    "digest": "PDFME Affected by Decompression Bomb in FlateDecode Stream Parsing Causes Memory Exhaustion DoS. ## Summary The `DecodeStream.ensureBuffer()` method in `@pdfme/pdf-lib` doubles its internal buffer without any upper bound on the decompressed size. A crafted PDF containing a FlateDecode stream with a high compression ratio (decompression bomb) causes unbounded memory allocation during stream decoding, leading to memory",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-6qc9-mqvw-jg7x",
+    "packages": [
+      "n8n"
+    ],
+    "digest": "n8n: Credential Authorization Bypass via Expression in HTTP Request Node `genericAuthType`. ## Impact An authenticated member with edit access to a shared workflow could reference another user's credential in an HTTP Request node while specifying the credential type through an expression. Because the pre-execution permission check compared the unresolved expression instead of the real credential type, the ownership c",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-vxwf-pprx-wc25",
+    "packages": [
+      "citypredict.whauwiller"
+    ],
+    "digest": "Directory Traversal in citypredict.whauwiller. Affected versions of `citypredict.whauwiller` resolve relative file paths, resulting in a directory traversal vulnerability. A malicious actor can use this vulnerability to access files outside of the intended directory root, which may result in the disclosure of private files on the vulnerable system. **Example request:** ```http GET /../../../../../../../../../../etc/p",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-37v6-fxx8-xjmx",
+    "packages": [
+      "openclaw"
+    ],
+    "digest": "OpenClaw: Telnyx Webhook Replay Detection Bypass via Base64 Signature Re-encoding. ## Summary Telnyx Webhook Replay Detection Bypass via Base64 Signature Re-encoding ## Current Maintainer Triage - Status: narrow - Normalized severity: low - Assessment: Shipped v2026.3.28 replay hashing treated equivalent Telnyx Base64/Base64URL signatures as distinct requests, but signature verification still held, so lower to low. #",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-gx45-xrj5-g6c4",
+    "packages": [
+      "deepseek-tui",
+      "codewhale"
+    ],
+    "digest": "CodeWhale: Project config `allow_shell` override enables arbitrary shell command execution via cloned repository. ### Maintainer resolution The CodeWhale maintainers validated this report. The affected package ranges are recorded in the advisory metadata. Version 0.8.64 contains the fix in commit 43563356b98c6b993085554da82e77370160a31c. Users should upgrade to 0.8.64 or later. The original reporter analysis is prese",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-vh3f-qppr-j97f",
+    "packages": [
+      "@meshconnect/web-link-sdk"
+    ],
+    "digest": "Mesh Connect JS SDK Vulnerable to Cross Site Scripting via createLink.openLink. ### Summary The lack of sanitization of URLs protocols in the `createLink.openLink` function enables the execution of arbitrary JavaScript code within the context of the parent page. ### Details https://github.com/FrontFin/mesh-web-sdk/blob/cf013b85ab95d64c63cbe46d6cb14695474924e7/packages/link/src/Link.ts#L441 The `createLink.openLink` f",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-8h8q-6873-q5fj",
+    "packages": [
+      "next"
+    ],
+    "digest": "Next.js Vulnerable to Denial of Service with Server Components. A vulnerability affects certain React Server Components packages for versions 19.x and frameworks that use the affected packages, including Next.js 13.x, 14.x, 15.x, and 16.x using the App Router. The issue is tracked upstream as [CVE-2026-23870](https://github.com/facebook/react/security/advisories/GHSA-rv78-f8rc-xrxh). A specially crafted HTTP request ",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-2m3v-v2m8-q956",
+    "packages": [
+      "react-server-dom-parcel",
+      "react-server-dom-turbopack",
+      "react-server-dom-webpack"
+    ],
+    "digest": "Denial of Service Vulnerability in React Server Components. ## Impact There is a denial of service vulnerability in React Server Components. React recommends updating immediately. The vulnerability exists in versions 19.0.0, 19.0.1 19.1.0, 19.1.1, 19.1.2, 19.2.0 and 19.2.1 of: - [react-server-dom-webpack](https://www.npmjs.com/package/react-server-dom-webpack) - [react-server-dom-parcel](https://www.npmjs.com/package",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-3644-q5cj-c5c7",
+    "packages": [
+      "langsmith"
+    ],
+    "digest": "LangSmith SDK: Public prompt pull deserializes untrusted manifests without trust boundary warning. ## Description The LangSmith SDK's prompt pull methods (`pull_prompt` / `pull_prompt_commit` in Python, `pullPrompt` / `pullPromptCommit` in JS/TS) fetch and deserialize prompt manifests from the LangSmith Hub. These manifests may contain serialized LangChain objects and model configuration that affect runtime behavior.",
+    "trigger": "",
+    "note": ""
+  },
+  {
+    "id": "GHSA-4pg4-qvpc-4q3h",
+    "packages": [
+      "multer"
+    ],
+    "digest": "Multer vulnerable to Denial of Service from maliciously crafted requests. ### Impact A vulnerability in Multer versions >=1.4.4-lts.1 allows an attacker to trigger a Denial of Service (DoS) by sending a malformed multi-part upload request. This request causes an unhandled exception, leading to a crash of the process. ### Patches Users should upgrade to `2.0.0` ### Workarounds None ### References - https://github.com/",
+    "trigger": "",
+    "note": ""
+  }
+]

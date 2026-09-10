@@ -1,0 +1,1067 @@
+[
+  {
+    "id": "GHSA-82jf-8f24-xq9m",
+    "packages": [
+      "hexo-theme-anzhiyu"
+    ],
+    "weeklyDownloads": 222
+  },
+  {
+    "id": "GHSA-g6w6-h933-4rc5",
+    "packages": [
+      "@soketi/soketi"
+    ],
+    "weeklyDownloads": 3526
+  },
+  {
+    "id": "GHSA-m794-qv59-gj7c",
+    "packages": [
+      "signqle"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-9hjh-fr4f-gxc4",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-3x62-x456-q2vm",
+    "packages": [
+      "git-pull-or-clone"
+    ],
+    "weeklyDownloads": 59
+  },
+  {
+    "id": "GHSA-h4hr-7fg3-h35w",
+    "packages": [
+      "prismjs"
+    ],
+    "weeklyDownloads": 26348154
+  },
+  {
+    "id": "GHSA-9qm3-6qrr-c76m",
+    "packages": [
+      "@nyariv/sandboxjs"
+    ],
+    "weeklyDownloads": 78563
+  },
+  {
+    "id": "GHSA-9ccr-fpp6-78qf",
+    "packages": [
+      "parse-server"
+    ],
+    "weeklyDownloads": 78244
+  },
+  {
+    "id": "GHSA-w868-4576-rv24",
+    "packages": [
+      "ntesseract"
+    ],
+    "weeklyDownloads": 8
+  },
+  {
+    "id": "GHSA-qqqw-gm93-qf6m",
+    "packages": [
+      "snyk-gradle-plugin"
+    ],
+    "weeklyDownloads": 16056
+  },
+  {
+    "id": "GHSA-q5f6-qxm2-mcqm",
+    "packages": [
+      "tarteaucitronjs"
+    ],
+    "weeklyDownloads": 10514
+  },
+  {
+    "id": "GHSA-xmwj-c75x-6346",
+    "packages": [
+      "@lobehub/lobehub"
+    ],
+    "weeklyDownloads": 156
+  },
+  {
+    "id": "GHSA-wf6x-7x77-mvgw",
+    "packages": [
+      "immutable"
+    ],
+    "weeklyDownloads": 37153533
+  },
+  {
+    "id": "GHSA-xw5p-hw6r-2j98",
+    "packages": [
+      "fastify"
+    ],
+    "weeklyDownloads": 8946475
+  },
+  {
+    "id": "GHSA-2m8v-572m-ff2v",
+    "packages": [
+      "systeminformation"
+    ],
+    "weeklyDownloads": 10674815
+  },
+  {
+    "id": "GHSA-396q-4vc8-28x9",
+    "packages": [
+      "@microsoft/kiota-http-fetchlibrary"
+    ],
+    "weeklyDownloads": 258127
+  },
+  {
+    "id": "GHSA-jvf5-q4h5-2jmj",
+    "packages": [
+      "madlib-object-utils"
+    ],
+    "weeklyDownloads": 50
+  },
+  {
+    "id": "GHSA-9cgf-pxwq-2cpw",
+    "packages": [
+      "stimulsoft-dashboards-js"
+    ],
+    "weeklyDownloads": 1769
+  },
+  {
+    "id": "GHSA-x975-rgx4-5fh4",
+    "packages": [
+      "appium-mcp"
+    ],
+    "weeklyDownloads": 8491
+  },
+  {
+    "id": "GHSA-f8r4-mf27-rf7m",
+    "packages": [
+      "financejs"
+    ],
+    "weeklyDownloads": 5837
+  },
+  {
+    "id": "GHSA-p9ff-h696-f583",
+    "packages": [
+      "vite"
+    ],
+    "weeklyDownloads": 158616150
+  },
+  {
+    "id": "GHSA-6927-3vr9-fxf2",
+    "packages": [
+      "parse-server"
+    ],
+    "weeklyDownloads": 78244
+  },
+  {
+    "id": "GHSA-53xv-c2hx-5w6q",
+    "packages": [
+      "node-windows"
+    ],
+    "weeklyDownloads": 30481
+  },
+  {
+    "id": "GHSA-j7h9-2jh7-g967",
+    "packages": [
+      "mcp-ssh-tool"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-528h-pc64-c93x",
+    "packages": [
+      "stream-json"
+    ],
+    "weeklyDownloads": 6698771
+  },
+  {
+    "id": "GHSA-5359-pvf2-pw78",
+    "packages": [
+      "tinymce"
+    ],
+    "weeklyDownloads": 993416
+  },
+  {
+    "id": "GHSA-2hhw-p8mg-jrm6",
+    "packages": [
+      "http-live-simulator"
+    ],
+    "weeklyDownloads": 22
+  },
+  {
+    "id": "GHSA-x4qj-2f4q-r4rx",
+    "packages": [
+      "parse-server"
+    ],
+    "weeklyDownloads": 78244
+  },
+  {
+    "id": "GHSA-3f62-qv96-4p78",
+    "packages": [
+      "@actual-app/sync-server"
+    ],
+    "weeklyDownloads": 3375
+  },
+  {
+    "id": "GHSA-cr7h-93fh-whwm",
+    "packages": [
+      "magix-combine-ex"
+    ],
+    "weeklyDownloads": 16
+  },
+  {
+    "id": "GHSA-hv96-xxx2-5v7w",
+    "packages": [
+      "nw"
+    ],
+    "weeklyDownloads": 2606
+  },
+  {
+    "id": "GHSA-8jr4-6r33-phwm",
+    "packages": [
+      "@steipete/summarize"
+    ],
+    "weeklyDownloads": 4014
+  },
+  {
+    "id": "GHSA-x3ff-w252-2g7j",
+    "packages": [
+      "@stablelib/ed25519"
+    ],
+    "weeklyDownloads": 285628
+  },
+  {
+    "id": "GHSA-pr34-8jfr-xhv8",
+    "packages": [
+      "selenium-wrapper"
+    ],
+    "weeklyDownloads": 6
+  },
+  {
+    "id": "GHSA-f44m-65h3-99vc",
+    "packages": [
+      "tarteaucitronjs"
+    ],
+    "weeklyDownloads": 10514
+  },
+  {
+    "id": "GHSA-3p68-rc4w-qgx5",
+    "packages": [
+      "axios"
+    ],
+    "weeklyDownloads": 106518902
+  },
+  {
+    "id": "GHSA-jrvm-mcxc-mf6m",
+    "packages": [
+      "dom-iterator"
+    ],
+    "weeklyDownloads": 90685
+  },
+  {
+    "id": "GHSA-7pvx-4585-hqww",
+    "packages": [
+      "sequelize-typescript"
+    ],
+    "weeklyDownloads": 379306
+  },
+  {
+    "id": "GHSA-g27f-9qjv-22pm",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-36h3-7c54-j27r",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-4xcv-9jjx-gfj3",
+    "packages": [
+      "mem"
+    ],
+    "weeklyDownloads": 5340897
+  },
+  {
+    "id": "GHSA-mc68-q9jw-2h3v",
+    "packages": [
+      "clawdbot"
+    ],
+    "weeklyDownloads": 1078
+  },
+  {
+    "id": "GHSA-6fw7-3q8r-m5vj",
+    "packages": [
+      "flowise"
+    ],
+    "weeklyDownloads": 4060
+  },
+  {
+    "id": "GHSA-cc8f-xg8v-72m3",
+    "packages": [
+      "compressing"
+    ],
+    "weeklyDownloads": 98695
+  },
+  {
+    "id": "GHSA-4h66-vghf-xg5x",
+    "packages": [
+      "get-npm-package-version"
+    ],
+    "weeklyDownloads": 103
+  },
+  {
+    "id": "GHSA-j9fq-vwqv-2fm2",
+    "packages": [
+      "parse-url"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-r54r-wmmq-mh84",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-3pcq-34w5-p4g2",
+    "packages": [
+      "modern-async"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-4r8w-3jww-m2rp",
+    "packages": [
+      "@strapi/strapi"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-qc2q-qhf3-235m",
+    "packages": [
+      "get-jwks"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-2j4c-9qqq-896r",
+    "packages": [
+      "web3-core-method"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-pxg6-pf52-xh8x",
+    "packages": [
+      "cookie"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-qf3q-9f3h-cjp9",
+    "packages": [
+      "nextchat"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-jvwf-75h9-cwgg",
+    "packages": [
+      "protobufjs"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-7grx-f945-mj96",
+    "packages": [
+      "uptime-kuma"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-2p49-hgcm-8545",
+    "packages": [
+      "svgo"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-2q6w-rxf3-4wc9",
+    "packages": [
+      "codify"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-fg3m-vhrr-8gj6",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-m874-69ww-w7jq",
+    "packages": [
+      "whispercast"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-x5mm-wm4g-j5xv",
+    "packages": [
+      "ghost"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-4rc3-7j7w-m548",
+    "packages": [
+      "liquidjs"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-9pcj-m5rr-p28g",
+    "packages": [
+      "textract"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-9j9m-8wjc-ff96",
+    "packages": [
+      "apostrophe"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-8342-988q-86cr",
+    "packages": [
+      "n8n"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-2gg9-6p7w-6cpj",
+    "packages": [
+      "@nyariv/sandboxjs"
+    ],
+    "weeklyDownloads": 78563
+  },
+  {
+    "id": "GHSA-7q2j-c4q5-rm27",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-q5qw-h33p-qvwr",
+    "packages": [
+      "hono"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-hf5h-hh56-3vrg",
+    "packages": [
+      "uws"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-r96p-v3cr-gfv8",
+    "packages": [
+      "@scullyio/scully",
+      "@scullyio/ng-lib"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-5888-ffcr-r425",
+    "packages": [
+      "superjson",
+      "blitz"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-mfwh-5m23-j46w",
+    "packages": [
+      "@actions/core"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-4f9j-vr4p-642r",
+    "packages": [
+      "@budibase/backend-core"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-mvhf-547c-h55r",
+    "packages": [
+      "thumbler"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-hc9w-4p87-j549",
+    "packages": [
+      "cached-path-relative"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-mw96-cpmx-2vgc",
+    "packages": [
+      "rollup"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-632p-p495-25m5",
+    "packages": [
+      "directus"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-hwx8-q9cg-mqmc",
+    "packages": [
+      "parse-server"
+    ],
+    "weeklyDownloads": 78244
+  },
+  {
+    "id": "GHSA-33vh-7x8q-mg35",
+    "packages": [
+      "safe-eval"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-2r8f-2665-3gxq",
+    "packages": [
+      "froever"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-68jh-rf6x-836f",
+    "packages": [
+      "@apollo/server"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-9g95-qf3f-ggrw",
+    "packages": [
+      "n8n"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-74hh-4rcv-pp27",
+    "packages": [
+      "bitconijs-lib"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-7mc2-6phr-23xc",
+    "packages": [
+      "tiny-secp256k1"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-8h8v-6qqm-fwpq",
+    "packages": [
+      "express-cart"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-363h-vj6q-3cmj",
+    "packages": [
+      "hapi"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-crv8-r5wq-gv2w",
+    "packages": [
+      "webui-aria2"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-7jvx-f994-rfw2",
+    "packages": [
+      "materialize-css"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-m6jq-g7gq-5w3c",
+    "packages": [
+      "@builder.io/qwik-city"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-p6mc-m468-83gw",
+    "packages": [
+      "lodash",
+      "lodash-es",
+      "lodash.pick",
+      "lodash.set",
+      "lodash.setwith",
+      "lodash.update",
+      "lodash.updatewith"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-wfp2-v9c7-fh79",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-w93q-cq9w-58p7",
+    "packages": [
+      "suneditor"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-cmj3-wx7h-ffvg",
+    "packages": [
+      "parse-server"
+    ],
+    "weeklyDownloads": 78244
+  },
+  {
+    "id": "GHSA-m866-6qv5-p2fg",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-3rmj-9m5h-8fpv",
+    "packages": [
+      "@astrojs/node"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-9ww8-j8j2-3788",
+    "packages": [
+      "yui"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-c4pw-33h3-35xw",
+    "packages": [
+      "astro"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-7hv8-3fr9-j2hv",
+    "packages": [
+      "@backstage/core-components",
+      "@backstage/catalog-model",
+      "@backstage/plugin-catalog-backend"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-r2qc-w64x-6j54",
+    "packages": [
+      "vega"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-q3j5-8vrg-4p9q",
+    "packages": [
+      "n8n"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-hf55-c445-2w97",
+    "packages": [
+      "@rocket.chat/livechat"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-f88m-g3jw-g9cj",
+    "packages": [
+      "sharp"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-q4fm-pjq6-m63g",
+    "packages": [
+      "n8n"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-crh9-3gjh-m6gc",
+    "packages": [
+      "api-lab-mcp"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-qq9h-g4jm-xgf3",
+    "packages": [
+      "better-auth"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-rjjv-87mx-6x3h",
+    "packages": [
+      "@sveltejs/kit"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-mvmf-cvfx-qg55",
+    "packages": [
+      "bleach"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-g5cg-6c7v-mmpw",
+    "packages": [
+      "hackmd-mcp"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-hcwq-x9fw-8cfq",
+    "packages": [
+      "@apostrophecms/cli"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-9rmh-mm8f-r9h6",
+    "packages": [
+      "svelte"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-5h7x-68wj-jhwc",
+    "packages": [
+      "docsify"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-8cw6-53m5-4932",
+    "packages": [
+      "studiocms"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-77q4-m83q-w76v",
+    "packages": [
+      "browserify-hmr"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-xmhh-xrcc-mx36",
+    "packages": [
+      "@scrypted/server"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-2fqv-h3r5-m4vf",
+    "packages": [
+      "plotly.js"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-r4pf-3v7r-hh55",
+    "packages": [
+      "app-builder-lib"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-583x-23h9-f5w7",
+    "packages": [
+      "@strapi/plugin-users-permissions"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-wj6h-7chw-x4h2",
+    "packages": [
+      "get-git-data"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-pv55-r6j3-wp94",
+    "packages": [
+      "eslint-config-eslint"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-fwhp-2hqr-6g72",
+    "packages": [
+      "pk-app-wonderbox"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-7xcv-wvr7-4h6p",
+    "packages": [
+      "an0n-chat-lib"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-mp66-rf4f-mhh8",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-vr98-27qj-3c8q",
+    "packages": [
+      "rollup-plugin-server"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-jh3h-rpxg-fr36",
+    "packages": [
+      "@haxtheweb/haxcms-nodejs",
+      "@haxtheweb/video-player",
+      "@haxtheweb/iframe-loader"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-cqp4-qqvg-3787",
+    "packages": [
+      "open-webui"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-7r7x-4c4q-c4qf",
+    "packages": [
+      "next-auth"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-97v6-998m-fp4g",
+    "packages": [
+      "apostrophe"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-gprh-27j3-g5h4",
+    "packages": [
+      "nocodb"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-23wc-v4mf-x7v4",
+    "packages": [
+      "intsol-package"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-m6wh-m8m8-6xx5",
+    "packages": [
+      "cofeescript"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-grw5-g9h2-wpg8",
+    "packages": [
+      "bootstrap-table"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-hhf6-3xpg-pggx",
+    "packages": [
+      "web3-core-subscriptions"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-x3h8-jrgh-p8jx",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-8mhj-rffc-rcvw",
+    "packages": [
+      "mppx"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-vx5p-q85x-xm3c",
+    "packages": [
+      "nocodb"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-247c-9743-5963",
+    "packages": [
+      "fastify"
+    ],
+    "weeklyDownloads": 8946475
+  },
+  {
+    "id": "GHSA-rpc5-pm7q-hjmp",
+    "packages": [
+      "billboard.js"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-h8mc-42c3-r72p",
+    "packages": [
+      "hubl-server"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-jxr4-4prv-mh83",
+    "packages": [
+      "@mongodb-js/connection-form"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-533p-g2hq-qr26",
+    "packages": [
+      "treekill"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-wvxp-jp4w-w8wg",
+    "packages": [
+      "mcp-server-kubernetes"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-vrqm-gvq7-rrwh",
+    "packages": [
+      "@pdfme/pdf-lib"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-6qc9-mqvw-jg7x",
+    "packages": [
+      "n8n"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-vxwf-pprx-wc25",
+    "packages": [
+      "citypredict.whauwiller"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-37v6-fxx8-xjmx",
+    "packages": [
+      "openclaw"
+    ],
+    "weeklyDownloads": 3328302
+  },
+  {
+    "id": "GHSA-gx45-xrj5-g6c4",
+    "packages": [
+      "deepseek-tui",
+      "codewhale"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-vh3f-qppr-j97f",
+    "packages": [
+      "@meshconnect/web-link-sdk"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-8h8q-6873-q5fj",
+    "packages": [
+      "next"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-2m3v-v2m8-q956",
+    "packages": [
+      "react-server-dom-parcel",
+      "react-server-dom-turbopack",
+      "react-server-dom-webpack"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-3644-q5cj-c5c7",
+    "packages": [
+      "langsmith"
+    ],
+    "weeklyDownloads": 0
+  },
+  {
+    "id": "GHSA-4pg4-qvpc-4q3h",
+    "packages": [
+      "multer"
+    ],
+    "weeklyDownloads": 0
+  }
+]
