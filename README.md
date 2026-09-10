@@ -107,6 +107,13 @@ elimination rate              : 50.0%
 That is the known-correct answer for that fixture. A package-level scan keeps
 both advisories, because lodash *is* imported.
 
+## What we found trying to build this
+
+[FINDINGS.md](FINDINGS.md) reports the measurement: extraction reaches 7.8
+percent recall against GHSA, covers 4.4 percent of a real project's findings,
+and one of the five covered records silently cleared a live NoSQL injection
+because the vulnerability is not a function call at all.
+
 ## Limitations
 
 Transitive reachability has no scalable sound answer yet, and that is the open
