@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "In `getClientRedirectUri()`, the function",
     "fixCommit": "https://github.com/medplum/medplum/commit/7ae10035ddadde4dba7b18d3156553940465b3a1"
   }

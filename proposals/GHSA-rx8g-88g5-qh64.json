@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the removeAttributeNS method",
     "fixCommit": "https://github.com/Raynos/min-document/commit/fe32e8da464cef622528725f647029a8fd7d95a6"
   }

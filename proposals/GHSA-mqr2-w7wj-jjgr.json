@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "through the `keyFromFields` function",
     "fixCommit": "https://github.com/sidorares/node-mysql2/commit/0d54b0ca6498c823098426038162ef10df02c818"
   }

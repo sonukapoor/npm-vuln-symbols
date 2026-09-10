@@ -13,8 +13,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in emit function",
     "fixCommit": "https://github.com/derbyjs/derby/commit/24524e96f36976883c7c619811320428536bd4d0"
   }

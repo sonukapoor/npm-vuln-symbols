@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the `set()` function",
     "fixCommit": "https://github.com/mickhansen/dottie.js/commit/7d3aee1c9c3c842720506e131de7e181e5c8db68"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the 'module.exports.setup' function",
     "fixCommit": "https://github.com/paypal/nemo-appium/commit/aa271d36dd5c81baae3c43aa2616c84f0ee4195f"
   }

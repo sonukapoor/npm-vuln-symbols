@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `parse` function",
     "fixCommit": "https://github.com/octokit/endpoint.js/commit/6c9c5be033c450d436efb37de41b6470c22f7db8"
   }

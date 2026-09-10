@@ -16,9 +16,9 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
-    "excerpt": "in `parse_str` (GHSA-f98m-q3hr-p5wq, GHSA-rxrv-835q-v5mh) \u2014 `unserialize` is a different function",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
+    "excerpt": "in `parse_str` (GHSA-f98m-q3hr-p5wq, GHSA-rxrv-835q-v5mh) — `unserialize` is a different function",
     "fixCommit": "https://github.com/locutusjs/locutus/commit/345a6211e1e6f939f96a7090bfeff642c9fcf9e4"
   }
 }

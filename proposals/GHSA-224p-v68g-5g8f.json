@@ -13,8 +13,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "In the `countDepth` function",
     "fixCommit": "https://github.com/Escape-Technologies/graphql-armor/commit/998986109f8c2313bd61325ddfe7f5dcd48f9232"
   }

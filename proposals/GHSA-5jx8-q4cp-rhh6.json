@@ -16,8 +16,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the getRandomBigIntegerZeroToMax and getRandomBigIntegerMinToMax functions",
     "fixCommit": "https://github.com/kjur/jsrsasign/commit/ee4b013478366cb16cea9a4bdfb218b6077f83b1"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "using the parseLookup function",
     "fixCommit": "https://github.com/trentm/json/commit/cc4798169f9e0f181f8aa61905b88479badcd483"
   }

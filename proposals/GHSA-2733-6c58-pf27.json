@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `add()` function",
     "fixCommit": "https://github.com/sharpred/deepHas/commit/8097fafd3776c613d8066546653e0d2c7b5fc465"
   }

@@ -24,8 +24,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the public `normalize()` API",
     "fixCommit": "https://github.com/xmldom/xmldom/commit/0748720b620555f8c222782dcab575cf0cf403b4"
   }

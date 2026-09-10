@@ -16,8 +16,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the php.strings.parse_str function",
     "fixCommit": "https://github.com/locutusjs/locutus/commit/0eb16d8541838e80f3c2340a9ef93ded7c97290f"
   }

@@ -13,8 +13,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the `deepMerge()` function",
     "fixCommit": "https://github.com/TheeCryptoChad/merge-guard/commit/25e4b4f2618578a656ef3cb4946a1b475f736736"
   }

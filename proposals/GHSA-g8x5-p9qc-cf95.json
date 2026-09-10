@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `checkStateFunction` function",
     "fixCommit": "https://github.com/fastify/fastify-oauth2/commit/bff756b456cbb769080631af2beb85671ff4c79c"
   }

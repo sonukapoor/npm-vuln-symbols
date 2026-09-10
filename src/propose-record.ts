@@ -57,8 +57,15 @@ export function proposeRecord(record: OsvRecord): SymbolRecord | null {
   }
 
   // A candidate equal to an affected package name is the package being named
-  // in prose, not one of its exports.
-  const packageNameSet = new Set(packageNames.map(name => name.toLowerCase()));
+  // in prose, not one of its exports. Scoped names must also be compared
+  // unscoped: `@misskey-dev/summaly` yielded the symbol `summaly`, because an
+  // exact-match check never sees past the scope.
+  const packageNameSet = new Set<string>();
+  for (const name of packageNames) {
+    packageNameSet.add(name.toLowerCase());
+    const unscoped = name.includes("/") ? name.slice(name.lastIndexOf("/") + 1) : name;
+    packageNameSet.add(unscoped.toLowerCase());
+  }
   const symbols = extraction.symbols.filter(
     symbol => !packageNameSet.has(symbol.toLowerCase()),
   );

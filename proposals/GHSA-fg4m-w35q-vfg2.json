@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the lib.deepMerge function",
     "fixCommit": "https://github.com/chakra-ui/zag/commit/f53edc548f737aadfdd486a0043bdd5f5c068bbf"
   }

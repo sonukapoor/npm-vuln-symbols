@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the util.setPath function",
     "fixCommit": "https://github.com/digitalbazaar/forge/commit/6a1e3ef74f6eb345bcff1b82184201d1e28b6756"
   }

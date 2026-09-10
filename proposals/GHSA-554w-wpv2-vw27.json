@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the node-forge `asn1.fromDer` function",
     "fixCommit": "https://github.com/digitalbazaar/forge/commit/260425c6167a38aae038697132483b5517b26451"
   }

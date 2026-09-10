@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the `extend` function",
     "fixCommit": "https://github.com/kobezzza/Collection/commit/d3d937645f62f37d3115d6aa90bb510fd856e6a2"
   }

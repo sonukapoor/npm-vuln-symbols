@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the _merge() function",
     "fixCommit": "https://github.com/algolia/algoliasearch-helper-js/commit/776dff23c87b0902e554e02a8c2567d2580fe12a"
   }

@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the Editor() function",
     "fixCommit": "https://github.com/jsuites/jsuites/commit/b31770d5fe91684a00177f629aab933139c32d9f"
   }

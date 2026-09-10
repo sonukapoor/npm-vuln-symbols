@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in addJS Method",
     "fixCommit": "https://github.com/parallax/jsPDF/commit/56b46d45b052346f5995b005a34af5dcdddd5437"
   }

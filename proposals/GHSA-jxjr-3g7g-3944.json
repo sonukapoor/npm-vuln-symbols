@@ -16,9 +16,9 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
-    "excerpt": "through `createElement` / `setAttribute` are never validated at creation \u2014 those APIs",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
+    "excerpt": "through `createElement` / `setAttribute` are never validated at creation — those APIs",
     "fixCommit": "https://github.com/xmldom/xmldom/commit/7b2ec67e1750daadd0bb06c92e875e726544a362"
   }
 }

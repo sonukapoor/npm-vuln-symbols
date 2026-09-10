@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the `nest()` function",
     "fixCommit": "https://github.com/brycebaril/node-flatnest/commit/27d569baf9d9d25677640edeaf2d13af165868d6"
   }

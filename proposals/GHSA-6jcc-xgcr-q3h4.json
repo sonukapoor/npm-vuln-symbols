@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in handleInboxInternal function",
     "fixCommit": "https://github.com/fedify-dev/fedify/commit/14a2f8c6d2c3cbc00c3170a86ad3b7b8555c6847"
   }

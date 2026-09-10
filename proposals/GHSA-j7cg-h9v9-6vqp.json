@@ -30,8 +30,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the set, unSet, pushVal and pullVal functions",
     "fixCommit": "https://github.com/Irrelon/irrelon-path/commit/8a126b160c1a854ae511659c111413ad9910ebe3"
   }

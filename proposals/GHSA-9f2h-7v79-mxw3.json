@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in `Parse.Object` and internal APIs",
     "fixCommit": "https://github.com/parse-community/Parse-SDK-JS/commit/00973987f361368659c0c4dbf669f3897520b132"
   }

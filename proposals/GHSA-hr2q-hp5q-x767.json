@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "in the `createRequest()` function",
     "fixCommit": "https://github.com/withastro/astro/commit/dafbb1ba29912099c4faff1440033edc768af8b4"
   }

@@ -71,3 +71,28 @@ describe("findNpmPackages", () => {
     expect(findNpmPackages(record)).toEqual(["lodash", "lodash-es"]);
   });
 });
+
+describe("scoped package names", () => {
+  it("rejects a symbol matching the unscoped part of a scoped package", async () => {
+    // "@misskey-dev/summaly" yielded the symbol "summaly" from the phrase
+    // "in the main `summaly` function", because an exact-match check against
+    // the full scoped name never sees past the scope.
+    const { proposeRecord } = await import("../src/propose-record.js");
+    const record = proposeRecord({
+      id: "GHSA-test-scop-ed01",
+      affected: [{ package: { ecosystem: "npm", name: "@misskey-dev/summaly" } }],
+      details: "A vulnerability in the main `summaly` function allows SSRF.",
+    });
+    expect(record).toBeNull();
+  });
+
+  it("still proposes when the symbol differs from the package name", async () => {
+    const { proposeRecord } = await import("../src/propose-record.js");
+    const record = proposeRecord({
+      id: "GHSA-test-scop-ed02",
+      affected: [{ package: { ecosystem: "npm", name: "@scope/thing" } }],
+      details: "Command injection via the `renderTemplate` function.",
+    });
+    expect(record?.affected[0]?.symbols).toEqual(["renderTemplate"]);
+  });
+});

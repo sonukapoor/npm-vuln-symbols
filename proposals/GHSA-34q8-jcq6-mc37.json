@@ -15,8 +15,8 @@
     }
   ],
   "evidence": {
-    "source": "advisory_text",
-    "confidence": "medium",
+    "source": "advisory_text+fix_commit",
+    "confidence": "high",
     "excerpt": "via the uplot.assign function",
     "fixCommit": "https://github.com/leeoniya/uPlot/commit/5756e3e9b91270b303157e14bd0174311047d983"
   }
