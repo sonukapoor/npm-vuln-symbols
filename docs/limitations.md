@@ -70,7 +70,7 @@ answer soundly.
 
 ## Coverage is the binding constraint, not the analysis
 
-Measured end to end against OWASP Juice Shop v20.2.0 (1,179 packages).
+Measured end to end against OWASP Juice Shop v20.2.0 (1,179 packages). **A single project, n=1.**
 
 | Stage | Count | |
 |---|---|---|
@@ -80,10 +80,13 @@ Measured end to end against OWASP Juice Shop v20.2.0 (1,179 packages).
 | Of those, vulnerable symbol reached | 2 | |
 | Eliminated | **0** | **0.0%** |
 
-Even with a perfect reachability engine, 95.6% of that queue is untouchable,
-because the dataset has no symbols for those advisories. Extraction recall is
-7.9% against GHSA and translates to roughly 4.4% against a real project's
-findings.
+Even with a perfect reachability engine, 95.6% of that queue was untouchable,
+because the dataset had no symbols for those advisories.
+
+**This is one project and the figure does not generalise.** Juice Shop is
+deliberately stuffed with outdated dependencies. What generalises is the reason
+behind it: most advisories name no callable function at all, so no dataset can
+cover them.
 
 That is the number that decides whether this is worth pursuing. The analysis
 works; there is simply almost nothing for it to work on. Useful coverage means
