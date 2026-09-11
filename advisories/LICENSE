@@ -9,4 +9,4 @@ This matches the licence used by the OSV database, so the data can be
 redistributed by, and contributed upstream to, existing advisory sources
 without a licence conflict.
 
-Everything outside advisories/ is licensed under the MIT License. See LICENSE.
+Everything outside advisories/ is licensed under the MIT License. See ../LICENSE.
