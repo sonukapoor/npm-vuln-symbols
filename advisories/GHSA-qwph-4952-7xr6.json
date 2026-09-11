@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "in the `jwt.verify()` function",
     "fixCommit": "https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

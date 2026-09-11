@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "in Network-AI\" — *\"`ApprovalInbox` provides a web-accessible approval queue with REST API",
     "fixCommit": "https://github.com/Jovancoding/Network-AI/commit/a59c13a1f0ce0e8a0779a90343eef92fac5ab4c3"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

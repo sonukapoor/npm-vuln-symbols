@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "in the `escapeValue()` function",
     "fixCommit": "https://github.com/hypequery/hypequery/commit/2879161a810fed2c2222f785816ff05510976960"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

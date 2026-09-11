@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "using the supplied [`validateTransfer` function",
     "fixCommit": "https://github.com/solana-labs/solana-pay/commit/ac6ce0d0a81137700874a8bf5a7caac3be999fad"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

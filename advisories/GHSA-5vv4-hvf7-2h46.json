@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "Inside the `versions()` function",
     "fixCommit": "https://github.com/sebhildebrandt/systeminformation/commit/b67d3715eec881038ccbaace2f2711419ac3e107"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

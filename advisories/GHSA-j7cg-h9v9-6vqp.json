@@ -34,5 +34,7 @@
     "confidence": "high",
     "excerpt": "via the set, unSet, pushVal and pullVal functions",
     "fixCommit": "https://github.com/Irrelon/irrelon-path/commit/8a126b160c1a854ae511659c111413ad9910ebe3"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

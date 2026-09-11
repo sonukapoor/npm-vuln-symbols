@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "via the setter function",
     "fixCommit": "https://github.com/jquense/expr/commit/df846910915d59f711ce63c1f817815bceab5ff7"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

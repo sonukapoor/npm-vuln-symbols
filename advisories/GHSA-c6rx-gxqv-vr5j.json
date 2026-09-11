@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "in the 'module.exports.setup' function",
     "fixCommit": "https://github.com/paypal/nemo-appium/commit/aa271d36dd5c81baae3c43aa2616c84f0ee4195f"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

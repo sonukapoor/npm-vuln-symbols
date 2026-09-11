@@ -19,5 +19,7 @@
     "confidence": "high",
     "excerpt": "in the `wifiNetworks()` function",
     "fixCommit": "https://github.com/sebhildebrandt/systeminformation/commit/22242aa56188f2bffcbd7d265a11e1ebb808b460"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11"
 }

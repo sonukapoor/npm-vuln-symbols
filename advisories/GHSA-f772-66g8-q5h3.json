@@ -19,5 +19,8 @@
     "confidence": "high",
     "excerpt": "in a single `request` API",
     "fixCommit": "https://github.com/nodejs/undici/commit/66165d604fd0aee70a93ed5c44ad4cc2df395f80"
-  }
+  },
+  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedAt": "2026-09-11",
+  "trigger": "data_value"
 }
