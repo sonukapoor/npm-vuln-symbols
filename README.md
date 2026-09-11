@@ -135,6 +135,8 @@ both advisories, because lodash *is* imported.
 
 ## Documentation
 
+- [Review queue](docs/review-queue.md) - every record sorted by what is known
+  about it, so a reviewer knows where to start
 - [Findings](docs/findings.md) - what measuring this actually showed, with
   reproduction steps
 - [Limitations](docs/limitations.md) - transitive reachability, and the

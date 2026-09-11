@@ -30,6 +30,23 @@ symmetric:
 So the extractor drops anything ambiguous, and a human confirms everything that
 survives.
 
+## Where to start
+
+Do not read `proposals/` top to bottom. [docs/review-queue.md](docs/review-queue.md)
+sorts every record into bands by what two independent signals say about it, and
+the bands are ordered by how much a reviewer's attention repays:
+
+| Band | What to do |
+|---|---|
+| Likely wrong | Reject, and add a regression test. Highest yield. |
+| Conflicting signals | Read properly. This is where judgement is needed. |
+| Likely right | Skim and promote. |
+| Weak support | Light check. |
+| Unsupported | Leave until last. |
+
+Regenerate it with `npx tsx scripts/build-review-queue.ts` after any change to
+the dataset or to `study/export-check.json`.
+
 ## Reviewing a proposal
 
 For each file in `proposals/`:
