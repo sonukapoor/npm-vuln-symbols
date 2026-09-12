@@ -91,6 +91,26 @@ export interface AffectedPackage {
 }
 
 /**
+ * How a review was carried out.
+ *
+ * `reviewedBy` on its own spans everything from a person reading the advisory
+ * to an agent reading it with a glance from a human, and a consumer cannot tell
+ * which. That is the same failure this dataset documents elsewhere: an unmarked
+ * absence of evidence read as evidence of safety. Stating the method makes the
+ * claim checkable instead of merely present.
+ */
+export const ReviewMethod = {
+  /** A person read the advisory and decided. */
+  Human: "human",
+  /** An agent read it and a person accepted the result. */
+  Assisted: "assisted",
+  /** No human in the loop. Weakest, and must be labelled as such. */
+  Machine: "machine",
+} as const;
+
+export type ReviewMethod = (typeof ReviewMethod)[keyof typeof ReviewMethod];
+
+/**
  * One advisory's vulnerable symbols, per affected package.
  *
  * Mirrors OSV's own `affected[]` structure rather than flattening to a single
@@ -113,4 +133,9 @@ export interface SymbolRecord {
   readonly reviewedBy?: string;
   /** ISO date, YYYY-MM-DD. */
   readonly reviewedAt?: string;
+  /**
+   * Required whenever `reviewedBy` is set, so a review claim cannot be made
+   * without saying how it was produced.
+   */
+  readonly reviewMethod?: ReviewMethod;
 }

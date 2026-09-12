@@ -1,4 +1,11 @@
-import { Confidence, ECOSYSTEM_NPM, EvidenceSource, Trigger, type SymbolRecord } from "./types.js";
+import {
+  Confidence,
+  ECOSYSTEM_NPM,
+  EvidenceSource,
+  ReviewMethod,
+  Trigger,
+  type SymbolRecord,
+} from "./types.js";
 
 /**
  * Shape validation for a dataset record.
@@ -15,6 +22,7 @@ const IDENTIFIER_PATTERN = /^[A-Za-z_$][A-Za-z0-9_$]*$/;
 const CONFIDENCE_VALUES = new Set<string>(Object.values(Confidence));
 const EVIDENCE_SOURCE_VALUES = new Set<string>(Object.values(EvidenceSource));
 const TRIGGER_VALUES = new Set<string>(Object.values(Trigger));
+const REVIEW_METHOD_VALUES = new Set<string>(Object.values(ReviewMethod));
 
 function isRecordObject(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -107,6 +115,22 @@ function validateReview(record: Record<string, unknown>, errors: string[]): void
   const reviewedAt = record["reviewedAt"];
   if (reviewedAt !== undefined && (typeof reviewedAt !== "string" || !ISO_DATE_PATTERN.test(reviewedAt))) {
     errors.push("reviewedAt must be an ISO date, YYYY-MM-DD");
+  }
+
+  const reviewedBy = record["reviewedBy"];
+  const reviewMethod = record["reviewMethod"];
+
+  if (reviewMethod !== undefined && (typeof reviewMethod !== "string" || !REVIEW_METHOD_VALUES.has(reviewMethod))) {
+    errors.push("reviewMethod must be 'human', 'assisted' or 'machine'");
+  }
+
+  // A review claim without a stated method is exactly the ambiguity this field
+  // exists to remove, so the two travel together or not at all.
+  if (reviewedBy !== undefined && reviewMethod === undefined) {
+    errors.push("reviewedBy requires reviewMethod, so the claim says how it was produced");
+  }
+  if (reviewMethod !== undefined && reviewedBy === undefined) {
+    errors.push("reviewMethod requires reviewedBy");
   }
 }
 

@@ -64,13 +64,32 @@ For each file in `proposals/`:
      nothing either way. Roughly two thirds of packages land here.
 3. Check the `excerpt` supports the claim rather than contradicting it.
    Advisories often describe what is *not* affected.
-4. If it holds, move the file to `advisories/`, set `reviewedBy` and
-   `reviewedAt`, and raise `evidence.confidence` if a fix commit corroborates it.
+4. If it holds, move the file to `advisories/` and set `reviewedBy`,
+   `reviewedAt` and `reviewMethod`. Raise `evidence.confidence` if a fix commit
+   corroborates it.
 5. If it does not hold, delete it and add a regression test to
    `tests/extract-symbols.test.ts` so the extractor stops producing that shape.
 
 Step 5 is the one that compounds. Every rejected proposal that becomes a test
 raises precision permanently.
+
+## Saying how you reviewed
+
+`reviewedBy` alone spans everything from a person reading the advisory to an
+agent reading it with a glance from a human, and a consumer cannot tell which.
+So a review claim has to state its method, and validation enforces the pair.
+
+| `reviewMethod` | Means |
+|---|---|
+| `human` | you read the advisory and decided |
+| `assisted` | an agent read it and you accepted the result |
+| `machine` | no human in the loop |
+
+**Agent-assisted review is welcome.** Most review will be assisted, and saying
+so is worth more than a claim that overstates itself. What is not welcome is a
+record that reads as human-reviewed when it was not, because that is the same
+failure this project documents in reachability tooling: an unmarked absence of
+evidence, read as evidence of safety.
 
 ## Confidence levels
 
