@@ -23,7 +23,8 @@ const NEVER_SYMBOL_WORDS = new Set([
   "certain", "specific", "arbitrary", "malicious", "crafted", "untrusted",
   "unsanitized", "unvalidated", "vulnerable", "affected", "following",
   "underlying", "internal", "exported", "default", "main",
-  "arrow", "anonymous", "ui", "env", "clipboard",
+  "arrow", "anonymous", "ui", "env", "clipboard", "entry", "host",
+  "prediction", "projects", "custom", "apply", "exec", "documented",
 ]);
 
 /**
@@ -70,10 +71,40 @@ const INTRODUCERS = "via|in|through|using|within|inside";
  */
 const SPAN = `(?:(?!\\b(?:${INTRODUCERS})\\b|\\.\\s)[^;:]){1,120}?`;
 
+/**
+ * GitHub advisories carry a stock phrase whose symbol comes *after* the word
+ * "function", not before it:
+ *
+ *   "vulnerable to Prototype Pollution through the entry function(s) `lib.set`"
+ *
+ * The general patterns below read "the <X> function" and take X, which yields
+ * the literal word "entry". This runs first so the real symbol wins.
+ */
+const ENTRY_FUNCTION_PATTERN =
+  /\bentry function\(s\)\s*((?:`[^`]+`)(?:\s*(?:,|and)\s*`[^`]+`)*)/gi;
+
+/**
+ * "function" and "method" are strong evidence that the span before them names
+ * code.
+ */
 const SYMBOL_PHRASE_PATTERNS: readonly RegExp[] = [
-  new RegExp(`(?:${INTRODUCERS})\\s+(?:the\\s+)?(${SPAN})\\s+(?:function|method|api)s?\\b`, "gi"),
-  new RegExp(`\\bthe\\s+(${SPAN})\\s+(?:function|method|api)s?\\s+(?:is|are|was|were)\\s+vulnerable`, "gi"),
+  new RegExp(`(?:${INTRODUCERS})\\s+(?:the\\s+)?(${SPAN})\\s+(?:function|method)s?\\b`, "gi"),
+  new RegExp(`\\bthe\\s+(${SPAN})\\s+(?:function|method)s?\\s+(?:is|are|was|were)\\s+vulnerable`, "gi"),
 ];
+
+/**
+ * "API" is much weaker evidence. "the Express API", "the Projects API" and
+ * "microservice APIs" are product and feature names, and they outnumber the
+ * genuine cases. An API-terminated span therefore only counts when the advisory
+ * marked the candidate as code itself, which keeps real cases such as
+ * "via the blameByFile() API" while dropping the proper nouns.
+ */
+const WEAK_PHRASE_PATTERNS: readonly RegExp[] = [
+  new RegExp(`(?:${INTRODUCERS})\\s+(?:the\\s+)?(${SPAN})\\s+apis?\\b`, "gi"),
+];
+
+/** A span the advisory itself marked as code, by backticks or call parens. */
+const CODE_MARKER_PATTERN = /`[^`]+`|\w\s*\(\s*\)/;
 
 /** Splits a captured span on commas and conjunctions. */
 const LIST_SEPARATOR_PATTERN = /\s*(?:,|\band\b|\bor\b)\s*/;
@@ -176,14 +207,23 @@ export interface ExtractionResult {
  * Returns an empty result when nothing can be established confidently.
  */
 export function extractSymbolsFromText(details: string): ExtractionResult {
+  ENTRY_FUNCTION_PATTERN.lastIndex = 0;
+  for (const match of details.matchAll(ENTRY_FUNCTION_PATTERN)) {
+    const span = match[1];
+    if (span === undefined) {
+      continue;
+    }
+    const symbols = candidatesFromSpan(span);
+    if (symbols.length > 0) {
+      return { symbols: [...new Set(symbols)], excerpt: match[0].trim() };
+    }
+  }
+
   for (const pattern of SYMBOL_PHRASE_PATTERNS) {
     pattern.lastIndex = 0;
     for (const match of details.matchAll(pattern)) {
       const span = match[1];
-      if (span === undefined) {
-        continue;
-      }
-      if (NEGATION_PATTERN.test(match[0])) {
+      if (span === undefined || NEGATION_PATTERN.test(match[0])) {
         continue;
       }
       const symbols = candidatesFromSpan(span);
@@ -192,5 +232,24 @@ export function extractSymbolsFromText(details: string): ExtractionResult {
       }
     }
   }
+
+  for (const pattern of WEAK_PHRASE_PATTERNS) {
+    pattern.lastIndex = 0;
+    for (const match of details.matchAll(pattern)) {
+      const span = match[1];
+      if (span === undefined || NEGATION_PATTERN.test(match[0])) {
+        continue;
+      }
+      // Only a span the advisory itself marked as code counts here.
+      if (!/`[^`]+`|\w\s*\(\s*\)/.test(span)) {
+        continue;
+      }
+      const symbols = candidatesFromSpan(span);
+      if (symbols.length > 0) {
+        return { symbols: [...new Set(symbols)], excerpt: match[0].trim() };
+      }
+    }
+  }
+
   return { symbols: [] };
 }

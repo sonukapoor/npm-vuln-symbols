@@ -10,8 +10,7 @@
         "name": "@budibase/server"
       },
       "symbols": [
-        "PUBLIC_ENDPOINTS",
-        "TODO"
+        "buildCsrfMiddleware"
       ]
     }
   ],

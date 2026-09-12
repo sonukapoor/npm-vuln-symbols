@@ -10,7 +10,7 @@
         "name": "@intlify/shared"
       },
       "symbols": [
-        "entry"
+        "deepCopy"
       ]
     },
     {
@@ -19,7 +19,7 @@
         "name": "@intlify/vue-i18n-core"
       },
       "symbols": [
-        "entry"
+        "deepCopy"
       ]
     },
     {
@@ -28,7 +28,7 @@
         "name": "petite-vue-i18n"
       },
       "symbols": [
-        "entry"
+        "deepCopy"
       ]
     },
     {
@@ -37,7 +37,7 @@
         "name": "vue-i18n"
       },
       "symbols": [
-        "entry"
+        "deepCopy"
       ]
     }
   ],

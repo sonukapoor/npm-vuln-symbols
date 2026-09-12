@@ -10,7 +10,7 @@
         "name": "@intlify/core"
       },
       "symbols": [
-        "entry"
+        "handleFlatJson"
       ]
     },
     {
@@ -19,7 +19,7 @@
         "name": "@intlify/core-base"
       },
       "symbols": [
-        "entry"
+        "handleFlatJson"
       ]
     },
     {
@@ -28,7 +28,7 @@
         "name": "@intlify/message-resolver"
       },
       "symbols": [
-        "entry"
+        "handleFlatJson"
       ]
     },
     {
@@ -37,7 +37,7 @@
         "name": "@intlify/vue-i18n-core"
       },
       "symbols": [
-        "entry"
+        "handleFlatJson"
       ]
     },
     {
@@ -46,7 +46,7 @@
         "name": "petite-vue-i18n"
       },
       "symbols": [
-        "entry"
+        "handleFlatJson"
       ]
     },
     {
@@ -55,7 +55,7 @@
         "name": "vue-i18n"
       },
       "symbols": [
-        "entry"
+        "handleFlatJson"
       ]
     }
   ],

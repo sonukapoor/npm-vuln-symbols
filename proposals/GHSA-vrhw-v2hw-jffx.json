@@ -10,7 +10,7 @@
         "name": "signalk-server"
       },
       "symbols": [
-        "applicationData"
+        "validateAppId"
       ]
     }
   ],
