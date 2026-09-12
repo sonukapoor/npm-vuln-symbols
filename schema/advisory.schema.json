@@ -115,6 +115,22 @@
         "data_value"
       ],
       "description": "How the vulnerability is triggered. Defaults to 'call'. A 'data_value' record is triggered by passing a value or option key and cannot be resolved by call-pattern reachability, so it must never be used to eliminate a finding."
+    },
+    "reviewMethod": {
+      "enum": [
+        "human",
+        "assisted",
+        "machine"
+      ],
+      "description": "How the review was carried out. Required whenever reviewedBy is present, so a review claim always states how it was produced. 'human' means a person read the advisory and decided, 'assisted' means an agent read it and a person accepted the result, 'machine' means no human was in the loop."
     }
+  },
+  "dependentRequired": {
+    "reviewedBy": [
+      "reviewMethod"
+    ],
+    "reviewMethod": [
+      "reviewedBy"
+    ]
   }
 }
