@@ -110,3 +110,32 @@ describe("scanExports, detecting incomplete understanding", () => {
     expect(scan.result).toBe(ExportScanResult.Parsed);
   });
 });
+
+describe("scanExports, TypeScript declarations", () => {
+  // A .d.ts states the export surface directly, so it reads cleanly where a
+  // bundle does not. handlebars' lib/index.js yields nothing while its
+  // types/index.d.ts yields 64 names.
+
+  it("reads declared function exports", () => {
+    const source = "export declare function create(options?: object): Handlebars;";
+    expect(scanExports("index.d.ts", source).names).toContain("create");
+  });
+
+  it("reads declared class exports", () => {
+    expect(scanExports("index.d.ts", "export declare class AxiosHeaders {}").names).toContain(
+      "AxiosHeaders",
+    );
+  });
+
+  it("reads declared const exports", () => {
+    const source = "export declare const ECONNABORTED: string;";
+    expect(scanExports("index.d.ts", source).names).toContain("ECONNABORTED");
+  });
+
+  it("is unknown for a barrel that only re-exports", () => {
+    // A declaration file forwarding to other files is not the whole surface,
+    // and treating it as complete would produce false not-found suspicions.
+    const scan = scanExports("index.d.ts", 'export * from "./client";');
+    expect(scan.result).toBe(ExportScanResult.Unknown);
+  });
+});
