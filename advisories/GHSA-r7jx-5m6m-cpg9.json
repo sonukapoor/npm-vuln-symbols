@@ -20,7 +20,9 @@
     "excerpt": "in the lib.Logger function",
     "fixCommit": "https://github.com/shakyShane/eazy-logger/commit/a8baa6fe441d19ffa9916eba367016b7937a28fd"
   },
-  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedBy": "K4bain",
   "reviewedAt": "2026-09-11",
-  "trigger": "data_value"
+  "trigger": "call",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

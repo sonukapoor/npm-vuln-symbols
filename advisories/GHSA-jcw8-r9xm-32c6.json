@@ -20,6 +20,8 @@
     "excerpt": "in the `resolve()` method",
     "fixCommit": "https://github.com/skoranga/node-dns-sync/commit/d9abaae384b198db1095735ad9c1c73d7b890a0d"
   },
-  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
-  "reviewedAt": "2026-09-11"
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

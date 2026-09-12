@@ -20,6 +20,8 @@
     "excerpt": "within the getLastModDate() function",
     "fixCommit": "https://github.com/thejoshwolfe/yauzl/commit/c4695215b05c6adffda613b9051a2a85429b33fe"
   },
-  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
-  "reviewedAt": "2026-09-11"
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

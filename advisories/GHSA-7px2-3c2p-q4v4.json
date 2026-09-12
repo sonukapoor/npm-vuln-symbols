@@ -20,6 +20,8 @@
     "excerpt": "via the `nest()` function",
     "fixCommit": "https://github.com/brycebaril/node-flatnest/commit/27d569baf9d9d25677640edeaf2d13af165868d6"
   },
-  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
-  "reviewedAt": "2026-09-11"
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

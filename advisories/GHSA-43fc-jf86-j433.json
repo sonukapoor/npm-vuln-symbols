@@ -20,7 +20,9 @@
     "excerpt": "in mergeConfig\n\n### Summary\n\nThe `mergeConfig` function",
     "fixCommit": "https://github.com/axios/axios/commit/28c721588c7a77e7503d0a434e016f852c597b57"
   },
-  "reviewedBy": "K4bain (symbol-vs-advisory review for issue #17)",
+  "reviewedBy": "K4bain",
   "reviewedAt": "2026-09-11",
-  "trigger": "data_value"
+  "trigger": "call",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }
