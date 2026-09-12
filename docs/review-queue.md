@@ -16,15 +16,15 @@ together they say where a reviewer's attention repays most.
 
 | Band | Records | What it means |
 |---|---|---|
-| [Likely wrong](#likely-wrong) | 42 | Start here. |
-| [Conflicting signals](#conflicting-signals) | 84 | The two signals disagree, so this is where judgement is actually required. |
-| [Likely right](#likely-right) | 30 | Both signals agree. |
-| [Weak support](#weak-support) | 156 | One signal is positive and the other is silent. |
-| [Unsupported](#unsupported) | 180 | Nothing is known either way. |
+| [Likely wrong](#likely-wrong) | 48 | Start here. |
+| [Conflicting signals](#conflicting-signals) | 100 | The two signals disagree, so this is where judgement is actually required. |
+| [Likely right](#likely-right) | 42 | Both signals agree. |
+| [Weak support](#weak-support) | 152 | One signal is positive and the other is silent. |
+| [Unsupported](#unsupported) | 150 | Nothing is known either way. |
 
 ## Likely wrong
 
-42 records. Start here. Both signals are negative. Confirm the symbol is wrong, delete the record, and add a regression test to `tests/extract-symbols.test.ts` so the extractor stops producing that shape. Every rejection here raises precision permanently.
+48 records. Start here. Both signals are negative. Confirm the symbol is wrong, delete the record, and add a regression test to `tests/extract-symbols.test.ts` so the extractor stops producing that shape. Every rejection here raises precision permanently.
 
 | Advisory | Package | Symbols |
 |---|---|---|
@@ -35,7 +35,10 @@ together they say where a reviewer's attention repays most.
 | `GHSA-3j8v-cgw4-2g6q` | fast-jwt | `verify` |
 | `GHSA-3jcg-vx7f-j6qf` | @fuel-ts/account | `txpool`, `tA`, `fund` |
 | `GHSA-3jxr-9vmj-r5cp` | brace-expansion | `expand_`, `post` |
+| `GHSA-3p64-6gvh-82v5` | mlflow | `BEFORE_REQUEST_VALIDATORS` |
 | `GHSA-3xgx-r9j4-qw9w` | dexie | `keyPath` |
+| `GHSA-42h9-826w-cgv3` | axios | `formDataToJSON`, `formToJSON` |
+| `GHSA-442j-39wm-28r2` | handlebars | `lookup` |
 | `GHSA-4j8x-x6v7-w9rq` | flowise, flowise-components | `globalThis`, `eval` |
 | `GHSA-5rq4-664w-9x2c` | basic-ftp | `downloadToDir` |
 | `GHSA-5xvg-pmgg-3mxr` | flowise, flowise-components | `run` |
@@ -46,21 +49,24 @@ together they say where a reviewer's attention repays most.
 | `GHSA-8344-3jmq-59r6` | @xmldom/xmldom, xmldom | `getNamedItemNS` |
 | `GHSA-88qf-5f3v-pm6m` | dawnsparks-node-tesseract | `child_process` |
 | `GHSA-8m3c-c648-2xjj` | nodemailer | `resolveAll`, `_convertDataImages` |
+| `GHSA-8qff-qr5q-5pr8` | openpgp | `decrypt`, `verificationKeys` |
 | `GHSA-8v9x-9xqg-r8mr` | json8-merge-patch | `modify` |
+| `GHSA-8xq3-w9fx-74rv` | webfinger.js | `addition` |
+| `GHSA-9c47-m6qq-7p4h` | json5 | `Parse` |
 | `GHSA-9crc-q9x8-hgqq` | vitest | `saveTestFile` |
+| `GHSA-c7pp-g2v2-2766` | gmail-js | `parse_response`, `visible_emails_post`, `email_data_post` |
 | `GHSA-chmr-rg2f-9jmf` | @strapi/database, @strapi/strapi +1 | `bootstrap` |
+| `GHSA-cxrg-g7r8-w69p` | @fastify/middie | `Holder` |
 | `GHSA-f8pq-3926-8gx5` | @opentelemetry/instrumentation | `import` |
 | `GHSA-gm9x-q798-hmr4` | git-tags-remote | `repo` |
 | `GHSA-h42x-xx2q-6v6g` | flowise | `comment` |
 | `GHSA-h7cp-r72f-jxh6` | pbkdf2 | `deriveKey` |
 | `GHSA-hfpr-jhpq-x4rm` | openclaw | `send` |
-| `GHSA-hjwq-mjwj-4x6c` | @intlify/shared, @intlify/vue-i18n-core +2 | `deepCopy` |
-| `GHSA-hpqf-m68j-2pfx` | js-object-utilities | `set` |
 | `GHSA-hwmc-4c8j-xxj7` | sveltekit-superforms | `parseFormData` |
 | `GHSA-m7jm-9gc2-mpf2` | fast-xml-parser | `validateEntityName` |
 | `GHSA-mp7w-mhcv-673j` | vega, vega-selections | `vlSelectionTuples` |
 | `GHSA-mpgr-2cx9-327h` | ssb-db | `get` |
-| `GHSA-p2ph-7g93-hw3m` | @intlify/core, @intlify/core-base +4 | `handleFlatJson` |
+| `GHSA-mqgv-67vx-g4m5` | js-data | `deepFillIn` |
 | `GHSA-p5gc-c584-jj6v` | vm2 | `inspect` |
 | `GHSA-p9cg-vqcc-grcx` | @fedify/fedify | `fetch` |
 | `GHSA-rchf-xwx2-hm93` | @fedify/fedify | `exploit` |
@@ -73,7 +79,7 @@ together they say where a reviewer's attention repays most.
 
 ## Conflicting signals
 
-84 records. The two signals disagree, so this is where judgement is actually required. Read the advisory and the fix commit, and decide.
+100 records. The two signals disagree, so this is where judgement is actually required. Read the advisory and the fix commit, and decide.
 
 | Advisory | Package | Symbols |
 |---|---|---|
@@ -89,9 +95,12 @@ together they say where a reviewer's attention repays most.
 | `GHSA-38cw-85xc-xr9x` | @veramo/data-store | `decorateQB` |
 | `GHSA-395f-4hp3-45gv` | shell-quote | `exports` |
 | `GHSA-43p4-m455-4f4j` | @trpc/server | `formDataToObject` |
+| `GHSA-4m3m-ppvx-xgw9` | @fastify/passport | `authenticate` |
 | `GHSA-4rch-2fh8-94vw` | mysql2 | `readCodeFor` |
+| `GHSA-529q-4j3p-7c5r` | algoliasearch-helper | `_merge` |
 | `GHSA-554w-wpv2-vw27` | node-forge | `fromDer` |
 | `GHSA-56p6-qw3c-fq2g` | @directus/api, @directus/types +1 | `verifySessionJWT` |
+| `GHSA-57f3-gghm-9mhc` | jspdf | `addImage` |
 | `GHSA-5c7w-4wm3-85vw` | @asymmetric-effort/specifyjs | `gql` |
 | `GHSA-5f97-h2c2-826q` | @apidevtools/json-schema-ref-parser | `bundle`, `parse`, `resolve`, `dereference` |
 | `GHSA-5h4j-qrvg-9xhw` | node-jose | `modInverse` |
@@ -103,6 +112,7 @@ together they say where a reviewer's attention repays most.
 | `GHSA-65ch-62r8-g69g` | node-forge | `derToOid` |
 | `GHSA-6f65-4fv2-wwch` | @vendure/core | `authenticate` |
 | `GHSA-6jrj-vc65-c983` | unzip-stream | `Extract` |
+| `GHSA-6q87-84jw-cjhp` | @sveltejs/kit | `load` |
 | `GHSA-73rg-f94j-xvhx` | @udecode/plate-core | `getRenderNodeProps` |
 | `GHSA-7f53-fmmv-mfjv` | react-native | `validateBaseUrl` |
 | `GHSA-7hh3-3x64-v2g9` | remult | `apiPrefilter` |
@@ -110,33 +120,43 @@ together they say where a reviewer's attention repays most.
 | `GHSA-92xj-mqp7-vmcj` | node-forge | `setPath` |
 | `GHSA-93r5-fhx6-vmg9` | @xmldom/xmldom, xmldom | `normalize` |
 | `GHSA-995x-33wq-8gc9` | cycle-import-check | `writeFileToTmpDirAndOpenIt` |
+| `GHSA-9g8m-v378-pcg3` | parse | `initializeState` |
 | `GHSA-9hp6-4448-45g2` | hono | `getPath` |
-| `GHSA-cq8r-fc3q-6hg2` | jointjs | `unsetByPath` |
+| `GHSA-9wwp-q7wq-jx35` | @fastify/secure-session | `delete` |
 | `GHSA-cr84-xvw4-qx3c` | shescape | `escape`, `escapeAll` |
 | `GHSA-cvv5-9h9w-qp2m` | systeminformation | `getWindowsIEEE8021x` |
-| `GHSA-f3pp-32qc-36w4` | jointjs | `setByPath` |
 | `GHSA-f6ww-3ggp-fr8h` | @xmldom/xmldom, xmldom | `createDocumentType` |
 | `GHSA-fhwm-pc6r-4h2f` | commandkit | `commandName` |
 | `GHSA-fp25-p6mj-qqg6` | locutus | `call_user_func_array` |
+| `GHSA-fpg4-jhqr-589c` | @sveltejs/kit | `form` |
 | `GHSA-fpw7-j2hg-69v5` | mysql2 | `readCodeFor` |
 | `GHSA-fq9m-v26v-2m4f` | lilconfig | `dynamicImport` |
+| `GHSA-g3q2-vcjq-rgrc` | @blackprint/engine | `setDeepProperty` |
 | `GHSA-g5xx-pwrp-g3fv` | unhead | `acceptDataAttrs` |
+| `GHSA-g7mq-rfj2-25wq` | total4 | `set`, `get` |
+| `GHSA-g8x5-p9qc-cf95` | @fastify/oauth2 | `checkStateFunction` |
 | `GHSA-g956-2f74-rmv7` | hashi-vault-js | `encodeURIComponent` |
 | `GHSA-gq3j-xvxp-8hrf` | hono | `timingSafeEqual` |
 | `GHSA-h2p3-h48h-9jj7` | pidusage | `ps` |
 | `GHSA-hc5w-c9f8-9cc4` | langchain | `getFullPath` |
 | `GHSA-hggm-x7r9-mm7v` | openclaw | `isLikelyLocalPath`, `isValidMedia` |
 | `GHSA-hhf6-3xpg-pggx` | web3-core-subscriptions | `attachToObject` |
+| `GHSA-hjwq-mjwj-4x6c` | @intlify/shared, @intlify/vue-i18n-core +2 | `deepCopy` |
+| `GHSA-hpqf-m68j-2pfx` | js-object-utilities | `set` |
 | `GHSA-hr2q-hp5q-x767` | astro | `createRequest` |
 | `GHSA-j4fx-xxwh-2485` | jsondiffpatch | `patch` |
 | `GHSA-jfm8-hwhg-r6gg` | p4 | `run` |
 | `GHSA-jgw5-rp4p-qhp6` | quill-mention | `renderList` |
 | `GHSA-jxjr-3g7g-3944` | @xmldom/xmldom | `createElement`, `setAttribute` |
 | `GHSA-m272-9rp6-32mc` | @orpc/client | `deserialize` |
+| `GHSA-m44r-7c5h-m6mj` | @medplum/core | `getClientRedirectUri` |
 | `GHSA-mqr2-w7wj-jjgr` | mysql2 | `keyFromFields` |
 | `GHSA-mwhf-vhr5-7j23` | whatsapp-api-js | `post`, `verifyRequestSignature` |
+| `GHSA-p2ph-7g93-hw3m` | @intlify/core, @intlify/core-base +4 | `handleFlatJson` |
 | `GHSA-p6jh-p7q8-pcrg` | nodee-utils | `deepSet` |
+| `GHSA-pc47-g7gv-4gpw` | @rpldy/uploader | `createUploader` |
 | `GHSA-prmx-7v35-7q82` | a11y-mcp | `A11yServer` |
+| `GHSA-q4q5-c5cv-2p68` | vuetify | `eventName` |
 | `GHSA-q53c-4prm-w95q` | shescape | `escape`, `escapeAll` |
 | `GHSA-qj83-cq47-w5f8` | axios | `getSession` |
 | `GHSA-qpx9-hpmf-5gmw` | underscore | `flatten`, `isEqual` |
@@ -149,6 +169,7 @@ together they say where a reviewer's attention repays most.
 | `GHSA-v62p-rq8g-8h59` | pbkdf2 | `toBuffer` |
 | `GHSA-vh3f-qppr-j97f` | @meshconnect/web-link-sdk | `openLink` |
 | `GHSA-vp56-6g26-6827` | node-fetch | `isOriginPotentiallyTrustworthy` |
+| `GHSA-vpj2-qq7w-5qq6` | parse-server | `function` |
 | `GHSA-vvxf-wj5w-6gj5` | hemmelig | `isPublicUrl` |
 | `GHSA-w4hw-qcx7-56pr` | shescape | `escape`, `escapeAll` |
 | `GHSA-w4pp-8pjf-rmxw` | pacote | `addGitSha` |
@@ -159,19 +180,23 @@ together they say where a reviewer's attention repays most.
 | `GHSA-xf7w-r453-m56c` | fstream | `DirWriter` |
 | `GHSA-xh2p-7p87-fhgh` | @liquity/contracts | `batchLiquidateTroves` |
 | `GHSA-xh87-mx6m-69f3` | hono | `getConnInfo` |
+| `GHSA-xh92-rqrq-227v` | @mastra/mcp-docs-server | `readMdxContent` |
 | `GHSA-xqg6-98cw-gxhq` | @builder.io/qwik-city | `formToObj` |
 | `GHSA-xxjr-mmjv-4gpg` | lodash, lodash-amd +2 | `unset`, `omit` |
 
 ## Likely right
 
-30 records. Both signals agree. Skim, confirm the named symbol really is the vulnerable one rather than merely a real export, then promote to `advisories/` with `reviewedBy` and `reviewedAt`.
+42 records. Both signals agree. Skim, confirm the named symbol really is the vulnerable one rather than merely a real export, then promote to `advisories/` with `reviewedBy` and `reviewedAt`.
 
 | Advisory | Package | Symbols |
 |---|---|---|
 | `GHSA-224p-v68g-5g8f` | @escape.tech/graphql-armor-max-depth | `countDepth` |
 | `GHSA-2m53-83f3-562j` | min-dash | `set` |
+| `GHSA-34q8-jcq6-mc37` | uplot | `assign` |
 | `GHSA-35jh-r3h4-6jhm` | lodash, lodash-es +2 | `template` |
+| `GHSA-3hvj-2783-34x2` | njwt | `parse` |
 | `GHSA-43fc-jf86-j433` | axios | `mergeConfig` |
+| `GHSA-4xw9-cx39-r355` | json-web-token | `decode` |
 | `GHSA-5c8j-xr24-2665` | printer | `printDirect` |
 | `GHSA-5vv4-hvf7-2h46` | systeminformation | `versions` |
 | `GHSA-5xjx-4xcm-hpcm` | ts-nodash | `Merge` |
@@ -180,15 +205,23 @@ together they say where a reviewer's attention repays most.
 | `GHSA-73rr-hh4g-fpgx` | diff | `parsePatch` |
 | `GHSA-7px2-3c2p-q4v4` | flatnest | `nest` |
 | `GHSA-8cf7-32gw-wr33` | jsonwebtoken | `sign`, `verify` |
+| `GHSA-8v5f-hp78-jgxq` | jwt-simple | `decode` |
 | `GHSA-9c88-49p5-5ggf` | systeminformation | `wifiNetworks` |
+| `GHSA-9f2h-7v79-mxw3` | parse | `Object` |
 | `GHSA-9mjx-wfqp-j5ph` | window-control | `sendKeys` |
+| `GHSA-9vjf-qc39-jprp` | jspdf | `addJS` |
 | `GHSA-c429-5p7v-vgjp` | @hapi/hoek, hoek | `clone` |
 | `GHSA-c6rx-gxqv-vr5j` | nemo-appium | `setup` |
 | `GHSA-cf4h-3jhx-xvhq` | underscore | `template` |
+| `GHSA-cjw8-79x6-5cj4` | jspdf | `addJS` |
+| `GHSA-cq8r-fc3q-6hg2` | jointjs | `unsetByPath` |
+| `GHSA-f3pp-32qc-36w4` | jointjs | `setByPath` |
 | `GHSA-f772-66g8-q5h3` | undici | `request` |
+| `GHSA-f825-f98c-gj3g` | mongoose | `path` |
 | `GHSA-fg4m-w35q-vfg2` | @zag-js/core | `deepMerge` |
 | `GHSA-ggv3-vmgw-xv2q` | @tanstack/form-core | `mutateMergeDeep` |
 | `GHSA-gmq8-994r-jv83` | yauzl | `getLastModDate` |
+| `GHSA-h8hf-x3f4-xwgp` | mongoose | `path` |
 | `GHSA-hcrg-fc28-fcg5` | parse-duration | `parse` |
 | `GHSA-j47c-j42c-mwqq` | @solana/pay | `validateTransfer` |
 | `GHSA-j7cg-h9v9-6vqp` | @irrelon/path, irrelon-path | `set`, `unSet`, `pushVal`, `pullVal` |
@@ -197,43 +230,42 @@ together they say where a reviewer's attention repays most.
 | `GHSA-qwph-4952-7xr6` | jsonwebtoken | `verify` |
 | `GHSA-r5cq-9537-9rpf` | mixme | `mutate`, `merge` |
 | `GHSA-r7jx-5m6m-cpg9` | eazy-logger | `Logger` |
+| `GHSA-vm32-vv63-w422` | jspdf | `addMetadata` |
 | `GHSA-x5m8-2r8v-8f97` | libnested | `set` |
 
 ## Weak support
 
-156 records. One signal is positive and the other is silent. A light check, usually quick.
+152 records. One signal is positive and the other is silent. A light check, usually quick.
 
 | Advisory | Package | Symbols |
 |---|---|---|
 | `GHSA-22p9-wv53-3rq4` | linkify-it | `test` |
 | `GHSA-2cjr-5v3h-v2w4` | @evomap/evolver | `_applyUpdate`, `_updateRecord` |
 | `GHSA-2mjp-6q6p-2qxm` | undici | `request`, `Client` |
-| `GHSA-34q8-jcq6-mc37` | uplot | `assign` |
 | `GHSA-34w8-mcwr-vg29` | codeceptjs | `emptyFolder` |
+| `GHSA-39q2-94rc-95cp` | dompurify | `ADD_TAGS` |
 | `GHSA-39q4-p535-c852` | locutus | `gopher_parsedir` |
 | `GHSA-3c6g-pvg8-gqw2` | json | `parseLookup` |
 | `GHSA-3gc7-fjrx-p6mg` | bigint-buffer | `toBigIntLE` |
 | `GHSA-3hjv-c53m-58jj` | flowise, flowise-components | `run` |
 | `GHSA-3hq6-rmv7-39vh` | op-browser | `url` |
-| `GHSA-3hvj-2783-34x2` | njwt | `parse` |
 | `GHSA-3p34-w4f6-5xh2` | better-helperjs | `safeStaticPath` |
 | `GHSA-3qmc-2r76-4rqp` | @redwoodjs/api | `handler` |
 | `GHSA-3wc5-fcw2-2329` | katex | `trust` |
+| `GHSA-4228-7qvx-f4rq` | devcert | `certificateFor` |
 | `GHSA-43f8-2h32-f4cj` | hosted-git-info | `fromUrl` |
+| `GHSA-444r-cwp2-x5xf` | fastify | `trustProxy` |
 | `GHSA-446w-rrm4-r47f` | shescape | `escape`, `escapeAll` |
 | `GHSA-47pj-q2vm-46xc` | collection.js | `extend` |
 | `GHSA-4g53-vp7q-gfjv` | @worker-tools/stripe-webhook | `constructEvent` |
 | `GHSA-4g7x-7vgq-3j28` | aaptjs | `list` |
 | `GHSA-4gxf-g5gf-22h4` | dottie | `set` |
 | `GHSA-4h4x-4m75-47j4` | cool-path, depath | `set` |
-| `GHSA-4m3m-ppvx-xgw9` | @fastify/passport | `authenticate` |
 | `GHSA-4m6q-rxhm-675w` | adb-driver | `command` |
 | `GHSA-4m8h-h59m-m34j` | bmoor | `set` |
 | `GHSA-4mph-v827-f877` | locutus | `parse_str`, `unserialize` |
 | `GHSA-4q97-fh3f-j294` | tiny-conf | `set` |
 | `GHSA-4qwq-q4pr-rr7r` | aaptjs | `packageCmd` |
-| `GHSA-4xw9-cx39-r355` | json-web-token | `decode` |
-| `GHSA-529q-4j3p-7c5r` | algoliasearch-helper | `_merge` |
 | `GHSA-52v5-jr5w-gjxr` | sigstore | `verify` |
 | `GHSA-5359-pvf2-pw78` | tinymce | `addNodeFilter` |
 | `GHSA-5g97-whc9-8g7j` | @nubosoftware/node-static, node-static | `startsWith` |
@@ -251,10 +283,11 @@ together they say where a reviewer's attention repays most.
 | `GHSA-69xw-7hcm-h432` | hono | `createElement` |
 | `GHSA-6gww-qpm6-mc2g` | ssrf-agent | `defaultIpChecker` |
 | `GHSA-6h5j-32cf-4253` | apostrophe | `publicApiCheck` |
+| `GHSA-6hw5-45gm-fj88` | @fastify/express | `enhanceRequest` |
 | `GHSA-6jcc-xgcr-q3h4` | @fedify/fedify | `handleInboxInternal` |
 | `GHSA-6q48-vjq2-mwcj` | umount | `device` |
-| `GHSA-6q87-84jw-cjhp` | @sveltejs/kit | `load` |
 | `GHSA-6v5v-wf23-fmfq` | markdown-it | `replaceAt` |
+| `GHSA-75px-5xx7-5xc7` | protobufjs | `decode` |
 | `GHSA-76g8-235f-gj6p` | dref | `set` |
 | `GHSA-79jw-6wg7-r9g4` | mixme | `mutate`, `merge` |
 | `GHSA-7fm6-gxqg-2pwr` | total.js | `set`, `get` |
@@ -268,54 +301,50 @@ together they say where a reviewer's attention repays most.
 | `GHSA-8g7p-jf3g-gxcp` | jsrsasign | `bnModInverse` |
 | `GHSA-8jh2-3mw6-6pfm` | node-ts-ocr | `invokeImageOcr` |
 | `GHSA-8pfc-jjgw-6g26` | @nyariv/sandboxjs | `restOfExp` |
-| `GHSA-8v5f-hp78-jgxq` | jwt-simple | `decode` |
 | `GHSA-9cq3-fj2h-ggj5` | aaptjs | `remove` |
-| `GHSA-9f2h-7v79-mxw3` | parse | `Object` |
-| `GHSA-9g8m-v378-pcg3` | parse | `initializeState` |
 | `GHSA-9jh3-4pc9-hq29` | node-bluetooth-serial-port | `findSerialPortChannel` |
 | `GHSA-9jm3-5835-537m` | apex-publish-static-files | `publish` |
 | `GHSA-9p95-fxvg-qgq2` | simple-git | `clone` |
 | `GHSA-9r2w-394v-53qc` | tar | `path` |
-| `GHSA-9vjf-qc39-jprp` | jspdf | `addJS` |
 | `GHSA-c2rm-g55x-8hr5` | nuxt-og-image | `dashboards` |
 | `GHSA-c3px-v9c7-m734` | mithril | `toString` |
-| `GHSA-cjw8-79x6-5cj4` | jspdf | `addJS` |
+| `GHSA-c6h4-gc3f-hgjq` | js-data | `deepFillIn` |
 | `GHSA-cr7h-93fh-whwm` | magix-combine-ex | `addFileDepend` |
 | `GHSA-f23m-r3pf-42rh` | lodash, lodash-amd +2 | `unset`, `omit` |
 | `GHSA-f38q-mgvj-vph7` | protobufjs, protobufjs-cli | `service` |
 | `GHSA-f6hc-c5jr-878p` | flowise | `resetPassword` |
-| `GHSA-f825-f98c-gj3g` | mongoose | `path` |
 | `GHSA-f98m-q3hr-p5wq` | locutus | `parse_str` |
 | `GHSA-ffh4-j6h5-pg66` | vm2 | `constructor` |
 | `GHSA-fhv8-fx5f-7fxf` | zrender | `merge` |
+| `GHSA-fmrr-mx6j-h3h5` | confucious | `set` |
 | `GHSA-fvq6-55gv-jx9f` | mysql | `escape` |
 | `GHSA-fwr7-v2mv-hh25` | async | `mapValues` |
-| `GHSA-g3q2-vcjq-rgrc` | @blackprint/engine | `setDeepProperty` |
 | `GHSA-g3vf-47fv-8f3c` | hellojs | `extend` |
 | `GHSA-g5qr-xgg7-8q2w` | puppet-facter | `getFact` |
 | `GHSA-g77h-45rf-hcx4` | exifreader | `load` |
-| `GHSA-g7mq-rfj2-25wq` | total4 | `set`, `get` |
 | `GHSA-g7wq-wggw-vmhg` | ts-fns | `assign` |
 | `GHSA-g8wj-3cr3-6w7v` | @nuxt/nitro-server, nuxt | `ohash` |
-| `GHSA-g8x5-p9qc-cf95` | @fastify/oauth2 | `checkStateFunction` |
 | `GHSA-gjm5-83cw-p3p2` | extend2 | `extend` |
 | `GHSA-gr58-j5wh-m333` | nis-utils | `setValue` |
+| `GHSA-gwhp-pf74-vj37` | @fastify/http-proxy, @fastify/reply-from | `rewriteRequestHeaders` |
 | `GHSA-h3rx-g5c9-8q4x` | bmoor | `set` |
 | `GHSA-h452-7996-h45h` | cookiejar | `parse` |
 | `GHSA-h6pr-c536-6rjg` | object-path-set | `setPath` |
-| `GHSA-h8hf-x3f4-xwgp` | mongoose | `path` |
+| `GHSA-h9w6-f932-gq62` | ses | `Compartment` |
+| `GHSA-hf66-r44g-p7j9` | handsontable | `isNumeric` |
 | `GHSA-hfq9-rfpv-j8r8` | pidusage | `ps` |
 | `GHSA-hmgh-466j-fx4c` | flowise | `Dynamic` |
 | `GHSA-hqq7-2q2v-82xq` | @braintree/sanitize-url | `sanitizeUrl` |
 | `GHSA-hr5v-j9h9-xjhg` | openclaw | `handlePluginAction` |
+| `GHSA-hrwm-hgmj-7p9c` | @fastify/express | `onRegister` |
 | `GHSA-hw46-vg6w-88fj` | replicator | `fromSerializable` |
 | `GHSA-j4rj-2jr5-m439` | ssrfcheck | `privIp6` |
 | `GHSA-j5mf-6rh3-rhgg` | clevertap-web-sdk | `handleCustomHtmlPreviewPostMessageEvent` |
 | `GHSA-j8g8-j7fc-43v6` | flowise | `WHITELIST_URLS` |
 | `GHSA-j8wr-fwf2-vvr9` | create-choo-electron | `devInstall` |
 | `GHSA-jc5m-wrp2-qq38` | flowise | `forgotPassword` |
+| `GHSA-jfqg-hf23-qpw2` | electron | `VideoFrame` |
 | `GHSA-jxfh-8wgv-vfr2` | dojo | `deepCopy` |
-| `GHSA-m44r-7c5h-m6mj` | @medplum/core | `getClientRedirectUri` |
 | `GHSA-m5v8-wpw4-rj3x` | abacus-ext-cmdline | `execute` |
 | `GHSA-m7p2-ghfh-pjvx` | aaptjs | `crunch` |
 | `GHSA-m9rg-mr6g-75gm` | vega-functions | `setdata` |
@@ -323,9 +352,10 @@ together they say where a reviewer's attention repays most.
 | `GHSA-p4cc-w597-6cpm` | nodebb | `generateUUID` |
 | `GHSA-pfv6-prqm-85q8` | madlib-object-utils | `setValue` |
 | `GHSA-pgmg-gf5p-54j8` | gammautils | `deepSet`, `deepMerge` |
-| `GHSA-q4q5-c5cv-2p68` | vuetify | `eventName` |
 | `GHSA-q5j8-9m9g-x2jh` | module-from-string | `requireFromString` |
+| `GHSA-q5mq-6fjg-4mw8` | thinkjs | `increment`, `decrement` |
 | `GHSA-q674-xm3x-2926` | parse-link-header | `checkHeader` |
+| `GHSA-q6m5-f73j-m9mc` | electron | `Buffer` |
 | `GHSA-qr4m-jcvc-3382` | dot-notes | `create` |
 | `GHSA-r2rv-8pp3-65xw` | spmrc | `set`, `config` |
 | `GHSA-r496-7hgp-53wf` | aaptjs | `dump` |
@@ -343,9 +373,7 @@ together they say where a reviewer's attention repays most.
 | `GHSA-vc8f-x9pp-wf5p` | locutus | `parse_str` |
 | `GHSA-vcxh-qvgr-9fw9` | m.static | `requestFile` |
 | `GHSA-vghf-hv5q-vc2g` | validator | `isLength` |
-| `GHSA-vm32-vv63-w422` | jspdf | `addMetadata` |
 | `GHSA-vp4f-wxgw-7x8x` | @dcl/single-sign-on-client | `init` |
-| `GHSA-vpj2-qq7w-5qq6` | parse-server | `function` |
 | `GHSA-vrcx-gx3g-j3h8` | sqlite-vec | `npy_token_next` |
 | `GHSA-vrm6-8vpv-qv8q` | undici | `decompress` |
 | `GHSA-vwhc-pww7-72x6` | total.js | `set` |
@@ -356,15 +384,17 @@ together they say where a reviewer's attention repays most.
 | `GHSA-wm5r-5qp3-5vxf` | dbgate-api | `import` |
 | `GHSA-x2fc-mxcx-w4mf` | mathjs | `deepExtend` |
 | `GHSA-x43g-gj9x-838x` | phantomjs | `open` |
-| `GHSA-xh92-rqrq-227v` | @mastra/mcp-docs-server | `readMdxContent` |
+| `GHSA-x9g3-xrwr-cwfg` | piscina | `filename` |
+| `GHSA-xfh7-phr7-gr2x` | parse-server | `readOnlyMasterKey` |
 | `GHSA-xhjh-pmcv-23jw` | axios | `encode` |
+| `GHSA-xj5x-m3f3-5x3h` | electron | `executeJavaScript` |
 | `GHSA-xj9v-6q2f-vqhx` | wifey | `connect` |
 | `GHSA-xmxh-g7wj-8m4m` | curling | `run` |
 | `GHSA-xrxm-cp7j-8xf6` | @angular/platform-server | `url` |
 
 ## Unsupported
 
-180 records. Nothing is known either way. Slowest to review, so leave these until last.
+150 records. Nothing is known either way. Slowest to review, so leave these until last.
 
 | Advisory | Package | Symbols |
 |---|---|---|
@@ -378,7 +408,6 @@ together they say where a reviewer's attention repays most.
 | `GHSA-34q3-8x9v-j957` | toggle-array | `enable`, `disable` |
 | `GHSA-36j9-mx87-2cff` | renovate | `quote` |
 | `GHSA-378v-28hj-76wf` | bn.js | `toString`, `divmod` |
-| `GHSA-39q2-94rc-95cp` | dompurify | `ADD_TAGS` |
 | `GHSA-3c3p-xh4f-pfh7` | json-schema-editor-visual | `setData`, `deleteData` |
 | `GHSA-3f44-xw83-3pmg` | renovate | `quote` |
 | `GHSA-3fw4-4h3m-892h` | serial-number | `serialNumber` |
@@ -386,13 +415,8 @@ together they say where a reviewer's attention repays most.
 | `GHSA-3jcq-cwr7-6332` | jplayer | `alert` |
 | `GHSA-3mpm-jx38-9m8w` | sassdoc-extras | `byGroupAndType` |
 | `GHSA-3mpr-hq3p-49h9` | mixin-deep | `merging` |
-| `GHSA-3p64-6gvh-82v5` | mlflow | `BEFORE_REQUEST_VALIDATORS` |
 | `GHSA-3w5v-p54c-f74x` | ejs | `renderFile` |
-| `GHSA-4228-7qvx-f4rq` | devcert | `certificateFor` |
-| `GHSA-42h9-826w-cgv3` | axios | `formDataToJSON`, `formToJSON` |
-| `GHSA-442j-39wm-28r2` | handlebars | `lookup` |
 | `GHSA-4449-hg37-77v8` | total.js | `pipe`, `stream` |
-| `GHSA-444r-cwp2-x5xf` | fastify | `trustProxy` |
 | `GHSA-44fc-8fm5-q62h` | convict | `startsWith` |
 | `GHSA-49mg-94fc-2fx6` | npm-git-publish | `publish` |
 | `GHSA-4hwx-xcc5-2hfc` | tarteaucitronjs | `addOrUpdate` |
@@ -402,7 +426,6 @@ together they say where a reviewer's attention repays most.
 | `GHSA-5226-3rvg-hp4x` | fast-filesystem-mcp | `handleGetDiskUsage` |
 | `GHSA-549h-r7g9-2qpf` | n158 | `exports` |
 | `GHSA-54jw-jqr9-6cj9` | vagrant.js | `boxAdd` |
-| `GHSA-57f3-gghm-9mhc` | jspdf | `addImage` |
 | `GHSA-5844-q3fc-56rh` | pubnub | `getKey` |
 | `GHSA-5c6j-r48x-rmvq` | serialize-javascript | `eval` |
 | `GHSA-5cp4-xmrw-59wf` | angular | `JQLite` |
@@ -411,13 +434,11 @@ together they say where a reviewer's attention repays most.
 | `GHSA-64vr-4gr2-m642` | automagik-genie | `readTranscriptFromCommit` |
 | `GHSA-65rp-mhqf-8gj3` | rangy | `extend` |
 | `GHSA-6f9p-g466-f8v8` | blamer | `blameByFile` |
-| `GHSA-6hw5-45gm-fj88` | @fastify/express | `enhanceRequest` |
 | `GHSA-6m85-wvcr-pgw3` | safetydance | `set` |
 | `GHSA-6v32-fjc9-9qf6` | @nestjs/platform-fastify | `forRoutes` |
 | `GHSA-6vp2-6r7m-2jvx` | @budibase/backend-core | `unAssign` |
 | `GHSA-6x33-pw7p-hmpq` | http-proxy | `setHeader` |
 | `GHSA-753c-phhg-cj29` | madge | `image`, `svg`, `dot` |
-| `GHSA-75px-5xx7-5xc7` | protobufjs | `decode` |
 | `GHSA-79h2-v6hh-wq23` | @ndhoule/defaults | `deep` |
 | `GHSA-7f59-x49p-v8mq` | swagger-ui | `consumes`, `produces` |
 | `GHSA-7r96-8g3x-g36m` | tenvoy | `verification` |
@@ -431,20 +452,14 @@ together they say where a reviewer's attention repays most.
 | `GHSA-8h3g-hcwp-6hxq` | semver-tags | `getGitTagsRemote` |
 | `GHSA-8j8c-7jfh-h6hx` | js-yaml | `load` |
 | `GHSA-8mrf-64fw-2x75` | fs-path | `copy`, `copySync`, `remove`, `removeSync` |
-| `GHSA-8qff-qr5q-5pr8` | openpgp | `decrypt`, `verificationKeys` |
 | `GHSA-8vr4-h4rr-8ph6` | @bit/loader | `M` |
 | `GHSA-8vw3-vxmj-h43w` | bwm-ng | `check` |
-| `GHSA-8xq3-w9fx-74rv` | webfinger.js | `addition` |
 | `GHSA-9829-jj5p-j6hf` | worksmith | `setValue` |
-| `GHSA-9c47-m6qq-7p4h` | json5 | `Parse` |
 | `GHSA-9g9w-hmvj-5h57` | merge-deep | `merging` |
 | `GHSA-9hc2-hjx8-q6pv` | tidgi | `startup` |
 | `GHSA-9px9-f7jw-fwhj` | priest-runner | `createChild` |
 | `GHSA-9w5j-4mwv-2wj8` | simple-git | `clone`, `pull`, `push`, `listRemote` |
-| `GHSA-9wwp-q7wq-jx35` | @fastify/secure-session | `delete` |
-| `GHSA-c6h4-gc3f-hgjq` | js-data | `deepFillIn` |
 | `GHSA-c7m7-4257-h698` | templ8 | `parse` |
-| `GHSA-c7pp-g2v2-2766` | gmail-js | `parse_response`, `visible_emails_post`, `email_data_post` |
 | `GHSA-c83v-7274-4vgp` | opencode-ai | `fetch` |
 | `GHSA-cg42-4wrc-gp47` | node-extend | `eval` |
 | `GHSA-cgpp-wm2h-6hqx` | waterline-sequel | `like`, `contains`, `startsWith`, `endsWith` |
@@ -452,14 +467,11 @@ together they say where a reviewer's attention repays most.
 | `GHSA-cmh5-qc8w-xvcq` | i18next | `init` |
 | `GHSA-cv76-rv4h-4mqc` | proctree | `fix` |
 | `GHSA-cwx2-736x-mf6w` | object-path | `set` |
-| `GHSA-cxrg-g7r8-w69p` | @fastify/middie | `Holder` |
 | `GHSA-cxx3-36qc-m6qm` | node-bluetooth | `findSerialPortChannel` |
 | `GHSA-f5w6-r7rg-mcgq` | validator | `isURL` |
 | `GHSA-f8r4-mf27-rf7m` | financejs | `IRR` |
 | `GHSA-f9cv-665r-275h` | merge-change | `set` |
 | `GHSA-fm7p-gw32-828p` | mathlive | `createHTML` |
-| `GHSA-fmrr-mx6j-h3h5` | confucious | `set` |
-| `GHSA-fpg4-jhqr-589c` | @sveltejs/kit | `form` |
 | `GHSA-fr4j-65pv-gjjj` | renovate | `quote` |
 | `GHSA-frpw-jrwx-hcfv` | node-red-contrib-huemagic | `sendFile` |
 | `GHSA-frq9-3hp2-xvxg` | mcp-markdownify-server | `get` |
@@ -469,16 +481,12 @@ together they say where a reviewer's attention repays most.
 | `GHSA-gcg3-c5p2-cqgg` | oneuptime | `_aggregateBy` |
 | `GHSA-gm68-572p-q28r` | @vendure/admin-ui-plugin | `shipping` |
 | `GHSA-gpvc-mx6g-cchv` | underscore-keypath | `setProperty` |
-| `GHSA-gwhp-pf74-vj37` | @fastify/http-proxy, @fastify/reply-from | `rewriteRequestHeaders` |
 | `GHSA-gwp3-f7mr-qpfv` | s3-uploader | `metadata` |
 | `GHSA-h63v-hw6g-x8hp` | cookie-encrypter | `encryption` |
-| `GHSA-h9w6-f932-gq62` | ses | `Compartment` |
 | `GHSA-hcg3-56jf-x4vh` | safe-eval | `safeEval` |
-| `GHSA-hf66-r44g-p7j9` | handsontable | `isNumeric` |
 | `GHSA-hfxh-rjv7-2369` | uptime-kuma | `codebase` |
 | `GHSA-hpcf-8vf9-q4gj` | jquery-ui | `dialog` |
 | `GHSA-hr66-5mqr-8mpx` | @budibase/server | `buildCsrfMiddleware` |
-| `GHSA-hrwm-hgmj-7p9c` | @fastify/express | `onRegister` |
 | `GHSA-hx7h-9vf7-5xhg` | uptime-kuma | `send` |
 | `GHSA-j28q-p8ww-cp87` | merge-deep2 | `mergeDeep` |
 | `GHSA-j32x-j8pj-pg2h` | decal | `extend` |
@@ -487,7 +495,6 @@ together they say where a reviewer's attention repays most.
 | `GHSA-j4rw-x3vg-c8r7` | node-oojs | `setPath` |
 | `GHSA-j977-g5vj-j27g` | scratch-svg-renderer | `_transformMeasurements` |
 | `GHSA-jchw-25xp-jwwc` | follow-redirects | `parse` |
-| `GHSA-jfqg-hf23-qpw2` | electron | `VideoFrame` |
 | `GHSA-jh2m-j8pp-55rc` | gedi | `set` |
 | `GHSA-jpq3-xf27-5jf2` | safe-object2 | `setter` |
 | `GHSA-m4ch-4m5f-2gp6` | bootbox | `confirm`, `prompt` |
@@ -496,21 +503,17 @@ together they say where a reviewer's attention repays most.
 | `GHSA-mh8j-9jvh-gjf6` | mockjs | `extend` |
 | `GHSA-mjjj-6p43-vhhv` | deep-get-set | `deep` |
 | `GHSA-mjr5-v9c9-mm7g` | joplin | `openExternal` |
-| `GHSA-mqgv-67vx-g4m5` | js-data | `deepFillIn` |
 | `GHSA-mr5m-2385-2vcp` | xdlocalstorage | `postMessage` |
 | `GHSA-mvhf-547c-h55r` | thumbler | `thumbnail` |
 | `GHSA-p28h-cc7q-c4fg` | css-what | `parse` |
 | `GHSA-p5g2-jm85-8g35` | oneuptime | `append` |
 | `GHSA-p8v3-m643-4xqx` | directus | `alias` |
-| `GHSA-pc47-g7gv-4gpw` | @rpldy/uploader | `createUploader` |
 | `GHSA-ph28-wwfj-fv7f` | sds | `set` |
 | `GHSA-pr45-cg4x-ff4m` | ggit | `clone` |
 | `GHSA-prp4-2f49-fcgp` | @actual-app/sync-server | `password` |
 | `GHSA-px3p-vgh9-m57c` | @nocobase/plugin-workflow-javascript | `prepareStackTrace`, `getThis` |
 | `GHSA-q4h9-46xg-m3x9` | @openzeppelin/contracts-upgradeable | `UUPSUpgradeable` |
 | `GHSA-q56h-x9h5-q53c` | kityminder | `init` |
-| `GHSA-q5mq-6fjg-4mw8` | thinkjs | `increment`, `decrement` |
-| `GHSA-q6m5-f73j-m9mc` | electron | `Buffer` |
 | `GHSA-qc59-cxj2-c2w4` | aws-cdk-lib | `CDK` |
 | `GHSA-qf3q-9f3h-cjp9` | nextchat | `PUT` |
 | `GHSA-qwj6-q94f-8425` | mathlive | `test` |
@@ -538,11 +541,8 @@ together they say where a reviewer's attention repays most.
 | `GHSA-wqq3-wfmp-v85g` | mojic | `getDecryptStream` |
 | `GHSA-wxfj-84xf-7gxv` | utilities | `_mix` |
 | `GHSA-x369-mcw8-8rvj` | darkreader | `setFetchMethod` |
-| `GHSA-x9g3-xrwr-cwfg` | piscina | `filename` |
 | `GHSA-xcvv-84j5-jw9h` | assign-deep | `merging` |
-| `GHSA-xfh7-phr7-gr2x` | parse-server | `readOnlyMasterKey` |
 | `GHSA-xhq9-58fw-859p` | apostrophe | `launder` |
-| `GHSA-xj5x-m3f3-5x3h` | electron | `executeJavaScript` |
 | `GHSA-xjr7-3c3g-m763` | renovate | `quote` |
 | `GHSA-xq4f-3jxp-qv6m` | csvjson | `toCsv` |
 | `GHSA-xq4x-622m-q8fq` | @lobehub/lobehub | `runCommand` |

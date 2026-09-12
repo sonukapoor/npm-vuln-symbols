@@ -51,6 +51,39 @@ interface RegistryVersion {
   readonly dist?: { tarball?: string };
 }
 
+/**
+ * Locates the package's TypeScript declaration file.
+ *
+ * A `.d.ts` states the export surface directly, so it reads cleanly where a
+ * bundle does not: handlebars' `lib/index.js` yields nothing at all, while its
+ * `types/index.d.ts` yields 64 names. Roughly a third of the packages this
+ * checker could not read ship one.
+ */
+function findTypesFile(packageDir: string): string | null {
+  let manifest: { types?: unknown; typings?: unknown } = {};
+  try {
+    manifest = JSON.parse(readFileSync(path.join(packageDir, "package.json"), "utf8")) as typeof manifest;
+  } catch {
+    return null;
+  }
+  for (const declared of [manifest.types, manifest.typings]) {
+    if (typeof declared !== "string") {
+      continue;
+    }
+    const direct = path.join(packageDir, declared);
+    if (isReadableFile(direct)) {
+      return direct;
+    }
+    const withExtension = `${direct}.d.ts`;
+    if (isReadableFile(withExtension)) {
+      return withExtension;
+    }
+  }
+  // Convention when nothing is declared: index.d.ts beside the entry point.
+  const conventional = path.join(packageDir, "index.d.ts");
+  return isReadableFile(conventional) ? conventional : null;
+}
+
 interface RegistryManifest {
   readonly versions?: Record<string, RegistryVersion>;
 }
@@ -195,17 +228,35 @@ async function checkPackage(
       return { verdict: Verdict.Unknown, missing: [], reason: "could not unpack the tarball" };
     }
     const entry = findEntryFile(packageDir);
-    if (entry === null) {
+    const types = findTypesFile(packageDir);
+    if (entry === null && types === null) {
       return { verdict: Verdict.Unknown, missing: [], reason: "no resolvable entry point" };
     }
-    const scan = scanExports(entry, readFileSync(entry, "utf8"));
+
+    const scan =
+      entry === null
+        ? { result: ExportScanResult.Unknown, names: [] as readonly string[], reason: "no runtime entry point" }
+        : scanExports(entry, readFileSync(entry, "utf8"));
     const names = new Set(scan.names);
     let resolved = scan.result;
+
+    // Declarations are unioned with the runtime scan rather than replacing it.
+    // Each sees exports the other misses, and a wider surface means fewer
+    // symbols wrongly reported as absent.
+    if (types !== null) {
+      const declared = scanExports(types, readFileSync(types, "utf8"));
+      for (const name of declared.names) {
+        names.add(name);
+      }
+      if (declared.result === ExportScanResult.Parsed) {
+        resolved = ExportScanResult.Parsed;
+      }
+    }
 
     // A module that hands its exports to another file is the largest single
     // reason a scan fails. Following one level recovers most of them without
     // reimplementing Node's resolver.
-    if (resolved === ExportScanResult.Unknown && scan.delegatesTo !== undefined) {
+    if (resolved === ExportScanResult.Unknown && entry !== null && scan.delegatesTo !== undefined) {
       for (const specifier of scan.delegatesTo) {
         const target = resolveRelative(path.dirname(entry), specifier);
         if (target === null) {
