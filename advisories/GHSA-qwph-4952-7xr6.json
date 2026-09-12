@@ -1,7 +1,7 @@
 {
-  "id": "GHSA-8cf7-32gw-wr33",
+  "id": "GHSA-qwph-4952-7xr6",
   "aliases": [
-    "CVE-2022-23539"
+    "CVE-2022-23540"
   ],
   "affected": [
     {
@@ -10,7 +10,6 @@
         "name": "jsonwebtoken"
       },
       "symbols": [
-        "sign",
         "verify"
       ]
     }
@@ -18,7 +17,11 @@
   "evidence": {
     "source": "advisory_text+fix_commit",
     "confidence": "high",
-    "excerpt": "in the `sign()` and/or `verify()` functions",
+    "excerpt": "in the `jwt.verify()` function",
     "fixCommit": "https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3"
-  }
+  },
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

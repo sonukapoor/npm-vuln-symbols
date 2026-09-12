@@ -19,5 +19,9 @@
     "confidence": "high",
     "excerpt": "in the text passed to the library's `parse()` function",
     "fixCommit": "https://github.com/jkroso/parse-duration/commit/9e88421bfd41806fa4b473bfb28a9ee9dafc27d7"
-  }
+  },
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }
