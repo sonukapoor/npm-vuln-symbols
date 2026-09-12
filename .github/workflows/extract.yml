@@ -38,7 +38,11 @@ jobs:
       # into proposals/ and then trying to reconcile it against git is what
       # produced a pull request deleting all 565 records.
       - name: Propose symbol records
-        run: npx tsx scripts/extract.ts --osv-dir osv-feed --out _new-proposals
+        run: |
+          set -euo pipefail
+          npx tsx scripts/extract.ts --osv-dir osv-feed --out _new-proposals | tee extract.log
+          echo "ADVISORIES_READ=$(grep -oE '[0-9]+' <<< "$(grep 'advisories read' extract.log)")" >> "$GITHUB_ENV"
+          echo "SYMBOLS_PROPOSED=$(grep -oE '[0-9]+' <<< "$(grep 'symbols proposed' extract.log)")" >> "$GITHUB_ENV"
 
       - name: Keep only records that are genuinely new
         run: |
@@ -58,7 +62,7 @@ jobs:
           echo "NEW_RECORDS=$added" >> "$GITHUB_ENV"
 
       - name: Clean up the feed before committing
-        run: rm -rf osv-feed npm-all.zip _new-proposals
+        run: rm -rf osv-feed npm-all.zip _new-proposals extract.log
 
       - name: Open a pull request
         if: env.NEW_RECORDS != '0'
@@ -77,3 +81,31 @@ jobs:
             For each file, check that the named symbols really are the
             vulnerable exports, then move it to `advisories/` and set
             `reviewedBy` and `reviewedAt`.
+
+      # A run that finds nothing looks identical to a run that is broken: both
+      # are a green tick with no pull request. This states which one happened,
+      # on the run page, without anyone reading the logs.
+      - name: Report what happened
+        if: always()
+        run: |
+          {
+            echo "## Nightly extraction"
+            echo
+            echo "| | |"
+            echo "|---|---:|"
+            echo "| Advisories read | ${ADVISORIES_READ:-unknown} |"
+            echo "| Symbols proposed | ${SYMBOLS_PROPOSED:-unknown} |"
+            echo "| Already in the dataset | $(( ${SYMBOLS_PROPOSED:-0} - ${NEW_RECORDS:-0} )) |"
+            echo "| **New records** | **${NEW_RECORDS:-0}** |"
+            echo
+            if [ "${NEW_RECORDS:-0}" -eq 0 ]; then
+              echo "No pull request opened, because nothing new was found."
+              echo
+              echo "This is the expected result most days. About 97 percent of the npm"
+              echo "feed is malicious-package reports, which are deliberately ignored,"
+              echo "and only around 8 percent of the remainder name an extractable"
+              echo "symbol. Expect a pull request every week or two, not every morning."
+            else
+              echo "Opened a pull request with ${NEW_RECORDS} new record(s) for review."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
