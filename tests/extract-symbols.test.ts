@@ -113,3 +113,47 @@ describe("query operators", () => {
     expect(extractSymbolsFromText(details).symbols).not.toContain("$where");
   });
 });
+
+describe("rejections found by reviewing the likely-wrong band", () => {
+  // Each case below is a real record that was proposed, adjudicated as wrong,
+  // and deleted. The test is what stops the extractor producing that shape
+  // again, which is the part of review that compounds.
+
+  it("takes the symbol after the 'entry function(s)' stock phrase, not the word entry", () => {
+    // GHSA-hjwq-mjwj-4x6c, @intlify/shared, verbatim. The general patterns read
+    // "the <X> function" and took the literal word "entry".
+    const details =
+      "@intlify/shared is vulnerable to Prototype Pollution through the entry " +
+      "function(s) `lib.deepCopy`. An attacker can supply a payload.";
+    expect(extractSymbolsFromText(details).symbols).toEqual(["deepCopy"]);
+  });
+
+  it("handles the same phrase with a bare name", () => {
+    // GHSA-p2ph-7g93-hw3m.
+    const details = "vulnerable to Prototype Pollution through the entry function(s) `handleFlatJson`.";
+    expect(extractSymbolsFromText(details).symbols).toEqual(["handleFlatJson"]);
+  });
+
+  it("rejects a proper noun standing before API", () => {
+    // eta, "using the Express API". Express is a different package entirely.
+    expect(extractSymbolsFromText("Vulnerable when using the Express API.").symbols).toEqual([]);
+  });
+
+  it("rejects JavaScript builtins named as the sink", () => {
+    // vm2 "using the host `apply` method", mversion "inside the exec function",
+    // flowise "`globalThis` and `eval`". None are exports of those packages.
+    expect(extractSymbolsFromText("Escape using the host `apply` method.").symbols).toEqual([]);
+    expect(extractSymbolsFromText("Injection inside the exec function.").symbols).toEqual([]);
+  });
+
+  it("rejects an endpoint or feature name standing before API", () => {
+    // flowise "in Prediction API", @node-red/runtime "via the Projects API".
+    expect(extractSymbolsFromText("Unauthorised access in Prediction API.").symbols).toEqual([]);
+    expect(extractSymbolsFromText("Path traversal via the Projects API.").symbols).toEqual([]);
+  });
+
+  it("rejects English nouns listed before APIs", () => {
+    // axios, "in panels, or microservice APIs".
+    expect(extractSymbolsFromText("SSRF in panels, or microservice APIs.").symbols).toEqual([]);
+  });
+});

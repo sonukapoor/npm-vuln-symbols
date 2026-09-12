@@ -1,18 +1,5 @@
 [
   {
-    "id": "GHSA-2238-xc5r-v9hj",
-    "band": "weak_support",
-    "packages": [
-      "@tinacms/graphql"
-    ],
-    "symbols": [
-      "GitHub"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-224p-v68g-5g8f",
     "band": "likely_right",
     "packages": [
@@ -188,19 +175,6 @@
     "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
-    "id": "GHSA-2h6j-mhcp-9j9h",
-    "band": "unsupported",
-    "packages": [
-      "genieacs"
-    ],
-    "symbols": [
-      "NBI"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-2j2x-hqr9-3h42",
     "band": "conflicting",
     "packages": [
@@ -280,19 +254,6 @@
     "corroborated": false,
     "exportVerdict": "confirmed",
     "note": "exported by the package but the fix commit never mentions it"
-  },
-  {
-    "id": "GHSA-2vx9-7wpg-88jq",
-    "band": "unsupported",
-    "packages": [
-      "n8n"
-    ],
-    "symbols": [
-      "REST"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-32x6-qvw6-mxj4",
@@ -375,19 +336,6 @@
     "corroborated": true,
     "exportVerdict": "confirmed",
     "note": "exported by the package and named in the fix commit"
-  },
-  {
-    "id": "GHSA-36hm-qxxp-pg3m",
-    "band": "unsupported",
-    "packages": [
-      "preact"
-    ],
-    "symbols": [
-      "your"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-36j9-mx87-2cff",
@@ -549,19 +497,6 @@
     "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
-    "id": "GHSA-3ch2-jxxc-v4xf",
-    "band": "unsupported",
-    "packages": [
-      "@akoskm/create-mcp-server-stdio"
-    ],
-    "symbols": [
-      "exec"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-3f44-xw83-3pmg",
     "band": "unsupported",
     "packages": [
@@ -673,7 +608,9 @@
       "@fuel-ts/account"
     ],
     "symbols": [
-      "question"
+      "txpool",
+      "tA",
+      "fund"
     ],
     "corroborated": false,
     "exportVerdict": "not_found",
@@ -957,19 +894,6 @@
     "note": "named in the fix commit, exports could not be read"
   },
   {
-    "id": "GHSA-48q3-prgv-gm4w",
-    "band": "unsupported",
-    "packages": [
-      "parse-server"
-    ],
-    "symbols": [
-      "GraphQL"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-49mg-94fc-2fx6",
     "band": "unsupported",
     "packages": [
@@ -1007,19 +931,6 @@
     "corroborated": false,
     "exportVerdict": "confirmed",
     "note": "exported by the package, no fix commit to check"
-  },
-  {
-    "id": "GHSA-4gp3-p7ph-x2jr",
-    "band": "unsupported",
-    "packages": [
-      "devcert-sanscache"
-    ],
-    "symbols": [
-      "exec"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-4gxf-g5gf-22h4",
@@ -1077,19 +988,6 @@
     "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
-    "id": "GHSA-4jpm-cgx2-8h37",
-    "band": "weak_support",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "Unstructured"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-4m3m-ppvx-xgw9",
     "band": "weak_support",
     "packages": [
@@ -1141,20 +1039,6 @@
     "corroborated": true,
     "exportVerdict": "unknown",
     "note": "named in the fix commit, exports could not be read"
-  },
-  {
-    "id": "GHSA-4phg-hpqm-c3j4",
-    "band": "unsupported",
-    "packages": [
-      "@strapi/strapi",
-      "strapi"
-    ],
-    "symbols": [
-      "admin"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-4q97-fh3f-j294",
@@ -1220,33 +1104,6 @@
     "corroborated": false,
     "exportVerdict": "unknown",
     "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-4w3w-2rp5-g8jm",
-    "band": "likely_wrong",
-    "packages": [
-      "@xmldom/xmldom",
-      "xmldom"
-    ],
-    "symbols": [
-      "browsers"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
-    "id": "GHSA-4wcm-7hjf-6xw5",
-    "band": "weak_support",
-    "packages": [
-      "interactive-git-checkout"
-    ],
-    "symbols": [
-      "exec"
-    ],
-    "corroborated": true,
-    "exportVerdict": "unknown",
-    "note": "named in the fix commit, exports could not be read"
   },
   {
     "id": "GHSA-4xg3-7w7q-856q",
@@ -1340,19 +1197,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-54j7-grvr-9xwg",
-    "band": "unsupported",
-    "packages": [
-      "adb-mcp"
-    ],
-    "symbols": [
-      "exec"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-54jw-jqr9-6cj9",
     "band": "unsupported",
     "packages": [
@@ -1392,19 +1236,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-5777-rcjj-9p22",
-    "band": "unsupported",
-    "packages": [
-      "mattermost-desktop"
-    ],
-    "symbols": [
-      "JavaScript"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-57f3-gghm-9mhc",
@@ -1485,32 +1316,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-5f53-522j-j454",
-    "band": "weak_support",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "NVIDIA"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
-    "id": "GHSA-5f92-jrq3-28rc",
-    "band": "unsupported",
-    "packages": [
-      "parse-server"
-    ],
-    "symbols": [
-      "REST"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-5f97-h2c2-826q",
     "band": "conflicting",
     "packages": [
@@ -1525,19 +1330,6 @@
     "corroborated": false,
     "exportVerdict": "confirmed",
     "note": "exported by the package but the fix commit never mentions it"
-  },
-  {
-    "id": "GHSA-5fpj-28rv-84r7",
-    "band": "unsupported",
-    "packages": [
-      "@budibase/server"
-    ],
-    "symbols": [
-      "REST"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-5g97-whc9-8g7j",
@@ -1604,19 +1396,6 @@
     "corroborated": true,
     "exportVerdict": "unknown",
     "note": "named in the fix commit, exports could not be read"
-  },
-  {
-    "id": "GHSA-5h9v-837x-m97r",
-    "band": "likely_wrong",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "documented"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-5j4c-8p2g-v4jx",
@@ -1807,19 +1586,6 @@
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
   },
   {
-    "id": "GHSA-62gx-5q78-wrvx",
-    "band": "weak_support",
-    "packages": [
-      "obsidian-local-rest-api"
-    ],
-    "symbols": [
-      "enabled"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-62hf-57xw-28j9",
     "band": "conflicting",
     "packages": [
@@ -1899,34 +1665,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-65w6-pf7x-5g85",
-    "band": "unsupported",
-    "packages": [
-      "@delmaredigital/payload-puck"
-    ],
-    "symbols": [
-      "styles",
-      "prompts",
-      "context"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-667w-mmh7-mrr4",
-    "band": "likely_wrong",
-    "packages": [
-      "studiocms"
-    ],
-    "symbols": [
-      "Insecure"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-68f8-9mhj-h2mp",
     "band": "likely_wrong",
     "packages": [
@@ -1990,19 +1728,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-6f6r-m9pv-67jw",
-    "band": "unsupported",
-    "packages": [
-      "ios-simulator-mcp"
-    ],
-    "symbols": [
-      "exec"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-6f9p-g466-f8v8",
@@ -2109,19 +1834,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-6m8p-4fxj-pgc2",
-    "band": "likely_wrong",
-    "packages": [
-      "mversion"
-    ],
-    "symbols": [
-      "exec"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-6q48-vjq2-mwcj",
     "band": "weak_support",
     "packages": [
@@ -2180,7 +1892,8 @@
       "flowise"
     ],
     "symbols": [
-      "Prediction"
+      "overrideConfig",
+      "flowConfig"
     ],
     "corroborated": false,
     "exportVerdict": "not_found",
@@ -2224,19 +1937,6 @@
     "corroborated": false,
     "exportVerdict": "unknown",
     "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-728h-4mwj-f2p4",
-    "band": "likely_wrong",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "documented"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-73rg-f94j-xvhx",
@@ -2293,19 +1993,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-75qm-gp28-rcq9",
-    "band": "unsupported",
-    "packages": [
-      "n8n"
-    ],
-    "symbols": [
-      "workflow"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-76g8-235f-gj6p",
     "band": "weak_support",
     "packages": [
@@ -2317,19 +2004,6 @@
     "corroborated": false,
     "exportVerdict": "confirmed",
     "note": "exported by the package, no fix commit to check"
-  },
-  {
-    "id": "GHSA-78pr-c5x5-jggc",
-    "band": "likely_wrong",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "documented"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-79h2-v6hh-wq23",
@@ -2386,19 +2060,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-7f6v-3gx7-27q8",
-    "band": "likely_wrong",
-    "packages": [
-      "@orpc/openapi"
-    ],
-    "symbols": [
-      "unauthorized"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-7fm6-gxqg-2pwr",
     "band": "weak_support",
     "packages": [
@@ -2452,19 +2113,6 @@
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
   },
   {
-    "id": "GHSA-7j65-65cr-6644",
-    "band": "likely_wrong",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "documented"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-7mwh-4pqv-wmr8",
     "band": "weak_support",
     "packages": [
@@ -2489,19 +2137,6 @@
     "corroborated": true,
     "exportVerdict": "confirmed",
     "note": "exported by the package and named in the fix commit"
-  },
-  {
-    "id": "GHSA-7qgg-vw88-cc99",
-    "band": "weak_support",
-    "packages": [
-      "utils-extend"
-    ],
-    "symbols": [
-      "entry"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
     "id": "GHSA-7r96-8g3x-g36m",
@@ -2678,19 +2313,6 @@
     "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
-    "id": "GHSA-88qh-cphv-996c",
-    "band": "unsupported",
-    "packages": [
-      "fuxa-server"
-    ],
-    "symbols": [
-      "Upload"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-89fp-f5mx-748x",
     "band": "unsupported",
     "packages": [
@@ -2757,32 +2379,6 @@
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
   },
   {
-    "id": "GHSA-8ghr-w65f-j3qr",
-    "band": "unsupported",
-    "packages": [
-      "fuxa-server"
-    ],
-    "symbols": [
-      "Scheduler"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-8gj2-2cvc-6xx7",
-    "band": "likely_wrong",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "ElevenLabs"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-8gq3-vp5j-2grp",
     "band": "unsupported",
     "packages": [
@@ -2807,19 +2403,6 @@
     "corroborated": false,
     "exportVerdict": "unknown",
     "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-8j2w-6fmm-m587",
-    "band": "weak_support",
-    "packages": [
-      "openclaw"
-    ],
-    "symbols": [
-      "channel"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
     "id": "GHSA-8j8c-7jfh-h6hx",
@@ -2905,19 +2488,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-8r88-6cj9-9fh5",
-    "band": "likely_wrong",
-    "packages": [
-      "@supabase/auth-js"
-    ],
-    "symbols": [
-      "wrong"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-8v5f-hp78-jgxq",
     "band": "weak_support",
     "packages": [
@@ -2983,19 +2553,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-92hr-gmr6-h8cp",
-    "band": "unsupported",
-    "packages": [
-      "ep_etherpad-lite"
-    ],
-    "symbols": [
-      "timing"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-92xj-mqp7-vmcj",
     "band": "conflicting",
     "packages": [
@@ -3007,19 +2564,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-934x-72xh-5hrg",
-    "band": "unsupported",
-    "packages": [
-      "aws-lambda"
-    ],
-    "symbols": [
-      "exec"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-93r5-fhx6-vmg9",
@@ -3049,19 +2593,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-98xf-r82g-9mhx",
-    "band": "likely_wrong",
-    "packages": [
-      "@langchain/langgraph-checkpoint-mongodb"
-    ],
-    "symbols": [
-      "depth"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-995x-33wq-8gc9",
     "band": "conflicting",
     "packages": [
@@ -3086,19 +2617,6 @@
     "corroborated": false,
     "exportVerdict": "unknown",
     "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-9c4c-g95m-c8cp",
-    "band": "weak_support",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "importChatflows"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
     "id": "GHSA-9c88-49p5-5ggf",
@@ -3173,19 +2691,6 @@
     ],
     "symbols": [
       "merging"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-9gh8-wp53-ccc6",
-    "band": "unsupported",
-    "packages": [
-      "ghost"
-    ],
-    "symbols": [
-      "our"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -3325,20 +2830,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-9wmw-9wph-2vwp",
-    "band": "likely_wrong",
-    "packages": [
-      "dagu"
-    ],
-    "symbols": [
-      "secrets",
-      "credentials"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-9wwp-q7wq-jx35",
     "band": "unsupported",
     "packages": [
@@ -3452,7 +2943,7 @@
       "opencode-ai"
     ],
     "symbols": [
-      "OpenCode"
+      "fetch"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -3499,19 +2990,6 @@
     "corroborated": false,
     "exportVerdict": "unknown",
     "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-chfm-xgc4-47rj",
-    "band": "likely_wrong",
-    "packages": [
-      "openclaw"
-    ],
-    "symbols": [
-      "Graph"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-chmr-rg2f-9jmf",
@@ -3568,20 +3046,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-cmj3-wx7h-ffvg",
-    "band": "unsupported",
-    "packages": [
-      "parse-server"
-    ],
-    "symbols": [
-      "REST",
-      "GraphQL"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-cq8r-fc3q-6hg2",
     "band": "conflicting",
     "packages": [
@@ -3620,19 +3084,6 @@
     "corroborated": false,
     "exportVerdict": "confirmed",
     "note": "exported by the package but the fix commit never mentions it"
-  },
-  {
-    "id": "GHSA-crh9-3gjh-m6gc",
-    "band": "weak_support",
-    "packages": [
-      "api-lab-mcp"
-    ],
-    "symbols": [
-      "atototo"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
     "id": "GHSA-cv76-rv4h-4mqc",
@@ -3700,19 +3151,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-f229-3862-4942",
-    "band": "likely_wrong",
-    "packages": [
-      "@enclave-vm/core"
-    ],
-    "symbols": [
-      "host"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-f23m-r3pf-42rh",
     "band": "weak_support",
     "packages": [
@@ -3757,20 +3195,6 @@
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
   },
   {
-    "id": "GHSA-f4gw-2p7v-4548",
-    "band": "likely_wrong",
-    "packages": [
-      "axios"
-    ],
-    "symbols": [
-      "panels",
-      "microservice"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-f5w6-r7rg-mcgq",
     "band": "unsupported",
     "packages": [
@@ -3778,20 +3202,6 @@
     ],
     "symbols": [
       "isURL"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-f6fm-r26q-p747",
-    "band": "unsupported",
-    "packages": [
-      "@strapi/strapi",
-      "strapi"
-    ],
-    "symbols": [
-      "panel"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -3929,19 +3339,6 @@
     "note": "exported by the package and named in the fix commit"
   },
   {
-    "id": "GHSA-fgx4-p8xf-qhp9",
-    "band": "unsupported",
-    "packages": [
-      "@lobehub/chat"
-    ],
-    "symbols": [
-      "PoC"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-fhv8-fx5f-7fxf",
     "band": "weak_support",
     "packages": [
@@ -4020,19 +3417,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-fph2-r4qg-9576",
-    "band": "unsupported",
-    "packages": [
-      "parse-server"
-    ],
-    "symbols": [
-      "REST"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-fpw7-j2hg-69v5",
     "band": "conflicting",
     "packages": [
@@ -4057,19 +3441,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-fr3w-2p22-6w7p",
-    "band": "unsupported",
-    "packages": [
-      "directus"
-    ],
-    "symbols": [
-      "Auth"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-fr4j-65pv-gjjj",
@@ -4109,22 +3480,6 @@
     "corroborated": false,
     "exportVerdict": "unknown",
     "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-fvcw-9w9r-pxc7",
-    "band": "weak_support",
-    "packages": [
-      "flowise",
-      "flowise-components"
-    ],
-    "symbols": [
-      "g",
-      "Jenkins",
-      "Kubernetes"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
     "id": "GHSA-fvq6-55gv-jx9f",
@@ -4364,19 +3719,6 @@
     "note": "named in the fix commit, exports could not be read"
   },
   {
-    "id": "GHSA-gjx4-2c7g-fm94",
-    "band": "unsupported",
-    "packages": [
-      "screenshot-desktop"
-    ],
-    "symbols": [
-      "g"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-gm68-572p-q28r",
     "band": "unsupported",
     "packages": [
@@ -4453,19 +3795,6 @@
     "corroborated": false,
     "exportVerdict": "not_found",
     "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
-    "id": "GHSA-grj5-jjm8-h35p",
-    "band": "likely_wrong",
-    "packages": [
-      "vm2"
-    ],
-    "symbols": [
-      "apply"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-gwhp-pf74-vj37",
@@ -4717,19 +4046,6 @@
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
   },
   {
-    "id": "GHSA-hgqx-r2hp-jr38",
-    "band": "unsupported",
-    "packages": [
-      "tinymce"
-    ],
-    "symbols": [
-      "open"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-hhf6-3xpg-pggx",
     "band": "conflicting",
     "packages": [
@@ -4743,19 +4059,6 @@
     "note": "exported by the package but the fix commit never mentions it"
   },
   {
-    "id": "GHSA-hjwc-26pj-v3pm",
-    "band": "unsupported",
-    "packages": [
-      "@agenticmail/api"
-    ],
-    "symbols": [
-      "AgenticMail"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-hjwq-mjwj-4x6c",
     "band": "likely_wrong",
     "packages": [
@@ -4765,7 +4068,7 @@
       "vue-i18n"
     ],
     "symbols": [
-      "entry"
+      "deepCopy"
     ],
     "corroborated": false,
     "exportVerdict": "not_found",
@@ -4804,7 +4107,7 @@
       "js-object-utilities"
     ],
     "symbols": [
-      "entry"
+      "set"
     ],
     "corroborated": false,
     "exportVerdict": "not_found",
@@ -4856,8 +4159,7 @@
       "@budibase/server"
     ],
     "symbols": [
-      "PUBLIC_ENDPOINTS",
-      "TODO"
+      "buildCsrfMiddleware"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -5020,19 +4322,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-j5c2-hm46-wp5c",
-    "band": "unsupported",
-    "packages": [
-      "ghost"
-    ],
-    "symbols": [
-      "integrations"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-j5mf-6rh3-rhgg",
     "band": "weak_support",
     "packages": [
@@ -5096,19 +4385,6 @@
     ],
     "symbols": [
       "_transformMeasurements"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-jc39-686j-wp6q",
-    "band": "unsupported",
-    "packages": [
-      "parse-server"
-    ],
-    "symbols": [
-      "REST"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -5219,22 +4495,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-jv3g-j58f-9mq9",
-    "band": "likely_wrong",
-    "packages": [
-      "jose",
-      "jose-browser-runtime",
-      "jose-node-cjs-runtime",
-      "jose-node-esm-runtime"
-    ],
-    "symbols": [
-      "decryption"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-jxfh-8wgv-vfr2",
     "band": "weak_support",
     "packages": [
@@ -5273,19 +4533,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-m33v-338h-4v9f",
-    "band": "likely_wrong",
-    "packages": [
-      "@node-red/runtime"
-    ],
-    "symbols": [
-      "Projects"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-m44r-7c5h-m6mj",
@@ -5473,32 +4720,6 @@
     "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
-    "id": "GHSA-mpjm-v997-c4h4",
-    "band": "unsupported",
-    "packages": [
-      "electron"
-    ],
-    "symbols": [
-      "nativeImage"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-mq53-pc65-wjc4",
-    "band": "likely_wrong",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "documented"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-mqgv-67vx-g4m5",
     "band": "unsupported",
     "packages": [
@@ -5591,19 +4812,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-p28v-f755-9qrg",
-    "band": "likely_wrong",
-    "packages": [
-      "@trigger.dev/core"
-    ],
-    "symbols": [
-      "logs"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-p2ph-7g93-hw3m",
     "band": "likely_wrong",
     "packages": [
@@ -5615,7 +4823,7 @@
       "vue-i18n"
     ],
     "symbols": [
-      "entry"
+      "handleFlatJson"
     ],
     "corroborated": false,
     "exportVerdict": "not_found",
@@ -5713,19 +4921,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-pcw7-5633-82vv",
-    "band": "weak_support",
-    "packages": [
-      "@strapi/upload"
-    ],
-    "symbols": [
-      "Content"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-pfv6-prqm-85q8",
     "band": "weak_support",
     "packages": [
@@ -5803,19 +4998,6 @@
     "corroborated": false,
     "exportVerdict": "unknown",
     "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-pwhf-39xg-4rxw",
-    "band": "likely_wrong",
-    "packages": [
-      "@backstage/techdocs-common"
-    ],
-    "symbols": [
-      "TechDocs"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-px3p-vgh9-m57c",
@@ -6181,19 +5363,6 @@
     "note": "exported by the package, no fix commit to check"
   },
   {
-    "id": "GHSA-r8jr-wg88-fq5c",
-    "band": "weak_support",
-    "packages": [
-      "@keycloak/keycloak-admin-client"
-    ],
-    "symbols": [
-      "Admin"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-rchf-xwx2-hm93",
     "band": "likely_wrong",
     "packages": [
@@ -6244,19 +5413,6 @@
     "corroborated": false,
     "exportVerdict": "confirmed",
     "note": "exported by the package, no fix commit to check"
-  },
-  {
-    "id": "GHSA-rjq5-w47x-x359",
-    "band": "unsupported",
-    "packages": [
-      "@hono/node-server"
-    ],
-    "symbols": [
-      "standard"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-rjvj-673q-4hfw",
@@ -6364,19 +5520,6 @@
     "note": "exported by the package but the fix commit never mentions it"
   },
   {
-    "id": "GHSA-v2v4-37r5-5v8g",
-    "band": "weak_support",
-    "packages": [
-      "ip-address"
-    ],
-    "symbols": [
-      "comparison"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-v37h-5mfm-c47c",
     "band": "likely_wrong",
     "packages": [
@@ -6431,19 +5574,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-v65r-p3vv-jjfv",
-    "band": "unsupported",
-    "packages": [
-      "tinymce"
-    ],
-    "symbols": [
-      "getContent"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-v667-gc2r-2xm7",
@@ -6524,19 +5654,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-vc7j-h8xg-fv5x",
-    "band": "likely_wrong",
-    "packages": [
-      "matrix-appservice-bridge"
-    ],
-    "symbols": [
-      "provisioning"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-vc8f-x9pp-wf5p",
     "band": "weak_support",
     "packages": [
@@ -6602,33 +5719,6 @@
     "note": "named in the fix commit, exports could not be read"
   },
   {
-    "id": "GHSA-vgj7-895j-gpr6",
-    "band": "unsupported",
-    "packages": [
-      "@strapi/strapi",
-      "strapi"
-    ],
-    "symbols": [
-      "panel"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-vh25-5764-9wcr",
-    "band": "unsupported",
-    "packages": [
-      "@conventional-changelog/git-client"
-    ],
-    "symbols": [
-      "another"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-vh3f-qppr-j97f",
     "band": "conflicting",
     "packages": [
@@ -6642,19 +5732,6 @@
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
   },
   {
-    "id": "GHSA-vj5c-m527-mpff",
-    "band": "likely_wrong",
-    "packages": [
-      "style-dictionary"
-    ],
-    "symbols": [
-      "Expand"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-vj72-mwrj-m2xq",
     "band": "unsupported",
     "packages": [
@@ -6662,19 +5739,6 @@
     ],
     "symbols": [
       "deepMerge"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
-    "id": "GHSA-vjc7-jrh9-9j86",
-    "band": "unsupported",
-    "packages": [
-      "9router"
-    ],
-    "symbols": [
-      "responses"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -6805,7 +5869,7 @@
       "signalk-server"
     ],
     "symbols": [
-      "applicationData"
+      "validateAppId"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -6890,20 +5954,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-w2rr-34g9-rvrj",
-    "band": "likely_wrong",
-    "packages": [
-      "@xmldom/xmldom",
-      "xmldom"
-    ],
-    "symbols": [
-      "browsers"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-w4hw-qcx7-56pr",
     "band": "conflicting",
     "packages": [
@@ -6929,19 +5979,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-w52v-v783-gw97",
-    "band": "unsupported",
-    "packages": [
-      "ghost"
-    ],
-    "symbols": [
-      "Content"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-w5m3-xh75-mp55",
@@ -7030,7 +6067,7 @@
       "flowise-components"
     ],
     "symbols": [
-      "Custom"
+      "isValidURL"
     ],
     "corroborated": false,
     "exportVerdict": "not_found",
@@ -7049,32 +6086,6 @@
     "corroborated": false,
     "exportVerdict": "not_found",
     "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
-    "id": "GHSA-wj56-g96r-673q",
-    "band": "weak_support",
-    "packages": [
-      "studiocms"
-    ],
-    "symbols": [
-      "REST"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
-    "id": "GHSA-wjc4-73q6-gv3m",
-    "band": "unsupported",
-    "packages": [
-      "plotly.js"
-    ],
-    "symbols": [
-      "plot"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
   },
   {
     "id": "GHSA-wjpc-cgvw-xx23",
@@ -7103,21 +6114,6 @@
     "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
-    "id": "GHSA-wmm3-h9qj-p5v6",
-    "band": "unsupported",
-    "packages": [
-      "sillytavern"
-    ],
-    "symbols": [
-      "Firefox",
-      "g",
-      "view"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-wq8f-xmq3-5vq9",
     "band": "unsupported",
     "packages": [
@@ -7144,19 +6140,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-wvr6-395c-5pxr",
-    "band": "unsupported",
-    "packages": [
-      "cedipay-core"
-    ],
-    "symbols": [
-      "transaction"
-    ],
-    "corroborated": false,
-    "exportVerdict": "unknown",
-    "note": "exports could not be read and no fix commit corroborates it"
-  },
-  {
     "id": "GHSA-wxfj-84xf-7gxv",
     "band": "unsupported",
     "packages": [
@@ -7170,19 +6153,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-wxgw-qj99-44c2",
-    "band": "weak_support",
-    "packages": [
-      "node-forge"
-    ],
-    "symbols": [
-      "setPath"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-wxhw-j4hc-fmq6",
     "band": "conflicting",
     "packages": [
@@ -7194,19 +6164,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-wxrr-jp8m-qq7f",
-    "band": "likely_wrong",
-    "packages": [
-      "flowise"
-    ],
-    "symbols": [
-      "documented"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-x2fc-mxcx-w4mf",
@@ -7353,19 +6310,6 @@
     "note": "exports could not be read and no fix commit corroborates it"
   },
   {
-    "id": "GHSA-xgm2-5f3f-mvvc",
-    "band": "likely_wrong",
-    "packages": [
-      "hono"
-    ],
-    "symbols": [
-      "AWS"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
-  },
-  {
     "id": "GHSA-xh2p-7p87-fhgh",
     "band": "conflicting",
     "packages": [
@@ -7424,7 +6368,7 @@
       "apostrophe"
     ],
     "symbols": [
-      "REST"
+      "launder"
     ],
     "corroborated": false,
     "exportVerdict": "unknown",
@@ -7483,19 +6427,6 @@
     "note": "the package does not appear to export this, and there is no fix commit to check"
   },
   {
-    "id": "GHSA-xp9c-82x8-7f67",
-    "band": "weak_support",
-    "packages": [
-      "@node-red/runtime"
-    ],
-    "symbols": [
-      "admin"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and there is no fix commit to check"
-  },
-  {
     "id": "GHSA-xq4f-3jxp-qv6m",
     "band": "unsupported",
     "packages": [
@@ -7533,19 +6464,6 @@
     "corroborated": true,
     "exportVerdict": "not_found",
     "note": "the fix commit mentions this symbol but the package does not appear to export it"
-  },
-  {
-    "id": "GHSA-xrh7-m5pp-39r6",
-    "band": "likely_wrong",
-    "packages": [
-      "eta"
-    ],
-    "symbols": [
-      "Express"
-    ],
-    "corroborated": false,
-    "exportVerdict": "not_found",
-    "note": "the package does not appear to export this, and the fix commit never mentions it"
   },
   {
     "id": "GHSA-xrxm-cp7j-8xf6",

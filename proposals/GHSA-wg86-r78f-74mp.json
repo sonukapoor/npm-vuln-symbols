@@ -10,7 +10,7 @@
         "name": "flowise"
       },
       "symbols": [
-        "Custom"
+        "isValidURL"
       ]
     },
     {
@@ -19,7 +19,7 @@
         "name": "flowise-components"
       },
       "symbols": [
-        "Custom"
+        "isValidURL"
       ]
     }
   ],

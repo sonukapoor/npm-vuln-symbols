@@ -10,7 +10,9 @@
         "name": "@fuel-ts/account"
       },
       "symbols": [
-        "question"
+        "txpool",
+        "tA",
+        "fund"
       ]
     }
   ],

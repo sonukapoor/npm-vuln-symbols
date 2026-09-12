@@ -10,7 +10,7 @@
         "name": "opencode-ai"
       },
       "symbols": [
-        "OpenCode"
+        "fetch"
       ]
     }
   ],

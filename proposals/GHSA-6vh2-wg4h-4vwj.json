@@ -10,7 +10,8 @@
         "name": "flowise"
       },
       "symbols": [
-        "Prediction"
+        "overrideConfig",
+        "flowConfig"
       ]
     }
   ],
