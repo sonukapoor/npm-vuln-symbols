@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-pj96-35fp-cfcc",
+  "aliases": [
+    "CVE-2026-85715"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "exifreader"
+      },
+      "symbols": [
+        "getItems"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/mattiasw/ExifReader/commit/17b901cd192d2c90d7f9f347bd3073b28b482699",
+    "excerpt": "in the `getItems()` function"
+  }
+}
