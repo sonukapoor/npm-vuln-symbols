@@ -19,5 +19,10 @@
     "confidence": "high",
     "excerpt": "in the lib.deepMerge function",
     "fixCommit": "https://github.com/chakra-ui/zag/commit/f53edc548f737aadfdd486a0043bdd5f5c068bbf"
-  }
+  },
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "trigger": "call",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

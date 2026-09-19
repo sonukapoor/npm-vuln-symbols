@@ -19,5 +19,9 @@
     "confidence": "high",
     "excerpt": "via the template function",
     "fixCommit": "https://github.com/jashkenas/underscore/commit/4c73526d43838ad6ab43a6134728776632adeb66"
-  }
+  },
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

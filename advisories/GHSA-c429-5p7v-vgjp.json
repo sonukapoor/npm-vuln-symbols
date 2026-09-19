@@ -28,5 +28,9 @@
     "confidence": "high",
     "excerpt": "via the clone function",
     "fixCommit": "https://github.com/hapijs/hoek/commit/4d0804bc6135ad72afdc5e1ec002b935b2f5216a"
-  }
+  },
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }

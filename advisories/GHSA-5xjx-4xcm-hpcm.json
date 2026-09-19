@@ -19,5 +19,9 @@
     "confidence": "high",
     "excerpt": "via the Merge() function",
     "fixCommit": "https://github.com/BadOPCode/NoDash/commit/b9cc2b3b49f6cd5228e406bc57e17a28b998fea5"
-  }
+  },
+  "reviewedBy": "K4bain",
+  "reviewedAt": "2026-09-11",
+  "notes": "symbol-vs-advisory review for issue #17",
+  "reviewMethod": "assisted"
 }
