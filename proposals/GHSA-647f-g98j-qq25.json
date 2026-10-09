@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-647f-g98j-qq25",
+  "aliases": [
+    "CVE-2026-92937"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vm2"
+      },
+      "symbols": [
+        "sandbox"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/patriksimek/vm2/commit/315786904c416be68ff2517b86fb9d71fa6761db",
+    "excerpt": "through the `sandbox` option, or a NodeVM external module's async method"
+  }
+}

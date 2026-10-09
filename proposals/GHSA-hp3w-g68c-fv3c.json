@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-hp3w-g68c-fv3c",
+  "aliases": [
+    "CVE-2026-97058"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "sprintf-js"
+      },
+      "symbols": [
+        "toExponential",
+        "toPrecision"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "through 1.1.3 passes unbounded precision specifiers to toFixed, toExponential, and toPrecision methods"
+  }
+}

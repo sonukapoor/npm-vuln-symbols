@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-wr44-6hxh-3jwq",
+  "aliases": [
+    "CVE-2026-90771"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "joi"
+      },
+      "symbols": [
+        "prototype"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/hapijs/joi/commit/1d2001cad9971327a62c9fd8eb1afec20cd784d2",
+    "excerpt": "in custom messages to replace the returned object's prototype, breaking downstream code relying on Object.prototype methods"
+  }
+}

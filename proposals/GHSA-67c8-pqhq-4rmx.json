@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-67c8-pqhq-4rmx",
+  "aliases": [
+    "CVE-2026-102992"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "piscina"
+      },
+      "symbols": [
+        "loadBalancer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/piscinajs/piscina/commit/0cb12fca37f526065b072592afe954574dcc656f",
+    "excerpt": "via `loadBalancer`, an attacker-supplied function"
+  }
+}

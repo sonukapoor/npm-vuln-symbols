@@ -1,0 +1,21 @@
+{
+  "id": "GHSA-g2v6-rqmx-r4w6",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@vue/server-renderer"
+      },
+      "symbols": [
+        "setAttribute"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/vuejs/core/commit/a2b40db9a83b36ed9da3a16403cf8f040262d73f",
+    "excerpt": "via the DOM `setAttribute()` API"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-2v2p-6j97-cjg9",
+  "aliases": [
+    "CVE-2026-100722"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vm2"
+      },
+      "symbols": [
+        "async"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/patriksimek/vm2/commit/6e487df9518e455e5e60faec3df3a0e2e27f9940",
+    "excerpt": "in async functions"
+  }
+}
