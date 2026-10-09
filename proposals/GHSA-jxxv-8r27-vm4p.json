@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-jxxv-8r27-vm4p",
+  "aliases": [
+    "CVE-2026-92950"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vm2"
+      },
+      "symbols": [
+        "require"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/patriksimek/vm2/commit/903017c8a1eae9aba947ec854468b48155e79f86",
+    "excerpt": "through the **host** `require()` function"
+  }
+}

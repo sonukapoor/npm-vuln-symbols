@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-p8wg-vrv2-v86f",
+  "aliases": [
+    "CVE-2026-106445"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "handlebars"
+      },
+      "symbols": [
+        "g"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/handlebars-lang/handlebars.js/commit/ceec388abe1d1aac8f6369860d5f390fa71ef4fa",
+    "excerpt": "through Handlebars' template rendering mechanics (e.g., #with calling functions"
+  }
+}
