@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-mc52-mwq4-vfx3",
+  "aliases": [
+    "CVE-2026-86540"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "knowns"
+      },
+      "symbols": [
+        "Validate"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/knowns-dev/knowns/commit/d3989829fb5095666d23d005b2f78a082832a396",
+    "excerpt": "In `internal/models/config.go`, the `ProjectSettings.Validate()` function"
+  }
+}

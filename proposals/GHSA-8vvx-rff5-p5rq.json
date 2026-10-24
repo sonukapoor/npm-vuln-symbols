@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-8vvx-rff5-p5rq",
+  "aliases": [
+    "CVE-2026-100702"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nodemailer"
+      },
+      "symbols": [
+        "sendMail"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/nodemailer/nodemailer/commit/ebe084940aef88278afc6016b78c6d1c3821bb66",
+    "excerpt": "through the normal `sendMail()` API"
+  }
+}

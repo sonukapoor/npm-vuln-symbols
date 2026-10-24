@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-rx4f-c7p8-82vq",
+  "aliases": [
+    "CVE-2026-85014"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "undici"
+      },
+      "symbols": [
+        "WebSocketStream"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/nodejs/undici/commit/1858656ebb1e919311c1f31613dfd581b7214349",
+    "excerpt": "using the `WebSocketStream` API"
+  }
+}

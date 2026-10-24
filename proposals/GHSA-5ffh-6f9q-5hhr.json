@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-5ffh-6f9q-5hhr",
+  "aliases": [
+    "CVE-2026-77425"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "unleash-server"
+      },
+      "symbols": [
+        "existingOrder"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/Unleash/unleash/commit/43e8db37b846921c8a94db58b44935ecbd15d9d1",
+    "excerpt": "in `existingOrder` (the set of strategy IDs that genuinely belong to `{project, featureName, environment}`), which the function"
+  }
+}

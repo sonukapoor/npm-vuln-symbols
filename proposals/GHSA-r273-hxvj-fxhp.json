@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-r273-hxvj-fxhp",
+  "aliases": [
+    "CVE-2026-92933"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vm2"
+      },
+      "symbols": [
+        "readonly"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/patriksimek/vm2/commit/e10bd2f539ab1a90c2d37466e6aae740d4a1ce2a",
+    "excerpt": "in `vm.readonly()` without filtering any member, so newly added Node APIs"
+  }
+}
