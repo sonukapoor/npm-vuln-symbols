@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-9wx9-5pv9-3349",
+  "aliases": [
+    "CVE-2026-116582"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "seroval"
+      },
+      "symbols": [
+        "escapeRegExp"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/lxsmnsyc/seroval/commit/f94ee0b63936dae954ff50d5b5e8ea7cb9b284e6",
+    "excerpt": "through an escaping helper (such as an `escapeRegExp` function"
+  }
+}

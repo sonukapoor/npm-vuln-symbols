@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-2vq3-mpmf-9xgr",
+  "aliases": [
+    "CVE-2026-106763"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@justice8096/sagemath-mcp-server"
+      },
+      "symbols": [
+        "escapeShellString",
+        "sanitizeCode"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the escapeShellString and sanitizeCode functions"
+  }
+}

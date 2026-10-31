@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-9fr6-4gfg-395g",
+  "aliases": [
+    "CVE-2026-101902"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "axios"
+      },
+      "symbols": [
+        "confirmed"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a",
+    "excerpt": "in the confirmed method"
+  }
+}

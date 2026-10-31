@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-gg6h-894w-4m9c",
+  "aliases": [
+    "CVE-2026-116795"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "re2js"
+      },
+      "symbols": [
+        "LOOKBEHINDS"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/le0pard/re2js/commit/dfdd947785dfa113bdc97416375c246a39458395",
+    "excerpt": "in `LOOKBEHINDS` flag together with any repeated-matching API"
+  }
+}

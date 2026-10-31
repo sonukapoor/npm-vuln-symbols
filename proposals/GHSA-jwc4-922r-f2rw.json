@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-jwc4-922r-f2rw",
+  "aliases": [
+    "CVE-2026-106764"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@rog0x/mcp-git-tools"
+      },
+      "symbols": [
+        "resolveBaseBranch"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the resolveBaseBranch function"
+  }
+}

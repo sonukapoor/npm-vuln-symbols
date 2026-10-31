@@ -1,0 +1,68 @@
+{
+  "id": "GHSA-f2ph-cmg5-wxc8",
+  "aliases": [
+    "CVE-2026-114125"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-mcp"
+      },
+      "symbols": [
+        "postMessage"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-vitest"
+      },
+      "symbols": [
+        "postMessage"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@storybook/core"
+      },
+      "symbols": [
+        "postMessage"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@storybook/core-server"
+      },
+      "symbols": [
+        "postMessage"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@storybook/experimental-addon-test"
+      },
+      "symbols": [
+        "postMessage"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "storybook"
+      },
+      "symbols": [
+        "postMessage"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/storybookjs/storybook/commit/243c06bf8f1e2f09446c44868ea100261e1374da",
+    "excerpt": "using the `postMessage` API"
+  }
+}
