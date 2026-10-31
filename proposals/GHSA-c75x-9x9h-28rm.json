@@ -1,0 +1,32 @@
+{
+  "id": "GHSA-c75x-9x9h-28rm",
+  "aliases": [
+    "CVE-2026-118247"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@highcharts/dashboards"
+      },
+      "symbols": [
+        "DataTable"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@highcharts/grid-pro"
+      },
+      "symbols": [
+        "DataTable"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/highcharts/highcharts/commit/02dd9349aeb6f4cc9c98806120d917ed316b4c74",
+    "excerpt": "through the public `DataTable` API"
+  }
+}

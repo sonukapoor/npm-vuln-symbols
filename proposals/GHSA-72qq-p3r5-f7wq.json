@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-72qq-p3r5-f7wq",
+  "aliases": [
+    "CVE-2026-10032"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@a2ui/web_core"
+      },
+      "symbols": [
+        "openUrl"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/a2ui-project/a2ui/commit/71573078c4168b2dc166bb847c3a85715dadc675",
+    "excerpt": "in the `openUrl` function"
+  }
+}

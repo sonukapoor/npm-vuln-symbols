@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-834v-8h66-3h79",
+  "aliases": [
+    "CVE-2026-115895"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "happy-dom"
+      },
+      "symbols": [
+        "Window"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/capricorn86/happy-dom/commit/fd163520b74d9fa146be91f7b4e4f46d6cccbe13",
+    "excerpt": "through the public `Window` and `<script type=\"module\">` APIs"
+  }
+}

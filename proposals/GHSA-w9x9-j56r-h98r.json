@@ -1,0 +1,21 @@
+{
+  "id": "GHSA-w9x9-j56r-h98r",
+  "aliases": [],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@eeacms/volto-chatbot"
+      },
+      "symbols": [
+        "Bearer"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/eea/volto-chatbot/commit/eaf18b7c0f23560086b300bf0c5e62f9f76ad7b0",
+    "excerpt": "in session cookie or a `Bearer` API"
+  }
+}

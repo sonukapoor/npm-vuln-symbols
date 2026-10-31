@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-q9v2-7m5w-4693",
+  "aliases": [
+    "CVE-2026-12866"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "expr-eval"
+      },
+      "symbols": [
+        "toJSFunction"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the toJSFunction() API"
+  }
+}

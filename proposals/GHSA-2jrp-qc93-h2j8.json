@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-2jrp-qc93-h2j8",
+  "aliases": [
+    "CVE-2026-113655"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "apostrophe"
+      },
+      "symbols": [
+        "move"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/apostrophecms/apostrophe/commit/9500b8b0e1d630d5e07fbb5fd2c25ed0943845ce",
+    "excerpt": "in the same `move()` function"
+  }
+}

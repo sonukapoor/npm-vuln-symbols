@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-5mj8-gf6m-fhw8",
+  "aliases": [
+    "CVE-2026-56681"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "9router"
+      },
+      "symbols": [
+        "skipping"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/decolua/9router/commit/efd20be8d81ef2e256a7037f3aa78e6b567b5fd3",
+    "excerpt": "in  \n- canAccessPublicLlmApi() — grants access to /api/v1/* when isLocalRequest() returns true, skipping API"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "GHSA-pq96-jpmf-w254",
+  "aliases": [
+    "CVE-2026-106102"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "quasar"
+      },
+      "symbols": [
+        "curl"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "fixCommit": "https://github.com/quasarframework/quasar/commit/11505afe5b5218f2c468f130181815b898fd1e40",
+    "excerpt": "via actual `curl` requests (not just isolated function"
+  }
+}

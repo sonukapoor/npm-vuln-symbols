@@ -1,0 +1,22 @@
+{
+  "id": "GHSA-fq6x-j3g6-xx83",
+  "aliases": [
+    "CVE-2026-106765"
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@rog0x/mcp-docker-tools"
+      },
+      "symbols": [
+        "handleImageList"
+      ]
+    }
+  ],
+  "evidence": {
+    "source": "advisory_text",
+    "confidence": "medium",
+    "excerpt": "via the handleImageList function"
+  }
+}
